@@ -79,7 +79,12 @@ add_action( 'widgets_init', 'makercon_widgets_init' );
  * Enqueue scripts and styles.
  */
 function makercon_scripts() {
-	wp_enqueue_style( 'makercon-style', get_stylesheet_uri() );
+	wp_enqueue_style( 'makercon-bootstrap', get_stylesheet_directory_uri() . '/css/style.css' );
+
+	// Drop the original CSS.
+	// wp_enqueue_style( 'makercon-style', get_stylesheet_uri() );
+
+	wp_enqueue_script( 'makercon-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '20120206', true );
 
 	wp_enqueue_script( 'makercon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
