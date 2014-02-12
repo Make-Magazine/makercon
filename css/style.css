@@ -5987,9 +5987,14 @@ article ul li {
   margin-bottom: -168px;
   margin-top: 90px;
 }
+footer {
+  background-color: #9EE0F7;
+  border-top: 1px solid #BEECFC;
+}
 .widget {
   border-top: 8px solid #00ACEC;
   padding-top: 5px;
+  margin-bottom: 20px;
 }
 .widget h1 {
   font-size: 32px;
