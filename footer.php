@@ -10,8 +10,8 @@
 
 	</div><!-- #content -->
 
-	<footer id="colophon" class="site-footer" role="contentinfo">
-		<div class="row">
+	<footer id="colophon" class="site-footer row" role="contentinfo">
+		<div class="">
 			<div class="col-md-4">
 				<h3>Past Events</h3>
 			</div>

@@ -5989,7 +5989,12 @@ article ul li {
 }
 footer {
   background-color: #9EE0F7;
-  border-top: 1px solid #BEECFC;
+  border-top: 10px solid #BEECFC;
+}
+footer h3 {
+  text-align: center;
+  font-size: 42px;
+  margin: 20px 0;
 }
 .widget {
   border-top: 8px solid #00ACEC;
@@ -6005,6 +6010,23 @@ footer {
 }
 .widget ul li {
   list-style-type: none;
+}
+.home .call-box {
+  padding: 100px;
+  background-color: #E3FCFC;
+  text-align: center;
+}
+.home .call-box h2 {
+  color: #0181b2;
+}
+.home .call-box h4 {
+  color: #00adef;
+}
+a.button {
+  padding: 10px;
+  background-color: #EA202D;
+  color: white;
+  border: 8px solid #CBEAEA;
 }
 h1 {
   font-size: 45px;
