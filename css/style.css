@@ -5930,3 +5930,44 @@ article ul li {
     border-bottom-color: #ffffff;
   }
 }
+#masthead {
+  margin-top: 20px;
+}
+#masthead .social-links .social {
+  margin-right: 15px;
+  margin-bottom: 20px;
+  height: 22px;
+  width: 22px;
+  display: block;
+  float: right !important;
+  margin-left: 15px;
+  background-image: url('../img/social-sprite.png');
+}
+#masthead .social-links .social:hover {
+  opacity: .3;
+}
+#masthead .social-links .social.social-facebook {
+  background-position-x: 99px;
+}
+#masthead .social-links .social.social-google {
+  background-position-x: 61px;
+}
+#masthead .social-links .social.social-linkedin {
+  background-position-x: 22px;
+}
+#masthead #site-navigation ul li {
+  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+  text-transform: uppercase;
+  font-size: 28px;
+  margin: 0px;
+}
+#masthead #site-navigation ul li a {
+  color: #00adef;
+  padding: 12px;
+}
+#masthead .blue-bar {
+  background-image: url('../img/blue-bar.jpg');
+  height: 82px;
+  margin-bottom: -163px;
+  margin-top: 90px;
+}
