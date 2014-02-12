@@ -1,0 +1,44 @@
+@light-blue: #E0FCFC;
+
+h1 {
+	font-size: 45px;
+	text-transform: uppercase;
+}
+
+.entry-content {
+	color: #02394f;
+	font-family: @font;
+	h3 {
+		color: darken(@blue, 10%);
+	}
+}
+
+.table {
+	margin: 20px 0;
+	tbody {
+		tr {
+			margin-bottom: 10px;
+			td {
+				text-align: left; 
+				vertical-align: middle;
+				border: 0px;
+				&.blurb {
+					background-color: rgba(224, 252, 252, 0.5);
+					padding: 10px 10px 10px 40px;
+					font-size: 16px;
+				}
+				&.time {
+					color: #ed1b24;
+					font-size: 24px;
+					text-transform: uppercase;
+					padding: 10px 40px 10px 0px;
+					font-family: @heading;
+				}
+				&.break {
+					background-color: #63ABED;
+					color: #fff;
+				}
+			}
+		}
+	}
+}

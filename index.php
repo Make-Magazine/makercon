@@ -14,8 +14,10 @@
 get_header(); ?>
 
 <div class="row">
-		<div id="primary" class="content-area col-md-8">
-			<main id="main" class="site-main" role="main">
+
+	<div id="primary" class="content-area col-md-8">
+
+		<main id="main" class="site-main" role="main">
 
 			<?php if ( have_posts() ) : ?>
 
@@ -41,6 +43,7 @@ get_header(); ?>
 			<?php endif; ?>
 
 			</main><!-- #main -->
+	
 		</div><!-- #primary -->
 
 	<?php get_sidebar(); ?>

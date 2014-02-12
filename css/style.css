@@ -5853,6 +5853,21 @@ td.visible-print {
     display: none !important;
   }
 }
+a {
+  color: #00adef;
+}
+a:hover {
+  color: #23c2ff;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+  color: #00adef;
+}
 a:hover {
   text-decoration: none !important;
 }
@@ -5932,6 +5947,7 @@ article ul li {
 }
 #masthead {
   margin-top: 20px;
+  margin-bottom: 40px;
 }
 #masthead .social-links .social {
   margin-right: 15px;
@@ -5968,6 +5984,58 @@ article ul li {
 #masthead .blue-bar {
   background-image: url('../img/blue-bar.jpg');
   height: 82px;
-  margin-bottom: -163px;
+  margin-bottom: -168px;
   margin-top: 90px;
+}
+.widget {
+  border-top: 8px solid #00ACEC;
+  padding-top: 5px;
+}
+.widget h1 {
+  font-size: 32px;
+}
+.widget ul {
+  margin-left: 0px;
+  padding-left: 0px;
+}
+.widget ul li {
+  list-style-type: none;
+}
+h1 {
+  font-size: 45px;
+  text-transform: uppercase;
+}
+.entry-content {
+  color: #02394f;
+  font-family: Helvetica, sans-serif;
+}
+.entry-content h3 {
+  color: #0088bc;
+}
+.table {
+  margin: 20px 0;
+}
+.table tbody tr {
+  margin-bottom: 10px;
+}
+.table tbody tr td {
+  text-align: left;
+  vertical-align: middle;
+  border: 0px;
+}
+.table tbody tr td.blurb {
+  background-color: rgba(224, 252, 252, 0.5);
+  padding: 10px 10px 10px 40px;
+  font-size: 16px;
+}
+.table tbody tr td.time {
+  color: #ed1b24;
+  font-size: 24px;
+  text-transform: uppercase;
+  padding: 10px 40px 10px 0px;
+  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+}
+.table tbody tr td.break {
+  background-color: #63ABED;
+  color: #fff;
 }
