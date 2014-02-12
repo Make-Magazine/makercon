@@ -25,7 +25,9 @@
 <div id="page" class="hfeed site container">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header row" role="banner">
-		<div class="blue-bar"></div>
+		<?php if ( ! is_front_page() ) : ?>
+			<div class="blue-bar"></div>
+		<?php endif; ?>
 		<div class="site-branding col-md-4">
 			<?php if ( is_front_page() || is_home() ) : ?>
 				<h1 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
@@ -46,5 +48,12 @@
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right' ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
+
+	<?php if ( is_front_page() ) : ?>
+</div>
+<div class="photo-bar"></div>
+<div id="" class="hfeed site container">
+	<?php endif; ?>
+
 
 	<div id="content" class="site-content row">

@@ -6012,21 +6012,63 @@ footer h3 {
   list-style-type: none;
 }
 .home .call-box {
-  padding: 100px;
+  padding: 75px 0 50px;
   background-color: #E3FCFC;
   text-align: center;
+  border-top: 8px solid #c8eaea;
+  border-bottom: 8px solid #c8eaea;
 }
 .home .call-box h2 {
   color: #0181b2;
+  font-size: 42px;
 }
 .home .call-box h4 {
   color: #00adef;
+  font-size: 18px;
+  font-family: Helvetica, sans-serif;
+  font-weight: 300;
+}
+.home .call-box .padme {
+  margin: 25px;
+}
+.home .photo-bar {
+  height: 465px;
+  background-image: url('../img/photo-bg.jpg');
+  background-position: top center;
+  margin-top: -150px;
+}
+.home .image-bordered {
+  border: 8px solid #00adef;
+  max-width: 100%;
+}
+.home .entry-content {
+  padding: 50px 0;
+}
+.home .entry-content h2 {
+  font-size: 36px;
+}
+.home .entry-content p {
+  font-size: 16px;
+  margin-bottom: 24px;
+}
+.home .entry-content .spacer {
+  height: 20px;
 }
 a.button {
   padding: 10px;
   background-color: #EA202D;
   color: white;
   border: 8px solid #CBEAEA;
+}
+a.button:hover {
+  border-color: #00adef;
+  background-color: #c8eaea;
+  color: #00adef;
+}
+a.button:active {
+  background-color: #00adef;
+  color: #fff;
+  border-color: #CBEAEA;
 }
 h1 {
   font-size: 45px;
