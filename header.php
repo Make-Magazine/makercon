@@ -30,9 +30,9 @@
 		<?php endif; ?>
 		<div class="site-branding col-md-4">
 			<?php if ( is_front_page() || is_home() ) : ?>
-				<h1 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+				<h1 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01-2x.png" width="301" alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
 			<?php else : ?>
-				<h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
+				<h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01-2x.png" width="301"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
 			<?php endif; ?>
 		</div>
 
@@ -51,7 +51,17 @@
 
 	<?php if ( is_front_page() ) : ?>
 </div>
-<div class="photo-bar"></div>
+<div class="photo-bar">
+	<div class="container">
+		<div class="row">
+			<div class="col-md-12">
+				<h1>Join us for <span>MakerCon</span>!</h1>
+				<h2>The impact of Makers and Making on:</h2>
+				<h2>Education, the Economy, and Emerging Markets</h2>
+			</div>
+		</div>
+	</div>
+</div>
 <div id="" class="hfeed site container">
 	<?php endif; ?>
 
