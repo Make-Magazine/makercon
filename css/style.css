@@ -6089,7 +6089,7 @@ footer h3 {
   max-width: 100%;
 }
 .home .white-box {
-  height: 300px;
+  min-height: 300px;
   padding: 50px;
 }
 .home .white-box h2 {
