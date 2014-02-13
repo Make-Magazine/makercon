@@ -37,5 +37,10 @@
 
 <?php wp_footer(); ?>
 
+<script async defer>
+	jQuery(document).ready(function(){
+		jQuery(".post-edit-link").addClass("btn btn-primary btn-xs");
+	});
+</script>
 </body>
 </html>
