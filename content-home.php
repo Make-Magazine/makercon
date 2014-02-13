@@ -46,4 +46,12 @@
 		</div>
 	</div><!-- .entry-content -->
 
+	<div class="red-banner">
+		<div class="row">
+			<div class="col-md-12">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/red-banner.jpg" alt="A leader of the maker movement, MAKE has been integral in helping DIY hobbyists avail themselves of the tools and technologies—such as 3D printers, CNC mills, and microcontrollers—to design and engineer innovative products and devices.">
+			</div>
+		</div>
+	</div>
+
 </article><!-- #post-## -->

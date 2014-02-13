@@ -6056,6 +6056,9 @@ footer h3 {
 .home .entry-content .spacer {
   height: 20px;
 }
+.home .red-banner img {
+  max-width: 100%;
+}
 a.button {
   padding: 10px;
   background-color: #EA202D;
