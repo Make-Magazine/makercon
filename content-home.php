@@ -54,4 +54,12 @@
 		</div>
 	</div>
 
+	<div class="white-box">
+		<div class="row">
+			<div class="col-md-12">
+				<h3 style="text-align:center; margin-top:100px;">Sponsors and Stuff...</h3>
+			</div>
+		</div>
+	</div>
+
 </article><!-- #post-## -->

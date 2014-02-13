@@ -6056,8 +6056,14 @@ footer h3 {
 .home .entry-content .spacer {
   height: 20px;
 }
+.home .red-banner {
+  border-bottom: 8px solid #AC6167;
+}
 .home .red-banner img {
   max-width: 100%;
+}
+.home .white-box {
+  height: 300px;
 }
 a.button {
   padding: 10px;
