@@ -13,7 +13,12 @@
 	<footer id="colophon" class="site-footer row" role="contentinfo">
 		<div class="">
 			<div class="col-md-4">
-				<!-- <h3>Past Events</h3> -->
+				<h3>Past Events</h3>
+				<ul>
+					<li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/">2013 New York</a></li>
+					<li><a href="http://makezine.com/hardware-innovation-workshop/overview/">2013 Bay Area</a></li>
+					<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/">2012 Bay Area</a></li>
+				</ul>
 			</div>
 			<div class="col-md-4">
 				<h3>New for the editors of MAKE magazine!</h3>
