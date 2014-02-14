@@ -22,15 +22,26 @@
 			</div>
 			<div class="col-md-4">
 				<h3>New for the editors of MAKE magazine!</h3>
-				<p>Maker Pro Newsletter is a weekly roundup of news about the impact makers are having on business and technology. From new hardware products and devices, hot startups, incubators and innovators, to new tools and market trends, Maker Pro delivers a quick read to keep you up to speed on the business of making. <a href="#">Subscribe today!</a></p>
+				<p>Maker Pro Newsletter is a weekly roundup of news about the impact makers are having on business and technology. From new hardware products and devices, hot startups, incubators and innovators, to new tools and market trends, Maker Pro delivers a quick read to keep you up to speed on the business of making. <strong>Subscribe today!</strong></p>
+				<form action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
+					<p>
+						<label for="fieldName">Name <input id="fieldName" name="cm-name" type="text" /></label>
+						
+					</p>
+					<p>
+						<label for="fieldEmail">Email <input id="fieldEmail" name="cm-ttlusi-ttlusi" type="email" required /></label>
+					</p>
+					<p>
+						<button type="submit" class="button button-red">Subscribe</button>
+					</p>
+					</form>
 			</div>
 			<div class="col-md-4">
 				<h3>Venue</h3>
-				<address>
-					Redwood City, CA<br>
-					May 13th - 14th 2014
-				</address>
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/map.jpg" alt="Venue Map">
+				<ul class="blue">
+					<li>Redwood City, CA</li>
+					<li>May 13th - 14th 2014</li>
+				</ul>
 			</div>
 		</div>
 		<div class="site-info">

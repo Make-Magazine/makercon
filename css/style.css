@@ -6001,6 +6001,9 @@ footer h3 {
   font-size: 42px;
   margin: 20px 0;
 }
+footer ul {
+  padding-left: 0px;
+}
 footer ul li {
   border-bottom: 1px solid #fff;
   text-align: center;
@@ -6009,6 +6012,7 @@ footer ul li {
   margin-bottom: 5px;
   font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
   font-size: 24px;
+  color: #00adef;
 }
 .widget {
   border-top: 8px solid #00ACEC;
