@@ -7,56 +7,6 @@
 ?>
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
-	<section class="call-box">
-		<div class="row">
-			<div class="col-md-4">
-				<h2>Call for Speakers</h2>
-				<h4>Come speak at MakerCon</h4>
-				<p class="padme"><a class="button button-red" href="<?php echo home_url( '/propose-a-session/' ); ?>">Register to Speak</a></p>
-			</div>
-			<div class="col-md-4">
-				<h2>Register for MakerCon</h2>
-				<h4>Join us in the Maker revolution</h4>
-				<p class="padme"><a class="button button-red" href="#">Coming soon!</a></p>
-			</div>
-			<div class="col-md-4">
-
-				<h2>Subscribe for Updates</h2>
-				<h4>Be notified when registration opens</h4>
-
-				<!-- Button trigger modal -->
-				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#myModal">Subscribe</button></p>
-
-				<!-- Modal -->
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title" id="myModalLabel">Register for MakerCon</h4>
-							</div>
-							<div class="modal-body">
-								<form class="form" role="form" action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
-									<div class="form-group">
-										<label class="sr-only" for="fieldName">Name</label>
-										<input type="email" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="fieldEmail">Email address</label>
-										<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
-									</div>
-									<button type="submit" class="btn btn-primary">Subscribe</button>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
-			</div>
-		</div>
-	</section><!-- .call-box -->
 
 	<div class="entry-content">
 		<div class="row">
