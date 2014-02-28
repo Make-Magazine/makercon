@@ -25,14 +25,11 @@
 <div id="page" class="hfeed site container">
 	<?php do_action( 'before' ); ?>
 	<header id="masthead" class="site-header row" role="banner">
-		<?php if ( ! is_front_page() ) : ?>
-			<div class="blue-bar"></div>
-		<?php endif; ?>
 		<div class="site-branding col-md-4">
 			<?php if ( is_front_page() || is_home() ) : ?>
-				<h1 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01-2x.png" width="301" alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+				
 			<?php else : ?>
-				<h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-01-2x.png" width="301"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
+				<h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
 			<?php endif; ?>
 		</div>
 
@@ -50,17 +47,67 @@
 	</header><!-- #masthead -->
 
 	<?php if ( is_front_page() ) : ?>
+
 </div>
+
 <div class="photo-bar">
-	<div class="container">
+	<div class="">
 		<div class="row">
 			<div class="col-md-12">
-				<h1>Join us for <span>MakerCon</span>!</h1>
-				<h2>The impact of Makers and Making on:</h2>
-				<h2>Education, the Economy, and Emerging Markets</h2>
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Logo4.png" alt="MakerCon 2014">
 			</div>
 		</div>
 	</div>
+	<section class="call-box container">
+		<div class="row">
+			<div class="col-md-4">
+				<h2>Call for Speakers</h2>
+				<h4>Come speak at MakerCon</h4>
+				<p class="padme"><a class="button button-red" href="<?php echo home_url( '/propose-a-session/' ); ?>">Register to Speak</a></p>
+			</div>
+			<div class="col-md-4">
+				<h2>Register for MakerCon</h2>
+				<h4>Join us in the Maker revolution</h4>
+				<p class="padme"><a class="button button-red" href="#">Coming soon!</a></p>
+			</div>
+			<div class="col-md-4">
+
+				<h2>Subscribe for Updates</h2>
+				<h4>Be notified when registration opens</h4>
+
+				<!-- Button trigger modal -->
+				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#myModal">Subscribe</button></p>
+
+				<!-- Modal -->
+				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+					<div class="modal-dialog">
+						<div class="modal-content">
+							<div class="modal-header">
+								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+								<h4 class="modal-title" id="myModalLabel">Register for MakerCon</h4>
+							</div>
+							<div class="modal-body">
+								<form class="form" role="form" action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
+									<div class="form-group">
+										<label class="sr-only" for="fieldName">Name</label>
+										<input type="email" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
+									</div>
+									<div class="form-group">
+										<label class="sr-only" for="fieldEmail">Email address</label>
+										<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
+									</div>
+									<button type="submit" class="btn btn-primary">Subscribe</button>
+								</form>
+							</div>
+							<div class="modal-footer">
+								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</section><!-- .call-box -->
 </div>
 <div id="" class="hfeed site container">
 	<?php endif; ?>
