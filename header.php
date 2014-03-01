@@ -76,38 +76,40 @@
 				<h4>Be notified when registration opens</h4>
 
 				<!-- Button trigger modal -->
-				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#myModal">Subscribe</button></p>
+				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#subscribe-modal">Subscribe</button></p>
 
 				<!-- Modal -->
-				<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-					<div class="modal-dialog">
-						<div class="modal-content">
-							<div class="modal-header">
-								<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
-								<h4 class="modal-title" id="myModalLabel">Register for MakerCon</h4>
-							</div>
-							<div class="modal-body">
-								<form class="form" role="form" action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
-									<div class="form-group">
-										<label class="sr-only" for="fieldName">Name</label>
-										<input type="email" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
-									</div>
-									<div class="form-group">
-										<label class="sr-only" for="fieldEmail">Email address</label>
-										<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
-									</div>
-									<button type="submit" class="btn btn-primary">Subscribe</button>
-								</form>
-							</div>
-							<div class="modal-footer">
-								<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
-							</div>
-						</div>
-					</div>
-				</div>
+				
 			</div>
 		</div>
 	</section><!-- .call-box -->
+</div>
+<!-- Add our subscription modal here. Nesting the modal can lead to unintended displays... -->
+<div class="modal fade" id="subscribe-modal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+	<div class="modal-dialog">
+		<div class="modal-content">
+			<div class="modal-header">
+				<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+				<h4 class="modal-title" id="myModalLabel">Register for MakerCon</h4>
+			</div>
+			<div class="modal-body">
+				<form class="form" role="form" action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
+					<div class="form-group">
+						<label class="sr-only" for="fieldName">Name</label>
+						<input type="email" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
+					</div>
+					<div class="form-group">
+						<label class="sr-only" for="fieldEmail">Email address</label>
+						<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
+					</div>
+					<button type="submit" class="btn btn-primary">Subscribe</button>
+				</form>
+			</div>
+			<div class="modal-footer">
+				<button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+			</div>
+		</div>
+	</div>
 </div>
 <div id="" class="hfeed site container">
 	<?php endif; ?>
