@@ -96,7 +96,7 @@
 				<form class="form" role="form" action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
 					<div class="form-group">
 						<label class="sr-only" for="fieldName">Name</label>
-						<input type="email" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
+						<input type="text" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
 					</div>
 					<div class="form-group">
 						<label class="sr-only" for="fieldEmail">Email address</label>
