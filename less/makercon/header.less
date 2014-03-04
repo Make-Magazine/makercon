@@ -29,36 +29,44 @@
 	margin-bottom: 40px;
 	position: relative;
 	z-index: 1;
-		.social {
-			margin-bottom: 20px;
-			height: 22px;
-			width: 240px;
-			display: block;
-			.pull-right;
-			margin-left: 15px;
-			.sharedaddy {
-				border:none;
-				//hide default share this title
-				.sd-title {display:none;} 
-				.sd-content ul li {margin-left:20px !important;}
-				//hide default share this icons
-				li.share-linkedin a.sd-button > span, 
-				li.share-google-plus-1 a.sd-button > span, 
-				li.share-facebook a.sd-button > span, 
-				li.share-twitter a.sd-button > span {
-					display:none;
-		        	}
-				#sharing-linkedin-24 {background-image:url('../img/social-sprite.png');background-position-x: -116px;background-repeat:no-repeat;}
-				#sharing-google-24 {background-image:url('../img/social-sprite.png');background-position-x: -78px;background-repeat:no-repeat;}
-				#sharing-facebook-24 {background-image:url('../img/social-sprite.png');background-position-x: -39px;background-repeat:no-repeat;}
-				#sharing-twitter-24 {background-image:url('../img/social-sprite.png');background-position-x: 1px;background-repeat:no-repeat;}
-				//hide default share this border and background gradient
-				a.sd-button {border:none !important; background:none;} 
-				a:hover {
-		          opacity: 0.3;
-			 	}
-			    .sd-block {border:none;}
-		    }
+		#site-navigation {
+			.social {
+				margin-bottom: 20px;
+				height: 22px;
+				width: 240px;
+				display: block;
+				.pull-right;
+				margin-left: 15px;
+				.sharedaddy {
+					border:none;
+					//hide default share this title
+					.sd-title {display:none;} 
+					.sd-content{margin:0 !important;height:22px !important;
+						ul {margin:0px;height:22px;
+							li {margin-left:20px !important;height:23px !important;
+								a {margin:0px;padding:0px !important;}
+							}
+						}
+					}
+					//hide default share this icons
+					li.share-linkedin a.sd-button > span, 
+					li.share-google-plus-1 a.sd-button > span, 
+					li.share-facebook a.sd-button > span, 
+					li.share-twitter a.sd-button > span {
+						display:none;
+			        	}
+					.share-linkedin {background-image:url('../img/social-sprite.png');background-position-x: -116px;background-repeat:no-repeat;}
+					.share-google-plus-1 {background-image:url('../img/social-sprite.png');background-position-x: -78px;background-repeat:no-repeat;}
+					.share-facebook {background-image:url('../img/social-sprite.png');background-position-x: -39px;background-repeat:no-repeat;}
+					.share-twitter {background-image:url('../img/social-sprite.png');background-position-x: 1px;background-repeat:no-repeat;}
+					//hide default share this border and background gradient
+					a.sd-button {border:none !important; background:none;height:22px;box-shadow: none;width:23px;} 
+					a:hover {
+			          opacity: 0.3 !important;
+				 	}
+				    .sd-block {border:none;}
+			    }
+			}
 	    }
 	#site-navigation {
 		ul {
