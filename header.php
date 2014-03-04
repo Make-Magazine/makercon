@@ -35,11 +35,18 @@
 
 		<nav id="site-navigation" class="main-navigation nav pull-right col-md-8" role="navigation">
 			
-			<div class="social-links">
-				<a href="#"><span class="social social-twitter"></span></a>
-				<a href="#"><span class="social social-facebook"></span></a>
-				<a href="#"><span class="social social-google"></span></a>
-				<a href="#"><span class="social social-linkedin"></span></a>
+			<div class="social">
+				<?php 
+
+				if ( function_exists( 'sharing_display' ) ) {
+				    sharing_display( '', true );
+				}
+				 
+				if ( class_exists( 'Jetpack_Likes' ) ) {
+				    $custom_likes = new Jetpack_Likes;
+				    echo $custom_likes->post_likes( '' );
+				}
+				?>
 			</div>
 
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right' ) ); ?>

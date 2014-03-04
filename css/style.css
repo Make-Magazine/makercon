@@ -5951,27 +5951,58 @@ article ul li {
   position: relative;
   z-index: 1;
 }
-#masthead .social-links .social {
-  margin-right: 15px;
+#masthead .social {
   margin-bottom: 20px;
   height: 22px;
-  width: 22px;
+  width: 240px;
   display: block;
   float: right !important;
   margin-left: 15px;
+}
+#masthead .social .sharedaddy {
+  border: none;
+}
+#masthead .social .sharedaddy .sd-title {
+  display: none;
+}
+#masthead .social .sharedaddy .sd-content ul li {
+  margin-left: 20px !important;
+}
+#masthead .social .sharedaddy li.share-linkedin a.sd-button > span,
+#masthead .social .sharedaddy li.share-google-plus-1 a.sd-button > span,
+#masthead .social .sharedaddy li.share-facebook a.sd-button > span,
+#masthead .social .sharedaddy li.share-twitter a.sd-button > span {
+  display: none;
+}
+#masthead .social .sharedaddy #sharing-linkedin-24 {
   background-image: url('../img/social-sprite.png');
+  background-position-x: -116px;
+  background-repeat: no-repeat;
 }
-#masthead .social-links .social:hover {
-  opacity: .3;
+#masthead .social .sharedaddy #sharing-google-24 {
+  background-image: url('../img/social-sprite.png');
+  background-position-x: -78px;
+  background-repeat: no-repeat;
 }
-#masthead .social-links .social.social-facebook {
-  background-position-x: 99px;
+#masthead .social .sharedaddy #sharing-facebook-24 {
+  background-image: url('../img/social-sprite.png');
+  background-position-x: -39px;
+  background-repeat: no-repeat;
 }
-#masthead .social-links .social.social-google {
-  background-position-x: 61px;
+#masthead .social .sharedaddy #sharing-twitter-24 {
+  background-image: url('../img/social-sprite.png');
+  background-position-x: 1px;
+  background-repeat: no-repeat;
 }
-#masthead .social-links .social.social-linkedin {
-  background-position-x: 22px;
+#masthead .social .sharedaddy a.sd-button {
+  border: none !important;
+  background: none;
+}
+#masthead .social .sharedaddy a:hover {
+  opacity: 0.3;
+}
+#masthead .social .sharedaddy .sd-block {
+  border: none;
 }
 #masthead #site-navigation ul li {
   font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
