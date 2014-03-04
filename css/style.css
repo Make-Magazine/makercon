@@ -5981,6 +5981,12 @@ article ul li {
   margin: 0px;
   padding: 0px !important;
 }
+#masthead #site-navigation .social .sharedaddy li.share-linkedin a.sd-button > span,
+#masthead #site-navigation .social .sharedaddy li.share-google-plus-1 a.sd-button > span,
+#masthead #site-navigation .social .sharedaddy li.share-facebook a.sd-button > span,
+#masthead #site-navigation .social .sharedaddy li.share-twitter a.sd-button > span {
+  display: none;
+}
 #masthead #site-navigation .social .sharedaddy .share-linkedin {
   background-image: url('../img/social-sprite.png');
   background-position-x: -116px;
