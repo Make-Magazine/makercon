@@ -5865,7 +5865,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+  font-family: "alternate-gothic-no-3-d";
   color: #145a60;
 }
 a:hover {
@@ -5989,23 +5989,29 @@ article ul li {
 }
 #masthead #site-navigation .social .sharedaddy .share-linkedin {
   background-image: url('../img/social-sprite.png');
-  background-position-x: -116px;
+  background-position: -116px 0px;
   background-repeat: no-repeat;
 }
 #masthead #site-navigation .social .sharedaddy .share-google-plus-1 {
   background-image: url('../img/social-sprite.png');
-  background-position-x: -78px;
+  background-position: -78px 0px;
   background-repeat: no-repeat;
 }
 #masthead #site-navigation .social .sharedaddy .share-facebook {
   background-image: url('../img/social-sprite.png');
-  background-position-x: -39px;
+  background-position: -39px 0px;
   background-repeat: no-repeat;
 }
 #masthead #site-navigation .social .sharedaddy .share-twitter {
   background-image: url('../img/social-sprite.png');
-  background-position-x: 1px;
+  background-position: 1px 0px;
   background-repeat: no-repeat;
+}
+#masthead #site-navigation .social .sharedaddy .share-linkedin:hover,
+#masthead #site-navigation .social .sharedaddy .share-google-plus-1:hover,
+#masthead #site-navigation .social .sharedaddy .share-facebook:hover,
+#masthead #site-navigation .social .sharedaddy .share-twitter:hover {
+  opacity: 0.3;
 }
 #masthead #site-navigation .social .sharedaddy a.sd-button {
   border: none !important;
@@ -6014,14 +6020,11 @@ article ul li {
   box-shadow: none;
   width: 23px;
 }
-#masthead #site-navigation .social .sharedaddy a:hover {
-  opacity: 0.3 !important;
-}
 #masthead #site-navigation .social .sharedaddy .sd-block {
   border: none;
 }
 #masthead #site-navigation ul li {
-  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+  font-family: "alternate-gothic-no-3-d";
   text-transform: uppercase;
   font-size: 28px;
   margin: 0px;
@@ -6053,7 +6056,7 @@ footer ul li {
   list-style-type: none;
   padding-bottom: 5px;
   margin-bottom: 5px;
-  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+  font-family: "alternate-gothic-no-3-d";
   font-size: 24px;
   color: #145a60;
 }
@@ -6204,7 +6207,7 @@ h1 {
   font-size: 24px;
   text-transform: uppercase;
   padding: 10px 40px 10px 0px;
-  font-family: "alternate-gothic-no-3-d" Helvetica, sans-serif;
+  font-family: "alternate-gothic-no-3-d";
 }
 .table tbody tr td.break {
   background-color: #63ABED;
