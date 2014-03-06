@@ -39,6 +39,7 @@
 			<div class="col-md-4">
 				<h3>Venue</h3>
 				<ul class="blue">
+					<li>Oracle Conference Center</li>
 					<li>Redwood City, CA</li>
 					<li>May 13th - 14th 2014</li>
 				</ul>
