@@ -6213,3 +6213,23 @@ h1 {
   background-color: #63ABED;
   color: #fff;
 }
+.sponsorship {
+  color: #145a60;
+}
+.sponsorship h2 {
+  margin: 10px auto;
+  color: #FF0000;
+}
+.sponsorship h2 span {
+  font-family: arial, sans-serif;
+  font-size: 21px;
+  font-weight: 100;
+}
+.sponsorship ul {
+  padding-left: 0;
+  color: #00ADDC;
+  list-style: none;
+}
+.sponsorship ul li:before {
+  content: "\00BB \0020";
+}
