@@ -6179,6 +6179,21 @@ h1 {
   font-size: 45px;
   text-transform: uppercase;
 }
+.page-id-20 .entry-content p {
+  margin-bottom: 30px;
+}
+.page-id-20 .entry-content .overview-left {
+  margin-right: 20px;
+  float: left;
+  width: 240px;
+  height: auto;
+}
+.page-id-20 .entry-content .overview-left.overview-300 {
+  width: 300px;
+}
+.page-id-20 .entry-content .overview-left.overview-380 {
+  width: 380px;
+}
 .entry-content {
   color: #02394f;
   font-family: Helvetica, sans-serif;
