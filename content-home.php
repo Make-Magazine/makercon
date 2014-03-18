@@ -8,6 +8,24 @@
 
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
 
+		<div class="white-box" style="padding-top:30px !important;padding-bottom:30px !important">
+		<div class="row">
+		<div class="row sponsors-home">
+		    <div class="col-md-4">	
+		    	<h3>Supporting Sponsor</h3>
+		    	<a href="http://www.shopbottools.com/"><img src="http://makercon2014.com/wp-content/uploads/2014/03/shopbot-logo-medium-e1394736612972.png" alt="Shopbot Logo" /></a>
+		    </div>
+		    <div class="col-md-4">	
+				<h3>Host Sponsor</h3> 
+				<a href="http://www.oracle.com"><img src="http://makercon2014.com/wp-content/uploads/2014/03/Oracle_ai.jpg?w=250" alt="Oracle Logo" width="250" style="margin-top:15px;" /></a>
+		    </div>
+		    <div class="col-md-4">
+				<h3>Media Partner</h3>	
+				<a href="http://www.marketwire.com/"><img src="http://makercon2014.com/wp-content/uploads/2014/03/marketwired-logo-small.jpg" alt="Market Wire Logo" /></a>
+		    </div>
+		</div>    
+	</div>
+
 	<div class="entry-content">
 		<div class="row">
 			<div class="col-md-6">
@@ -42,15 +60,6 @@
 		<div class="row">
 			<div class="col-md-12">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/red-banner.jpg" alt="A leader of the maker movement, MAKE has been integral in helping DIY hobbyists avail themselves of the tools and technologies—such as 3D printers, CNC mills, and microcontrollers—to design and engineer innovative products and devices.">
-			</div>
-		</div>
-	</div>
-
-	<div class="white-box">
-		<div class="row">
-			<div class="col-md-12">
-				<h2>Sponsorships:</h2>
-				<p>Become a MakerCon sponsor! Connect your brand to the growing community of makers having an exciting and enduring impact on our world! We have created a number of sponsorship opportunities for companies, media organizations, public institutions and trade associations. Contact: sponsors@makerconference.com for more information.</p>
 			</div>
 		</div>
 	</div>
