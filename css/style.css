@@ -6183,8 +6183,13 @@ h1 {
   color: #02394f;
   font-family: Helvetica, sans-serif;
 }
+.entry-content p {
+  font-size: 16px;
+}
 .entry-content h3 {
   color: #0b3236;
+  margin-bottom: 10px;
+  font-size: 26px;
 }
 .table {
   margin: 20px 0;
