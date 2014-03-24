@@ -11,19 +11,25 @@
 		<div class="white-box" style="padding-top:30px !important;padding-bottom:30px !important">
 		<div class="row">
 		<div class="row sponsors-home">
-		    <div class="col-md-4">	
+		    <div class="col-md-4">
 		    	<h3>Supporting Sponsor</h3>
-		    	<a href="http://www.shopbottools.com/"><img src="http://makercon2014.com/wp-content/uploads/2014/03/shopbot-logo-medium-e1394736612972.png" alt="Shopbot Logo" /></a>
-		    </div>
-		    <div class="col-md-4">	
-				<h3>Host Sponsor</h3> 
-				<a href="http://www.oracle.com"><img src="http://makercon2014.com/wp-content/uploads/2014/03/Oracle_ai.jpg?w=250" alt="Oracle Logo" width="250" style="margin-top:15px;" /></a>
+		    	<a href="http://www.shopbottools.com/">
+		    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" width="200px" style="margin-top:25px;" />
+			</a>
 		    </div>
 		    <div class="col-md-4">
-				<h3>Media Partner</h3>	
-				<a href="http://www.marketwire.com/"><img src="http://makercon2014.com/wp-content/uploads/2014/03/marketwired-logo-small.jpg" alt="Market Wire Logo" /></a>
+				<h3>Host Sponsor</h3>
+				<a href="http://www.oracle.com">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo" width="220px">
+				</a>
 		    </div>
-		</div>    
+		    <div class="col-md-4">
+				<h3>Media Partner</h3>
+				<a href="http://www.marketwire.com/">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="200" style="margin-top:15px;" />
+				</a>
+		    </div>
+		</div>
 	</div>
 
 	<div class="entry-content">

@@ -5,7 +5,7 @@
  * @package    makercon
  * @license    http://opensource.org/licenses/gpl-license.php  GNU Public License
  * @author     Bill Olson <bolson@makermedia.com>
- * 
+ *
  */
 get_header(); ?>
 
@@ -37,7 +37,6 @@ get_header(); ?>
 			<?php endif; ?>
 
 		</main><!-- #main -->
-	
 	</div><!-- #primary -->
 
 </div> <!--.row-->
