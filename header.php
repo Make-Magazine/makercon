@@ -75,7 +75,7 @@
 			<div class="col-md-4">
 				<h2>Register for MakerCon</h2>
 				<h4>Join us in the Maker revolution</h4>
-				<p class="padme"><a class="button button-red" href="<?php echo home_url( '/attend/' ); ?>">Register</a></p>
+				<p class="padme"><a class="button button-red" href="<?php echo home_url( '/attend/' ); ?>">Register Now!</a></p>
 			</div>
 			<div class="col-md-4">
 
