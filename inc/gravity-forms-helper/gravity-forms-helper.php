@@ -33,7 +33,7 @@ class Gravity_Forms_Helper {
 	 * @return  void
 	 */
 	public function __construct() {
-		add_shortcode( 'gravity_forms_entry', 'get_form' );
+		add_shortcode( 'gravity_forms_entry', array( $this, 'get_form' ) );
 	}
 
 	public function get_form( $atts ) {
