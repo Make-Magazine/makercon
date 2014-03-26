@@ -109,7 +109,7 @@
 						<label class="sr-only" for="fieldEmail">Email address</label>
 						<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
 					</div>
-					<button type="submit" class="btn btn-primary">Subscribe</button>
+					<button type="submit" class="btn btn-primary">Sign Up</button>
 				</form>
 			</div>
 			<div class="modal-footer">
