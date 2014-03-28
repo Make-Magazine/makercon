@@ -6075,6 +6075,15 @@ footer ul li {
 .widget ul li {
   list-style-type: none;
 }
+.sponsors {
+  text-align: center;
+}
+.sponsors img {
+  margin: 15px auto;
+}
+.sponsors h1 {
+  text-align: left;
+}
 .home .photo-bar {
   background-color: #3b8caa;
   margin-top: -40px;
@@ -6083,7 +6092,7 @@ footer ul li {
   text-align: center;
 }
 .home .photo-bar .col-md-12 {
-  margin-top: -95px;
+  margin-top: -106px;
 }
 .home .photo-bar h1 {
   font-size: 70px;
@@ -6155,6 +6164,15 @@ footer ul li {
 }
 .home .white-box p {
   font-size: 20px;
+}
+.home .sponsors-home {
+  text-align: center;
+}
+.home .sponsors-home h3 {
+  margin: 25px auto 5px auto;
+}
+.home .sponsors-home img {
+  margin: 5px auto;
 }
 button.button,
 a.button {
