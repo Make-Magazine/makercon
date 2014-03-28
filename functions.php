@@ -141,3 +141,8 @@ add_action( 'loop_start', 'jptweak_remove_share' );
  * Load Gravity Forms Helper
  */
 require get_template_directory() . '/inc/gravity-forms-helper/gravity-forms-helper.php';
+
+/**
+ * Load Speaker Post Type
+ */
+require get_template_directory() . '/post-types/speaker.php';
