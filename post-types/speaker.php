@@ -20,7 +20,7 @@ class Speaker_Meta {
 			'public'            => true,
 			'show_in_nav_menus' => true,
 			'show_ui'           => true,
-			'supports'          => array( 'title', 'editor' ),
+			'supports'          => array( 'title', 'editor', 'thumbnail' ),
 			'has_archive'       => true,
 			'query_var'         => true,
 			'rewrite'           => true,
@@ -128,10 +128,10 @@ class Speaker_Meta {
 		/* OK, its safe for us to save the data now. */
 
 		// Sanitize the user input.
-		$mydata = sanitize_text_field( $_POST['makercon_new_field'] );
+		$mydata = sanitize_text_field( $_POST['makercon_speaker'] );
 
 		// Update the meta field.
-		update_post_meta( $post_id, '_my_meta_value_key', $mydata );
+		update_post_meta( $post_id, 'selected_speaker', $mydata );
 	}
 
 
@@ -146,16 +146,13 @@ class Speaker_Meta {
 		wp_nonce_field( 'makercon_speaker', 'makercon_speaker_nonce' );
 
 		// Use get_post_meta to retrieve an existing value from the database.
-		$value = get_post_meta( $post->ID, '_my_meta_value_key', true );
+		$value = get_post_meta( $post->ID, 'selected_speaker', true );
 
 		// Display the form, using the current value.
 		echo '<label for="makercon_new_field">';
-		_e( 'Description for this field', 'makercon' );
+		_e( 'Assign a proposal to this record: ', 'makercon' );
+		echo $this->entry_dropdown( $this->get_all_form_entries( 1 ), $value );
 		echo '</label> ';
-		echo '<input type="text" id="makercon_new_field" name="makercon_new_field"';
-		echo ' value="' . esc_attr( $value ) . '" size="25" />';
-
-		echo $this->entry_dropdown( $this->get_all_form_entries( 1 ) );
 	}
 
 	/**
@@ -173,11 +170,13 @@ class Speaker_Meta {
 	 *
 	 * @param array $entries Array of all of the entries of a given form.
 	 */
-	public function entry_dropdown( $entries ) {
+	public function entry_dropdown( $entries, $selected ) {
 		$output = '<select class="makercon_speaker" name="makercon_speaker">';
+		$output .= '<option value="">None</option>';
 		foreach ( $entries as $entry ) {
-			$output .= '<option value="' . $entry[ 'id' ] . '">' . $entry[ 4 ] . ' - ' . $entry[ '13.3' ] . ' ' . $entry[ '13.6' ] . '</option>';
+			$output .= '<option value="' . $entry[ 'id' ] . '" ' . selected( $selected, $entry[ 'id' ], false ) . '>' . $entry[ 4 ] . ' - ' . $entry[ '13.3' ] . ' ' . $entry[ '13.6' ] . '</option>';
 		}
+		$output .= '</select>';
 		return $output;
 	}
 }
