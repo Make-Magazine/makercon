@@ -29,6 +29,10 @@ class Gravity_Forms_Helper {
 		add_shortcode( 'gravity_forms_entry', array( $this, 'get_form' ) );
 	}
 
+	public function make_image( $url, $size, $alt ) {
+		return '<img src="' . esc_url( $url ) . '" width="' . esc_attr( $size ) . '" height="auto" class="img-responsive">';
+	}
+
 	public function get_form( $atts ) {
 
 		// Let's merge all of the attributes
