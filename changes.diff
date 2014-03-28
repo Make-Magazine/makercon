@@ -1,0 +1,271 @@
+diff --git a/content-home.php b/content-home.php
+index 222b719..c3b6082 100644
+--- a/content-home.php
++++ b/content-home.php
+@@ -8,6 +8,30 @@
+ 
+ <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
+ 
++		<div class="white-box" style="padding-top:30px !important;padding-bottom:30px !important">
++		<div class="row">
++		<div class="row sponsors-home">
++		    <div class="col-md-4">
++		    	<h3>Supporting Sponsor</h3>
++		    	<a href="http://www.shopbottools.com/">
++		    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" width="200px" style="margin-top:25px;" />
++			</a>
++		    </div>
++		    <div class="col-md-4">
++				<h3>Host Sponsor</h3>
++				<a href="http://www.oracle.com">
++					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo" width="220px">
++				</a>
++		    </div>
++		    <div class="col-md-4">
++				<h3>Media Partner</h3>
++				<a href="http://www.marketwire.com/">
++					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="200" style="margin-top:15px;" />
++				</a>
++		    </div>
++		</div>
++	</div>
++
+ 	<div class="entry-content">
+ 		<div class="row">
+ 			<div class="col-md-6">
+@@ -46,13 +70,4 @@
+ 		</div>
+ 	</div>
+ 
+-	<div class="white-box">
+-		<div class="row">
+-			<div class="col-md-12">
+-				<h2>Sponsorships:</h2>
+-				<p>Become a MakerCon sponsor! Connect your brand to the growing community of makers having an exciting and enduring impact on our world! We have created a number of sponsorship opportunities for companies, media organizations, public institutions and trade associations. Contact: sponsors@makerconference.com for more information.</p>
+-			</div>
+-		</div>
+-	</div>
+-
+ </article><!-- #post-## -->
+diff --git a/css/style.css b/css/style.css
+index 70360f6..057b598 100644
+--- a/css/style.css
++++ b/css/style.css
+@@ -6075,6 +6075,15 @@ footer ul li {
+ .widget ul li {
+   list-style-type: none;
+ }
++.sponsors {
++  text-align: center;
++}
++.sponsors img {
++  margin: 15px auto;
++}
++.sponsors h1 {
++  text-align: left;
++}
+ .home .photo-bar {
+   background-color: #3b8caa;
+   margin-top: -40px;
+@@ -6083,7 +6092,7 @@ footer ul li {
+   text-align: center;
+ }
+ .home .photo-bar .col-md-12 {
+-  margin-top: -95px;
++  margin-top: -106px;
+ }
+ .home .photo-bar h1 {
+   font-size: 70px;
+@@ -6156,6 +6165,15 @@ footer ul li {
+ .home .white-box p {
+   font-size: 20px;
+ }
++.home .sponsors-home {
++  text-align: center;
++}
++.home .sponsors-home h3 {
++  margin: 25px auto 5px auto;
++}
++.home .sponsors-home img {
++  margin: 5px auto;
++}
+ button.button,
+ a.button {
+   padding: 10px;
+diff --git a/header.php b/header.php
+index 468462a..3f1a41e 100644
+--- a/header.php
++++ b/header.php
+@@ -27,21 +27,21 @@
+ 	<header id="masthead" class="site-header row" role="banner">
+ 		<div class="site-branding col-md-4">
+ 			<?php if ( is_front_page() || is_home() ) : ?>
+-				
++
+ 			<?php else : ?>
+ 				<h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
+ 			<?php endif; ?>
+ 		</div>
+ 
+ 		<nav id="site-navigation" class="main-navigation nav pull-right col-md-8" role="navigation">
+-			
++
+ 			<div class="social">
+-				<?php 
++				<?php
+ 
+ 				if ( function_exists( 'sharing_display' ) ) {
+ 				    sharing_display( '', true );
+ 				}
+-				 
++
+ 				if ( class_exists( 'Jetpack_Likes' ) ) {
+ 				    $custom_likes = new Jetpack_Likes;
+ 				    echo $custom_likes->post_likes( '' );
+@@ -61,7 +61,7 @@
+ 	<div class="">
+ 		<div class="row">
+ 			<div class="col-md-12">
+-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Header_v4.gif" alt="MakerCon 2014">
++				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Header_v6c.gif" alt="MakerCon 2014">
+ 			</div>
+ 		</div>
+ 	</div>
+@@ -75,18 +75,18 @@
+ 			<div class="col-md-4">
+ 				<h2>Register for MakerCon</h2>
+ 				<h4>Join us in the Maker revolution</h4>
+-				<p class="padme"><a class="button button-red" href="#">Coming soon!</a></p>
++				<p class="padme"><a class="button button-red" href="<?php echo home_url( '/attend/' ); ?>">Register Now!</a></p>
+ 			</div>
+ 			<div class="col-md-4">
+ 
+-				<h2>Subscribe for Updates</h2>
+-				<h4>Be notified when registration opens</h4>
++				<h2>Sign Up for Updates</h2>
++				<h4>Be notified of MakerCon updates</h4>
+ 
+ 				<!-- Button trigger modal -->
+-				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#subscribe-modal">Subscribe</button></p>
++				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#subscribe-modal">Sign Up</button></p>
+ 
+ 				<!-- Modal -->
+-				
++
+ 			</div>
+ 		</div>
+ 	</section><!-- .call-box -->
+@@ -109,7 +109,7 @@
+ 						<label class="sr-only" for="fieldEmail">Email address</label>
+ 						<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
+ 					</div>
+-					<button type="submit" class="btn btn-primary">Subscribe</button>
++					<button type="submit" class="btn btn-primary">Sign Up</button>
+ 				</form>
+ 			</div>
+ 			<div class="modal-footer">
+@@ -122,4 +122,4 @@
+ 	<?php endif; ?>
+ 
+ 
+-	<div id="content" class="site-content row">
+\ No newline at end of file
++	<div id="content" class="site-content row">
+diff --git a/less/makercon/home.less b/less/makercon/home.less
+index 46dc101..f3f6ce2 100644
+--- a/less/makercon/home.less
++++ b/less/makercon/home.less
+@@ -5,7 +5,7 @@
+ 		position: relative;
+ 		z-index: 0;
+ 		.col-md-12 {
+-			margin-top: -95px;
++			margin-top: -109px;
+ 		}
+ 		h1 {
+ 			font-size: 70px;
+@@ -85,4 +85,9 @@
+ 			font-size: 20px;
+ 		}
+ 	}
++	.sponsors-home {
++		text-align: center;
++			h3 {margin:25px auto 5px auto;}
++			img {margin:5px auto}
++	}
+ }
+\ No newline at end of file
+diff --git a/less/makercon/sidebar.less b/less/makercon/sidebar.less
+index a92357e..8024c06 100644
+--- a/less/makercon/sidebar.less
++++ b/less/makercon/sidebar.less
+@@ -12,4 +12,11 @@
+ 			list-style-type: none;
+ 		}
+ 	}
+-}
+\ No newline at end of file
++}
++
++.sponsors {
++	text-align: center;
++	img {margin: 15px auto;}
++}
++
++.sponsors h1 {text-align:left;}
+\ No newline at end of file
+diff --git a/page-home.php b/page-home.php
+index a220dc9..8178694 100644
+--- a/page-home.php
++++ b/page-home.php
+@@ -5,7 +5,7 @@
+  * @package    makercon
+  * @license    http://opensource.org/licenses/gpl-license.php  GNU Public License
+  * @author     Bill Olson <bolson@makermedia.com>
+- * 
++ *
+  */
+ get_header(); ?>
+ 
+@@ -37,9 +37,8 @@ get_header(); ?>
+ 			<?php endif; ?>
+ 
+ 		</main><!-- #main -->
+-	
+ 	</div><!-- #primary -->
+ 
+ </div> <!--.row-->
+ 
+-<?php get_footer(); ?>
+\ No newline at end of file
++<?php get_footer(); ?>
+diff --git a/screenshot.png b/screenshot.png
+deleted file mode 100644
+index 1836098..0000000
+Binary files a/screenshot.png and /dev/null differ
+diff --git a/sidebar.php b/sidebar.php
+old mode 100644
+new mode 100755
+index 6538a31..684f655
+--- a/sidebar.php
++++ b/sidebar.php
+@@ -30,4 +30,19 @@
+ 			</aside>
+ 
+ 		<?php endif; // end sidebar widget area ?>
++			<aside class="sponsors widget">
++				<h1 class="widget-title" style="margin-bottom:20px;">Our Sponsors</h1>
++				<h3>Presenting Sponsor</h3>
++				<a href="http://www.intel.com/">
++					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="250">
++                <h3 style="margin-top:20px;">Supporting Sponsor</h3>
++		    	<a href="http://www.shopbottools.com/">
++				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" />
++		    	<h3 style="margin-top:20px;">Host Sponsor</h3>
++		    	<a href="http://www.oracle.com/">
++				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo">
++				 <h3 style="margin-top:20px;">Media Partner</h3>
++				<a href="http://www.marketwire.com/">
++					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="250" style="margin-top:15px;" />
++			</aside>
+ 	</div><!-- #secondary -->
