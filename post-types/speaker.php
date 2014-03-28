@@ -172,7 +172,7 @@ class Speaker_Meta {
 	 */
 	public function entry_dropdown( $entries, $selected ) {
 		$output = '<select class="makercon_speaker" name="makercon_speaker">';
-		$output .= '<option value="">None</option>';
+		$output .= '<option value="0">None</option>';
 		foreach ( $entries as $entry ) {
 			$output .= '<option value="' . $entry[ 'id' ] . '" ' . selected( $selected, $entry[ 'id' ], false ) . '>' . $entry[ 4 ] . ' - ' . $entry[ '13.3' ] . ' ' . $entry[ '13.6' ] . '</option>';
 		}
