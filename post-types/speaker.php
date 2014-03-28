@@ -161,7 +161,7 @@ class Speaker_Meta {
 	 * @param int $form The ID of the Gravity Form
 	 */
 	public function get_all_form_entries( $form ) {
-		$entries = RGFormsModel::get_leads( $form );
+		$entries = RGFormsModel::get_leads( $form, 0, 'ASC', '', 0, 1000, null, null, false, null, null, 'active', false );
 		return $entries;
 	}
 
