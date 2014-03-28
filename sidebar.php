@@ -30,4 +30,19 @@
 			</aside>
 
 		<?php endif; // end sidebar widget area ?>
+			<aside class="sponsors widget">
+				<h1 class="widget-title" style="margin-bottom:20px;">Our Sponsors</h1>
+				<h3>Presenting Sponsor</h3>
+				<a href="http://www.intel.com/">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="250">
+                <h3 style="margin-top:20px;">Supporting Sponsor</h3>
+		    	<a href="http://www.shopbottools.com/">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" />
+		    	<h3 style="margin-top:20px;">Host Sponsor</h3>
+		    	<a href="http://www.oracle.com/">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo">
+				 <h3 style="margin-top:20px;">Media Partner</h3>
+				<a href="http://www.marketwire.com/">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="250" style="margin-top:15px;" />
+			</aside>
 	</div><!-- #secondary -->

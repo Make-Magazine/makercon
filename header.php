@@ -27,21 +27,21 @@
 	<header id="masthead" class="site-header row" role="banner">
 		<div class="site-branding col-md-4">
 			<?php if ( is_front_page() || is_home() ) : ?>
-				
+
 			<?php else : ?>
 				<h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
 			<?php endif; ?>
 		</div>
 
 		<nav id="site-navigation" class="main-navigation nav pull-right col-md-8" role="navigation">
-			
+
 			<div class="social">
-				<?php 
+				<?php
 
 				if ( function_exists( 'sharing_display' ) ) {
 				    sharing_display( '', true );
 				}
-				 
+
 				if ( class_exists( 'Jetpack_Likes' ) ) {
 				    $custom_likes = new Jetpack_Likes;
 				    echo $custom_likes->post_likes( '' );
@@ -61,7 +61,7 @@
 	<div class="">
 		<div class="row">
 			<div class="col-md-12">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Header_v4.gif" alt="MakerCon 2014">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Header_v6c.gif" alt="MakerCon 2014">
 			</div>
 		</div>
 	</div>
@@ -75,18 +75,18 @@
 			<div class="col-md-4">
 				<h2>Register for MakerCon</h2>
 				<h4>Join us in the Maker revolution</h4>
-				<p class="padme"><a class="button button-red" href="#">Coming soon!</a></p>
+				<p class="padme"><a class="button button-red" href="<?php echo home_url( '/attend/' ); ?>">Register Now!</a></p>
 			</div>
 			<div class="col-md-4">
 
-				<h2>Subscribe for Updates</h2>
-				<h4>Be notified when registration opens</h4>
+				<h2>Sign Up for Updates</h2>
+				<h4>Be notified of MakerCon updates</h4>
 
 				<!-- Button trigger modal -->
-				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#subscribe-modal">Subscribe</button></p>
+				<p class="padme"><button class="button button-red" data-toggle="modal" data-target="#subscribe-modal">Sign Up</button></p>
 
 				<!-- Modal -->
-				
+
 			</div>
 		</div>
 	</section><!-- .call-box -->
@@ -109,7 +109,7 @@
 						<label class="sr-only" for="fieldEmail">Email address</label>
 						<input type="email" name="cm-ttlusi-ttlusi" class="form-control" id="fieldEmail" placeholder="Enter email" required>
 					</div>
-					<button type="submit" class="btn btn-primary">Subscribe</button>
+					<button type="submit" class="btn btn-primary">Sign Up</button>
 				</form>
 			</div>
 			<div class="modal-footer">
