@@ -146,3 +146,78 @@ require get_template_directory() . '/inc/gravity-forms-helper/gravity-forms-help
  * Load Speaker Post Type
  */
 require get_template_directory() . '/post-types/speaker.php';
+
+
+/**
+ * Load Track Taxonomy
+ */
+require get_template_directory() . '/taxonomies/track.php';
+
+/**
+ * Load Event Taxonomy
+ */
+require get_template_directory() . '/taxonomies/event.php';
+
+/**
+ * Load Advanced Custom Fields
+ */
+require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
+
+/**
+ * Load Advanced Custom Fields
+ */
+require get_template_directory() . '/inc/acf-field-date-time-picker/acf-date_time_picker.php';
+
+// Load the default fields.
+if( function_exists( "register_field_group" ) ) {
+	register_field_group( array(
+		'id' => 'acf_session-schedule',
+		'title' => 'Session Schedule',
+		'fields' => array(
+			array(
+				'key' => 'field_5335f93d5b09e',
+				'label' => 'Start Time',
+				'name' => 'start_time',
+				'type' => 'date_time_picker',
+				'show_date' => 'true',
+				'date_format' => 'm/d/y',
+				'time_format' => 'h:mm tt',
+				'show_week_number' => 'false',
+				'picker' => 'select',
+				'save_as_timestamp' => 'true',
+				'get_as_timestamp' => 'false',
+			),
+			array(
+				'key' => 'field_5335faedf0e3a',
+				'label' => 'End Time',
+				'name' => 'end_time',
+				'type' => 'date_time_picker',
+				'show_date' => 'true',
+				'date_format' => 'm/d/y',
+				'time_format' => 'h:mm tt',
+				'show_week_number' => 'false',
+				'picker' => 'select',
+				'save_as_timestamp' => 'true',
+				'get_as_timestamp' => 'false',
+			),
+		),
+		'location' => array(
+			array(
+				array(
+					'param' => 'post_type',
+					'operator' => '==',
+					'value' => 'speaker',
+					'order_no' => 0,
+					'group_no' => 0,
+				),
+			),
+		),
+		'options' => array(
+			'position' => 'normal',
+			'layout' => 'default',
+			'hide_on_screen' => array(
+			),
+		),
+		'menu_order' => 0,
+	));
+}
