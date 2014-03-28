@@ -15,9 +15,7 @@ get_header(); ?>
 
 		<?php while ( have_posts() ) : the_post(); ?>
 
-			<?php get_template_part( 'content', 'single' ); ?>
-
-			<?php makercon_post_nav(); ?>
+			<?php get_template_part( 'content', 'speaker-single' ); ?>
 
 		<?php endwhile; // end of the loop. ?>
 
