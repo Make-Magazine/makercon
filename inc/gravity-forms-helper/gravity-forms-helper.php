@@ -26,24 +26,24 @@ class Gravity_Forms_Helper {
 	 * @return  void
 	 */
 	public function __construct() {
-		add_shortcode( 'gravity_forms_entry', array( $this, 'get_form' ) );
+		add_shortcode( 'gravity_forms_entry', array( $this, 'get_entry' ) );
 	}
 
 	public function make_image( $url, $size, $alt ) {
-		return '<img src="' . esc_url( $url ) . '" width="' . esc_attr( $size ) . '" height="auto" class="img-responsive">';
+		return '<img src="' . esc_url( $url ) . '" width="' . esc_attr( $size ) . '" height="auto" class="img-responsive" alt="' . esc_attr( $alt ) . '">';
 	}
 
-	public function get_form( $atts ) {
+	public function get_entry( $atts ) {
 
 		// Let's merge all of the attributes
 		extract( shortcode_atts( array(
-			'form'				=> 1,
+			'entry'				=> 1,
 			'field'				=> 1,
 			'sanitize_callback'	=> 'wp_kses_post'
 		), $atts ) );
 
 		// Get the full form
-		$lead = RGFormsModel::get_lead( $form );
+		$lead = RGFormsModel::get_lead( $entry );
 
 		// Based on the field, pull the value from the index.
 		$output = $lead[ $field ];
