@@ -33,23 +33,22 @@ class Gravity_Forms_Helper {
 		return '<img src="' . esc_url( $url ) . '" width="' . esc_attr( $size ) . '" height="auto" class="img-responsive" alt="' . esc_attr( $alt ) . '">';
 	}
 
-	public function get_entry( $atts ) {
-
-		// Let's merge all of the attributes
-		extract( shortcode_atts( array(
-			'entry'				=> 1,
-			'field'				=> 1,
-			'sanitize_callback'	=> 'wp_kses_post'
-		), $atts ) );
+	public function get_entry( $entry ) {
 
 		// Get the full form
 		$lead = RGFormsModel::get_lead( $entry );
+
+		return $lead;
+	}
+
+	public function get_field( $lead, $field, $sanitize_callback = 'wp_kses_post' ) {
 
 		// Based on the field, pull the value from the index.
 		$output = $lead[ $field ];
 
 		//Sanitize the function, we'll use wp_kses_post as it is pretty broad, but we can change the filter if desired.
 		return $sanitize_callback( $output );
+
 	}
 
 }
