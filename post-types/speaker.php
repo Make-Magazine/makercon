@@ -252,7 +252,6 @@ class Speaker_Meta {
 			$output .= '</div>';
 			$output .= '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">';
 				$output .= ( !empty( $speaker['title'] ) ) ? '<h2>' . apply_filters( 'the_title', $speaker['title'] ) . '</h2>' : '' ;
-				$output .= ( !empty( $speaker['company'] ) ) ? '<h3>' . apply_filters( 'the_title', $speaker['company'] ) . '</h3>' : '' ;
 				$output .= ( get_the_content() ) ? the_content() : apply_filters( 'the_content', $speaker['long_description'] );
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
 				$output .= ' ';
@@ -283,6 +282,37 @@ class Speaker_Meta {
 				$output .= ( $speaker['thumbnail'] ) ? Gravity_Forms_Helper::make_image( $speaker['thumbnail'], '300', $speaker['name'] ) : '' ;
 			$output .= '</div>';
 		}
+
+		$output .= '<hr>';
+
+		return $output;
+	}
+
+	/**
+	 * Condensed Loop
+	 */
+	public function short_speaker_loop() {
+		$speaker = Speaker_Meta::build_speaker_data();
+
+		// Let's get going with the main block of content.
+		$output = '<div class="row">';
+			$output .= '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">';
+				if ( has_post_thumbnail() ) {
+					$output .= get_the_post_thumbnail( 'medium', array( 'class' => 'img-responsive' ) );
+				} else {
+					$output .= Gravity_Forms_Helper::make_image( $speaker['presentation_photo'], '300', get_the_title() );
+				}
+			$output .= '</div>';
+			$output .= '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">';
+				$output .= '<h2 class="entry-title"><a href="'. get_permalink() . '">'. get_the_title() . '</a></h2>';
+				$output .= ( !empty( $speaker['company'] ) ) ? '<h3>' . apply_filters( 'the_title', $speaker['company'] ) . '</h3>' : '' ;
+				$output .= ( get_the_content() ) ? the_content() : apply_filters( 'the_content', $speaker['short_description'] );
+				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
+				$output .= ' ';
+				$output .= ( ! empty( $speaker['video_url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['video_url'] ) . '"><span class="glyphicon glyphicon glyphicon-facetime-video"></span> Website</a>' : '';
+			$output .= '</div>';
+		$output .= '</div>';
+
 
 		$output .= '<hr>';
 
