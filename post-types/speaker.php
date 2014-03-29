@@ -179,5 +179,88 @@ class Speaker_Meta {
 		$output .= '</select>';
 		return $output;
 	}
+
+	/**
+	 * Build the loop, based on the Gravity Forms data
+	 */
+	public function build_speaker_data() {
+		global $post;
+		$selected_speaker = get_post_meta( get_the_id(), 'selected_speaker', true );
+		$meta = Gravity_Forms_Helper::get_entry( $selected_speaker );
+		$speaker = array(
+			'title' 				=> $meta[ 4 ],
+			'short_description'		=> $meta[ 5 ],
+			'long_description'		=> $meta[ 6 ],
+			'presentation_photo'	=> $meta[ 25 ],
+			'submitter_name'		=> $meta[ '13.3' ] . ' ' . $meta[ '13.6' ],
+			'url'					=> $meta[ 8 ],
+			'video_url'				=> $meta[ 9 ],
+			'long_description'		=> $meta[ 6 ],
+			'speakers' 				=> array(
+				'first_speaker' 		=> array(
+					'submitter_name'	=> $meta[ '18.3' ] . ' ' . $meta[ '18.6' ],
+					'email'				=> $meta[ 19 ],
+					'company'			=> $meta[ 20 ],
+					'title'				=> $meta[ 21 ],
+					'bio'				=> $meta[ 22 ],
+					'twitter'			=> $meta[ 23 ],
+					'url'				=> $meta[ 24 ],
+					'thumbnail'			=> $meta[ 25 ],
+					'phone'				=> $meta[ 26 ]
+				),
+				'second_speaker' 		=> array(
+					'submitter_name'	=> $meta[ '29.3' ] . ' ' . $meta[ '29.6' ],
+					'email'				=> $meta[ 30 ],
+					'company'			=> $meta[ 32 ],
+					'title'				=> $meta[ 33 ],
+					'bio'				=> $meta[ 34 ],
+					'twitter'			=> $meta[ 35 ],
+					'url'				=> $meta[ 36 ],
+					'thumbnail'			=> $meta[ 37 ],
+					'phone'				=> $meta[ 38 ]
+				),
+				'third_speaker' 		=> array(
+					'submitter_name'	=> $meta[ '40.3' ] . ' ' . $meta[ '40.6' ],
+					'email'				=> $meta[ 41 ],
+					'company'			=> $meta[ 42 ],
+					'title'				=> $meta[ 43 ],
+					'bio'				=> $meta[ 44 ],
+					'twitter'			=> $meta[ 45 ],
+					'url'				=> $meta[ 46 ],
+					'thumbnail'			=> $meta[ 47 ],
+					'phone'				=> $meta[ 48 ]
+				),
+			),
+		);
+		return $speaker;
+	}
+
+	/**
+	 * Speaker Loop
+	 */
+	public function speaker_loop() {
+		$speaker = Speaker_Meta::build_speaker_data();
+		$output = '<!-- Let\'s setup a row of stuff... -->';
+		$output .= '<div class="row">';
+			$output .= '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">';
+				if ( has_post_thumbnail() ) {
+					$output .= get_the_post_thumbnail( 'medium', array( 'class' => 'img-responsive' ) );
+				} else {
+					$output .= Gravity_Forms_Helper::make_image( $speaker['presentation_photo'], '300', get_the_title() );
+				}
+			$output .= '</div>';
+			$output .= '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">';
+				$output .= ( !empty( $speaker['title'] ) ) ? '<h2>' . apply_filters( 'the_title', $speaker['title'] ) . '</h2>' : '' ;
+				$output .= ( get_the_content() ) ? the_content() : apply_filters( 'the_content', $speaker['long_description'] );
+				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
+				$output .= ' ';
+				$output .= ( ! empty( $speaker['video_url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['video_url'] ) . '"><span class="glyphicon glyphicon glyphicon-facetime-video"></span> Website</a>' : '';
+			$output .= '</div>';
+		$output .= '</div>';
+
+		$output .= '<hr>';
+
+		return $output;
+	}
 }
 $speaker = new Speaker_Meta();
