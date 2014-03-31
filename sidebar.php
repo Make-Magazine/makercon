@@ -38,6 +38,9 @@
                 <h3 style="margin-top:20px;">Supporting Sponsor</h3>
 		    	<a href="http://www.shopbottools.com/">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" />
+				<h3 style="margin-top:20px;">Track Sponsor</h3>
+		    	<a href="http://fusion360.autodesk.com/">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/FUSION-360-sponsor-logo-250.jpg" alt="Autodesk Fusion Logo" />
 		    	<h3 style="margin-top:20px;">Host Sponsor</h3>
 		    	<a href="http://www.oracle.com/">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo">
