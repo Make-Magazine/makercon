@@ -13,7 +13,10 @@
 			</a>
 		</div>
 
-		<?php echo Speaker_Meta::speaker_loop(); ?>
+		<?php
+			global $speakers;
+			echo $speakers->speaker_loop();
+		?>
 
 		<?php
 			wp_link_pages( array(

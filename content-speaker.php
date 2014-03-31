@@ -8,7 +8,10 @@
 
 	<div class="entry-content">
 
-		<?php echo Speaker_Meta::short_speaker_loop(); ?>
+		<?php
+			global $speakers;
+			echo $speakers->short_speaker_loop();
+		?>
 
 	</div><!-- .entry-content -->
 
