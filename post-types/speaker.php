@@ -239,7 +239,7 @@ class Speaker_Meta {
 	 * Speaker Loop
 	 */
 	public function speaker_loop() {
-		$speaker = Speaker_Meta::build_speaker_data();
+		$speaker = $this->build_speaker_data();
 
 		// Let's get going with the main block of content.
 		$output = '<div class="row">';
@@ -262,8 +262,15 @@ class Speaker_Meta {
 
 		$output .= '<hr>';
 
-		foreach ($speaker['speakers'] as $speaker ) {
-			$output .= '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">';
+		if ( empty( $speaker['speakers'][1]['name'] ) ) {
+			$additional = false;
+		} else {
+			$additional = true;
+		}
+
+		foreach ( $speaker['speakers'] as $speaker ) {
+			$output .= '<div class="row">';
+			$output .= ( $additional === false ) ? '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">' : '<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">';
 				if ( !empty( $speaker['url'] ) ) {
 					$output .= '<a href="' . esc_url( $speaker['url'] ) . '">';
 					$output .= ( $speaker['name'] ) ? '<h3>' . $speaker['name'] . '</h3>' : '';
@@ -274,12 +281,15 @@ class Speaker_Meta {
 				$output .= ( !empty( $speaker['company'] ) || !empty( $speaker['title'] ) ) ? '<h4>' . apply_filters( 'the_title', $speaker['company'] ) . ' ' . apply_filters( 'the_title', '(' . $speaker['title'] . ')' ) . '</h4>' : '' ;
 				$output .= ( $speaker['bio'] ) ? apply_filters( 'the_content', $speaker['bio'] ) : '' ;
 				if ( ! empty( $speaker['twitter'] ) ) {
-					$output .= '<a href="https://twitter.com/' . $speaker['twitter'] . '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @' . $speaker['twitter'] . '</a>';
+					$output .= '<a href="' . esc_url( 'https://twitter.com/' . $speaker['twitter'] ) . '" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @' . $speaker['twitter'] . '</a>';
 					$output .= '<script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>';
 				}
 			$output .= '</div>';
-			$output .= '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">';
-				$output .= ( $speaker['thumbnail'] ) ? Gravity_Forms_Helper::make_image( $speaker['thumbnail'], '300', $speaker['name'] ) : '' ;
+			if ( $additional == false ) :
+				$output .= '<div class="col-xs-4 col-sm-4 col-md-4 col-lg-4">';
+					$output .= ( $speaker['thumbnail'] ) ? Gravity_Forms_Helper::make_image( $speaker['thumbnail'], '300', $speaker['name'] ) : '' ;
+				$output .= '</div>';
+			endif;
 			$output .= '</div>';
 		}
 
@@ -292,7 +302,7 @@ class Speaker_Meta {
 	 * Condensed Loop
 	 */
 	public function short_speaker_loop() {
-		$speaker = Speaker_Meta::build_speaker_data();
+		$speaker = $this->build_speaker_data();
 
 		// Let's get going with the main block of content.
 		$output = '<div class="row">';
@@ -319,4 +329,4 @@ class Speaker_Meta {
 		return $output;
 	}
 }
-$speaker = new Speaker_Meta();
+$speakers = new Speaker_Meta();
