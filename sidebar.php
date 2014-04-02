@@ -34,10 +34,10 @@
 				<h1 class="widget-title" style="margin-bottom:20px;">Our Sponsors</h1>
 				<h3>Presenting Sponsor</h3>
 				<a href="http://www.intel.com/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/oracle-redbox-logo.png" alt="Intel Logo" width="250"></a>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="250"></a>
 					   	<h3 style="margin-top:20px;">Host Sponsor</h3>
 		    	<a href="http://www.oracle.com/">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo"></a>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/oracle-redbox-logo.png" alt="Intel Logo" width="250"></a>
 				<h3 style="margin-top:20px;">Track Sponsor</h3>
 		    	<a href="http://fusion360.autodesk.com/">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/FUSION-360-sponsor-logo-250.jpg" alt="Autodesk Fusion Logo" /></a>
