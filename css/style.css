@@ -6060,6 +6060,13 @@ footer ul li {
   font-size: 24px;
   color: #145a60;
 }
+footer .hiw-footer-logo {
+  text-align: center;
+}
+footer .hiw-footer-logo img {
+  margin: 15px auto;
+  border: 1px solid #ccc;
+}
 .widget {
   border-top: 8px solid #00ACCD;
   padding-top: 5px;
@@ -6092,6 +6099,7 @@ footer ul li {
   text-align: center;
 }
 .home .photo-bar .col-md-12 {
+  margin-top: -109px;
   margin-top: -106px;
 }
 .home .photo-bar h1 {
