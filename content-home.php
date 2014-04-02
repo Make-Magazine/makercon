@@ -10,16 +10,22 @@
 
 		<div class="white-box" style="padding-top:30px !important;padding-bottom:30px !important">
 		<div class="row sponsors-home">
+			<div class="col-md-2">
+		    	<h3>Presenting Sponsor</h3>
+		    	<a href="http://www.intel.com/">
+		    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" style="width:150px;margin-top:5px" />
+			</a>
+		    </div>
 		    <div class="col-md-3">
 		    	<h3>Host Sponsor</h3>
 				<a href="http://www.oracle.com/">
-			    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/oracle-redbox-logo.png" alt="Oracle Logo" width="200px" style="width:200px;margin-top:30px;"   />
+			    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/oracle-redbox-logo.png" alt="Oracle Logo" width="180px" style="width:200px;margin-top:30px;"   />
 				</a>
 		    </div>
 		    <div class="col-md-3">
 				<h3>Track Sponsor</h3>
 				<a href="http://fusion360.autodesk.com/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/FUSION-360-sponsor-logo-250.jpg" alt="Autodesk Fusion Logo" style="width:200px;margin-top:25px;"  />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/FUSION-360-sponsor-logo-250.jpg" alt="Autodesk Fusion Logo" style="width:180px;margin-top:25px;"  />
 				</a>
 		    </div>
 		    		    <div class="col-md-4">
@@ -31,15 +37,9 @@
 		    	</div>
 		    	<div class="col-md-8">
 		    	<a href="http://www.shopbottools.com/">
-		    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo"  style="width:190px;margin-top:15px;"  />
+		    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo"  style="width:180px;margin-top:15px;"  />
 			</a>
 		</div>
-		    </div>
-		    <div class="col-md-2">
-		    	<h3>Media Sponsor</h3>
-		    	<a href="http://www.marketwired.com/">
-		    		<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wired Logo" style="width:150px;margin-top:5px" />
-			</a>
 		    </div>
 	</div>
 

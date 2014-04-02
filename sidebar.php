@@ -42,9 +42,9 @@
 		    	<a href="http://fusion360.autodesk.com/">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/FUSION-360-sponsor-logo-250.jpg" alt="Autodesk Fusion Logo" /></a>
 				  <h3 style="margin-top:20px;">Supporting Sponsor</h3>
-		    	<a href="http://www.shopbottools.com/">
+		    	<a href="http://www.haxlr8r.com/">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hax-logo-01.jpg" alt="Haxlr8r Logo" width="150" /></a>
-				<a href="http://www.haxlr8r.com/">
+				<a href="http://www.shopbottools.com/">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" /></a>
 				 <h3 style="margin-top:20px;">Media Partner</h3>
 				<a href="http://www.marketwire.com/">
