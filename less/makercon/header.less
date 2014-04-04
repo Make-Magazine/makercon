@@ -1,28 +1,42 @@
-// Tabs
-// -------------------------
+// Bootstrap Navigation Overides
 
-// Give the tabs something to sit on
-.nav-tabs {
-	// Active state, and its :hover to override normal :hover
-	> li {
-		&.active > a {
-			&,
-			&:hover,
-			&:focus {
-				color: @nav-tabs-active-link-hover-color;
-				background-color: @nav-tabs-active-link-hover-bg;
-				border: 1px solid @nav-tabs-active-link-hover-border-color;
-				border-bottom-color: transparent;
-				cursor: default;
-			}
-	}
-  }
-  // pulling this in mainly for less shorthand
-  &.nav-justified {
-	.nav-justified();
-	.nav-tabs-justified();
-  }
+.navbar {
+border:none;
+min-height:auto;
+margin:0;
 }
+.navbar-default {
+background-color: transparent;
+border-color: none;
+}
+
+// Primary Navigation styles
+#site-navigation {
+	li { .pull-left; }
+	li.dropdown:hover {
+		> ul.dropdown-menu {
+			display:block; // Allows us to use hover on the dropdowns rather than click.
+		}
+	}
+	a, .dropdown-menu a {
+		color: @nav-tabs-active-link-hover-color;
+		background-color: @nav-tabs-active-link-hover-bg;
+		&:hover {
+			background-color: #eee;
+			text-decoration:none !important;
+		}
+	}
+	.open > a {
+		color:@blue !important;
+		text-decoration:underline !important;
+		background:none !important;
+	}
+	.sub-menu, .dropdown-menu {
+		display:none; // Add this so our subnav doesn't display before the Bootstrap classes are added.
+		border-top:none;
+	}
+}
+
 
 #masthead {
 	margin-top: 20px;
@@ -40,7 +54,7 @@
 				.sharedaddy {
 					border:none;
 					//hide default share this title
-					.sd-title {display:none;} 
+					.sd-title {display:none;}
 					.sd-content{margin:0 !important;height:22px !important;
 						ul {margin:0px;height:22px;
 							li {margin-left:20px !important;height:23px !important;
@@ -49,9 +63,9 @@
 						}
 					}
 					//hide default share this icons
-					li.share-linkedin a.sd-button > span, 
-					li.share-google-plus-1 a.sd-button > span, 
-					li.share-facebook a.sd-button > span, 
+					li.share-linkedin a.sd-button > span,
+					li.share-google-plus-1 a.sd-button > span,
+					li.share-facebook a.sd-button > span,
 					li.share-twitter a.sd-button > span {
 						display:none;
 			        	}
@@ -59,12 +73,12 @@
 					.share-google-plus-1 {background-image:url('../img/social-sprite.png');background-position: -78px 0px;background-repeat:no-repeat;}
 					.share-facebook {background-image:url('../img/social-sprite.png');background-position: -39px 0px;background-repeat:no-repeat;}
 					.share-twitter {background-image:url('../img/social-sprite.png');background-position: 1px 0px;background-repeat:no-repeat;}
-					.share-linkedin:hover,						
+					.share-linkedin:hover,
 					.share-google-plus-1:hover,
 					.share-facebook:hover,
 					.share-twitter:hover {opacity: 0.3;}
 					//hide default share this border and background gradient
-					a.sd-button {border:none !important; background:none;height:22px;box-shadow: none;width:23px;} 
+					a.sd-button {border:none !important; background:none;height:22px;box-shadow: none;width:23px;}
 				    .sd-block {border:none;}
 			    }
 			}

@@ -5892,58 +5892,40 @@ body ul li {
 article ul li {
   font-size: 16px;
 }
-.nav-tabs > li.active > a,
-.nav-tabs > li.active > a:hover,
-.nav-tabs > li.active > a:focus {
+.navbar {
+  border: none;
+  min-height: auto;
+  margin: 0;
+}
+.navbar-default {
+  background-color: transparent;
+  border-color: none;
+}
+#site-navigation li {
+  float: left !important;
+}
+#site-navigation li.dropdown:hover > ul.dropdown-menu {
+  display: block;
+}
+#site-navigation a,
+#site-navigation .dropdown-menu a {
   color: #555555;
   background-color: #ffffff;
-  border: 1px solid #dddddd;
-  border-bottom-color: transparent;
-  cursor: default;
 }
-.nav-tabs.nav-justified {
-  width: 100%;
-  border-bottom: 0;
+#site-navigation a:hover,
+#site-navigation .dropdown-menu a:hover {
+  background-color: #eee;
+  text-decoration: none !important;
 }
-.nav-tabs.nav-justified > li {
-  float: none;
+#site-navigation .open > a {
+  color: #145a60 !important;
+  text-decoration: underline !important;
+  background: none !important;
 }
-.nav-tabs.nav-justified > li > a {
-  text-align: center;
-  margin-bottom: 5px;
-}
-.nav-tabs.nav-justified > .dropdown .dropdown-menu {
-  top: auto;
-  left: auto;
-}
-@media (min-width: 768px) {
-  .nav-tabs.nav-justified > li {
-    display: table-cell;
-    width: 1%;
-  }
-  .nav-tabs.nav-justified > li > a {
-    margin-bottom: 0;
-  }
-}
-.nav-tabs.nav-justified > li > a {
-  margin-right: 0;
-  border-radius: 4px;
-}
-.nav-tabs.nav-justified > .active > a,
-.nav-tabs.nav-justified > .active > a:hover,
-.nav-tabs.nav-justified > .active > a:focus {
-  border: 1px solid #dddddd;
-}
-@media (min-width: 768px) {
-  .nav-tabs.nav-justified > li > a {
-    border-bottom: 1px solid #dddddd;
-    border-radius: 4px 4px 0 0;
-  }
-  .nav-tabs.nav-justified > .active > a,
-  .nav-tabs.nav-justified > .active > a:hover,
-  .nav-tabs.nav-justified > .active > a:focus {
-    border-bottom-color: #ffffff;
-  }
+#site-navigation .sub-menu,
+#site-navigation .dropdown-menu {
+  display: none;
+  border-top: none;
 }
 #masthead {
   margin-top: 20px;
