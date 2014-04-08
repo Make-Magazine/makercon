@@ -19,6 +19,11 @@
 					<li><a href="http://makezine.com/hardware-innovation-workshop/overview/">2013 Bay Area</a></li>
 					<li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/">2012 Bay Area</a></li>
 				</ul>
+				<div class="hiw-footer-logo">
+					<a href="http://makezine.com/hardware-innovation-workshop/">
+						 <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hiw-logo_2013.jpg" alt="Hardware Innovation Workshop Logo" width="200px" />
+					</a>
+				</div>
 			</div>
 			<div class="col-md-4">
 				<h3>New from the editors of MAKE magazine!</h3>
@@ -26,7 +31,6 @@
 				<form action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
 					<p>
 						<label for="fieldName">Name <input id="fieldName" name="cm-name" type="text" /></label>
-						
 					</p>
 					<p>
 						<label for="fieldEmail">Email <input id="fieldEmail" name="cm-ttlusi-ttlusi" type="email" required /></label>

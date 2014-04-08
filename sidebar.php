@@ -34,15 +34,20 @@
 				<h1 class="widget-title" style="margin-bottom:20px;">Our Sponsors</h1>
 				<h3>Presenting Sponsor</h3>
 				<a href="http://www.intel.com/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="250">
-                <h3 style="margin-top:20px;">Supporting Sponsor</h3>
-		    	<a href="http://www.shopbottools.com/">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" />
-		    	<h3 style="margin-top:20px;">Host Sponsor</h3>
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="250"></a>
+					   	<h3 style="margin-top:20px;">Host Sponsor</h3>
 		    	<a href="http://www.oracle.com/">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/Oracle-Java_Logo_wide.gif" alt="Oracle Logo">
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/oracle-redbox-logo.png" alt="Intel Logo" width="250"></a>
+				<h3 style="margin-top:20px;">Track Sponsor</h3>
+		    	<a href="http://fusion360.autodesk.com/">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/FUSION-360-sponsor-logo-250.jpg" alt="Autodesk Fusion Logo" /></a>
+				  <h3 style="margin-top:20px;">Supporting Sponsor</h3>
+		    	<a href="http://www.haxlr8r.com/">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/hax-logo-01.jpg" alt="Haxlr8r Logo" width="150" /></a>
+				<a href="http://www.shopbottools.com/">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/shopbot-sponsor-sidebar.jpg" alt="Shopbot Logo" /></a>
 				 <h3 style="margin-top:20px;">Media Partner</h3>
 				<a href="http://www.marketwire.com/">
-					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="250" style="margin-top:15px;" />
+					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="250" style="margin-top:15px;" /></a>
 			</aside>
 	</div><!-- #secondary -->

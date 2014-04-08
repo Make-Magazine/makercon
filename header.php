@@ -33,7 +33,8 @@
 			<?php endif; ?>
 		</div>
 
-		<nav id="site-navigation" class="main-navigation nav pull-right col-md-8" role="navigation">
+
+		<nav id="site-navigation" class="navbar navbar-default col-md-8" role="navigation">
 
 			<div class="social">
 				<?php
@@ -48,8 +49,7 @@
 				}
 				?>
 			</div>
-
-			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right' ) ); ?>
+			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right', 'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
 		</nav><!-- #site-navigation -->
 	</header><!-- #masthead -->
 
