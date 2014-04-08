@@ -101,6 +101,7 @@
 			</div>
 			<div class="modal-body">
 				<form class="form" role="form" action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
+					<input id="listjrsydu" name="cm-ol-jrsydu" type="hidden" />
 					<div class="form-group">
 						<label class="sr-only" for="fieldName">Name</label>
 						<input type="text" name="cm-name" class="form-control" id="fieldName" placeholder="Name" required>
