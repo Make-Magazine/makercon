@@ -6243,28 +6243,16 @@ h1 {
 .table tbody tr td.grey {
   background-color: #b7b7b7;
 }
+.table tbody tr td.red {
+  background-color: #da9594;
+}
+.table tbody tr td.purple {
+  background-color: #7f64a1;
+}
 .table tbody tr td.blurb {
   background-color: rgba(224, 252, 252, 0.5);
   padding: 10px 10px 10px 10px;
   font-size: 16px;
-}
-.table tbody tr td.teal {
-  background-color: #4e9192;
-}
-.table tbody tr td.orange {
-  background-color: #f9ca9c;
-}
-.table tbody tr td.green {
-  background-color: #b6d7a8;
-}
-.table tbody tr td.yellow {
-  background-color: #f5db93;
-}
-.table tbody tr td.blue {
-  background-color: #f5db93;
-}
-.table tbody tr td.grey {
-  background-color: #b7b7b7;
 }
 .table tbody tr td.time {
   color: #ed1b24;
