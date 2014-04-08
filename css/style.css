@@ -5854,10 +5854,10 @@ td.visible-print {
   }
 }
 a {
-  color: #145a60;
+  color: #f5db93;
 }
 a:hover {
-  color: #1d828a;
+  color: #f9ebc2;
 }
 h1,
 h2,
@@ -5866,13 +5866,13 @@ h4,
 h5,
 h6 {
   font-family: "alternate-gothic-no-3-d";
-  color: #145a60;
+  color: #f5db93;
 }
 a:hover {
   text-decoration: none !important;
 }
 body {
-  color: #02394f;
+  color: #b7b7b7;
   margin-top: 0;
   overflow-wrap: break-word;
 }
@@ -5918,7 +5918,7 @@ article ul li {
   text-decoration: none !important;
 }
 #site-navigation .open > a {
-  color: #145a60 !important;
+  color: #f5db93 !important;
   text-decoration: underline !important;
   background: none !important;
 }
@@ -6017,7 +6017,7 @@ article ul li {
   }
 }
 #masthead #site-navigation ul li a {
-  color: #145a60;
+  color: #f5db93;
   padding: 12px;
 }
 footer {
@@ -6040,7 +6040,7 @@ footer ul li {
   margin-bottom: 5px;
   font-family: "alternate-gothic-no-3-d";
   font-size: 24px;
-  color: #145a60;
+  color: #f5db93;
 }
 footer .hiw-footer-logo {
   text-align: center;
@@ -6116,7 +6116,7 @@ footer .hiw-footer-logo img {
   margin-top: 20px;
 }
 .home .image-bordered {
-  border: 8px solid #145a60;
+  border: 8px solid #f5db93;
   max-width: 100%;
 }
 .home .entry-content {
@@ -6210,7 +6210,7 @@ h1 {
   font-size: 16px;
 }
 .entry-content h3 {
-  color: #0b3236;
+  color: #f1cb64;
   margin-bottom: 10px;
   font-size: 26px;
 }
@@ -6225,16 +6225,36 @@ h1 {
   vertical-align: middle;
   border: 0px;
 }
+.table tbody tr td.teal {
+  background-color: #4e9192;
+}
+.table tbody tr td.orange {
+  background-color: #f9ca9c;
+}
+.table tbody tr td.green {
+  background-color: #b6d7a8;
+}
+.table tbody tr td.yellow {
+  background-color: #f5db93;
+}
+.table tbody tr td.blue {
+  background-color: #f5db93;
+}
+.table tbody tr td.grey {
+  background-color: #b7b7b7;
+}
 .table tbody tr td.blurb {
   background-color: rgba(224, 252, 252, 0.5);
-  padding: 10px 10px 10px 40px;
+  padding: 10px 10px 10px 10px;
   font-size: 16px;
 }
 .table tbody tr td.time {
   color: #ed1b24;
   font-size: 24px;
   text-transform: uppercase;
-  padding: 10px 40px 10px 0px;
+  padding: 10px 10px 10px 0px;
+  width: 120px;
+  text-align: left;
   font-family: "alternate-gothic-no-3-d";
 }
 .table tbody tr td.break {
