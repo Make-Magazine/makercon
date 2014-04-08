@@ -6248,6 +6248,24 @@ h1 {
   padding: 10px 10px 10px 10px;
   font-size: 16px;
 }
+.table tbody tr td.teal {
+  background-color: #4e9192;
+}
+.table tbody tr td.orange {
+  background-color: #f9ca9c;
+}
+.table tbody tr td.green {
+  background-color: #b6d7a8;
+}
+.table tbody tr td.yellow {
+  background-color: #f5db93;
+}
+.table tbody tr td.blue {
+  background-color: #f5db93;
+}
+.table tbody tr td.grey {
+  background-color: #b7b7b7;
+}
 .table tbody tr td.time {
   color: #ed1b24;
   font-size: 24px;
