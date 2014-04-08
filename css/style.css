@@ -5854,10 +5854,10 @@ td.visible-print {
   }
 }
 a {
-  color: #f5db93;
+  color: #145a60;
 }
 a:hover {
-  color: #f9ebc2;
+  color: #1d828a;
 }
 h1,
 h2,
@@ -5866,7 +5866,7 @@ h4,
 h5,
 h6 {
   font-family: "alternate-gothic-no-3-d";
-  color: #f5db93;
+  color: #145a60;
 }
 a:hover {
   text-decoration: none !important;
@@ -5918,7 +5918,7 @@ article ul li {
   text-decoration: none !important;
 }
 #site-navigation .open > a {
-  color: #f5db93 !important;
+  color: #145a60 !important;
   text-decoration: underline !important;
   background: none !important;
 }
@@ -6017,7 +6017,7 @@ article ul li {
   }
 }
 #masthead #site-navigation ul li a {
-  color: #f5db93;
+  color: #145a60;
   padding: 12px;
 }
 footer {
@@ -6040,7 +6040,7 @@ footer ul li {
   margin-bottom: 5px;
   font-family: "alternate-gothic-no-3-d";
   font-size: 24px;
-  color: #f5db93;
+  color: #145a60;
 }
 footer .hiw-footer-logo {
   text-align: center;
@@ -6116,7 +6116,7 @@ footer .hiw-footer-logo img {
   margin-top: 20px;
 }
 .home .image-bordered {
-  border: 8px solid #f5db93;
+  border: 8px solid #145a60;
   max-width: 100%;
 }
 .home .entry-content {
@@ -6210,7 +6210,7 @@ h1 {
   font-size: 16px;
 }
 .entry-content h3 {
-  color: #f1cb64;
+  color: #0b3236;
   margin-bottom: 10px;
   font-size: 26px;
 }
