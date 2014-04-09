@@ -58,7 +58,7 @@ get_header(); ?>
 
 			?>
 
-			<?php makercon_paging_nav(); ?>
+			<?php // makercon_paging_nav(); ?>
 
 		</main><!-- #main -->
 	</section><!-- #primary -->
