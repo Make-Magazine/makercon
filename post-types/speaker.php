@@ -314,7 +314,9 @@ class Speaker_Meta {
 				}
 			$output .= '</div>';
 			$output .= '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">';
-				$output .= '<h2 class="entry-title"><a href="'. get_permalink() . '">'. get_the_title() . '</a></h2>';
+				$output .= ( !empty( $speaker['title'] ) ) ? '<h2>' . apply_filters( 'the_title', $speaker['title'] ) . '</h2>' : '' ;
+				// We might want to put the speaker title in here.
+				// $output .= '<h2 class="entry-title"><a href="'. get_permalink() . '">'. get_the_title() . '</a></h2>';
 				$output .= ( !empty( $speaker['company'] ) ) ? '<h3>' . apply_filters( 'the_title', $speaker['company'] ) . '</h3>' : '' ;
 				$output .= ( get_the_content() ) ? the_content() : apply_filters( 'the_content', $speaker['short_description'] );
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
