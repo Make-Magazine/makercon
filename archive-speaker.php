@@ -14,11 +14,6 @@ get_header(); ?>
 	<section id="primary" class="content-area col-md-8">
 		<main id="main" class="site-main" role="main">
 
-			<header class="page-header">
-				<h1 class="page-title">Speakers</h1>
-			</header><!-- .page-header -->
-
-
 			<?php
 
 			// Grab all of the tracks.
