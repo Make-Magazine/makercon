@@ -33,6 +33,7 @@ get_header(); ?>
 				$args = array(
 					'post_type' 		=> 'speaker',
 					'orderby'			=> 'title',
+					'order'				=> 'DESC',
 					'posts_per_page'	=> 100,
 					'tax_query' 		=> array(
 						array(
