@@ -46,7 +46,7 @@
 	<div class="entry-content">
 		<div class="row">
 			<div class="col-md-6">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/dale.jpg" alt="Dale Dougherty" class="image-bordered">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CoChairs-Image.jpg" alt="Workshop Co-Chairs" class="image-bordered">
 				<div class="spacer"></div>
 				<!-- <div class="row">
 					<div class="col-md-4">
