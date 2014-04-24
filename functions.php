@@ -171,7 +171,7 @@ require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
  */
 require get_template_directory() . '/inc/acf-field-date-time-picker/acf-date_time_picker.php';
 
-define( 'ACF_LITE', true );
+define( 'ACF_LITE', false );
 
 // Load the default fields.
 if( function_exists( "register_field_group" ) ) {
@@ -227,8 +227,7 @@ if( function_exists( "register_field_group" ) ) {
 				'label' => 'Session Title Override',
 				'name' => 'session_title_override',
 				'type' => 'true_false',
-				'instructions' => 'Should we override the post title with the session title?',
-				'message' => '',
+				'message' => 'Override post title with session title',
 				'default_value' => 0,
 			),
 		),
