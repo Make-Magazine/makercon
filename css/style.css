@@ -6024,6 +6024,9 @@ footer {
   background-color: #9EE0F7;
   border-top: 10px solid #BEECFC;
 }
+footer p {
+  color: #02394f;
+}
 footer h3 {
   text-align: center;
   font-size: 42px;
