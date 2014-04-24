@@ -251,7 +251,7 @@ class Speaker_Meta {
 				}
 			$output .= '</div>';
 			$output .= '<div class="col-xs-8 col-sm-8 col-md-8 col-lg-8">';
-				$output .= ( !empty( $speaker['title'] ) ) ? '<h2>' . apply_filters( 'the_title', $speaker['title'] ) . '</h2>' : '' ;
+				$output .= $this->title_override( '', false );
 				$output .= ( get_the_content() ) ? the_content() : apply_filters( 'the_content', $speaker['long_description'] );
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
 				$output .= ' ';
@@ -330,5 +330,27 @@ class Speaker_Meta {
 
 		return $output;
 	}
+
+	public function title_override( $heading = 'h1', $display = true ) {
+		if ( $display == false ) {
+			return;
+		}
+		global $post;
+		$override = get_post_meta( get_the_id(), 'session_title_override' );
+		$output = '';
+		if ( $override ) {
+			$speaker = $this->build_speaker_data();
+			$output .= '<' . esc_attr( $heading ) . ' class="entry-title">' . $speaker['title'] . '</' . esc_attr( $heading ) . '>';
+		} else {
+			$output .= '<' . esc_attr( $heading ) . ' class="entry-title">' . get_the_title() . '</' . esc_attr( $heading ) . '>';
+		}
+		return $output;
+	}
 }
+
 $speakers = new Speaker_Meta();
+
+function title_override() {
+	global $speakers;
+	echo $speakers->title_override();
+}

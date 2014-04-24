@@ -9,7 +9,7 @@
 	<div class="entry-content">
 		<div class="lead">
 			<a href="<?php the_permalink(); ?>">
-				<h1 class="entry-title"><?php the_title(); ?></h1>
+				<?php title_override(); ?>
 			</a>
 		</div>
 
