@@ -222,6 +222,15 @@ if( function_exists( "register_field_group" ) ) {
 				'default_value' => '',
 				'layout' => 'vertical',
 			),
+			array(
+				'key' => 'field_535946f7fda9c',
+				'label' => 'Session Title Override',
+				'name' => 'session_title_override',
+				'type' => 'true_false',
+				'instructions' => 'Should we override the post title with the session title?',
+				'message' => '',
+				'default_value' => 0,
+			),
 		),
 		'location' => array(
 			array(
