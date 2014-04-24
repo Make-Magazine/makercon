@@ -49,7 +49,7 @@
       </div>
       <div class="row" style="margin: 30px auto;">
          <div class="col-md-4">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/CoChairs-Image.jpg" alt="Workshop Co-Chairs" class="img-responsive">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cochairs-image-03.jpg" alt="Conference Co-Chairs" class="img-responsive">
             <div class="spacer"></div>
          </div>
          <div class="col-md-1"></div>
