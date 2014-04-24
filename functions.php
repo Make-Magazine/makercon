@@ -171,6 +171,8 @@ require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
  */
 require get_template_directory() . '/inc/acf-field-date-time-picker/acf-date_time_picker.php';
 
+define( 'ACF_LITE', true );
+
 // Load the default fields.
 if( function_exists( "register_field_group" ) ) {
 	register_field_group( array(
@@ -202,6 +204,32 @@ if( function_exists( "register_field_group" ) ) {
 				'picker' => 'select',
 				'save_as_timestamp' => 'true',
 				'get_as_timestamp' => 'false',
+			),
+			array(
+				'key' => 'field_53593fd8c4083',
+				'label' => 'Room',
+				'name' => 'room',
+				'type' => 'radio',
+				'choices' => array (
+					'Auditorium' => 'Auditorium',
+					'Room 102/103' => 'Room 102/103',
+					'Room 104' => 'Room 104',
+					'Room 105' => 'Room 105',
+					'Room 202/203' => 'Room 202/203',
+				),
+				'other_choice' => 1,
+				'save_other_choice' => 1,
+				'default_value' => '',
+				'layout' => 'vertical',
+			),
+			array(
+				'key' => 'field_535946f7fda9c',
+				'label' => 'Session Title Override',
+				'name' => 'session_title_override',
+				'type' => 'true_false',
+				'instructions' => 'Should we override the post title with the session title?',
+				'message' => '',
+				'default_value' => 0,
 			),
 		),
 		'location' => array(
