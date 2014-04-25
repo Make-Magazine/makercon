@@ -43,7 +43,7 @@
    <div class="entry-content">
       <div class="row">
          <div class="col-md-12">
-            <h2 style="margin-bottom:15px;">Reserve your Spot at MakerCon and Save $100<br /> Early Bird Pricing Ends April 27th!</h2>
+            <h2 style="margin-bottom:15px;"><a href="http://makercon.com/attend/">Reserve your Spot at MakerCon and Save $100<br /> Early Bird Pricing Ends April 27th!</a></h2>
             <p><strong>MakerCon is a conference by and for makers.</strong> The maker movement is providing new insights into local and global manufacturing, design, workforce development, education and even creative culture. MakerCon will provide valuable, practical insights into the impact of the maker movement on science, business and technology.</p>
          </div>
       </div>
