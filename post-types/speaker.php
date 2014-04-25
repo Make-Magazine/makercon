@@ -151,7 +151,13 @@ class Speaker_Meta {
 		// Display the form, using the current value.
 		echo '<label for="makercon_new_field">';
 		_e( 'Assign a proposal to this record: ', 'makercon' );
-		echo $this->entry_dropdown( $this->get_all_form_entries( 1 ), $value );
+
+		if ( get_site_url() == 'http://vip.dev/makercon' ) {
+			echo $this->entry_dropdown( $this->get_all_form_entries( 3 ), $value );
+		} else {
+			echo $this->entry_dropdown( $this->get_all_form_entries( 1 ), $value );
+		}
+
 		echo '</label> ';
 	}
 
