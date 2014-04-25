@@ -367,6 +367,50 @@ class Speaker_Meta {
 		}
 		return $output;
 	}
+
+	public function schedule( $atts ) {
+		$defaults = array(
+			'posts_per_page' 	=> 100,
+			'post_type'			=> 'speaker',
+			'meta_key'			=> 'start_time',
+			'orderby'			=> 'meta_value_num',
+		);
+
+		$args = wp_parse_args( $atts, $defaults );
+
+		$posts = new WP_Query( $args );
+
+		$output = '<table class="table table-striped">';
+
+		foreach ( $posts->posts as $post ) {
+			$output .= $this->table_row( $post );
+		}
+
+		$output .= '</table>';
+
+		return $output;
+
+
+	}
+
+	private function table_row( $post ) {
+
+		$meta = get_post_meta( absint( $post->ID ) );
+		$speaker = $this->build_speaker_data( $post->ID );
+
+		$output = '<tr>';
+			$output .= '<td>' . date( 'F jS g:i A',  $meta['start_time'][0] ) . ' - ' . date( 'g:i A',  $meta['end_time'][0] ) . '</td>';
+			$output .= '<td><h3>';
+				$output .= esc_html( $speaker['title'] );
+				$output .= '</h3>';
+				$output .= wp_kses_post( apply_filters( 'post_content', $speaker['short_description'] ) );
+			$output .= '</td>';
+		$output .= '</tr>';
+
+
+		return $output;
+	}
+
 }
 
 $speakers = new Speaker_Meta();
