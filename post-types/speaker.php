@@ -12,6 +12,7 @@ class Speaker_Meta {
 		add_action( 'save_post', array( $this, 'save' ) );
 		add_action( 'init', array( $this, 'speaker_init' ) );
 		add_filter( 'post_updated_messages', array( $this, 'speaker_updated_messages' ) );
+		add_shortcode( 'makercon_schedule', array( $this, 'schedule' ) );
 	}
 
 	function speaker_init() {
