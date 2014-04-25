@@ -189,9 +189,9 @@ class Speaker_Meta {
 	/**
 	 * Build the loop, based on the Gravity Forms data
 	 */
-	public function build_speaker_data() {
+	public function build_speaker_data( $id ) {
 		global $post;
-		$selected_speaker = get_post_meta( get_the_id(), 'selected_speaker', true );
+		$selected_speaker = get_post_meta( intval( $id ), 'selected_speaker', true );
 		$meta = Gravity_Forms_Helper::get_entry( $selected_speaker );
 		$speaker = array(
 			'title' 				=> $meta[ 4 ],
@@ -256,7 +256,7 @@ class Speaker_Meta {
 	 * Speaker Loop
 	 */
 	public function speaker_loop() {
-		$speaker = $this->build_speaker_data();
+		$speaker = $this->build_speaker_data( get_the_id() );
 
 		// Let's get going with the main block of content.
 		$output = '<div class="row">';
@@ -322,7 +322,7 @@ class Speaker_Meta {
 	 * Condensed Loop
 	 */
 	public function short_speaker_loop() {
-		$speaker = $this->build_speaker_data();
+		$speaker = $this->build_speaker_data( get_the_id() );
 
 		// Let's get going with the main block of content.
 		$output = '<div class="row">';
@@ -360,7 +360,7 @@ class Speaker_Meta {
 		$override = get_post_meta( get_the_id(), 'session_title_override' );
 		$output = '';
 		if ( $override ) {
-			$speaker = $this->build_speaker_data();
+			$speaker = $this->build_speaker_data( get_the_id() );
 			$output .= '<' . esc_attr( $heading ) . ' class="entry-title">' . $speaker['title'] . '</' . esc_attr( $heading ) . '>';
 		} else {
 			$output .= '<' . esc_attr( $heading ) . ' class="entry-title">' . get_the_title() . '</' . esc_attr( $heading ) . '>';
