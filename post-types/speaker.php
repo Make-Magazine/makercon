@@ -230,6 +230,17 @@ class Speaker_Meta {
 					'thumbnail'			=> $meta[ 47 ],
 					'phone'				=> $meta[ 48 ]
 				),
+				3 						=> array(
+					'name'				=> $meta[ '63.3' ] . ' ' . $meta[ '63.6' ],
+					'email'				=> $meta[ 64 ],
+					'company'			=> $meta[ 65 ],
+					'title'				=> $meta[ 66 ],
+					'bio'				=> $meta[ 67 ],
+					'twitter'			=> $meta[ 68 ],
+					'url'				=> $meta[ 70 ],
+					'thumbnail'			=> $meta[ 69 ],
+					'phone'				=> $meta[ 48 ]
+				),
 			),
 		);
 		return $speaker;
