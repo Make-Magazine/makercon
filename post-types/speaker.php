@@ -273,6 +273,9 @@ class Speaker_Meta {
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
 				$output .= ' ';
 				$output .= ( ! empty( $speaker['video_url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['video_url'] ) . '"><span class="glyphicon glyphicon glyphicon-facetime-video"></span> Video</a>' : '';
+				$output .= '<div class="clearfix"></div><div style="height:10px;"></div>';
+				$output .= get_the_term_list( get_the_id(), 'track', '<p>Track: ', ', ', '</p>' );
+
 			$output .= '</div>';
 		$output .= '</div>';
 
@@ -339,6 +342,7 @@ class Speaker_Meta {
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
 				$output .= ' ';
 				$output .= ( ! empty( $speaker['video_url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['video_url'] ) . '"><span class="glyphicon glyphicon glyphicon-facetime-video"></span> Video</a>' : '';
+				$output .= get_the_term_list( get_the_id(), 'track', '<p>Track: ', ', ', '</p>' );
 			$output .= '</div>';
 		$output .= '</div>';
 
