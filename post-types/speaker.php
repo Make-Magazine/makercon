@@ -378,6 +378,7 @@ class Speaker_Meta {
 			'post_type'			=> 'speaker',
 			'meta_key'			=> 'start_time',
 			'orderby'			=> 'meta_value_num',
+			'order'				=> 'ASC',
 		);
 
 		$args = wp_parse_args( $atts, $defaults );
