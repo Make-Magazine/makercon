@@ -406,7 +406,12 @@ class Speaker_Meta {
 		$speaker = $this->build_speaker_data( $post->ID );
 
 		$output = '<tr>';
-			$output .= '<td width="200">' . date( 'F jS g:i A',  $meta['start_time'][0] ) . ' - ' . date( 'g:i A',  $meta['end_time'][0] ) . '</td>';
+			if ( !empty( $meta['start_time'][0] ) || !empty( $meta['start_time'][0] ) ) {
+				$output .= '<td width="200">' . date( 'F jS g:i A',  $meta['start_time'][0] ) . ' - ' . date( 'g:i A',  $meta['end_time'][0] ) . '</td>';
+			} else {
+				$output .= '<td width="200"></td>';
+			}
+
 			$output .= '<td><h3><a href="';
 				$output .= esc_url( get_permalink( $post->ID ) );
 				$output .= '">';
@@ -427,25 +432,37 @@ class Speaker_Meta {
 		$speakers = $speaker['speakers'];
 
 		// Count the speakers
-		$count = count( $speakers );
+
 		$i = 1;
 
 		// Init the output.
 		$output = '';
 
+		$the_speakers = array();
+
+		// Let's do a new loop...
+		foreach ( $speakers  as $the_speaker ) {
+			if ( strlen( $the_speaker['name'] ) > 1 ) {
+				$the_speakers[] = $the_speaker['name'];
+			}
+
+		}
+
+		$count = count( $the_speakers );
+
 		// Speaker loop
-		foreach ( $speakers as $the_speaker ) {
+		foreach ( $the_speakers as $the_speaker ) {
 
 			// We don't want a comma if there are less then two speakers.
 			if ( $i < $count ) {
 				if ( $count > 2 ) {
-					$output .= ( ! empty( $the_speaker['name'] ) ) ? $the_speaker['name'] . ', ' : '' ;
+					$output .= ( strlen( $the_speaker ) > 1 ) ? $the_speaker . ', ' : '' ;
 				} else {
-					$output .= ( ! empty( $the_speaker['name'] ) ) ? $the_speaker['name'] . ' ' : '' ;
+					$output .= ( strlen( $the_speaker ) > 1 ) ? $the_speaker . ' ' : '' ;
 				}
 
 			} else {
-				$output .= ( ! empty( $the_speaker['name'] ) ) ? 'and ' . $the_speaker['name'] : '';
+				$output .= ( strlen( $the_speaker ) > 1 ) ? 'and ' . $the_speaker : '';
 			}
 
 			// Up the counter
