@@ -12,6 +12,7 @@ class Speaker_Meta {
 		add_action( 'save_post', array( $this, 'save' ) );
 		add_action( 'init', array( $this, 'speaker_init' ) );
 		add_filter( 'post_updated_messages', array( $this, 'speaker_updated_messages' ) );
+		add_shortcode( 'makercon_schedule', array( $this, 'schedule' ) );
 	}
 
 	function speaker_init() {
@@ -151,7 +152,13 @@ class Speaker_Meta {
 		// Display the form, using the current value.
 		echo '<label for="makercon_new_field">';
 		_e( 'Assign a proposal to this record: ', 'makercon' );
-		echo $this->entry_dropdown( $this->get_all_form_entries( 1 ), $value );
+
+		if ( get_site_url() == 'http://vip.dev/makercon' ) {
+			echo $this->entry_dropdown( $this->get_all_form_entries( 3 ), $value );
+		} else {
+			echo $this->entry_dropdown( $this->get_all_form_entries( 1 ), $value );
+		}
+
 		echo '</label> ';
 	}
 
@@ -183,9 +190,9 @@ class Speaker_Meta {
 	/**
 	 * Build the loop, based on the Gravity Forms data
 	 */
-	public function build_speaker_data() {
+	public function build_speaker_data( $id ) {
 		global $post;
-		$selected_speaker = get_post_meta( get_the_id(), 'selected_speaker', true );
+		$selected_speaker = get_post_meta( intval( $id ), 'selected_speaker', true );
 		$meta = Gravity_Forms_Helper::get_entry( $selected_speaker );
 		$speaker = array(
 			'title' 				=> $meta[ 4 ],
@@ -230,6 +237,17 @@ class Speaker_Meta {
 					'thumbnail'			=> $meta[ 47 ],
 					'phone'				=> $meta[ 48 ]
 				),
+				3 						=> array(
+					'name'				=> $meta[ '63.3' ] . ' ' . $meta[ '63.6' ],
+					'email'				=> $meta[ 64 ],
+					'company'			=> $meta[ 65 ],
+					'title'				=> $meta[ 66 ],
+					'bio'				=> $meta[ 67 ],
+					'twitter'			=> $meta[ 68 ],
+					'url'				=> $meta[ 70 ],
+					'thumbnail'			=> $meta[ 69 ],
+					'phone'				=> $meta[ 48 ]
+				),
 			),
 		);
 		return $speaker;
@@ -239,7 +257,7 @@ class Speaker_Meta {
 	 * Speaker Loop
 	 */
 	public function speaker_loop() {
-		$speaker = $this->build_speaker_data();
+		$speaker = $this->build_speaker_data( get_the_id() );
 
 		// Let's get going with the main block of content.
 		$output = '<div class="row">';
@@ -256,6 +274,9 @@ class Speaker_Meta {
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
 				$output .= ' ';
 				$output .= ( ! empty( $speaker['video_url'] ) ) ? '<a class="btn btn-default" href="' . esc_url( $speaker['video_url'] ) . '"><span class="glyphicon glyphicon glyphicon-facetime-video"></span> Video</a>' : '';
+				$output .= '<div class="clearfix"></div><div style="height:10px;"></div>';
+				$output .= get_the_term_list( get_the_id(), 'track', '<p>Track: ', ', ', '</p>' );
+
 			$output .= '</div>';
 		$output .= '</div>';
 
@@ -302,7 +323,7 @@ class Speaker_Meta {
 	 * Condensed Loop
 	 */
 	public function short_speaker_loop() {
-		$speaker = $this->build_speaker_data();
+		$speaker = $this->build_speaker_data( get_the_id() );
 
 		// Let's get going with the main block of content.
 		$output = '<div class="row">';
@@ -322,6 +343,7 @@ class Speaker_Meta {
 				$output .= ( ! empty( $speaker['url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['url'] ) . '"><span class="glyphicon glyphicon-link"></span> Website</a>' : '';
 				$output .= ' ';
 				$output .= ( ! empty( $speaker['video_url'] ) ) ? '<a class="btn btn-default btn-xs" href="' . esc_url( $speaker['video_url'] ) . '"><span class="glyphicon glyphicon glyphicon-facetime-video"></span> Video</a>' : '';
+				$output .= get_the_term_list( get_the_id(), 'track', '<p>Track: ', ', ', '</p>' );
 			$output .= '</div>';
 		$output .= '</div>';
 
@@ -339,13 +361,96 @@ class Speaker_Meta {
 		$override = get_post_meta( get_the_id(), 'session_title_override' );
 		$output = '';
 		if ( $override ) {
-			$speaker = $this->build_speaker_data();
+			$speaker = $this->build_speaker_data( get_the_id() );
 			$output .= '<' . esc_attr( $heading ) . ' class="entry-title">' . $speaker['title'] . '</' . esc_attr( $heading ) . '>';
 		} else {
 			$output .= '<' . esc_attr( $heading ) . ' class="entry-title">' . get_the_title() . '</' . esc_attr( $heading ) . '>';
 		}
 		return $output;
 	}
+
+	/**
+	 * Build the schedule
+	 */
+	public function schedule( $atts ) {
+		$defaults = array(
+			'posts_per_page' 	=> 100,
+			'post_type'			=> 'speaker',
+			'meta_key'			=> 'start_time',
+			'orderby'			=> 'meta_value_num',
+		);
+
+		$args = wp_parse_args( $atts, $defaults );
+
+		$posts = new WP_Query( $args );
+
+		$output = '<table class="table table-striped">';
+
+		foreach ( $posts->posts as $post ) {
+			$output .= $this->table_row( $post );
+		}
+
+		$output .= '</table>';
+
+		return $output;
+
+
+	}
+
+	/**
+	 * Generate the row of the table.
+	 */
+	private function table_row( $post ) {
+
+		$meta = get_post_meta( absint( $post->ID ) );
+		$speaker = $this->build_speaker_data( $post->ID );
+
+		$output = '<tr>';
+			$output .= '<td width="200">' . date( 'F jS g:i A',  $meta['start_time'][0] ) . ' - ' . date( 'g:i A',  $meta['end_time'][0] ) . '</td>';
+			$output .= '<td><h3><a href="';
+				$output .= esc_url( get_permalink( $post->ID ) );
+				$output .= '">';
+				$output .= esc_html( $speaker['title'] );
+				$output .= '</a></h3>';
+				$output .= '<h4>' . $this->speakers( $post->ID ) . '</h4>';
+				$output .= wp_kses_post( apply_filters( 'post_content', $speaker['short_description'] ) );
+			$output .= '</td>';
+		$output .= '</tr>';
+
+
+		return $output;
+	}
+
+	private function speakers( $id ) {
+		$meta = get_post_meta( absint( $id ) );
+		$speaker = $this->build_speaker_data( $id );
+		$speakers = $speaker['speakers'];
+
+		// Count the speakers
+		$count = count( $speakers );
+		$i = 1;
+
+		// Init the output.
+		$output = '';
+
+		// Speaker loop
+		foreach ( $speakers as $the_speaker ) {
+
+			// We don't want a comma if there are less then two speakers.
+			if ( $i < $count ) {
+				$output .= ( $count > 2 ) ? $the_speaker['name'] . ', ' : $the_speaker['name'] . ' ';
+			} else {
+				$output .= 'and ' . $the_speaker['name'];
+			}
+
+			// Up the counter
+			$i++;
+		}
+
+		// Return the list.
+		return $output;
+	}
+
 }
 
 $speakers = new Speaker_Meta();
