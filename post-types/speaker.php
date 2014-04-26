@@ -437,8 +437,8 @@ class Speaker_Meta {
 		foreach ( $speakers as $the_speaker ) {
 
 			// We don't want a comma if there are less then two speakers.
-			if ( $i < $count && ( $count > 2 ) ) {
-				$output .= $the_speaker['name'] . ', ';
+			if ( $i < $count ) {
+				$output .= ( $count > 2 ) ? $the_speaker['name'] . ', ' : $the_speaker['name'] . ' ';
 			} else {
 				$output .= 'and ' . $the_speaker['name'];
 			}
