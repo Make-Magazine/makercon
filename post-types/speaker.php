@@ -369,6 +369,9 @@ class Speaker_Meta {
 		return $output;
 	}
 
+	/**
+	 * Build the schedule
+	 */
 	public function schedule( $atts ) {
 		$defaults = array(
 			'posts_per_page' 	=> 100,
@@ -394,16 +397,21 @@ class Speaker_Meta {
 
 	}
 
+	/**
+	 * Generate the row of the table.
+	 */
 	private function table_row( $post ) {
 
 		$meta = get_post_meta( absint( $post->ID ) );
 		$speaker = $this->build_speaker_data( $post->ID );
 
 		$output = '<tr>';
-			$output .= '<td>' . date( 'F jS g:i A',  $meta['start_time'][0] ) . ' - ' . date( 'g:i A',  $meta['end_time'][0] ) . '</td>';
-			$output .= '<td><h3>';
+			$output .= '<td width="200">' . date( 'F jS g:i A',  $meta['start_time'][0] ) . ' - ' . date( 'g:i A',  $meta['end_time'][0] ) . '</td>';
+			$output .= '<td><h3><a href="';
+				$output .= esc_url( get_permalink( $post->ID ) );
+				$output .= '">';
 				$output .= esc_html( $speaker['title'] );
-				$output .= '</h3>';
+				$output .= '</a></h3>';
 				$output .= wp_kses_post( apply_filters( 'post_content', $speaker['short_description'] ) );
 			$output .= '</td>';
 		$output .= '</tr>';
