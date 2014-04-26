@@ -462,6 +462,8 @@ class Speaker_Meta {
 					$output .= ( strlen( $the_speaker ) > 1 ) ? esc_html( $the_speaker ) . ' ' : '' ;
 				}
 
+			} elseif ( $count == 1 ) {
+				$output .= ( strlen( $the_speaker ) > 1 ) ? esc_html( $the_speaker ) : '';
 			} else {
 				$output .= ( strlen( $the_speaker ) > 1 ) ? 'and ' . esc_html( $the_speaker ) : '';
 			}
