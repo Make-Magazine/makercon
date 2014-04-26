@@ -456,13 +456,13 @@ class Speaker_Meta {
 			// We don't want a comma if there are less then two speakers.
 			if ( $i < $count ) {
 				if ( $count > 2 ) {
-					$output .= ( strlen( $the_speaker ) > 1 ) ? $the_speaker . ', ' : '' ;
+					$output .= ( strlen( $the_speaker ) > 1 ) ? esc_html( $the_speaker ) . ', ' : '' ;
 				} else {
-					$output .= ( strlen( $the_speaker ) > 1 ) ? $the_speaker . ' ' : '' ;
+					$output .= ( strlen( $the_speaker ) > 1 ) ? esc_html( $the_speaker ) . ' ' : '' ;
 				}
 
 			} else {
-				$output .= ( strlen( $the_speaker ) > 1 ) ? 'and ' . $the_speaker : '';
+				$output .= ( strlen( $the_speaker ) > 1 ) ? 'and ' . esc_html( $the_speaker ) : '';
 			}
 
 			// Up the counter
