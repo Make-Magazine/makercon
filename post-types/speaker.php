@@ -412,11 +412,42 @@ class Speaker_Meta {
 				$output .= '">';
 				$output .= esc_html( $speaker['title'] );
 				$output .= '</a></h3>';
+				$output .= '<h4>' . $this->speakers( $post->ID ) . '</h4>';
 				$output .= wp_kses_post( apply_filters( 'post_content', $speaker['short_description'] ) );
 			$output .= '</td>';
 		$output .= '</tr>';
 
 
+		return $output;
+	}
+
+	private function speakers( $id ) {
+		$meta = get_post_meta( absint( $id ) );
+		$speaker = $this->build_speaker_data( $id );
+		$speakers = $speaker['speakers'];
+
+		// Count the speakers
+		$count = count( $speakers );
+		$i = 1;
+
+		// Init the output.
+		$output = '';
+
+		// Speaker loop
+		foreach ( $speakers as $the_speaker ) {
+
+			// We don't want a comma if there are less then two speakers.
+			if ( $i < $count && ( $count > 2 ) ) {
+				$output .= $the_speaker['name'] . ', ';
+			} else {
+				$output .= 'and ' . $the_speaker['name'];
+			}
+
+			// Up the counter
+			$i++;
+		}
+
+		// Return the list.
 		return $output;
 	}
 
