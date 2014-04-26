@@ -417,9 +417,11 @@ class Speaker_Meta {
 				$output .= esc_url( get_permalink( $post->ID ) );
 				$output .= '">';
 				$output .= esc_html( $speaker['title'] );
-				$output .= '</a></h3>';
+				$output .= '</a>';
+				$output .= '</h3>';
 				$output .= '<h4>' . $this->speakers( $post->ID ) . '</h4>';
 				$output .= wp_kses_post( apply_filters( 'post_content', $speaker['short_description'] ) );
+				$output .= ( ! empty( $meta['room'] ) ) ? '<p><label class="badge badge-info">' . $meta['room'][0] . '</label></p>' : '';
 			$output .= '</td>';
 		$output .= '</tr>';
 
