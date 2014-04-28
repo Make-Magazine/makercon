@@ -6205,6 +6205,11 @@ h1 {
 .page-id-20 .entry-content .overview-left.overview-380 {
   width: 380px;
 }
+.page-id-21 .entry-content table p {
+  font-size: 12px;
+  margin: 0px;
+  padding: 3px;
+}
 .entry-content {
   color: #02394f;
   font-family: Helvetica, sans-serif;
