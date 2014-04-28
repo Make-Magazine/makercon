@@ -387,6 +387,12 @@ class Speaker_Meta {
 
 		$output = '<table class="table table-striped">';
 
+		if ( isset( $args['track'] ) ) {
+			$track = get_term_by( 'slug', $args['track'], 'track' );
+
+			$output .= '<thead><tr><th>Time</th><th><h2>Track: ' . esc_html( $track->name ) . '</h2></th></tr></thead>';
+		}
+
 		foreach ( $posts->posts as $post ) {
 			$output .= $this->table_row( $post );
 		}
