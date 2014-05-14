@@ -43,7 +43,6 @@
    <div class="entry-content">
       <div class="row">
          <div class="col-md-12">
-            <h2 style="margin-bottom:15px;"><a href="http://makercon.com/attend/">Reserve your Spot at MakerCon Today!</a></h2>
             <p><strong>MakerCon is a conference by and for makers.</strong> The maker movement is providing new insights into local and global manufacturing, design, workforce development, education and even creative culture. MakerCon will provide valuable, practical insights into the impact of the maker movement on science, business and technology.</p>
          </div>
       </div>
@@ -52,8 +51,11 @@
             <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cochairs-image-03.jpg" alt="Conference Co-Chairs" class="img-responsive">
             <div class="spacer"></div>
          </div>
-         <div class="col-md-1"></div>
-         <div class="col-md-7">
+         <div class="col-md-4">
+            <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688">Tweets about "#makercon"</a>
+            <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+         </div>
+         <div class="col-md-4">
             <h2 style="text-align:left;">Our MakerCon mission and agenda:</h2>
             <ul class="bullets">
                <li>Celebrate makers and making</li>
