@@ -6127,6 +6127,7 @@ footer .hiw-footer-logo img {
 }
 .home .entry-content h2 {
   font-size: 36px;
+  margin-bottom: 20px;
 }
 .home .entry-content .bullets li {
   font-size: 20px;
@@ -6154,6 +6155,7 @@ footer .hiw-footer-logo img {
 .home .white-box h2 {
   font-size: 42px;
   text-align: center;
+  margin-bottom: 20px;
 }
 .home .white-box p {
   font-size: 20px;
@@ -6166,6 +6168,13 @@ footer .hiw-footer-logo img {
 }
 .home .sponsors-home img {
   margin: 5px auto;
+}
+ul.recent-posts li p {
+  font-size: 14px !important;
+  font-weight: lighter !important;
+}
+ul.recent-posts li p a {
+  color: #000000;
 }
 button.button,
 a.button {
