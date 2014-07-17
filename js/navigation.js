@@ -51,7 +51,7 @@ jQuery( document ).ready( function( $ ) {
 		var posts = jqxhr.responseJSON.posts;
 
 		// Start the output.
-		var html_output = '<h2>News from MakerCon</h2><ul class="recent-posts media-list">';
+		var html_output = '<h2>News from MakerCon Bay Area</h2><ul class="recent-posts media-list">';
 
 		// Figure out how many posts we have to work with...
 		var length = jqxhr.responseJSON.posts.length;

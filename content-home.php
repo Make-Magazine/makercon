@@ -7,7 +7,7 @@
 	?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
 	<div class="white-box" style="padding-top:30px !important;padding-bottom:30px !important">
-	<div class="row sponsors-home">
+	<!-- <div class="row sponsors-home">
 		<div class="col-md-2">
 			<h3>Presenting Sponsor</h3>
 			<a href="http://www.intel.com/">
@@ -39,14 +39,14 @@
 				</a>
 			</div>
 		</div>
-	</div>
+	</div> -->
 	<div class="entry-content">
 		<div class="row highlights">
 			<div class="col-md-6 posts">
 				<p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
 			</div>
 			<div class="col-md-6">
-				<h2>Photos from Makercon</h2>
+				<h2>Photos from Makercon Bay Area</h2>
 				<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
 					<script async defer>
 						var images = [
@@ -176,11 +176,11 @@
 				</ul>
 			</div>
 		</div>
-		<div class="row">
+		<!-- <div class="row">
 			<div class="col-md-12">
 				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/big-themes.jpg" alt="Workshop Co-Chairs" class="">
 			</div>
-		</div>
+		</div> -->
 	</div>
 	<!-- .entry-content -->
 </article>

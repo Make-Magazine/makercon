@@ -30,7 +30,7 @@
 			</aside>
 
 		<?php endif; // end sidebar widget area ?>
-			<aside class="sponsors widget">
+			<!-- <aside class="sponsors widget">
 				<h1 class="widget-title" style="margin-bottom:20px;">Our Sponsors</h1>
 				<h3>Presenting Sponsor</h3>
 				<a href="http://www.intel.com/">
@@ -52,5 +52,5 @@
 				<h3 style="margin-top:20px;">Communications Partner</h3>
 				<a href="http://www.marketwire.com/">
 					<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Market Wire Logo" width="250" style="margin-top:15px;" /></a>
-			</aside>
+			</aside> -->
 	</div><!-- #secondary -->

@@ -61,7 +61,7 @@
 	<div class="">
 		<div class="row">
 			<div class="col-md-12">
-				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Header_v6c.gif" alt="MakerCon 2014">
+				<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon_Header_NY2014_02.gif" alt="MakerCon New York 2014">
 			</div>
 		</div>
 	</div>

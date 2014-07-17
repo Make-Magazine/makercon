@@ -43,9 +43,9 @@
 			<div class="col-md-4">
 				<h3>Venue</h3>
 				<ul class="blue">
-					<li>Oracle Conference Center</li>
-					<li>Redwood City, CA</li>
-					<li>May 13th - 14th 2014</li>
+					<li>New York Hall Of Science</li>
+					<li>Corona, NY</li>
+					<li>September 17th - 18th 2014</li>
 				</ul>
 			</div>
 		</div>
