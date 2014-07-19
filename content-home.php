@@ -11,7 +11,7 @@
 		<div class="col-md-6">
 			<h3>Presenting Sponsor</h3>
 			<a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214418&iu=/11548178/Makezine">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo_250.png" alt="Intel Logo" style="width:250px;margin-top:5px" />
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo_250.png" alt="Intel Logo" style="width:250px;margin-top:41px" />
 			</a>
 		</div>
 		<div class="col-md-6">
