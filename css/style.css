@@ -5865,7 +5865,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "alternate-gothic-no-3-d";
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", helvetica, sans-serif;
   color: #145a60;
 }
 a:hover {
@@ -5882,7 +5882,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: "alternate-gothic-no-3-d";
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", helvetica, sans-serif;
   margin: 0px 0;
 }
 body ul li {
@@ -6006,7 +6006,7 @@ article ul li {
   border: none;
 }
 #masthead #site-navigation ul li {
-  font-family: "alternate-gothic-no-3-d";
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 28px;
   margin: 0px;
@@ -6041,7 +6041,7 @@ footer ul li {
   list-style-type: none;
   padding-bottom: 5px;
   margin-bottom: 5px;
-  font-family: "alternate-gothic-no-3-d";
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", helvetica, sans-serif;
   font-size: 24px;
   color: #145a60;
 }
@@ -6278,7 +6278,7 @@ h1 {
   padding: 10px 10px 10px 0px;
   width: 120px;
   text-align: left;
-  font-family: "alternate-gothic-no-3-d";
+  font-family: "alternate-gothic-no-3-d-n4", "alternate-gothic-no-3-d", helvetica, sans-serif;
 }
 .table tbody tr td.break {
   background-color: #63ABED;
