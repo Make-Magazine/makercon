@@ -11,13 +11,13 @@
 		<div class="col-md-6">
 			<h3>Presenting Sponsor</h3>
 			<a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214418&iu=/11548178/Makezine">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo_250.png" alt="Intel Logo" style="width:250px;margin-top:41px" />
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo-02.png" alt="Intel Logo" style="width:300px;margin-top:41px" />
 			</a>
 		</div>
 		<div class="col-md-6">
 			<h3>Participating Sponsor</h3>
 			<a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214658&iu=/11548178/Makezine">
-			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fusion-autodesk-sponsor-250.png" alt="Autodesk Logo" width="250px" style="width:250px;margin-top:30px;"   />
+			<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fusion-autodesk-sponsor-398.png" alt="Autodesk Logo" width="300px" style="width:250px;margin-top:30px;"   />
 			</a>
 		</div>
 
