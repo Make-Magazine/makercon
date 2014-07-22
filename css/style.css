@@ -5948,7 +5948,7 @@ article ul li {
   display: none;
 }
 #masthead #site-navigation .social .sharedaddy .sd-content {
-  margin: 0 !important;
+  margin: 8px 0 0 0 !important;
   height: 22px !important;
 }
 #masthead #site-navigation .social .sharedaddy .sd-content ul {
@@ -5960,7 +5960,7 @@ article ul li {
   height: 23px !important;
 }
 #masthead #site-navigation .social .sharedaddy .sd-content ul li a {
-  margin: 0px;
+  margin: 25px 0 0 0;
   padding: 0px !important;
 }
 #masthead #site-navigation .social .sharedaddy li.share-linkedin a.sd-button > span,
