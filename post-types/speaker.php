@@ -89,7 +89,7 @@ function featured_speakers_function() {
   echo '<h2>Featured Speakers</h2>';
   $my_query = new WP_Query($args);
   if( $my_query->have_posts() ) {
-  ?><ul class="featured-speakers"><?
+  ?><ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers"><?
   while ($my_query->have_posts()) : $my_query->the_post();
   ?>
     <li style="overflow: auto; list-style-type: none; margin-bottom: 10px; background-color: #00ABCD; padding: 10px; color: #FFF;">
