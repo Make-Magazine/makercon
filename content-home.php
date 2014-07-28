@@ -28,7 +28,7 @@
         <p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
       </div>
       <div class="col-md-6">
-        [featured-speakers]
+        <? featured_speakers_function(); ?>
       </div>
     </div>
     <div class="spacer"></div>
