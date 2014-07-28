@@ -1,7 +1,7 @@
 <?php
 
 function event_init() {
-	register_taxonomy( 'event', array( 'speaker' ), array(
+	register_taxonomy( 'event', array( 'speakers' ), array(
 		'hierarchical'      => true,
 		'public'            => true,
 		'show_in_nav_menus' => true,
