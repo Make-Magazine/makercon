@@ -148,6 +148,7 @@ require get_template_directory() . '/inc/gravity-forms-helper/gravity-forms-help
 /**
  * Load Speaker Post Type
  */
+
 require get_template_directory() . '/post-types/speaker.php';
 
 
