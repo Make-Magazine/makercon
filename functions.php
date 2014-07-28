@@ -152,6 +152,8 @@ require get_template_directory() . '/inc/gravity-forms-helper/gravity-forms-help
 require get_template_directory() . '/post-types/speaker.php';
 
 
+require get_template_directory() . '/menus/featured-speakers.php';
+
 /**
  * Load Track Taxonomy
  */

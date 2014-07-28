@@ -78,37 +78,35 @@ function register_speaker_shortcodes() {
 }
 
 function featured_speakers_function() {
- $args = array(
-  'meta_key'=>'speaker_featured',
-  'meta_value'=> 'on',
-  'post_type' => 'speakers',
-  'post_status' => 'publish',
-  'posts_per_page' => -1,
-  'caller_get_posts'=> 1
-  );
   echo '<h2>Featured Speakers</h2>';
-  $my_query = new WP_Query($args);
-  if( $my_query->have_posts() ) {
-  ?><ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers"><?
-  while ($my_query->have_posts()) : $my_query->the_post();
+  $featured_speakers = Array();
+
+  array_push($featured_speakers, get_option('featured-speaker-1'));
+  array_push($featured_speakers, get_option('featured-speaker-2'));
+  array_push($featured_speakers, get_option('featured-speaker-3'));
+  array_push($featured_speakers, get_option('featured-speaker-4'));
+
+  ?><ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers">
+     <? foreach($featured_speakers as $user_id) {
+        featured_speakers_view($user_id);
+     }?>
+   </ul><?
+}
+
+function featured_speakers_view($user_id) {
+  $post = get_post($user_id, ARRAY_A);
   ?>
     <li style="overflow: auto; list-style-type: none; margin-bottom: 10px; background-color: #00ABCD; padding: 10px; color: #FFF;">
       <div class="speaker-image" style="float: left; margin-right: 10px; border: 3px solid #FFF;">
-        <?=the_post_thumbnail(array(100, 100));?>
+        <?=get_the_post_thumbnail($user_id, array(100,100)); ?>
       </div>
       <div class="speaker-info">
         <div class="speaker-name-bio">
-          <?=the_title();?> — <?=get_post_meta($my_query->post->ID, 'speaker_bio_min', true);?>
+          <?=$post['post_title'];?> — <?=get_post_meta($user_id, 'speaker_bio_min', true);?>
         </div>
         <div class="speaker-session">
-          <i>No Session Set-up Yet</i>
         </div>
-        <!--a href="<?php the_permalink() ?>" rel="bookmark" title="Permanent Link to <?php the_title_attribute(); ?>"><?php the_title(); ?></a-->
       </div>
     </li>
   <?
-  endwhile;
-  ?></ul><?
-  }
-  wp_reset_query();  // Restore global post data stomped by the_post().
 }
