@@ -153,6 +153,7 @@ require get_template_directory() . '/post-types/speaker.php';
 
 
 require get_template_directory() . '/menus/featured-speakers.php';
+require get_template_directory() . '/shortcodes/home-slider.php';
 
 /**
  * Load Track Taxonomy
