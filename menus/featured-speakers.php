@@ -1,4 +1,4 @@
-<?
+<?php
 
 add_action('admin_menu', 'featured_speakers_order');
 
@@ -37,9 +37,9 @@ function featured_speakers_order_callback() {
          <td>Speaker #1</td>
          <td>
           <select name="featured-speaker-1">
-            <? while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-              <option value="<?=$speakers->post->ID ?>" <? if($speakers->post->ID == $featured_speaker_1) echo 'selected="selected"'; ?> ><? the_title(); ?></option>
-            <? endwhile; ?>
+            <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+              <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_1) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+            <?php endwhile; ?>
           </select>
          </td>
       </tr>
@@ -47,9 +47,9 @@ function featured_speakers_order_callback() {
          <td>Speaker #2</td>
          <td>
           <select name="featured-speaker-2">
-            <? while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-              <option value="<?=$speakers->post->ID ?>" <? if($speakers->post->ID == $featured_speaker_2) echo 'selected="selected"'; ?> ><? the_title(); ?></option>
-            <? endwhile; ?>
+            <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+              <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_2) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+            <?php endwhile; ?>
           </select>
          </td>
       </tr>
@@ -57,9 +57,9 @@ function featured_speakers_order_callback() {
          <td>Speaker #3</td>
          <td>
           <select name="featured-speaker-3">
-            <? while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-              <option value="<?=$speakers->post->ID ?>" <? if($speakers->post->ID == $featured_speaker_3) echo 'selected="selected"'; ?> ><? the_title(); ?></option>
-            <? endwhile; ?>
+            <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+              <option value="<?php $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_3) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+            <?php endwhile; ?>
           </select>
          </td>
        </tr>
@@ -67,9 +67,9 @@ function featured_speakers_order_callback() {
          <td>Speaker #4</td>
          <td>
           <select name="featured-speaker-4">
-            <? while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-              <option value="<?=$speakers->post->ID ?>" <? if($speakers->post->ID == $featured_speaker_4) echo 'selected="selected"'; ?> ><? the_title(); ?></option>
-            <? endwhile; ?>
+            <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+              <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_4) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+            <?php endwhile; ?>
           </select>
          </td>
       </tr>
@@ -78,6 +78,6 @@ function featured_speakers_order_callback() {
       <input type="submit" value="Save settings" class="button-primary"/>
     </p>
   </form>
-  <?
+  <?php
   echo '</div>';
 }
