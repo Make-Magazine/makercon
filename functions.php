@@ -153,7 +153,13 @@ require get_template_directory() . '/post-types/speaker.php';
 
 
 require get_template_directory() . '/menus/featured-speakers.php';
-require get_template_directory() . '/shortcodes/home-slider.php';
+
+/**
+ * Load Session Post Type
+ */
+
+require get_template_directory() . '/post-types/session.php';
+
 
 /**
  * Load Track Taxonomy
@@ -166,6 +172,22 @@ require get_template_directory() . '/taxonomies/track.php';
 require get_template_directory() . '/taxonomies/event.php';
 
 /**
+ * Load Location Taxonomy
+ */
+require get_template_directory() . '/taxonomies/location.php';
+
+/**
+ * Load Time Taxonomy(Sessions)
+ */
+require get_template_directory() . '/taxonomies/time.php';
+
+/**
+ * Load Day Taxonomy(Sessions)
+ */
+require get_template_directory() . '/taxonomies/day.php';
+
+
+/**
  * Load Advanced Custom Fields
  */
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
@@ -176,6 +198,13 @@ require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
 require get_template_directory() . '/inc/acf-field-date-time-picker/acf-date_time_picker.php';
 
 define( 'ACF_LITE', false );
+
+/**
+ * Load Home Slider
+ */
+
+require get_template_directory() . '/shortcodes/home-slider.php';
+
 
 // Load the default fields.
 if( function_exists( "register_field_group" ) ) {
