@@ -28,7 +28,7 @@
         <p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
       </div>
       <div class="col-md-6">
-        <? featured_speakers_function(); ?>
+        <?php featured_speakers_function(); ?>
         <div style="text-align: center; margin-top: 20px;">
           <a style="padding: 10px; background-color: red; color: #FFF" href="/speakers">Check out the full line up</a>
         </div>
