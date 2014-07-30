@@ -86,7 +86,6 @@ function featured_speakers_function() {
   array_push($featured_speakers, get_option('featured-speaker-2'));
   array_push($featured_speakers, get_option('featured-speaker-3'));
   array_push($featured_speakers, get_option('featured-speaker-4'));
-  print_r($featured_speakers);
   ?>
   <ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers">
      <?php foreach($featured_speakers as $user_id) {
@@ -98,7 +97,6 @@ function featured_speakers_function() {
 
 function featured_speakers_view($user_id) {
   $post = get_post($user_id, ARRAY_A);
-  print_r($post);
   ?>
     <li style="overflow: auto; list-style-type: none; margin-bottom: 10px; background-color: #00ABCD; padding: 10px; color: #FFF;">
       <div class="speaker-image" style="float: left; margin-right: 10px; border: 3px solid #FFF;">
