@@ -14,6 +14,7 @@ function create_speakers() {
                      'hierarchical' => false,
                      'public' => true,
                      'show_ui' => true,
+                     'menu_icon' => 'dashicons-businessman',
                      'supports' => array( 'title', 'editor', 'thumbnail' ),
                      'has_archive' => true
                      ));
@@ -43,10 +44,10 @@ function display_speaker_meta_box($speaker) {
         <td>Speaker Bio</td>
       </tr>
       <tr>
-        <td><input style="width: 100%" type="text" name="speaker_bio_min" value="<?=$speaker_bio_min;?>"></td>
+        <td><input style="width: 100%" type="text" name="speaker_bio_min" value="<?php echo $speaker_bio_min; ?>"></td>
       </tr>
     </table>
-  <?
+  <?php
 }
 
 function display_speaker_featured_meta_box($speaker) {
@@ -59,7 +60,7 @@ function display_speaker_featured_meta_box($speaker) {
         </td>
       </tr>
     </table>
-  <?
+  <?php
 }
 
 add_action('save_post', 'add_speaker_fields', 10, 2);
@@ -87,10 +88,10 @@ function featured_speakers_function() {
   array_push($featured_speakers, get_option('featured-speaker-4'));
 
   ?><ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers">
-     <? foreach($featured_speakers as $user_id) {
+     <?php foreach($featured_speakers as $user_id) {
         featured_speakers_view($user_id);
      }?>
-   </ul><?
+   </ul><?php
 }
 
 function featured_speakers_view($user_id) {
@@ -98,15 +99,15 @@ function featured_speakers_view($user_id) {
   ?>
     <li style="overflow: auto; list-style-type: none; margin-bottom: 10px; background-color: #00ABCD; padding: 10px; color: #FFF;">
       <div class="speaker-image" style="float: left; margin-right: 10px; border: 3px solid #FFF;">
-        <?=get_the_post_thumbnail($user_id, array(100,100)); ?>
+        <?php echo get_the_post_thumbnail($user_id, array(100,100)); ?>
       </div>
       <div class="speaker-info">
         <div class="speaker-name-bio">
-          <?=$post['post_title'];?> — <?=get_post_meta($user_id, 'speaker_bio_min', true);?>
+          <?php echo $post['post_title'];?> — <?php echo get_post_meta($user_id, 'speaker_bio_min', true);?>
         </div>
         <div class="speaker-session">
         </div>
       </div>
     </li>
-  <?
+  <?php
 }
