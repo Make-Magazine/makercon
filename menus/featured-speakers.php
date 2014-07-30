@@ -58,7 +58,7 @@ function featured_speakers_order_callback() {
          <td>
           <select name="featured-speaker-3">
             <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
-              <option value="<?php $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_3) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+              <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_3) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
             <?php endwhile; ?>
           </select>
          </td>
