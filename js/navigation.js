@@ -51,7 +51,7 @@ jQuery( document ).ready( function( $ ) {
 		var posts = jqxhr.responseJSON.posts;
 
 		// Start the output.
-		var html_output = '<h2>News from MakerCon Bay Area</h2><ul class="recent-posts media-list">';
+		var html_output = '<ul class="recent-posts media-list">';
 
 		// Figure out how many posts we have to work with...
 		var length = jqxhr.responseJSON.posts.length;
@@ -65,11 +65,11 @@ jQuery( document ).ready( function( $ ) {
 
 		// Loop through the new index.
 		$( index ).each( function( key, value ) {
-			html_output += '<li class="media">';
-			html_output += '<a class="pull-left" href="' + posts[ value ].URL + '"><img class="media-object thumbnail" src="' + posts[ value ].featured_image + '?w=125" alt="' + posts[ value ].title + '"></a>';
-			html_output += '<h3><a href="' + posts[ value ].URL + '">' + posts[ value ].title + '</a></h3>';
+			html_output += '<div class="col-md-6 media">';
+			html_output += '<a class="" href="' + posts[ value ].URL + '"><img class="media-object thumbnail" src="' + posts[ value ].featured_image + '?w=100%" alt="' + posts[ value ].title + '"></a>';
+			html_output += '<h3 style="font-size:20px;color:#ED1B24;"><a href="' + posts[ value ].URL + '">' + posts[ value ].title + '</a></h3>';
 			html_output += posts[ value ].excerpt;
-			html_output += '</li>';
+			html_output += '</div>';
 		});
 		html_output += '</ul>';
 		$('.highlights .posts').html( html_output );
