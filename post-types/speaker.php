@@ -5,46 +5,60 @@ add_action( 'init', 'create_speakers' );
 add_action( 'init', 'register_speaker_shortcodes' );
 
 function create_speakers() {
-  register_post_type('speakers', 
+  register_post_type('speaker', 
                      array(
-                      'labels' => array(
-                        'name' => 'Speakers',
-                        'singular_name' => 'Speaker'
+						'labels' => array(
+						'name' => 'Speakers',
+						'singular_name' => 'Speaker',
+						'add_new_item' => 'Add New Speaker',
+						'edit_item' => 'Edit Speaker'
                        ),
                      'hierarchical' => false,
                      'public' => true,
                      'show_ui' => true,
                      'menu_icon' => 'dashicons-businessman',
-                     'supports' => array( 'title', 'editor', 'thumbnail' ),
+                     'supports' => array( 'title', 'excerpt','editor', 'thumbnail','custom-fields'),
                      'has_archive' => true
                      ));
 }
 
 add_action( 'admin_init', 'speakers_admin' );
 function speakers_admin() {
-  add_meta_box('speakers_meta_box',
+
+  add_meta_box('speaker_details_meta_box',
                'Speaker Details',
-               'display_speaker_meta_box',
-               'speakers',
+               'display_speaker_details_meta_box',
+               'speaker',
                'normal',
                'high');
+
   add_meta_box('speakers_featured_meta_box',
                'Featured Speaker',
                'display_speaker_featured_meta_box',
-               'speakers',
+               'speaker',
                'side',
                'high');
 }
 
-function display_speaker_meta_box($speaker) {
-  $speaker_bio_min = get_post_meta( $speaker->ID, 'speaker_bio_min', true );
+
+function display_speaker_details_meta_box($speaker) {
+  	$speaker_twitter = get_post_meta( $speaker->ID, 'twitter', true );
+	$speaker_website = get_post_meta( $speaker->ID, 'website', true );
   ?>
     <table style="width: 100%">
       <tr>
-        <td>Speaker Bio</td>
+        <td>Twitter</td>
       </tr>
       <tr>
-        <td><input style="width: 100%" type="text" name="speaker_bio_min" value="<?php echo $speaker_bio_min; ?>"></td>
+        <td><input style="width: 100%" type="text" name="speaker_twitter" value="<?php echo $speaker_twitter; ?>"></td>
+      </tr>
+    </table>
+	<table style="width: 100%">
+      <tr>
+        <td>Website</td>
+      </tr>
+      <tr>
+        <td><input style="width: 100%" type="text" name="speaker_website" value="<?php echo $speaker_website; ?>"></td>
       </tr>
     </table>
   <?php
@@ -56,7 +70,7 @@ function display_speaker_featured_meta_box($speaker) {
     <table style="width: 100%">
       <tr>
         <td>
-          <input type="checkbox" name="speaker_featured" <?php if( $speaker_featured == true ) { ?>checked="checked"<?php } ?> />  Check to display on the front-page.
+          <input type="checkbox" name="speaker_featured" <?php if( $speaker_featured != "" ) { ?>checked="checked"<?php } ?> />  Check to display on the front-page.
         </td>
       </tr>
     </table>
@@ -65,11 +79,25 @@ function display_speaker_featured_meta_box($speaker) {
 
 add_action('save_post', 'add_speaker_fields', 10, 2);
 function add_speaker_fields($speaker_id, $speaker) {
-  if($speaker->post_type == 'speakers') {
+  if($speaker->post_type == 'speaker') {
     if(isset($_POST['speaker_bio_min']) && $_POST['speaker_bio_min'] != '') {
       update_post_meta($speaker_id, 'speaker_bio_min', $_POST['speaker_bio_min']);
     }
-    update_post_meta($speaker_id, 'speaker_featured', $_POST['speaker_featured']);
+
+	if(isset($_POST['speaker_twitter'])) {
+      update_post_meta($speaker_id, 'twitter', $_POST['speaker_twitter']);
+    }
+
+	if(isset($_POST['speaker_website'])) {
+		update_post_meta($speaker_id, 'website', $_POST['speaker_website']);
+	}
+
+	if(isset($_POST['speaker_featured']) && $_POST['speaker_featured'] != '') {
+		update_post_meta($session_id, 'speaker_featured', $_POST['speaker_featured']);
+	} else {
+		update_post_meta($session_id, 'speaker_featured','');
+	}
+
   }
 }
 
