@@ -1,17 +1,19 @@
 button.button,
 a.button {
-	padding: 10px;
-	background-color: #EA202D;
-	color: white;
-	border: 8px solid #CBEAEA;
+	font-size:20px;
+	font-family:@subtitle;
+	text-transform: uppercase;
+      color: #fff;
+	padding: 10px 15px;
+	margin: 20px auto !important;
+	background-color: @red;
+	border-radius: 2px;
 	&:hover {
-		border-color: #00adef;
-		background-color: #c8eaea;
-		color: #00adef;
+		background-color: lighten(@red, 10%);
+		color: #eee;
 	}
 	&:active {
-		background-color: #00adef;
+		background-color: @red;
 		color: #fff;
-		border-color: #CBEAEA;		
 	}
 }
