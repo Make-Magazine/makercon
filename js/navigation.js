@@ -62,11 +62,15 @@ jQuery( document ).ready( function( $ ) {
 		// Get the first random number.
 		index.push( getRandomArbitrary( 0, length, null ) );
 		index.push( getRandomArbitrary( 0, length, index[0] ) );
-
+		// html for title
+			html_output += '<row>';
+			html_output += '<h2 class="subtitle">News from Makercon</h2>';
+			html_output += '</row>';
+			html_output += '<row>';
 		// Loop through the new index.
 		$( index ).each( function( key, value ) {
 			html_output += '<div class="col-md-6 media" style="margin-top:0px !important;">';
-			html_output += '<a class="" href="' + posts[ value ].URL + '"><img class="media-object thumbnail responsive" src="' + posts[ value ].featured_image + '?h=200" alt="' + posts[ value ].title + '"></a>';
+			html_output += '<a class="" href="' + posts[ value ].URL + '"><img class="media-object responsive" src="' + posts[ value ].featured_image + '?h=200" alt="' + posts[ value ].title + '"></a>';
 			html_output += '<h3><a style="font-size:20px;color:#ED1B24;font-weight:bold;" href="' + posts[ value ].URL + '">' + posts[ value ].title + '</a></h3>';
 			html_output += posts[ value ].excerpt;
 			html_output += '</div>';
