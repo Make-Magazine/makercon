@@ -9,8 +9,8 @@
 
     <div class="row">
       <div class="col-md-12">
-        <h1 style="text-align:center;color:#ED1B24;font-size:40px;font-weight:bold;margin-bottom:25px">What is MakerCon?</h1>
-        <p style="text-align:justify; font-size:18px; line-height: 26px;color:#02394F"><strong>MakerCon is a conference by and for makers.</strong> The maker movement is providing new insights into local and global manufacturing, design, workforce development, education and even creative culture. MakerCon provides valuable, practical insights into the impact of makers and making on education, the economy and emerging markets. </p>
+        <h1 style="text-align:center;margin-bottom:25px">What is MakerCon?</h1>
+        <p class="intro"><strong>MakerCon is a conference by and for makers.</strong> The maker movement is providing new insights into local and global manufacturing, design, workforce development, education and even creative culture. MakerCon provides valuable, practical insights into the impact of makers and making on education, the economy and emerging markets. </p>
       </div>
     </div>
 
@@ -18,20 +18,20 @@
   <div class="entry-content">
     <div class="row">
       <div class="col-md-8">
-        <h2 style="color:#02394F;font-size:34px;">Live from MakerCon</h2>
+        <h2 class="subtitle">Live from MakerCon</h2>
         <img style="border:5px solid #02394F;" src="http://vip.dev/wp-content/uploads/sites/4/2014/07/Screen-Shot-2014-07-30-at-4.31.36-PM-e1406763528861.png" width="100%" alt ="" />
                   <div style="text-align: justify; margin-top: 20px;">
                     <p><strong>Mlkshk Odd Future wolf asymmetrical bitters</strong>, scenester meggings farm-to-table YOLO Cosby sweater normcore. Small batch master cleanse distillery, artisan mumblecore DIY sriracha PBR Vice polaroid.</p>
                   </div>
                   <div style="text-align: center; margin-top: 20px;">
-                    <a style="padding: 10px; color:#fff; font-size:20px;background-color:#ED1B24; border-radius: 2px;text-transform:uppercase;" href="/speakers">More Videos from MakerCon</a>
+                    <a class="button" href="/speakers">More Videos from MakerCon</a>
                   </div>
 
       </div>
       <div class="col-md-4">
         <?php featured_speakers_function(); ?>
         <div style="text-align: center; margin-top: 20px;">
-          <a style="padding: 10px; color:#fff; font-size:20px;background-color: #ED1B24; border-radius: 2px;text-transform:uppercase;" href="/speakers">Check out the full line up</a>
+          <a class="button" href="/speakers">Check out the full line up</a>
         </div>
       </div>
     </div>
@@ -40,13 +40,13 @@
   <div style="padding-top:30px !important;padding-bottom:30px !important">
        <div class="row sponsors-home" style="border-top:1px solid #999;border-bottom:1px solid #999;padding-top:30px !important; padding-bottom:30px !important;">
     <div class="col-md-6">
-      <h2 style="color:#02394F;font-size:34px;">Presenting Sponsor</h2>
+      <h2 class="subtitle">Presenting Sponsor</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214418&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo-02.png" alt="Intel Logo" style="width:300px;margin-top:41px" />
       </a>
     </div>
     <div class="col-md-6">
-      <h2 style="color:#02394F;font-size:34px;">Participating Sponsor</h2>
+      <h2 class="subtitle">Participating Sponsor</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214658&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
       <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/fusion-autodesk-sponsor-398.png" alt="Autodesk Logo" width="300px" style="width:300px;margin-top:30px;"   />
       </a>
@@ -54,8 +54,7 @@
 
   </div>
 
-    <div class="row highlights" style="margin: 30px auto;">
-        <h2 style="color:#02394F;font-size:34px;text-align:left;">News from MakerCon Bay Area</h2>
+    <div class="row highlights" style="margin: 50px auto 0 auto;">
 
       <div class="col-md-8 posts">
         <p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>

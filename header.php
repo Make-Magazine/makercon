@@ -25,18 +25,24 @@
 <div id="page" class="hfeed site container">
   <?php do_action( 'before' ); ?>
   <header id="masthead" class="site-header row" role="banner">
-    <div class="site-branding col-md-4">
+    <div class="site-branding col-md-3">
       <?php if ( is_front_page() || is_home() ) : ?>
 
+              <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+
+
       <?php else : ?>
-        <h2 title="Make Magazine - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h2>
+        <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
       <?php endif; ?>
     </div>
 
 
-    <nav id="site-navigation" class="navbar navbar-default col-md-8" role="navigation">
+    <nav id="site-navigation" class="navbar navbar-default col-md-7" role="navigation">
 
-      <div class="social">
+      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right', 'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
+    </nav><!-- #site-navigation -->
+
+          <div class="social col-md-2">
         <?php
 
         if ( function_exists( 'sharing_display' ) ) {
@@ -49,11 +55,10 @@
         }
         ?>
       </div>
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right', 'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
-    </nav><!-- #site-navigation -->
+
   </header><!-- #masthead -->
 
-  <?php if ( is_front_page() ) : ?>
+      <?php if ( is_front_page() || is_home() ) : ?>
 
 </div>
 <div class="clearfix"></div>

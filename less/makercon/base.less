@@ -1,3 +1,42 @@
+// Generic Page Styles
+a:hover {
+  text-decoration: none !important;
+}
+
+body {
+	color:@dark-grey;
+	margin-top:0;
+	overflow-wrap: break-word;
+}
+
+h1, h2, h3, h4, h5, h6 {
+	font-family: @heading;
+	color: @red;
+	font-weight:bold;
+}
+
+h1 {
+	font-size: 40px;
+	line-height:48px;
+	}
+
+h2 {
+	font-size:34px;
+	line-height: 40px;
+}
+
+h3 {
+	font-size:20px;
+	line-height: 24px;
+}
+
+p {
+	font-family: @font;
+	font-size:@blue;
+	line-height: 20px;
+	font-color:#02394F;
+}
+
 a {
 	color: @blue;
 	&:hover {
@@ -5,12 +44,11 @@ a {
 	}
 }
 
-h1,
-h2,
-h3,
-h4,
-h5,
-h6 {
-	font-family: @heading;
-	color: @blue;
+body ul li{
+	font-size: 16px;
+    line-height: 140%;
+}
+
+article ul li {
+	font-size: 16px;
 }
