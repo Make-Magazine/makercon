@@ -6573,6 +6573,15 @@ body.home .speakerblock {
   color: #fff;
   border-radius: 0;
 }
+body.home .speaker-box-name {
+  font-size: 18px;
+  font-weight: bold;
+  text-transform: uppercase;
+}
+body.home .speaker-box-bio {
+  font-size: 14px;
+  line-height: 18px;
+}
 body.home .recent-posts a {
   color: #ed1b24;
   font-weight: bold;

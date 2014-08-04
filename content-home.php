@@ -16,10 +16,10 @@
   <div class="row">
     <div class="col-md-8">
       <h2 class="subtitle">Live from MakerCon Bay Area</h2>
-      <a href="#">
-      <img style="border:5px solid #02394F;" src="http://vip.dev/wp-content/uploads/sites/4/2014/07/Screen-Shot-2014-07-30-at-4.31.36-PM-e1406763528861.png" width="100%" alt ="" />
+        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
+        <div style="clear:both;"></div>
       <div style="text-align: justify; margin-top: 20px;">
-        <p><strong>Mlkshk Odd Future wolf asymmetrical bitters</strong>, scenester meggings farm-to-table YOLO Cosby sweater normcore. Small batch master cleanse distillery, artisan mumblecore DIY sriracha PBR Vice polaroid.</p>
+        <p><strong>MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz </strong>, scenester meggings farm-to-table YOLO Cosby sweater normcore. Small batch master cleanse distillery, artisan mumblecore DIY sriracha PBR Vice polaroid.</p>
       </div>
       <div style="text-align: center; margin-top: 20px;">
         <a class="button" href="/speakers">More Videos from MakerCon</a>
