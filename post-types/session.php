@@ -140,7 +140,6 @@ function display_session_keynote_meta_box($session) {
   <?php
 }
 
-
 function display_session_speakers_tags_meta_box($session, $box) {
 	
 
