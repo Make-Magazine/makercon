@@ -3,7 +3,7 @@
 .navbar {
 border:none;
 min-height:auto;
-margin:0;
+margin:15px auto;
 }
 .navbar-default {
 background-color: transparent;
@@ -19,10 +19,10 @@ border-color: none;
 		}
 	}
 	a, .dropdown-menu a {
-		color: @nav-tabs-active-link-hover-color;
-		background-color: @nav-tabs-active-link-hover-bg;
+		color: @red;
+		background-color: none;
 		&:hover {
-			background-color: #eee;
+			color: #eee;
 			text-decoration:none !important;
 		}
 	}
@@ -39,30 +39,26 @@ border-color: none;
 
 
 #masthead {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	position: relative;
-	z-index: 1;
-		#site-navigation {
+	margin:20px auto;
+	h1 {margin:0 !important;}
 			.social {
 				margin-bottom: 20px;
 				height: 22px;
-				width: 240px;
 				display: block;
 				.pull-right;
-				margin-left: 15px;
+				margin-left: 0px;
 				.sharedaddy {
 					border:none;
 					//hide default share this title
 					.sd-title {display:none;}
 					.sd-content{
-						margin:8px 0 0 0 !important;
+						margin:15px 0 0 0 !important;
 						height:22px !important;
 						ul {
 						margin:0px;
 						height:22px;
 							li {
-							margin-left:20px !important;
+							margin-left:3px !important;
 							height:23px !important;
 								a {
 									margin:25px 0 0 0;
@@ -90,7 +86,6 @@ border-color: none;
 					a.sd-button {border:none !important; background:none;height:22px;box-shadow: none;width:23px;}
 				    .sd-block {border:none;}
 			    }
-			}
 	    }
 	#site-navigation {
 		ul {
@@ -100,10 +95,10 @@ border-color: none;
 				}
 				font-family: @heading;
 				text-transform: uppercase;
-				font-size: 28px;
+				font-size: 27px;
 				margin: 0px;
 				a {
-					color: @blue;
+					color: @red;
 					padding: 12px;
 				}
 			}
