@@ -272,7 +272,7 @@ if( function_exists( "register_field_group" ) ) {
 					'value' => 'speaker',
 					'order_no' => 0,
 					'group_no' => 0,
-				),
+				)
 			),
 		),
 		'options' => array(

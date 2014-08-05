@@ -40,6 +40,48 @@ function speakers_admin() {
                'high');
 }
 
+add_filter('enter_title_here','speaker_title_filter');
+function speaker_title_filter($speaker_title = '') {
+	$speaker_title = (get_post_type()=='speaker') ? "Enter speaker name here": $speaker_title;
+
+	return $speaker_title;
+
+}
+add_action('edit_form_after_title','display_speaker_subtitle');
+
+function display_speaker_subtitle() {
+
+    global $post, $typenow, $pagenow;
+    if( in_array($typenow, array('speaker') ) && (($pagenow == 'post.php')||($pagenow == 'post-new.php')) )  {
+        ?><style type="text/css" id="speaker-editor-css">
+		#subtitle {
+			padding: 6px 6px;
+			font-size: 1.2em;
+			height: 1.7em;
+			width: 100%;
+			outline: 0;
+			margin: 0 0 12px 0;
+			background-color: #fff;
+		}
+
+		input#subtitle::-webkit-input-placeholder {
+			padding: 6px 0px;
+		}
+		input#subtitle::-moz-placeholder {
+			padding: 6px 0px;
+		}
+		input#subtitle:-moz-placeholder {
+			padding: 6px 0px;
+		}
+		input#subtitle:-ms-input-placeholder {
+			padding: 6px 0px;
+		}
+		</style>
+		<label class="screen-reader-text" id="title-prompt-text" for="subtitle"><?php echo apply_filters( 'enter_subtitle_here', __( 'Enter subtitle here' ), $post ); ?></label>
+	<input type="text" name="speaker_subtitle" size="30" value="<?php echo esc_attr(htmlspecialchars( get_post_meta($post->ID, '_speaker_subtitle', true) )); ?>" id="subtitle" placeholder="<?php echo apply_filters( 'enter_subtitle_here', __( 'Enter subtitle here' ), $post ); ?>" autocomplete="off" />
+		<?php
+    }
+}
 
 function display_speaker_details_meta_box($speaker) {
   	$speaker_twitter = get_post_meta( $speaker->ID, 'twitter', true );
@@ -93,9 +135,13 @@ function add_speaker_fields($speaker_id, $speaker) {
 	}
 
 	if(isset($_POST['speaker_featured']) && $_POST['speaker_featured'] != '') {
-		update_post_meta($session_id, 'speaker_featured', $_POST['speaker_featured']);
+		update_post_meta($speaker_id, 'speaker_featured', $_POST['speaker_featured']);
 	} else {
-		update_post_meta($session_id, 'speaker_featured','');
+		update_post_meta($speaker_id, 'speaker_featured','');
+	}
+
+	if(isset($_POST['speaker_subtitle'])) {
+		update_post_meta($speaker_id, '_speaker_subtitle', $_POST['speaker_subtitle']);
 	}
 
   }

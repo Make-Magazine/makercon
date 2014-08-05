@@ -25,6 +25,13 @@ function create_sessions() {
 }
 add_action( 'admin_init', 'session_admin' );
 function session_admin() {
+	wp_enqueue_script('session-timepicker', get_template_directory_uri().'/js/session-timepicker.js');
+  add_meta_box('session_timedate_meta_box',
+               'Session Times',
+               'display_session_timedate_meta_box',
+               'session',
+               'normal',
+               'high');
 
   add_meta_box('session_video_meta_box',
                'Session Video',
@@ -55,7 +62,7 @@ function display_session_subtitle() {
     if( in_array($typenow, array('post', 'page','session') ) && $pagenow == 'post.php' )  {
         ?><style type="text/css" id="session-editor-css">
 			#subtitle {
-				padding: 6px px;
+				padding: 6px 6px;
 				font-size: 1.2em;
 
 				height: 1.7em;
@@ -84,6 +91,27 @@ function display_session_subtitle() {
     }
 }
 
+function display_session_timedate_meta_box($session) {
+		$session_start = date("m/d/y g:i a", get_post_meta( $session->ID, '_session_start', true ));
+		$session_end = get_post_meta( $session->ID, '_session_end', true );
+	?><table style="width: 100%">
+		<tr>
+			<td>Session Start</td>
+		</tr>
+		<tr>
+			<td><input style="width: 100%" type="text" name="session_start" class="mc_timepicker" id="session_start" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="Start Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_start; ?>"></td>
+		</tr>
+		<tr>
+			<td>Session End</td>
+		</tr>
+		<tr>
+		<td><input style="width: 100%" type="text" name="session_end" class="mc_timepicker" id="session_end" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="End Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_end; ?>"></td>
+		  </tr>
+		</table>
+
+	<?php
+
+}
 function display_session_video_meta_box($session) {
   $session_video_url = get_post_meta( $session->ID, '_session_video_url', true );
   ?>
@@ -272,6 +300,14 @@ function add_session_fields($session_id, $session) {
 			update_post_meta($session_id, '_session_keynote', $_POST['session_keynote']);
 		} else {
 			update_post_meta($session_id, '_session_keynote','');
+		}
+
+		if(isset($_POST['session_start']) && $_POST['session_start'] != '') {
+			update_post_meta($session_id, '_session_start', strtotime($_POST['session_start']));
+		}
+
+		if(isset($_POST['session_end']) && $_POST['session_end'] != '') {
+			update_post_meta($session_id, '_session_end', strtotime($_POST['session_end']));
 		}
 
 		if(isset($_POST['session_video_url']) && $_POST['session_video_url'] != '') {
