@@ -92,20 +92,23 @@ function display_session_subtitle() {
 }
 
 function display_session_timedate_meta_box($session) {
-		$session_start = date("m/d/y g:i a", get_post_meta( $session->ID, '_session_start', true ));
+		$session_start = get_post_meta( $session->ID, '_session_start', true );
+		$session_start_date = ($session_start != '') ? date("m/d/y g:i a", $session_start_date) : '';
+
 		$session_end = get_post_meta( $session->ID, '_session_end', true );
+		$session_end_date = ($session_end != '') ? date("m/d/y g:i a", $session_end_date) : '';
 	?><table style="width: 100%">
 		<tr>
 			<td>Session Start</td>
 		</tr>
 		<tr>
-			<td><input style="width: 100%" type="text" name="session_start" class="mc_timepicker" id="session_start" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="Start Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_start; ?>"></td>
+			<td><input style="width: 100%" type="text" name="session_start" class="mc_timepicker" id="session_start" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="Start Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_start_date; ?>"></td>
 		</tr>
 		<tr>
 			<td>Session End</td>
 		</tr>
 		<tr>
-		<td><input style="width: 100%" type="text" name="session_end" class="mc_timepicker" id="session_end" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="End Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_end; ?>"></td>
+		<td><input style="width: 100%" type="text" name="session_end" class="mc_timepicker" id="session_end" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="End Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_end_date; ?>"></td>
 		  </tr>
 		</table>
 
