@@ -1,4 +1,4 @@
-<?
+<?php
   add_shortcode('home-slider', 'home_slider_shortcode');
   // Enables us to use a single shortcode as long as there is only one slider per site -- I mean, who uses two, amirite?
   function home_slider_shortcode() {

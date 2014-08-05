@@ -160,12 +160,13 @@ function featured_speakers_function() {
   array_push($featured_speakers, get_option('featured-speaker-2'));
   array_push($featured_speakers, get_option('featured-speaker-3'));
   array_push($featured_speakers, get_option('featured-speaker-4'));
-
-  ?><ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers">
+  ?>
+  <ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers">
      <?php foreach($featured_speakers as $user_id) {
         featured_speakers_view($user_id);
      }?>
-   </ul><?php
+   </ul>
+   <?php
 }
 
 function featured_speakers_view($user_id) {
