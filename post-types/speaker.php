@@ -5,7 +5,7 @@ add_action( 'init', 'create_speakers' );
 add_action( 'init', 'register_speaker_shortcodes' );
 
 function create_speakers() {
-  register_post_type('speaker', 
+  register_post_type('speaker',
                      array(
 						'labels' => array(
 						'name' => 'Speakers',
@@ -178,7 +178,8 @@ function featured_speakers_view($user_id) {
       </div>
       <div class="speaker-info">
         <div class="speaker-name-bio">
-          <?php echo $post['post_title'];?> — <?php echo get_post_meta($user_id, 'speaker_bio_min', true);?>
+          <div class="speaker-box-name"><?php echo $post['post_title'];?></div>
+          <div class="speaker-box-bio"> <?php echo get_post_meta($user_id, 'speaker_bio_min', true);?></div>
         </div>
         <div class="speaker-session">
         </div>
