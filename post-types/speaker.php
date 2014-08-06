@@ -314,7 +314,7 @@ function featured_speakers_view($user_id) {
       <div class="speaker-info">
         <div class="speaker-name-bio">
           <div class="speaker-box-name"><?php echo $post['post_title'];?></div>
-          <div class="speaker-box-title"> <?php echo  get_post_meta($post->ID, '_speaker_subtitle', true);?></div>
+          <div class="speaker-box-bio"> <?php echo get_post_meta($user_id, '_speaker_subtitle', true);?></div>
         </div>
         <div class="speaker-session">
         </div>
