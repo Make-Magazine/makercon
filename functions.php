@@ -207,6 +207,9 @@ require get_template_directory() . '/shortcodes/home-slider.php';
 
 
 // Load the default fields.
+
+// -- set post_type to alien - just in case 08.06.14
+
 if( function_exists( "register_field_group" ) ) {
 	register_field_group( array(
 		'id' => 'acf_session-schedule',
@@ -269,7 +272,7 @@ if( function_exists( "register_field_group" ) ) {
 				array(
 					'param' => 'post_type',
 					'operator' => '==',
-					'value' => 'speaker',
+					'value' => 'alien',
 					'order_no' => 0,
 					'group_no' => 0,
 				)
