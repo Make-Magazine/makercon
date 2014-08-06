@@ -25,7 +25,9 @@ function create_sessions() {
 }
 add_action( 'admin_init', 'session_admin' );
 function session_admin() {
-	wp_enqueue_script('session-timepicker', get_template_directory_uri().'/js/session-timepicker.js');
+
+	wp_enqueue_script('session-timepicker', get_template_directory_uri().'/js/session-timepicker.js', array('jquery-ui-core'));
+
   add_meta_box('session_timedate_meta_box',
                'Session Times',
                'display_session_timedate_meta_box',
