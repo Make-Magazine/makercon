@@ -32,12 +32,13 @@ function speakers_admin() {
                'normal',
                'high');
 
-  add_meta_box('speakers_featured_meta_box',
-               'Featured Speaker',
-               'display_speaker_featured_meta_box',
-               'speaker',
-               'side',
-               'high');
+	add_meta_box('speakers_session_meta_box',
+		       'Sessions',
+		       'display_speakers_session_tags_meta_box',
+		       'speaker',
+		       'side',
+		       'high');
+
 }
 
 add_filter('enter_title_here','speaker_title_filter');
@@ -106,18 +107,135 @@ function display_speaker_details_meta_box($speaker) {
   <?php
 }
 
-function display_speaker_featured_meta_box($speaker) {
-  $speaker_featured = get_post_meta( $speaker->ID, 'speaker_featured', true)
-  ?>
-    <table style="width: 100%">
-      <tr>
-        <td>
-          <input type="checkbox" name="speaker_featured" <?php if( $speaker_featured != "" ) { ?>checked="checked"<?php } ?> />  Check to display on the front-page.
-        </td>
-      </tr>
-    </table>
-  <?php
+
+function display_speakers_session_tags_meta_box($speaker, $box) {
+	
+
+	if ( !isset($box['args']) || !is_array($box['args']) )
+		$args = array();
+	else
+		$args = $box['args'];
+	extract( wp_parse_args($args, $defaults), EXTR_SKIP );
+
+
+	$taxonomy = 'speakers_session';
+	$tax_name = esc_attr('speaker-session');
+	$user_can_assign_speakers = true;
+	$comma = _x( ',', 'tag delimiter' );
+
+	$speaker_session_selected = get_post_meta( $speaker->ID, '_speaker_sessions', true);
+
+	$speaker_session_ids = explode(",",get_post_meta( $speaker->ID, '_speaker_sessions', true));
+
+	$wp_session_events = wp_get_post_terms($speaker->ID, 'event', array());
+	$speaker_session_events = array();
+	foreach($wp_session_events as $wp_session_event) {
+		$speaker_session_events[$wp_session_event->term_id] = $wp_session_event->slug;
+	}
+	$speaker_session_event_slug = join(',',$speaker_session_events);
+	$wp_session_list = array();
+	$wp_session_posts = get_posts(array('post_type'=>'session','event' => $speaker_session_event_slug, 'posts_per_page' => -1 ));	
+	foreach($wp_session_posts as $session_post) {
+		setup_postdata($session_post);
+		$wp_session_list[$session_post->ID] = $session_post->post_title;
+
+	}
+
+	$wp_session_list_all = array();
+	$wp_session_posts = get_posts(array('post_type'=>'session', 'posts_per_page' => -1 ));	
+	foreach($wp_session_posts as $session_post) {
+		setup_postdata($session_post);
+		$wp_session_list_all[$session_post->ID] = $session_post->post_title;
+	}
+
+
+	?>
+	<div id="taxonomy-<?php echo $taxonomy; ?>" class="categorydiv">
+		<ul id="<?php echo $taxonomy; ?>-tabs" class="category-tabs">
+			<li class="tabs"><a href="#<?php echo $taxonomy; ?>-cur"><?php _e( 'Current Sessions' ); ?></a></li>
+			<li class="hide-if-no-js"><a href="#<?php echo $taxonomy; ?>-all"><?php echo 'All Sessions'; ?></a></li>
+			
+		</ul>
+		
+		<?php error_log(print_r($speaker_session_ids, true)); ?>
+		<div id="<?php echo $taxonomy; ?>-cur" class="tabs-panel">
+		<?php
+		    $name = 'session_list';
+		    echo "<input type='hidden' name='{$name}[]' value='0' />"; // Allows for an empty term set to be sent. 0 is an invalid Term ID and will be ignored by empty() checks.
+		    ?>
+				<ul id="<?php echo $taxonomy; ?>checklist" data-wp-lists="list:<?php echo $taxonomy?>" class="categorychecklist form-no-clear">
+				<?php 
+				$label_max = 25;
+				//show selected speakers first.
+				foreach($wp_session_list_all as $session_id => $session_label) {
+					if(in_array($session_id, $speaker_session_ids)) {
+						//truncate label
+						$label_length = strlen($session_label);				
+						$session_label = substr($session_label, 0, $label_max);
+						if ($label_length > $label_max) $session_label .= "...";
+
+						echo("<li id=\"speaker-{$session_id}\" class=\"popular-category\"><label><input value=\"{$session_id}\" type=\"checkbox\" name=\"{$name}[]\" id=\"in-speaker-{$session_id}\" checked=\"checked\"> {$session_label}</label></li>\n");
+					}
+				}
+
+				//non-selected speakers next.
+				foreach($wp_session_list as $session_id => $session_label) {
+					if(!in_array($session_id, $speaker_session_ids)) {
+						//truncate label
+						$label_length = strlen($session_label);				
+						$session_label = substr($session_label, 0, $label_max);
+						if ($label_length > $label_max) $session_label .= "...";
+
+						echo("<li id=\"speaker-{$session_id}\" class=\"popular-category\"><label><input value=\"{$session_id}\" type=\"checkbox\" name=\"{$name}[]\" id=\"in-speaker-{$session_id}\"> {$session_label}</label></li>\n");
+					}
+				}
+
+				?>
+					<?php //wp_terms_checklist($post->ID, array( 'taxonomy' => $taxonomy, 'popular_cats' => $popular_ids ) ) ?>
+				</ul>
+		</div>
+		<div id="<?php echo $taxonomy; ?>-all" class="tabs-panel"  style="display: none;">
+				<?php
+
+		    echo "<input type='hidden' name='{$name}[]' value='0' />"; // Allows for an empty term set to be sent. 0 is an invalid Term ID and will be ignored by empty() checks.
+		    ?>
+				<ul id="<?php echo $taxonomy; ?>checklist" data-wp-lists="list:<?php echo $taxonomy?>" class="categorychecklist form-no-clear">
+				<?php 
+				$label_max = 25;
+				//show selected speakers first.
+				foreach($wp_session_list_all as $session_id => $session_label) {
+					if(in_array($session_id, $speaker_session_ids)) {
+						//truncate label
+						$label_length = strlen($session_label);				
+						$session_label = substr($session_label, 0, $label_max);
+						if ($label_length > $label_max) $session_label .= "...";
+
+						echo("<li id=\"speaker-{$session_id}\" class=\"popular-category\"><label><input value=\"{$session_id}\" type=\"checkbox\" name=\"{$name}[]\" id=\"in-speaker-{$session_id}\" checked=\"checked\"> {$session_label}</label></li>\n");
+					}
+				}
+
+				//non-selected speakers next.
+				foreach($wp_session_list_all as $session_id => $session_label) {
+					if(!in_array($session_id, $speaker_session_ids)) {
+						//truncate label
+						$label_length = strlen($session_label);				
+						$session_label = substr($session_label, 0, $label_max);
+						if ($label_length > $label_max) $session_label .= "...";
+
+						echo("<li id=\"speaker-{$session_id}\" class=\"popular-category\"><label><input value=\"{$session_id}\" type=\"checkbox\" name=\"{$name}[]\" id=\"in-speaker-{$session_id}\"> {$session_label}</label></li>\n");
+					}
+				}
+
+				?>
+					
+				</ul>
+		</div>
+
+	</div>
+<?php
+
 }
+
 
 add_action('save_post', 'add_speaker_fields', 10, 2);
 function add_speaker_fields($speaker_id, $speaker) {
@@ -125,6 +243,23 @@ function add_speaker_fields($speaker_id, $speaker) {
     if(isset($_POST['speaker_bio_min']) && $_POST['speaker_bio_min'] != '') {
       update_post_meta($speaker_id, 'speaker_bio_min', $_POST['speaker_bio_min']);
     }
+	if(isset($_POST['session_list']) && $_POST['session_list'] != '') {
+		$old_speaker_session_ids = explode(",",get_post_meta( $speaker_id, '_speaker_sessions', true));
+
+		$wp_speaker_sessions = array();
+		foreach ($_POST['session_list'] as $session_term_id) {
+			//currently checked sessions
+			$wp_speaker_session_counts = array_count_values($_POST['session_list']);
+			if(($session_term_id != 0) && (in_array($session_term_id, $old_speaker_session_ids)) && ($wp_speaker_session_counts[$session_term_id] == 2)) {
+				$wp_speaker_sessions[] = $session_term_id;
+			} elseif(($session_term_id != 0) && (!in_array($session_term_id, $old_speaker_session_ids)) ) {
+				$wp_speaker_sessions[] = $session_term_id;
+			}   
+		}
+
+	$wp_speaker_sessions_list = join(',', array_unique($wp_speaker_sessions));
+	update_post_meta($speaker_id, '_speaker_sessions',$wp_speaker_sessions_list);
+	}
 
 	if(isset($_POST['speaker_twitter'])) {
       update_post_meta($speaker_id, 'twitter', $_POST['speaker_twitter']);
