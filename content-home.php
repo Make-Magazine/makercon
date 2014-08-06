@@ -15,8 +15,39 @@
   <div class="entry-content">
   <div class="row">
     <div class="col-md-8">
-      <h2 class="subtitle">Live from MakerCon Bay Area</h2>
+      <h2 class="subtitle">Live from MakerCon Bay Area 2014</h2>
+
+
+
+
+<!-- Button trigger modal -->
+<img class="responsive" src="http://make-cdn.s3.amazonaws.com/make/makercon/makercon-BA2014-jay-silver.jpg" data-toggle="modal" data-target="#myModal"/>
+
+<!-- Modal -->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+      </div>
+      <div class="modal-body">
         <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Save changes</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+
+
+
+
+
+
         <div style="clear:both;"></div>
       <div style="text-align: justify; margin-top: 20px;">
         <p><strong>MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz </strong>, scenester meggings farm-to-table YOLO Cosby sweater normcore. Small batch master cleanse distillery, artisan mumblecore DIY sriracha PBR Vice polaroid.</p>

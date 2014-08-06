@@ -6212,7 +6212,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: fbvqgndbagbold, helvetica, sans-serif;
+  font-family: fbvqgndbagbold, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
   color: #ed1b24;
   font-weight: bold;
 }
@@ -6360,7 +6360,7 @@ article ul li {
   border: none;
 }
 #masthead #site-navigation ul li {
-  font-family: fbvqgndbagbold, helvetica, sans-serif;
+  font-family: fbvqgndbagbold, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
   text-transform: uppercase;
   font-size: 27px;
   margin: 0px;
@@ -6397,7 +6397,7 @@ footer ul li {
   list-style-type: none;
   padding-bottom: 5px;
   margin-bottom: 5px;
-  font-family: fbvqgndbagbold, helvetica, sans-serif;
+  font-family: fbvqgndbagbold, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
   font-size: 24px;
   font-weight: bold;
   color: #145a60;
@@ -6433,7 +6433,7 @@ footer ul li a:visited {
 button.button,
 a.button {
   font-size: 20px;
-  font-family: "alternate-gothic-no-3-d-n4", fbb0kysgnjregular, helvetica, sans-serif;
+  font-family: fbb0kysgnjregular, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
   text-transform: uppercase;
   color: #fff;
   padding: 10px 15px;
@@ -6530,7 +6530,7 @@ a.button:active {
   padding: 10px 10px 10px 0px;
   width: 120px;
   text-align: left;
-  font-family: fbvqgndbagbold, helvetica, sans-serif;
+  font-family: fbvqgndbagbold, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
 }
 .table tbody tr td.break {
   background-color: #63ABED;
@@ -6556,8 +6556,11 @@ a.button:active {
 .sponsorship ul li:before {
   content: "\00BB \0020";
 }
+.modal-footer button {
+  margin-top: 20px;
+}
 body.home h2.subtitle {
-  font-family: "alternate-gothic-no-3-d-n4", fbb0kysgnjregular, helvetica, sans-serif !important;
+  font-family: fbb0kysgnjregular, "alternate-gothic-no-3-d-n4", helvetica, sans-serif !important;
   color: #02394f !important;
   font-size: 34px;
   line-height: 40px;
