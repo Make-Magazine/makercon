@@ -85,7 +85,7 @@ function makercon_scripts() {
 	// wp_enqueue_style( 'makercon-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'makercon-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '20120206', true );
+	wp_enqueue_script( 'makercon-bootstrap', get_stylesheet_directory_uri() . '/js/bootstrap.min.js', array( 'jquery' ), false, true );
 
 	wp_enqueue_script( 'makercon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
 
