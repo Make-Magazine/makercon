@@ -3,7 +3,7 @@
 add_action('admin_menu', 'featured_speakers_order');
 
 function featured_speakers_order() {
-  add_submenu_page('edit.php?post_type=speakers', 'Featured Order', 'Featured Order', 'manage_options', 'featured-speakers-order', 'featured_speakers_order_callback');
+  add_submenu_page('edit.php?post_type=speaker', 'Featured Order', 'Featured Order', 'manage_options', 'featured-speakers-order', 'featured_speakers_order_callback');
 }
 
 function featured_speakers_order_callback() {
@@ -29,7 +29,7 @@ function featured_speakers_order_callback() {
   echo '<div class="wrap"><div id="icon-tools" class="icon32"></div>';
   echo '<h2>Featured Speakers Order</h2>';
 
-  $speakers = new WP_Query('post_type=speakers');
+  $speakers = new WP_Query('post_type=speaker');
   ?>
   <form method="POST" action="">
     <table>
