@@ -6231,6 +6231,7 @@ h3 {
 p {
   font-family: fbb0kysgnjregular, helvetica, sans-serif;
   font-size: #02394f;
+  font-size: 14px;
   line-height: 20px;
   font-color: #02394F;
 }
@@ -6559,6 +6560,16 @@ a.button:active {
 .modal-footer button {
   margin-top: 20px;
 }
+.video-box {
+  border: 3px solid #02394f;
+  margin-bottom: 20px;
+}
+h2.subtitle {
+  font-family: fbb0kysgnjregular, "alternate-gothic-no-3-d-n4", helvetica, sans-serif !important;
+  color: #02394f !important;
+  font-size: 34px;
+  line-height: 40px;
+}
 body.home h2.subtitle {
   font-family: fbb0kysgnjregular, "alternate-gothic-no-3-d-n4", helvetica, sans-serif !important;
   color: #02394f !important;
@@ -6581,7 +6592,7 @@ body.home .speaker-box-name {
   font-weight: bold;
   text-transform: uppercase;
 }
-body.home .speaker-box-bio {
+body.home .speaker-box-title {
   font-size: 14px;
   line-height: 18px;
 }

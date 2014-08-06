@@ -21,7 +21,7 @@
 
 
 <!-- Button trigger modal -->
-<img class="responsive" src="http://make-cdn.s3.amazonaws.com/make/makercon/makercon-BA2014-jay-silver.jpg" data-toggle="modal" data-target="#myModal"/>
+<img class="img-responsive" src="http://make-cdn.s3.amazonaws.com/make/makercon/makercon-BA2014-jay-silver.jpg" data-toggle="modal" data-target="#myModal"/>
 
 <!-- Modal -->
 <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
@@ -29,7 +29,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">Modal title</h4>
+        <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
       </div>
       <div class="modal-body">
         <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
@@ -42,18 +42,12 @@
   </div>
 </div>
 
-
-
-
-
-
-
         <div style="clear:both;"></div>
       <div style="text-align: justify; margin-top: 20px;">
         <p><strong>MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz </strong>, scenester meggings farm-to-table YOLO Cosby sweater normcore. Small batch master cleanse distillery, artisan mumblecore DIY sriracha PBR Vice polaroid.</p>
       </div>
       <div style="text-align: center; margin-top: 20px;">
-        <a class="button" href="/speakers">More Videos from MakerCon</a>
+        <a class="button" href="/videos">More Videos from MakerCon</a>
       </div>
     </div>
     <div class="col-md-4">
@@ -83,7 +77,7 @@
         <p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
       </div>
       <div class="col-md-4">
-        <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="400">Tweets about "#makercon"</a>
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="450">Tweets about "#makercon"</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
       </div>
     </div>
