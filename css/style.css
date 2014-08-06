@@ -6257,9 +6257,6 @@ article ul li {
   background-color: transparent;
   border-color: none;
 }
-#site-navigation li {
-  float: left !important;
-}
 #site-navigation li.dropdown:hover > ul.dropdown-menu {
   display: block;
 }
