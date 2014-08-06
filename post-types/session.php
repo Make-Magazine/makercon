@@ -93,66 +93,11 @@ function display_session_subtitle() {
 
 function display_session_timedate_meta_box($session) {
 		$session_start = get_post_meta( $session->ID, '_session_start', true );
-		$session_start_date = ($session_start != '') ? date("m/d/y g:i a", $session_start_date) : '';
-
-		$session_end = get_post_meta( $session->ID, '_session_end', true );
-		$session_end_date = ($session_end != '') ? date("m/d/y g:i a", $session_end_date) : '';
-	?><table style="width: 100%">
-		<tr>
-			<td>Session Start</td>
-		</tr>
-		<tr>
-			<td><input style="width: 100%" type="text" name="session_start" class="mc_timepicker" id="session_start" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="Start Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_start_date; ?>"></td>
-		</tr>
-		<tr>
-			<td>Session End</td>
-		</tr>
-		<tr>
-		<td><input style="width: 100%" type="text" name="session_end" class="mc_timepicker" id="session_end" data-picker="select" data-date_format="m/d/y" data-time_format="h:mm tt" data-show_week_number="false" title="End Time" placeholder="m/d/y h:mm tt" value="<?php echo $session_end_date; ?>"></td>
-		  </tr>
-		</table>
-
-	<?php
-    global $post, $typenow, $pagenow;
-    if( in_array($typenow, array('post', 'page','session') ) && $pagenow == 'post.php' )  {
-        ?><style type="text/css" id="session-editor-css">
-			#subtitle {
-				padding: 6px 6px;
-				font-size: 1.2em;
-
-				height: 1.7em;
-				width: 100%;
-				outline: 0;
-				margin: 0 0 12px 0;
-				background-color: #fff;
-			}
-
-		input#subtitle::-webkit-input-placeholder {
-			padding: 6px 0px;
-		}
-		input#subtitle::-moz-placeholder {
-			padding: 6px 0px;
-		}
-		input#subtitle:-moz-placeholder {
-			padding: 6px 0px;
-		}
-		input#subtitle:-ms-input-placeholder {
-			padding: 6px 0px;
-		}
-		</style>
-		<label class="screen-reader-text" id="title-prompt-text" for="subtitle"><?php echo apply_filters( 'enter_subtitle_here', __( 'Enter subtitle here' ), $post ); ?></label>
-	<input type="text" name="session_subtitle" size="30" value="<?php echo esc_attr(htmlspecialchars( get_post_meta($post->ID, '_session_subtitle', true) )); ?>" id="subtitle" placeholder="<?php echo apply_filters( 'enter_subtitle_here', __( 'Enter subtitle here' ), $post ); ?>" autocomplete="off" />
-		<?php
-    }
-}
-
-function display_session_timedate_meta_box($session) {
-		$session_start = get_post_meta( $session->ID, '_session_start', true );
-		$session_start_date = ($session_start != '') ? date("m/d/y g:i a", $session_start_date) : '';
+		$session_start_date = (($session_start != '')&&($session_start != 0)) ? date("m/d/y g:i a", $session_start) : '';
 
 
 		$session_end = get_post_meta( $session->ID, '_session_end', true );
-		$session_end_date = ($session_end != '') ? date("m/d/y g:i a", $session_end_date) : '';
+		$session_end_date = (($session_end != '')&&($session_start != 0)) ? date("m/d/y g:i a", $session_end) : '';
 	?><table style="width: 100%">
 		<tr>
 			<td>Session Start</td>
