@@ -37,7 +37,6 @@ get_header(); ?>
 					        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
 					      </div>
 					      <div class="modal-footer">
-					        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 					      </div>
 					    </div>
 					  </div>
@@ -68,7 +67,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12"  width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -89,7 +87,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/GzsA_MBk1lE" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -110,7 +107,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/AjtiUtNfG0o" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -134,7 +130,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/y1-yFvAgzDk" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -155,7 +150,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/h81b0dxMAsc" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -176,7 +170,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/2gbCxL-x1jU" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -200,7 +193,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/IhF6wDmwAmk" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -221,7 +213,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/KKaysCbJlxg" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
@@ -242,7 +233,6 @@ get_header(); ?>
 				        <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/Ca6GpNbz-_A" frameborder="0" allowfullscreen></iframe>
 				      </div>
 				      <div class="modal-footer">
-				        <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
 				      </div>
 				    </div>
 				  </div>
