@@ -1,72 +1,61 @@
 <?php
-/**
- * The Header for our theme.
- *
- * Displays all of the <head> section and everything up till <div id="content">
- *
- * @package makercon
- */
-?><!DOCTYPE html>
+  /**
+   * The Header for our theme.
+   *
+   * Displays all of the <head> section and everything up till <div id="content">
+   *
+   * @package makercon
+   */
+  ?><!DOCTYPE html>
 <html <?php language_attributes(); ?>>
-<head>
-<meta charset="<?php bloginfo( 'charset' ); ?>">
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title><?php wp_title( '|', true, 'right' ); ?></title>
-<link rel="profile" href="http://gmpg.org/xfn/11">
-<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-
-<script type="text/javascript" src="//use.typekit.net/brg6nyz.js"></script>
-<script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-
-<?php wp_head(); ?>
-</head>
-
-<body <?php body_class(); ?>>
-<div id="page" class="hfeed site container">
-  <?php do_action( 'before' ); ?>
-  <header id="masthead" class="site-header row" role="banner">
-    <div class="site-branding col-md-3">
-      <?php if ( is_front_page() || is_home() ) : ?>
-
-              <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
-
-
-      <?php else : ?>
-        <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
-      <?php endif; ?>
-    </div>
-
-
-    <nav id="site-navigation" class="navbar navbar-default col-md-7" role="navigation">
-
-      <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right', 'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
-    </nav><!-- #site-navigation -->
-
+  <head>
+    <meta charset="<?php bloginfo( 'charset' ); ?>">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <link rel="profile" href="http://gmpg.org/xfn/11">
+    <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
+    <script type="text/javascript" src="//use.typekit.net/brg6nyz.js"></script>
+    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <?php wp_head(); ?>
+  </head>
+  <body <?php body_class(); ?>>
+    <div id="page" class="hfeed site container">
+      <?php do_action( 'before' ); ?>
+      <header id="masthead" class="site-header" role="banner">
+        <div class="row">
+          <div class="site-branding col-md-3">
+            <?php if ( is_front_page() || is_home() ) : ?>
+            <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+            <?php else : ?>
+            <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+            <?php endif; ?>
+          </div>
+          <nav id="site-navigation" class="navbar navbar-default col-md-7" role="navigation">
+            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right', 'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
+          </nav>
+          <!-- #site-navigation -->
           <div class="social col-md-2">
-        <?php
+            <?php
+              if ( function_exists( 'sharing_display' ) ) {
+                  sharing_display( '', true );
+              }
 
-        if ( function_exists( 'sharing_display' ) ) {
-            sharing_display( '', true );
-        }
-
-        if ( class_exists( 'Jetpack_Likes' ) ) {
-            $custom_likes = new Jetpack_Likes;
-            echo $custom_likes->post_likes( '' );
-        }
-        ?>
-      </div>
-
-  </header><!-- #masthead -->
-
+              if ( class_exists( 'Jetpack_Likes' ) ) {
+                  $custom_likes = new Jetpack_Likes;
+                  echo $custom_likes->post_likes( '' );
+              }
+              ?>
+          </div>
+        </div>
+      </header>
+      <!-- #masthead -->
       <?php if ( is_front_page() || is_home() ) : ?>
-
-</div>
-<div class="clearfix"></div>
-<div class="photo-bar">
- <?=do_shortcode('[home-slider]');?>
-</div>
-<div id="" class="hfeed site container">
-  <?php endif; ?>
-
-
-  <div id="content" class="site-content row">
+    <div class="clearfix"></div>
+    <div class="photo-bar">
+      <?=do_shortcode('[home-slider]');?>
+    </div>
+    <div id="" class="hfeed site container">
+    <?php endif; ?>
+    <div id="content" class="site-content row">

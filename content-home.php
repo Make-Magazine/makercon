@@ -8,8 +8,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
   <div class="row">
     <div class="col-md-12">
-      <h1 style="text-align:center;margin-bottom:25px">What is MakerCon?</h1>
-      <p class="intro"><strong>MakerCon is a conference by and for makers.</strong> The maker movement is providing new insights into local and global manufacturing, design, workforce development, education and even creative culture. MakerCon provides valuable, practical insights into the impact of makers and making on education, the economy and emerging markets. </p>
+      <p style="text-align:center;margin-bottom:25px;font-size:40px;text-transform:uppercase;color:#02394F">By <strong>Makers</strong> for <strong>Makers</strong></p>
     </div>
   </div>
   <div class="entry-content">
