@@ -6286,34 +6286,43 @@ article ul li {
 #masthead h1 {
   margin: 0 !important;
 }
-#masthead .social {
-  margin-bottom: 20px;
-  height: 22px;
-  display: block;
-  float: right !important;
-  margin-left: 0px;
-}
 #masthead .social .sharedaddy {
   border: none;
 }
 #masthead .social .sharedaddy .sd-title {
   display: none;
 }
-#masthead .social .sharedaddy .sd-content {
-  margin: 15px 0 0 0 !important;
-  height: 22px !important;
+#masthead .social .sharedaddy li.share-linkedin a span,
+#masthead .social .sharedaddy li.share-google-plus-1,
+#masthead .social .sharedaddy li.share-facebook a span,
+#masthead .social .sharedaddy li.share-twitter a span {
+  display: none !important;
 }
-#masthead .social .sharedaddy .sd-content ul {
-  margin: 0px;
-  height: 22px;
+#masthead .social .sharedaddy .share-linkedin {
+  background-image: url('../img/social-sprite.png');
+  background-position: -116px 0px;
+  background-repeat: no-repeat;
 }
-#masthead .social .sharedaddy .sd-content ul li {
-  margin-left: 3px !important;
-  height: 23px !important;
+#masthead .social .sharedaddy .share-google-plus-1 {
+  background-image: url('../img/social-sprite.png');
+  background-position: -78px 0px;
+  background-repeat: no-repeat;
 }
-#masthead .social .sharedaddy .sd-content ul li a {
-  margin: 5px 0 0 0;
-  padding: 0px !important;
+#masthead .social .sharedaddy .share-facebook {
+  background-image: url('../img/social-sprite.png');
+  background-position: -39px 0px;
+  background-repeat: no-repeat;
+}
+#masthead .social .sharedaddy .share-twitter {
+  background-image: url('../img/social-sprite.png');
+  background-position: 1px 0px;
+  background-repeat: no-repeat;
+}
+#masthead .social .sharedaddy .share-linkedin:hover,
+#masthead .social .sharedaddy .share-google-plus-1:hover,
+#masthead .social .sharedaddy .share-facebook:hover,
+#masthead .social .sharedaddy .share-twitter:hover {
+  opacity: 0.3;
 }
 #masthead .social .sharedaddy a.sd-button {
   border: none !important;
