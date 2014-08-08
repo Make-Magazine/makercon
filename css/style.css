@@ -6305,15 +6305,14 @@ article ul li {
 }
 #masthead .social .sharedaddy .sd-content ul {
   margin: 0px;
-  height: 22px;
+  height: 23px;
 }
 #masthead .social .sharedaddy .sd-content ul li {
-  font-size: 40px !important;
-  margin-left: 10px !important;
+  margin-left: 3px !important;
   height: 23px !important;
 }
 #masthead .social .sharedaddy .sd-content ul li a {
-  margin: 20px 0 0 0;
+  margin: 0px !important;
   padding: 0px !important;
 }
 #masthead .social .sharedaddy li.share-linkedin a.sd-button > span,
@@ -6323,21 +6322,25 @@ article ul li {
   display: none !important;
 }
 #masthead .social .sharedaddy .share-linkedin {
+  height: 23px !important;
   background-image: url('../img/social-sprite.png');
   background-position: -116px 0px;
   background-repeat: no-repeat;
 }
 #masthead .social .sharedaddy .share-google-plus-1 {
+  height: 23px !important;
   background-image: url('../img/social-sprite.png');
   background-position: -78px 0px;
   background-repeat: no-repeat;
 }
 #masthead .social .sharedaddy .share-facebook {
+  height: 23px !important;
   background-image: url('../img/social-sprite.png');
   background-position: -39px 0px;
   background-repeat: no-repeat;
 }
 #masthead .social .sharedaddy .share-twitter {
+  height: 23px !important;
   background-image: url('../img/social-sprite.png');
   background-position: 1px 0px;
   background-repeat: no-repeat;
