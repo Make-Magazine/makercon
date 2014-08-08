@@ -6308,11 +6308,12 @@ article ul li {
   height: 22px;
 }
 #masthead .social .sharedaddy .sd-content ul li {
-  margin-left: 3px !important;
+  font-size: 40px !important;
+  margin-left: 10px !important;
   height: 23px !important;
 }
 #masthead .social .sharedaddy .sd-content ul li a {
-  margin: 25px 0 0 0;
+  margin: 20px 0 0 0;
   padding: 0px !important;
 }
 #masthead .social .sharedaddy li.share-linkedin a.sd-button > span,
