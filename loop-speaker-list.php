@@ -5,8 +5,8 @@
    * @package makercon
    */
 
-	$wp_speaker_event_slug = get_post_meta(get_the_ID, 'speaker_event', true );
-	$wp_speaker_posts = get_posts(array('post_type'=>'speaker','event' => $wp_speaker_event_slug, 'posts_per_page' => -1 ));
+	$wp_speaker_event_slug = get_post_meta($post->ID, 'speaker_event', true );
+	$wp_speaker_posts = get_posts(array('post_type'=>'speaker','event' => $wp_speaker_event_slug, 'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => -1 ));
 	foreach($wp_speaker_posts as $speaker_post) {
 		setup_postdata($speaker_post); ?>
 		<div class="row">
