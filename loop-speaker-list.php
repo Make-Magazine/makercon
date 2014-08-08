@@ -6,7 +6,7 @@
    */
 
 	$wp_speaker_event_slug = get_post_meta(get_the_ID, 'speaker_event', true );
-	$wp_speaker_posts = get_posts(array('post_type'=>'speaker','event' => $wp_speaker_event_slug ));
+	$wp_speaker_posts = get_posts(array('post_type'=>'speaker','event' => $wp_speaker_event_slug, 'posts_per_page' => -1 ));
 	foreach($wp_speaker_posts as $speaker_post) {
 		setup_postdata($speaker_post); ?>
 		<div class="row">
@@ -21,12 +21,12 @@
 			<?php 
 				$_twitter = get_post_meta($speaker_post->ID, 'twitter', true );
 				if(($_twitter !== false) && ($_twitter != '')) {
-					echo("<b>Twitter</b>: <a href=\"http://twitter.com/{$_twitter}\">@{$_twitter}</a><br />\n");
+						echo("<b><a href=\"http://twitter.com/{$_twitter}\" target=\"_blank\">Twitter</a></b><br />\n");
 				} ?>
 			<?php 
 				$_website = get_post_meta($speaker_post->ID, 'website', true );
 				if(($_website !== false) && ($_website != '')) {
-					echo("<b>Website</b>: <a href=\"{$_website}\">{$_website}</a><br />\n");
+					echo("<b><a href=\"{$_website}\" target=\"_blank\">Website</a></b><br />\n");
 				} ?>
 			</div>
 		</div><!-- speaker-<?php echo($speaker_post->ID); ?> --><hr />
