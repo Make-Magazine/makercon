@@ -6315,10 +6315,10 @@ article ul li {
   margin: 25px 0 0 0;
   padding: 0px !important;
 }
-#masthead .social .sharedaddy li.share-linkedin a.sd-button > span,
-#masthead .social .sharedaddy li.share-google-plus-1 a.sd-button > span,
-#masthead .social .sharedaddy li.share-facebook a.sd-button > span,
-#masthead .social .sharedaddy li.share-twitter a.sd-button > span {
+#masthead .social .sharedaddy li.share-linkedin a span::before,
+#masthead .social .sharedaddy li.share-google-plus-1 a span::before,
+#masthead .social .sharedaddy li.share-facebook a span::before,
+#masthead .social .sharedaddy li.share-twitter a span::before {
   display: none;
 }
 #masthead .social .sharedaddy .share-linkedin {
