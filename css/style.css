@@ -6405,6 +6405,16 @@ footer ul li a:link,
 footer ul li a:visited {
   color: #145a60;
 }
+footer form input {
+  width: 260px;
+  height: 30px;
+}
+@media (max-width: 991px) {
+  footer p,
+  footer form {
+    text-align: center;
+  }
+}
 .widget {
   border-top: 8px solid #00ACCD;
   padding-top: 5px;

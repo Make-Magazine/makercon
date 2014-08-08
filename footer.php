@@ -30,7 +30,7 @@
 						<input id="fieldName" name="cm-name" type="text" />
 <br />
 
-					<p style="margin-bottom:0px;"><label for="fieldEmail">Email </label></p>
+					<p style="margin:5px 0 0 0;"><label for="fieldEmail">Email </label></p>
 						<input id="fieldEmail" name="cm-ttlusi-ttlusi" type="email" required />
 
 					<div style="margin:20px auto !important;">

@@ -56,6 +56,5 @@
     <div class="photo-bar">
       <?=do_shortcode('[home-slider]');?>
     </div>
-    <div id="" class="hfeed site container">
     <?php endif; ?>
     <div id="content" class="site-content row">
