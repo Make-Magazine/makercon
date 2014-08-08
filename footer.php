@@ -24,7 +24,7 @@
 			</div>
 			<div class="col-md-4">
 				<h2>Track the Maker Market!</h2>
-				<p>Keep up with the impact of makers on business and technology from new hardware to incubators to the hottest startups: get the weekly Maker Pro Newsletter from the editors of MAKE magazine.</p>
+				<p>Get the weekly Maker Pro Newsletter from the editors of MAKE magazine.</p>
 				<form action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
 					<p style="margin-bottom:0px;"><label for="fieldName">Name </label></p>
 						<input id="fieldName" name="cm-name" type="text" />
