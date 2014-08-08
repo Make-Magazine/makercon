@@ -57,7 +57,7 @@
 				</ul>
 			</div>
 			<div class="col-md-4">
-				<h2>Track the Maker Market!</h2>
+				<h2>Track the Maker Movement</h2>
 				<p>Get the weekly Maker Pro Newsletter from the editors of MAKE magazine.</p>
 				<form action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
 					<p style="margin-bottom:0px;"><label for="fieldName">Name </label></p>

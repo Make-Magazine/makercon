@@ -51,7 +51,7 @@
             <div class="container">
 
         <div class="col-md-4 col-lg-4 hidden-sm hidden-xs text-center">
-          <img src="http://staging.makercon.com/wp-content/uploads/2014/08/logo-rocket.png" class="rocket">
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-rocket.png" class="rocket img-responsive">
         </div>
         <div class="col-md-8 text-center slider">
                     <?=do_shortcode('[home-slider]');?>
