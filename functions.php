@@ -56,6 +56,9 @@ function makercon_setup() {
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
+
+	// Add image size for speakers
+	add_image_size( 'makercon-thumbnail', 270, 270, false );
 }
 endif; // makercon_setup
 add_action( 'after_setup_theme', 'makercon_setup' );
