@@ -37,16 +37,10 @@
           </nav>
           <!-- #site-navigation -->
           <div class="social col-md-2">
-            <?php
-              if ( function_exists( 'sharing_display' ) ) {
-                  sharing_display( '', true );
-              }
-
-              if ( class_exists( 'Jetpack_Likes' ) ) {
-                  $custom_likes = new Jetpack_Likes;
-                  echo $custom_likes->post_likes( '' );
-              }
-              ?>
+              <a class="sprite-facebook" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
+              <a class="sprite-twitter" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
+              <a class="sprite-google-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
+              <a class="sprite-linkedin" href="https://www.linkedin.com/cws/share?isFramed=false&url=http%3A%2F%2Fmakercon%2Ecom%2F&token=" target="_blank"></a>
           </div>
         </div>
       </header>

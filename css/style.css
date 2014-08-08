@@ -6287,79 +6287,38 @@ article ul li {
   margin: 0 !important;
 }
 #masthead .social {
-  margin-bottom: 20px;
-  height: 22px;
+  padding: 0px!important;
+}
+#masthead .social a {
+  margin: 21px 0 0 24px;
+  width: 23px;
+  height: 23px;
   display: block;
-  float: right !important;
-  margin-left: 0px;
+  float: right;
 }
-#masthead .social .sharedaddy {
-  border: none;
-}
-#masthead .social .sharedaddy .sd-title {
-  display: none;
-}
-#masthead .social .sharedaddy .sd-content {
-  margin: 15px 0 0 0 !important;
-  height: 22px !important;
-}
-#masthead .social .sharedaddy .sd-content ul {
-  margin: 0px;
+#masthead .social .sprite-facebook {
+  background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+  background-position: 0 0;
+  width: 23px;
   height: 23px;
 }
-#masthead .social .sharedaddy .sd-content ul li {
-  margin-left: 3px !important;
-  height: 23px !important;
-}
-#masthead .social .sharedaddy .sd-content ul li a {
-  margin: 0px !important;
-  padding: 0px !important;
-}
-#masthead .social .sharedaddy li.share-linkedin a.sd-button > span,
-#masthead .social .sharedaddy li.share-google-plus-1 a.sd-button > span,
-#masthead .social .sharedaddy li.share-facebook a.sd-button > span,
-#masthead .social .sharedaddy li.share-twitter a.sd-button > span {
-  display: none !important;
-}
-#masthead .social .sharedaddy .share-linkedin {
-  height: 23px !important;
-  background-image: url('../img/social-sprite.png');
-  background-position: -116px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-google-plus-1 {
-  height: 23px !important;
-  background-image: url('../img/social-sprite.png');
-  background-position: -78px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-facebook {
-  height: 23px !important;
-  background-image: url('../img/social-sprite.png');
-  background-position: -39px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-twitter {
-  height: 23px !important;
-  background-image: url('../img/social-sprite.png');
-  background-position: 1px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-linkedin:hover,
-#masthead .social .sharedaddy .share-google-plus-1:hover,
-#masthead .social .sharedaddy .share-facebook:hover,
-#masthead .social .sharedaddy .share-twitter:hover {
-  opacity: 0.3;
-}
-#masthead .social .sharedaddy a.sd-button {
-  border: none !important;
-  background: none;
-  height: 22px;
-  box-shadow: none;
+#masthead .social .sprite-google-plus {
+  background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+  background-position: 0 -73px;
   width: 23px;
+  height: 23px;
 }
-#masthead .social .sharedaddy .sd-block {
-  border: none;
+#masthead .social .sprite-linkedin {
+  background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+  background-position: 0 -146px;
+  width: 23px;
+  height: 23px;
+}
+#masthead .social .sprite-twitter {
+  background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+  background-position: 0 -219px;
+  width: 23px;
+  height: 23px;
 }
 #masthead #site-navigation ul li {
   font-family: fbvqgndbagbold, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
