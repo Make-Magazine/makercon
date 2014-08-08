@@ -6312,40 +6312,8 @@ article ul li {
   height: 23px !important;
 }
 #masthead .social .sharedaddy .sd-content ul li a {
-  margin: 25px 0 0 0;
+  margin: 5px 0 0 0;
   padding: 0px !important;
-}
-#masthead .social .sharedaddy li.share-linkedin a span::before,
-#masthead .social .sharedaddy li.share-google-plus-1 a span::before,
-#masthead .social .sharedaddy li.share-facebook a span::before,
-#masthead .social .sharedaddy li.share-twitter a span::before {
-  display: none;
-}
-#masthead .social .sharedaddy .share-linkedin {
-  background-image: url('../img/social-sprite.png');
-  background-position: -116px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-google-plus-1 {
-  background-image: url('../img/social-sprite.png');
-  background-position: -78px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-facebook {
-  background-image: url('../img/social-sprite.png');
-  background-position: -39px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-twitter {
-  background-image: url('../img/social-sprite.png');
-  background-position: 1px 0px;
-  background-repeat: no-repeat;
-}
-#masthead .social .sharedaddy .share-linkedin:hover,
-#masthead .social .sharedaddy .share-google-plus-1:hover,
-#masthead .social .sharedaddy .share-facebook:hover,
-#masthead .social .sharedaddy .share-twitter:hover {
-  opacity: 0.3;
 }
 #masthead .social .sharedaddy a.sd-button {
   border: none !important;
