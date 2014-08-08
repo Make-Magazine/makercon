@@ -27,7 +27,6 @@
         <div class="row">
           <div class="site-branding col-md-3">
             <?php if ( is_front_page() || is_home() ) : ?>
-            <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
             <?php else : ?>
             <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
             <?php endif; ?>
@@ -44,11 +43,24 @@
           </div>
         </div>
       </header>
+      </div>
       <!-- #masthead -->
       <?php if ( is_front_page() || is_home() ) : ?>
     <div class="clearfix"></div>
-    <div class="photo-bar">
-      <?=do_shortcode('[home-slider]');?>
+   <div class="slider-wrap row"><!-- desktop logo -->
+            <div class="container">
+
+        <div class="col-md-4 col-lg-4 hidden-sm hidden-xs text-center">
+          <img src="http://staging.makercon.com/wp-content/uploads/2014/08/logo-rocket.png" class="rocket">
+        </div>
+        <div class="col-md-8 text-center slider">
+                    <?=do_shortcode('[home-slider]');?>
+          </div>
+        </div>
+
     </div>
+
     <?php endif; ?>
+        <div class="container">
+
     <div id="content" class="site-content row">
