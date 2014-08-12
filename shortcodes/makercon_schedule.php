@@ -14,7 +14,6 @@ function makercon_schedule_shortcode($atts){
 		),
 		'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => -1 ));
 
-	echo("Posts: <pre>".print_r($wp_sessions_posts, true)."</pre><br>");
 	ob_start();
 	?>		
 	<!-- SCHEDULE PAGE CONTENT (ROUGH DRAFT OF HTML, CONTENT IN CAPS  IS WHAT I ASSUME IS DYNAMIC)-->
