@@ -109,7 +109,8 @@ function display_speaker_details_meta_box($speaker) {
 
 
 function display_speakers_session_tags_meta_box($speaker, $box) {
-
+	
+	$defaults = array('taxonomy' => 'speakers_session');
 
 	if ( !isset($box['args']) || !is_array($box['args']) )
 		$args = array();
@@ -157,7 +158,6 @@ function display_speakers_session_tags_meta_box($speaker, $box) {
 
 		</ul>
 
-		<?php error_log(print_r($speaker_session_ids, true)); ?>
 		<div id="<?php echo $taxonomy; ?>-cur" class="tabs-panel">
 		<?php
 		    $name = 'session_list';
@@ -167,8 +167,9 @@ function display_speakers_session_tags_meta_box($speaker, $box) {
 				<?php
 				$label_max = 25;
 				//show selected speakers first.
-				foreach($wp_session_list_all as $session_id => $session_label) {
-					if(in_array($session_id, $speaker_session_ids)) {
+				foreach($speaker_session_ids as $session_id) {
+					if(array_key_exists($session_id, $wp_session_list_all)) {
+						$session_label = $wp_session_list_all[$session_id];
 						//truncate label
 						$label_length = strlen($session_label);
 						$session_label = substr($session_label, 0, $label_max);
@@ -203,8 +204,9 @@ function display_speakers_session_tags_meta_box($speaker, $box) {
 				<?php
 				$label_max = 25;
 				//show selected speakers first.
-				foreach($wp_session_list_all as $session_id => $session_label) {
-					if(in_array($session_id, $speaker_session_ids)) {
+				foreach($speaker_session_ids as $session_id) {
+					if(array_key_exists($session_id, $wp_session_list_all)) {
+						$session_label = $wp_session_list_all[$session_id];
 						//truncate label
 						$label_length = strlen($session_label);
 						$session_label = substr($session_label, 0, $label_max);
@@ -245,17 +247,21 @@ function add_speaker_fields($speaker_id, $speaker) {
     }
 	if(isset($_POST['session_list']) && $_POST['session_list'] != '') {
 		$old_speaker_session_ids = explode(",",get_post_meta( $speaker_id, '_speaker_sessions', true));
+		$wp_speaker_session_counts = array_count_values($_POST['session_list']);
 
 		$wp_speaker_sessions = array();
 		foreach ($_POST['session_list'] as $session_term_id) {
 			//currently checked sessions
-			$wp_speaker_session_counts = array_count_values($_POST['session_list']);
 			if(($session_term_id != 0) && (in_array($session_term_id, $old_speaker_session_ids)) && ($wp_speaker_session_counts[$session_term_id] == 2)) {
 				$wp_speaker_sessions[] = $session_term_id;
 			} elseif(($session_term_id != 0) && (!in_array($session_term_id, $old_speaker_session_ids)) ) {
 				$wp_speaker_sessions[] = $session_term_id;
+			} elseif(($session_term_id != 0) && (in_array($session_term_id, $old_speaker_session_ids)) && ($wp_speaker_session_counts[$session_term_id] == 1)) {
+				remove_speaker_from_session($speaker_id, $session_term_id);
 			}
 		}
+
+	add_speaker_to_sessions($speaker_id, $wp_speaker_sessions);
 
 	$wp_speaker_sessions_list = join(',', array_unique($wp_speaker_sessions));
 	update_post_meta($speaker_id, '_speaker_sessions',$wp_speaker_sessions_list);
@@ -282,7 +288,37 @@ function add_speaker_fields($speaker_id, $speaker) {
   }
 }
 
+function add_speaker_to_sessions($speaker_id = 0, $wp_speaker_sessions = array() ) {
+	
 
+	$wp_session_posts = get_posts(array('post_type'=>'session', 'post__in' => array_reverse($wp_speaker_sessions)));
+	foreach($wp_session_posts as $wp_session_post) {
+		$session_speaker_ids = get_post_meta($wp_session_post->ID, '_session_speakers', true);
+		$session_speakers = explode(",",$session_speaker_ids);
+		if(!in_array($speaker_id,$session_speakers)) $session_speakers[] = $speaker_id;
+		if($session_speakers[0] == '') unset($session_speakers[0]); //remove empty array[0]
+		$new_session_speaker_ids = join(",",$session_speakers);
+		if($new_session_speaker_ids != $session_speaker_ids) {
+			update_post_meta($wp_session_post->ID, '_session_speakers', $new_session_speaker_ids);
+		}
+	}
+	return;
+}
+
+function remove_speaker_from_session($speaker_id = 0, $session_id = 0 ) {
+
+	$session_speaker_ids = get_post_meta($session_id, '_session_speakers', true);
+	$session_speakers = explode(",",$session_speaker_ids);
+
+	if(($key = array_search($speaker_id, $session_speakers)) !== false) {
+		unset($session_speakers[$key]);
+		$new_session_speakers = join(",",$session_speakers);
+
+		update_post_meta($session_id, '_session_speakers', $new_session_speakers);
+		return true;
+	}
+		
+}
 function register_speaker_shortcodes() {
   add_shortcode('featured-speakers', 'featured_speakers_function');
 }
