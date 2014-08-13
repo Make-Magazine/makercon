@@ -25,6 +25,9 @@
 		        <a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214658&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
 		        <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/fusion-autodesk-sponsor-398.png" alt="Autodesk Logo" width="300px" style="width:300px;margin-top:30px;"   />
 		        </a>
+		        <a href="http://http://intel.com">
+			        <img style="margin-top:25px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100px"  />
+		        </a>
 		      </div>
 		      <div class="col-md-3">
 		        <h3 class="subtitle">Media Partner</h2>
