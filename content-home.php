@@ -43,7 +43,7 @@
 
         <div style="clear:both;"></div>
       <div style="text-align: justify; margin-top: 20px;">
-        <p><strong>MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz </strong>, scenester meggings farm-to-table YOLO Cosby sweater normcore. Small batch master cleanse distillery, artisan mumblecore DIY sriracha PBR Vice polaroid.</p>
+        <p><strong>MakerCon Bay Area, May 2014: Jay Silver on designing for "wild humans".</strong></p>
       </div>
       <div style="text-align: center; margin-top: 20px;">
         <a class="button" href="/videos">More Videos from MakerCon</a>
