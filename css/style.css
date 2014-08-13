@@ -6572,6 +6572,19 @@ h2.subtitle {
   font-size: 34px;
   line-height: 40px;
 }
+.google-maps {
+  position: relative;
+  padding-bottom: 25%;
+  margin-bottom: 30px;
+  overflow: hidden;
+}
+.google-maps iframe {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100% !important;
+  height: 100% !important;
+}
 body.home h2.subtitle {
   font-family: fbb0kysgnjregular, "alternate-gothic-no-3-d-n4", helvetica, sans-serif !important;
   color: #02394f !important;
