@@ -28,7 +28,7 @@
     <div class="modal-content">
       <div class="modal-header">
         <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-        <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
+        <h4 style="text-align:center" class="modal-title" id="myModalLabel" >MakerCon Bay Area, May 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
       </div>
       <div class="modal-body">
         <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
@@ -42,7 +42,7 @@
 </div>
 
         <div style="clear:both;"></div>
-      <div style="text-align: justify; margin-top: 20px;">
+      <div style="text-align: center; margin-top: 20px;">
         <p><strong>MakerCon Bay Area, May 2014: Jay Silver on designing for "wild humans".</strong></p>
       </div>
       <div style="text-align: center; margin-top: 20px;">
