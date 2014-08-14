@@ -29,7 +29,7 @@ function featured_speakers_order_callback() {
   echo '<div class="wrap"><div id="icon-tools" class="icon32"></div>';
   echo '<h2>Featured Speakers Order</h2>';
 
-  $speakers = new WP_Query('post_type=speaker');
+  $speakers = new WP_Query('post_type=speaker&posts_per_page=-1');
   ?>
   <form method="POST" action="">
     <table>
