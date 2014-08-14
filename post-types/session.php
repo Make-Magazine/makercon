@@ -140,9 +140,9 @@ function display_session_speakers_tags_meta_box($session, $box) {
 	extract( wp_parse_args($args, $defaults), EXTR_SKIP );
 
 
-	$taxonomy = 'session_speaker';
-	$tax_name = esc_attr('session-speaker');
-	$user_can_assign_sessions = true;
+	$taxonomy = 'session_speakers';
+	$tax_name = esc_attr('session-speakers');
+	$user_can_assign_speakers = true;
 	$comma = _x( ',', 'tag delimiter' );
 
 	$session_speaker_selected = get_post_meta( $session->ID, '_session_speakers', true);
