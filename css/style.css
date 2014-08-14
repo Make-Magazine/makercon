@@ -6236,10 +6236,10 @@ p {
   font-color: #02394F;
 }
 a {
-  color: #02394f;
+  color: #ed1b24;
 }
 a:hover {
-  color: #035d81;
+  color: #f14a51;
 }
 body ul li {
   font-size: 16px;
@@ -6470,7 +6470,7 @@ a.button:active {
   background-color: #ed1b24;
   color: #fff;
 }
-.entry-title h1 {
+h1.entry-title {
   font-size: 34px;
   line-height: 40px;
 }
@@ -6616,6 +6616,9 @@ h2.subtitle {
   color: #ED1B24;
   font-size: 20px;
   margin: 0;
+}
+.page-id-788 .lead {
+  margin-bottom: 0px;
 }
 body.home h2.subtitle {
   font-family: fbentonsanscompmedium, helvetica, sans-serif !important;

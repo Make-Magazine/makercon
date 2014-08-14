@@ -8,7 +8,7 @@
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
   <div class="row">
     <div class="col-md-12">
-      <p style="text-align:center;margin-bottom:25px;font-size:40px;text-transform:uppercase;color:#02394F;margin-top:30px;">By <strong>Makers</strong> for <strong>Makers</strong></p>
+      <p style="text-align:center;margin-bottom:25px;font-size:40px;line-height:42px; text-transform:uppercase;color:#02394F;margin-top:30px;">By <strong>Makers</strong> for <strong>Makers</strong></p>
     </div>
   </div>
   <div class="entry-content">
