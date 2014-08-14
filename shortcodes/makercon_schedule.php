@@ -16,20 +16,6 @@ function makercon_schedule_shortcode($atts){
 
 	ob_start();
 	?>		
-	<!-- SCHEDULE PAGE CONTENT (ROUGH DRAFT OF HTML, CONTENT IN CAPS  IS WHAT I ASSUME IS DYNAMIC)-->
-	<div class="track-list-area">
-		<div class="row">
-		  <div class="col-md-12 title-area">
-		    <h1>All Tracks</h1>
-		  </div>
-		</div>
-	<!-- SCHEDULE TRACK ITEMS  (CURRENLTY THREE TRACKS BUT THIS COULD INCREASE AND WE'LL NEED REPEATING ROW)-->
-		<div class="row track-list-area">
-		  <div class="col-md-4 track-title">
-		    <h2 class="track-titles"><a href="TRACK TITLE LINK">TRACK TITLE</a></h2>
-		  </div>
-		</div>
-	</div>
 	<div class="sessions-list-area">
 	<?php 
 		
@@ -51,3 +37,4 @@ function makercon_schedule_shortcode($atts){
 	return $output_string;
 
 }
+</div>
