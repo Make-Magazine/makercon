@@ -6470,6 +6470,10 @@ a.button:active {
   background-color: #ed1b24;
   color: #fff;
 }
+.entry-title h1 {
+  font-size: 34px;
+  line-height: 40px;
+}
 .page-id-20 .entry-content p {
   margin-bottom: 30px;
 }
@@ -6605,13 +6609,13 @@ h2.subtitle {
 .page-id-23 a:visited {
   color: #ed1b24;
 }
-.page-id-788 img {
+.page-id-788 .attachment-makercon-thumbnai {
   border: 3px solid #02394f;
 }
-.page-id-788 h3 {
+.page-id-788 .entry-content h3 {
   color: #ED1B24;
-  font-size: 20px
-			margin:0;
+  font-size: 20px;
+  margin: 0;
 }
 body.home h2.subtitle {
   font-family: fbentonsanscompmedium, helvetica, sans-serif !important;
