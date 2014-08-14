@@ -15,7 +15,15 @@ function makercon_schedule_shortcode($atts){
 		'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => -1 ));
 
 	ob_start();
-	?>		
+
+	$wp_track_info = get_term_by('slug',$track,'track');
+	?><div class="track-info-area">
+			<div class="row">
+				 <div class="col-md-12 track-info">
+					<p><?php echo(esc_html($wp_track_info->description)); ?></p>
+				</div>
+			</div>
+	</div>
 	<div class="sessions-list-area">
 	<?php 
 		
@@ -25,10 +33,19 @@ function makercon_schedule_shortcode($atts){
 		  <div class="col-md-12 session">
 		    <h2 class="session-title"><a href="<?php echo(get_post_permalink($session_post->ID)); ?>">
 				<?php echo(esc_html($session_post->post_title)); ?></a></h2>
-		    <p class="session-author"><a href="SESSION AUTHOR LINK">SESSION AUTHOR NAME</a></p>
-		    <div class="button track-btn">
-		      <a href="TRACK TAG LINK">TRACK TAG</a> 
-		    </div>
+				<?php 
+				$session_speaker_ids = explode(",",get_post_meta($session_post->ID, '_session_speakers', true));
+
+				$wp_speaker_posts = get_posts(array('post_type'=>'speaker', 'posts_per_page' => 3,
+					'post__in' => array_reverse($session_speaker_ids)));
+				foreach($wp_speaker_posts as $speaker_post) {
+					setup_postdata($speaker_post); ?>
+					<p class="session-author"><a href="<?php echo(get_post_permalink($speaker_post->ID)); ?>">
+					<?php echo(esc_html($speaker_post->post_title)); ?></a></p>
+					<?php
+				}
+
+				?>
 		  </div>
 		</div> <?php } ?>
 	</div><?php
