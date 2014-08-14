@@ -6589,9 +6589,9 @@ h2.subtitle {
   line-height: 40px;
 }
 .google-maps {
+  border: 3px solid #02394f;
   position: relative;
   padding-bottom: 25%;
-  margin-bottom: 30px;
   overflow: hidden;
 }
 .google-maps iframe {
@@ -6600,6 +6600,10 @@ h2.subtitle {
   left: 0;
   width: 100% !important;
   height: 100% !important;
+}
+.page-id-23 a:link,
+.page-id-23 a:visited {
+  color: #ed1b24;
 }
 body.home h2.subtitle {
   font-family: fbentonsanscompmedium, "alternate-gothic-no-3-d-n4", helvetica, sans-serif !important;
