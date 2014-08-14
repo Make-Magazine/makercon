@@ -9,13 +9,12 @@
 	<div class="entry-content">
 		<div class="lead">
 			<a href="<?php the_permalink(); ?>">
-				<?php title_override(); ?>
+				<?php the_title(); ?>
 			</a>
 		</div>
 
 		<?php
-			global $speakers;
-			echo $speakers->speaker_loop();
+			get_template_part( 'content', 'single' );
 		?>
 
 		<?php

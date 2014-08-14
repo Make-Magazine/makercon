@@ -59,6 +59,8 @@ function makercon_setup() {
 
 	// Add image size for speakers
 	add_image_size( 'makercon-thumbnail', 270, 270, true );
+
+	add_image_size( 'small-thumbnail', 210, 210, true );
 }
 endif; // makercon_setup
 add_action( 'after_setup_theme', 'makercon_setup' );
