@@ -32,7 +32,13 @@
             <?php endif; ?>
           </div>
           <nav id="site-navigation" class="navbar navbar-default col-md-7" role="navigation">
-            <?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav navbar-nav pull-right', 'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
+            <?php wp_nav_menu( array( 
+            'theme_location' => 'primary', 
+            'top_menu',
+            'depth' => 2,
+            'container' => false,
+            'menu_class' => 'nav navbar-nav pull-right', 
+            'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
           </nav>
           <!-- #site-navigation -->
           <div class="social col-md-2">
