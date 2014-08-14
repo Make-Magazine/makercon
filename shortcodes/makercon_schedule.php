@@ -37,4 +37,3 @@ function makercon_schedule_shortcode($atts){
 	return $output_string;
 
 }
-</div>
