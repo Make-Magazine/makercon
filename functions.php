@@ -206,11 +206,15 @@ define( 'ACF_LITE', false );
 require get_template_directory() . '/shortcodes/home-slider.php';
 
 /**
- * Makecon_Schedule Shortocode
+ * Makecon_Schedule Shortcode
  */
 
 require get_template_directory() . '/shortcodes/makercon_schedule.php';
 
+/**
+ * Makecon_Schedule Shortcode
+ */
+require get_template_directory() . '/shortcodes/makercon_sessions.php';
 
 // Load the default fields.
 
