@@ -16,7 +16,6 @@ get_header(); ?>
 
       <?php get_template_part( 'content', 'session-single' ); 
       $wp_post_speaker_ids = get_post_meta(get_the_ID(), '_session_speakers', true);
-      echo("Speaker IDs: <pre>".print_r($wp_post_speaker_ids, true)."</pre>\n");
       if($wp_post_speaker_ids != '') {
       echo ("<h2>Speakers</h2>");
       get_template_part('loop','speaker-list');
