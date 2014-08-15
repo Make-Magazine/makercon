@@ -9,9 +9,9 @@
   <div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
     <div class="lead"><h2><?php the_title(); ?></h2><?php
       $wp_session_track = wp_get_post_terms(get_the_ID(), 'track', array());
-      if (is_object($wp_session_track[0])) {
+      if (isset($wp_session_track) && is_object($wp_session_track[0])) {
           $session_track_title = esc_html($wp_session_track[0]->name);
-          $session_track_permalink = get_term_link($wp_session_track[0]);
+          $session_track_permalink = get_option("makecon_session_page", get_option("siteurl")."/speakers/new-york-2014/");
           print("<h3 class=\"session-subtitle\"><a href=\"{$session_track_permalink}\">{$session_track_title}</a></h3>");
       }
       $session_info = '';
@@ -22,7 +22,7 @@
       $session_info .= (($session_end != '')&&($session_start != 0)) ? " to ".date("g:i a", $session_end) : '';
 
       $wp_session_location = wp_get_post_terms(get_the_ID(), 'location', array());
-      $session_info .= (is_object($wp_session_location[0])) ? " in ".esc_html($wp_session_location[0]->name) : '';
+      $session_info .= (isset($wp_session_location) && is_object($wp_session_location[0])) ? " in ".esc_html($wp_session_location[0]->name) : '';
       print("<div class=\"session-info\">{$session_info}</div>");
 
       ?></div>
