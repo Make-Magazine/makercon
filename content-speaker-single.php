@@ -3,16 +3,14 @@
  * @package makercon
  */
 ?>
-
-<article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
+<article id="speaker-<?php the_ID(); ?>" <?php post_class(); ?>>
+	<header class="entry-header">
+		<h1 class="entry-title"><?php the_title(); ?></h1>
+		<div class="entry-meta"></div><!-- .entry-meta -->
+	</header><!-- .entry-header -->
 
 	<div class="entry-content">
-		<div class="lead">
-			<a href="<?php the_permalink(); ?>">
-				<?php the_title(); ?>
-			</a>
-		</div>
-
+		<?php the_content(); ?>
 		<?php
 			get_template_part( 'content', 'single' );
 		?>
@@ -25,4 +23,7 @@
 		?>
 	</div><!-- .entry-content -->
 
-</article><!-- #post-## -->
+	<footer class="entry-meta">
+		<?php edit_post_link( __( 'Edit', 'makercon' ), '<span class="edit-link">', '</span>' ); ?>
+	</footer><!-- .entry-meta -->
+</article><!-- #speaker-## -->
