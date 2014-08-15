@@ -313,6 +313,7 @@ function add_session_fields($session_id, $session) {
 }
 
 function add_session_to_speakers($session_id = 0, $wp_session_speakers = array() ) {
+	if((count($wp_session_speakers) ==  0) || ($wp_session_speakers[0] == '')) return;
 	
 	$wp_speaker_posts = get_posts(array('post_type'=>'speaker', 'post__in' => array_reverse($wp_session_speakers)));
 	foreach($wp_speaker_posts as $wp_speaker_post) {
