@@ -5,20 +5,16 @@
 ?>
 
 <article id="session-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+<div class="row">
+			<div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
+			<?php 
+			if(get_post_meta(get_the_ID(), '_thumbnail_id', true ) !== false) {
+				echo get_the_post_thumbnail(get_the_ID(), 'small-thumbnail' );
+			} ?></div>
 
-		<div class="entry-meta">
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-meta">
-		<?php edit_post_link( __( 'Edit', 'makercon' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
+			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
+			<div class="lead"><h2><?php the_title(); ?></h2></div>
+			<?php the_content(); ?>
+			</div>
+		</div>			
 </article><!-- #post-## -->
