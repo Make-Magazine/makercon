@@ -5,20 +5,11 @@
 ?>
 
 <article id="session-<?php the_ID(); ?>" <?php post_class(); ?>>
-	<header class="entry-header">
-		<h1 class="entry-title"><?php the_title(); ?></h1>
+<div class="row">
 
-		<div class="entry-meta">
-		</div><!-- .entry-meta -->
-	</header><!-- .entry-header -->
-
-	<div class="entry-content">
-		<?php the_content(); ?>
-		<?php
-		?>
-	</div><!-- .entry-content -->
-
-	<footer class="entry-meta">
-		<?php edit_post_link( __( 'Edit', 'makercon' ), '<span class="edit-link">', '</span>' ); ?>
-	</footer><!-- .entry-meta -->
-</article><!-- #post-## -->
+	<div class="col-xs-12 col-sm-12 col-md-12 col-lg-12">
+		<div class="lead"><h2><?php the_title(); ?></h2></div>
+			<?php the_content(); ?>
+		</div>
+	</div>			
+</article><!-- #session-## -->
