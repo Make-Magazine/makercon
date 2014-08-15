@@ -15,7 +15,7 @@
     if(!is_array($wp_post_speaker_ids)) $wp_post_speaker_ids = explode(',',$wp_post_speaker_ids);
     $wp_speaker_posts = get_posts(array('post_type'=>'speaker','event' => $wp_speaker_event_slug, 'orderby' => 'title', 'post__in' => $wp_post_speaker_ids,'order' => 'ASC', 'posts_per_page' => -1 ));
   }
-  
+
   foreach($wp_speaker_posts as $speaker_post) {
     setup_postdata($speaker_post); ?>
     <div class="row">
@@ -25,7 +25,7 @@
         echo get_the_post_thumbnail($speaker_post->ID, 'small-thumbnail' );
       } ?></div>
       <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-      <div class="lead">
+      <div class="lead speaker-name-title">
         <h3>
             <a href="<?php echo(get_post_permalink($speaker_post->ID)); ?>">
               <?php echo($speaker_post->post_title); ?>
@@ -70,7 +70,7 @@
         */
         ?>
       </div>
-    </div><!-- speaker-<?php echo($speaker_post->ID); ?> --><hr />
+    </div><!-- speaker-<?php echo($speaker_post->ID); ?> --><br/><br/><br/>
     <?php
 
   }

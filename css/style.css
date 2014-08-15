@@ -6876,3 +6876,25 @@ ul.recent-posts .recent-posts p a {
   color: #ED1B24;
   font-weight: bold !important;
 }
+
+h3.session-subtitle {
+  color: rgb(241, 0, 0);
+  font-weight: 100;
+  margin-bottom: 0px;
+}
+div.lead .session-info {
+  font-size: 13pt;
+  font-weight: 500;
+  margin-top: -5px;
+}
+
+div.speaker-name-title h3 {
+  margin-bottom: 0px;
+}
+div.speaker-name-title p {
+  font-size: 16px;
+}
+
+h2.single-session-title {
+  margin-bottom: 20px;
+}
