@@ -4,7 +4,8 @@
  *
  * @package makercon
  */
-global $_show_speaker_more_link;
+
+global $_show_speaker_website_link;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <header class="entry-header">
@@ -13,14 +14,8 @@ global $_show_speaker_more_link;
 
   <div class="entry-content">
     <?php the_content();
-    $_show_speaker_more_link = true;
+    $_show_speaker_website_link = true;
       get_template_part('loop','speaker-list');
-    ?>
-    <?php
-      wp_link_pages( array(
-        'before' => '<div class="page-links">' . __( 'Pages:', 'makercon' ),
-        'after'  => '</div>',
-      ) );
     ?>
   </div><!-- .entry-content -->
   <?php # edit_post_link( __( 'Edit', 'makercon' ), '<p class="edit-link"><span class="btn btn-mini edit-link">', '</span></p>' ); ?>

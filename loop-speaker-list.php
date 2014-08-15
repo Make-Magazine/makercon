@@ -9,6 +9,7 @@
   global $wp_speaker_event_slug;
   global $_show_speaker_permalink;
   global $_show_speaker_more_link;
+  global $_show_speaker_website_link;
 
   if(!isset($_show_speaker_permalink)) {  
     $_show_speaker_permalink = false;
@@ -17,6 +18,11 @@
   if(!isset($_show_speaker_more_link)) {  
     $_show_speaker_more_link = false;
   }
+
+  if(!isset($_show_speaker_website_link)) {  
+    $_show_speaker_website_link = false;
+  }
+
   if(!isset($wp_speaker_event_slug)) $wp_speaker_event_slug = get_post_meta($post->ID, 'speaker_event', true );
   if(!isset($wp_post_speaker_ids)) {
   $wp_speaker_posts = get_posts(array('post_type'=>'speaker','event' => $wp_speaker_event_slug, 'orderby' => 'title', 'order' => 'ASC', 'posts_per_page' => -1 ));
@@ -36,10 +42,19 @@
       <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9"><div class="lead"><?php
       $speaker_post_title = esc_html($speaker_post->post_title);
 
-      if($_show_speaker_permalink == true) { 
+      $_website = get_post_meta($speaker_post->ID, 'website', true );
+
+      if(($_show_speaker_website_link == true) && ($_website !== false) && ($_website != '')) {
+       echo("<h3><a href=\"".$_website."\" target=\"_blank\">{$speaker_post_title}</a></h3>");
+      } elseif($_show_speaker_permalink == true) { 
         echo("<h3><a href=\"".get_post_permalink($speaker_post->ID)."\">{$speaker_post_title}</a></h3>");
       } else {
         echo("<h3>{$speaker_post_title}</h3>");
+      } 
+      
+      $speaker_subtitle = get_post_meta($speaker_post->ID, '_speaker_subtitle', true );
+      if($speaker_subtitle != '') {
+        print("<h3 class=\"speaker-subtitle\">".esc_html($speaker_subtitle)."</h3>");
       } ?></div>
       <?php echo($speaker_post->post_content); ?><br />
       <br/>
@@ -67,7 +82,6 @@
       <?php
         }
         
-          $_website = get_post_meta($speaker_post->ID, 'website', true );
           $_twitter = get_post_meta($speaker_post->ID, 'twitter', true );
           if((($_website !== false) && ($_website != '') && ($_show_speaker_more_link == true))||(($_twitter !== false) && ($_twitter != ''))) {
             echo("<p class=\"speaker-info-container\">");
