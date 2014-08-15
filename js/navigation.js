@@ -82,7 +82,6 @@ jQuery( document ).ready( function( $ ) {
 
 	var slides = '';
 	var i = 0;
-  var images = ''; //Bypass uncaught Reference
 	$( images ).each( function() {
 		if ( i === 0 ) {
 			slides += '<div class="item active"><img src="' + $(this)[0].path + '?w=520"></div>';
