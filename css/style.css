@@ -951,7 +951,6 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
@@ -6281,7 +6280,7 @@ article ul li {
   border-top: none;
 }
 #masthead {
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
 }
 #masthead h1 {
   margin: 0 !important;
