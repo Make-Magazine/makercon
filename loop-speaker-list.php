@@ -54,7 +54,7 @@
       
       $speaker_subtitle = get_post_meta($speaker_post->ID, '_speaker_subtitle', true );
       if($speaker_subtitle != '') {
-        print("<h3 class=\"speaker-subtitle\">".esc_html($speaker_subtitle)."</h3>");
+        print("<div class=\"speaker-subtitle\">".esc_html($speaker_subtitle)."</div>");
       } ?></div>
       <?php echo($speaker_post->post_content); ?><br />
       <br/>
@@ -105,4 +105,6 @@
     <?php
 
   }
+
+  $_show_speaker_website_link = false;
 ?>
