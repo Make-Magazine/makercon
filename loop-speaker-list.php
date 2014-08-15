@@ -25,7 +25,7 @@
 				echo get_the_post_thumbnail($speaker_post->ID, 'small-thumbnail' );
 			} ?></div>
 			<div class="col-xs-9 col-sm-9 col-md-9 col-lg-9">
-			<div class="lead"><h3><?php echo($speaker_post->post_title); ?></h3></div>
+			<div class="lead"><h3><a href="<?php echo(get_post_permalink($speaker_post->ID)); ?>"><?php echo($speaker_post->post_title); ?></a></h3></div>
 			<?php echo($speaker_post->post_content); ?><br />
 			<?php 
 				$_twitter = get_post_meta($speaker_post->ID, 'twitter', true );
