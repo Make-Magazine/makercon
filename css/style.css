@@ -6474,6 +6474,7 @@ a.button:active {
 h1.entry-title {
   font-size: 34px;
   line-height: 40px;
+  margin-bottom: 20px;
 }
 .page-id-20 .entry-content p {
   margin-bottom: 30px;

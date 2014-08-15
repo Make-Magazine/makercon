@@ -45,11 +45,14 @@ get_header(); ?>
 
         </div>
       </div><!--END MAIN VIDEO ROW-->
+      <br/>
+      <br/>
       <div class="row">
-          <div class="col-md-12">
-              <h2 class="subtitle">More Videos from Makercon</h2>
+        <div class="col-md-12">
+          <h2 class="subtitle">More Videos from Makercon</h2>
         </div>
       </div>
+      <br/>
       <div class="row">
           <div class="col-md-4">
         <!-- Button trigger modal -->
