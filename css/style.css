@@ -6212,7 +6212,7 @@ h3,
 h4,
 h5,
 h6 {
-  font-family: ffbentonsanscompmedium, helvetica, sans-serif;
+  font-family: bentonsanscompmedium, helvetica, sans-serif;
   color: #02394f;
   font-weight: bold;
 }
@@ -6221,19 +6221,18 @@ h1 {
   line-height: 48px;
 }
 h2 {
-  font-size: 34px;
-  line-height: 40px;
+  font-size: 32px;
+  line-height: 36px;
 }
 h3 {
   font-size: 20px;
-  line-height: 24px;
+  line-height: 26px;
 }
 p {
   font-family: fbb0kysgnjregular, helvetica, sans-serif;
-  font-size: #02394f;
   font-size: 14px;
   line-height: 20px;
-  font-color: #02394F;
+  font-color: #02394f;
 }
 a {
   color: #ed1b24;
@@ -6262,6 +6261,7 @@ article ul li {
 }
 #site-navigation a,
 #site-navigation .dropdown-menu a {
+  font-size: 27px;
   color: #ed1b24;
   background-color: none;
 }
@@ -6321,15 +6321,15 @@ article ul li {
   height: 23px;
 }
 #masthead #site-navigation ul li {
-  font-family: fbentonsanscompmedium, helvetica, sans-serif;
+  font-family: bentonsanscompmedium, helvetica, sans-serif;
   text-transform: uppercase;
-  font-size: 22px;
+  font-size: 27px;
   font-weight: bold;
   margin: 0px;
 }
 @media (max-width: 1200px) {
   #masthead #site-navigation ul li {
-    font-size: 22px;
+    font-size: 27px;
   }
 }
 #masthead #site-navigation ul li a {
@@ -6388,13 +6388,13 @@ footer {
   border-top: 10px solid #BEECFC;
 }
 footer p {
-  color: #02394f;
+  color: ##02394F;
 }
 footer h2 {
   font-weight: bold;
-  color: #145a60;
+  color: #02394F;
   text-align: center;
-  font-size: 24px;
+  font-size: 32px;
   margin: 20px 0;
 }
 footer ul {
@@ -6406,10 +6406,10 @@ footer ul li {
   list-style-type: none;
   padding-bottom: 5px;
   margin-bottom: 5px;
-  font-family: ffbentonsanscompmedium, helvetica, sans-serif;
+  font-family: bentonsanscompmedium, helvetica, sans-serif;
   font-size: 20px;
   font-weight: bold;
-  color: #145a60;
+  color: #02394F;
 }
 footer ul li a:link,
 footer ul li a:visited {
@@ -6449,10 +6449,10 @@ footer form input {
 .sponsors h1 {
   text-align: left;
 }
-button.button,
+.button,
 a.button {
   font-size: 20px;
-  font-family: fbentonsanscompmedium, helvetica, sans-serif;
+  font-family: bentonsanscompmedium, helvetica, sans-serif;
   text-transform: uppercase;
   color: #fff;
   padding: 10px 15px;
@@ -6460,12 +6460,12 @@ a.button {
   background-color: #ed1b24;
   border-radius: 2px;
 }
-button.button:hover,
+.button:hover,
 a.button:hover {
   background-color: #f14a51;
   color: #eee;
 }
-button.button:active,
+.button:active,
 a.button:active {
   background-color: #ed1b24;
   color: #fff;
@@ -6553,7 +6553,7 @@ h1.entry-title {
   padding: 10px 10px 10px 0px;
   width: 120px;
   text-align: left;
-  font-family: ffbentonsanscompmedium, helvetica, sans-serif;
+  font-family: bentonsanscompmedium, helvetica, sans-serif;
 }
 .table tbody tr td.break {
   background-color: #63ABED;
@@ -6587,7 +6587,7 @@ h1.entry-title {
   margin-bottom: 20px;
 }
 h2.subtitle {
-  font-family: fbentonsanscompmedium, helvetica, sans-serif !important;
+  font-family: bentonsanscompmedium, helvetica, sans-serif !important;
   color: #02394f !important;
   font-size: 34px;
   line-height: 40px;
@@ -6609,7 +6609,8 @@ h2.subtitle {
 .page-id-23 a:visited {
   color: #ed1b24;
 }
-.page-id-788 .attachment-makercon-thumbnail {
+.page-id-788 .attachment-makercon-thumbnail,
+.page-id-788 .attachment-small-thumbnail {
   border: 3px solid #02394f;
 }
 .page-id-788 .entry-content h3 {
@@ -6620,8 +6621,22 @@ h2.subtitle {
 .page-id-788 .lead {
   margin-bottom: 0px;
 }
+body.home .bighead {
+  font-family: fbuuzczpanmedium;
+  font-weight: normal;
+  text-align: center;
+  margin-bottom: 25px;
+  font-size: 40px;
+  line-height: 42px;
+  text-transform: uppercase;
+  color: #02394F;
+  margin-top: 30px;
+}
+body.home .bighead span {
+  font-family: fbvqgndbagbold;
+}
 body.home h2.subtitle {
-  font-family: fbentonsanscompmedium, helvetica, sans-serif !important;
+  font-family: bentonsanscompmedium, helvetica, sans-serif !important;
   color: #02394f !important;
   font-size: 34px;
   line-height: 40px;
