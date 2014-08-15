@@ -12,7 +12,7 @@
       if (is_object($wp_session_track[0])) {
           $session_track_title = esc_html($wp_session_track[0]->name);
           $session_track_permalink = get_term_link($wp_session_track[0]);
-          print("<h3 class=\"session-subtitle\"><a href=\"{$session_track_permalink}\">{$session_track_title}</h3>");
+          print("<h3 class=\"session-subtitle\"><a href=\"{$session_track_permalink}\">{$session_track_title}</a></h3>");
       }
       $session_info = '';
       $session_start = get_post_meta( get_the_ID(), '_session_start', true );
