@@ -26,14 +26,17 @@ function makercon_sessions_shortcode($atts){
 				<?php 
 				$session_speaker_ids = explode(",",get_post_meta($session_post->ID, '_session_speakers', true));
 
-				$wp_speaker_posts = get_posts(array('post_type'=>'speaker', 'posts_per_page' => 3,
-					'post__in' => array_reverse($session_speaker_ids)));
-				foreach($wp_speaker_posts as $speaker_post) {
-					setup_postdata($speaker_post); ?>
-					<p class="session-author"><a href="<?php echo(get_post_permalink($speaker_post->ID)); ?>">
-					<?php echo(esc_html($speaker_post->post_title)); ?></a></p>
-					<?php
-				}
+        if((count($session_speaker_ids) > 0) && ($session_speaker_ids[0] != '')) {
+          $wp_speaker_posts = get_posts(array('post_type'=>'speaker', 'posts_per_page' => 3,
+            'post__in' => array_reverse($session_speaker_ids)));
+          echo("<p class=\"session-author\">");
+          foreach($wp_speaker_posts as $speaker_post) {
+            setup_postdata($speaker_post); ?>
+            <?php echo(esc_html($speaker_post->post_title)); ?>
+            <?php
+          }
+          echo("</p>");
+        }
 
 				?>
 		  </div>
