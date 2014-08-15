@@ -50,6 +50,7 @@
         </div>
       </header>
       </div>
+      <hr style="border-bottom: 3px solid #00AACD" />
       <!-- #masthead -->
       <?php if ( is_front_page() || is_home() ) : ?>
     <div class="clearfix"></div>
