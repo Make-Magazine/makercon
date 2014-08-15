@@ -6899,3 +6899,38 @@ div.speaker-name-title p {
 h2.single-session-title {
   margin-bottom: 20px;
 }
+.nav-tabs {
+  border-bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav.nav-tabs li {
+  min-width: 385px;
+  background-color: #DBDBDB;
+  outline: 0px;
+  border: 0px;
+  margin: 2px;
+}
+
+.nav.nav-tabs li.active {
+  outline: 0px;
+  background-color: #E31A22;
+  border: 0px;
+}
+
+.nav.nav-tabs li.active a {
+  color: #FFF;
+}
+.nav.nav-tabs li a {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+  color: #19394F;
+}
+
+.nav.nav-tabs li a:hover {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+}
