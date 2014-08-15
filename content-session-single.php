@@ -11,7 +11,7 @@
       $wp_session_track = wp_get_post_terms(get_the_ID(), 'track', array());
       if (isset($wp_session_track) && is_object($wp_session_track[0])) {
           $session_track_title = esc_html($wp_session_track[0]->name);
-          $session_track_permalink = get_option("makecon_session_page", get_option("siteurl")."/speakers/new-york-2014/");
+          $session_track_permalink = get_option("makecon_session_page", get_option("siteurl")."/sessions/");
           print("<h3 class=\"session-subtitle\"><a href=\"{$session_track_permalink}\">{$session_track_title}</a></h3>");
       }
       $session_info = '';
