@@ -35,11 +35,13 @@
       </div>
       <?php echo($speaker_post->post_content); ?><br />
       <br/>
+      <?php 
+        $speaker_sessions = split(",", get_post_meta($speaker_post->ID, '_speaker_sessions', true));
+        if((count($speaker_sessions) ==  0) || ($speaker_sessions[0] == '')) { ?>
       <p class="sessions-container">
         <div class="session_heading">Sessions</div>
         <div class="session">
         <?php
-          $sessions = split(",", get_post_meta($speaker_post->ID, '_speaker_sessions', true));
           $anchors = Array();
           foreach($sessions as $session_id) {
             $tmp_title = get_the_title($session_id);
@@ -54,6 +56,8 @@
       </p>
 
       <?php
+        }
+        
         $_twitter = get_post_meta($speaker_post->ID, 'twitter', true );
         if(($_twitter !== false) && ($_twitter != '')) {
             $_twitter_pos = strpos($_twitter, '@');
