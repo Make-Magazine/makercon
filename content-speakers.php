@@ -4,6 +4,7 @@
  *
  * @package makercon
  */
+global $_show_speaker_more_link;
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
   <header class="entry-header">
@@ -12,6 +13,7 @@
 
   <div class="entry-content">
     <?php the_content();
+    $_show_speaker_more_link = true;
       get_template_part('loop','speaker-list');
     ?>
     <?php
