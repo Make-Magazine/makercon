@@ -85,6 +85,7 @@ add_action( 'widgets_init', 'makercon_widgets_init' );
  */
 function makercon_scripts() {
 	wp_enqueue_style( 'makercon-bootstrap', get_stylesheet_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'makercon-fonts', get_stylesheet_directory_uri() . '/css/fonts.css' );
 
 	// Drop the original CSS.
 	// wp_enqueue_style( 'makercon-style', get_stylesheet_uri() );
