@@ -46,7 +46,7 @@
       <?php 
         $speaker_sessions = explode(",", get_post_meta($speaker_post->ID, '_speaker_sessions', true));
 
-        if((count($speaker_sessions) ==  0) || ($speaker_sessions[0] == '')) { ?>
+        if((count($speaker_sessions) >  0) && ($speaker_sessions[0] != '')) { ?>
       <p class="sessions-container">
         <div class="session_heading">Sessions</div>
         <div class="session">
