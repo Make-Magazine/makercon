@@ -33,7 +33,7 @@
 
   foreach($wp_speaker_posts as $speaker_post) {
     setup_postdata($speaker_post); ?>
-    <div class="row">
+    <div class="row speaker-list speaker-id-<?php echo($speaker_post->ID); ?>" id="speaker-list-id<?php echo($speaker_post->ID); ?>">
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
       <?php 
       if(get_post_meta($speaker_post->ID, '_thumbnail_id', true ) !== false) {

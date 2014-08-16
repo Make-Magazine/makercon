@@ -10,8 +10,6 @@
  * 
  */
 
-set_post_thumbnail_size( 270, 270, true );
-
 get_header(); ?>
 <div class="row">
   <div id="primary" class="content-area col-md-12">

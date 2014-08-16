@@ -6606,20 +6606,22 @@ h2.subtitle {
   width: 100% !important;
   height: 100% !important;
 }
-.page-id-23 a:link,
-.page-id-23 a:visited {
+.page-template-page-speakers-php a:link,
+.page-template-page-speakers-php a:visited {
   color: #ed1b24;
 }
-.page-id-788 .attachment-makercon-thumbnail,
-.page-id-788 .attachment-small-thumbnail {
+
+.page-template-page-speakers-php .speaker-list .attachment-makercon-thumbnail,
+.page-template-page-speakers-php .speaker-list .attachment-small-thumbnail {
   border: 3px solid #02394f;
 }
-.page-id-788 .entry-content h3 {
-  color: #ED1B24;
+
+.page-template-page-speakers-php .speaker-list h3 {
   font-size: 20px;
   margin: 0;
 }
-.page-id-788 .lead {
+
+.page-template-page-speakers-php .speaker-list .lead {
   margin-bottom: 0px;
 }
 .google-maps {
