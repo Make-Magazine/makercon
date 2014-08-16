@@ -951,7 +951,6 @@ img {
   border-radius: 50%;
 }
 hr {
-  margin-top: 20px;
   margin-bottom: 20px;
   border: 0;
   border-top: 1px solid #eeeeee;
@@ -6281,7 +6280,7 @@ article ul li {
   border-top: none;
 }
 #masthead {
-  margin: 20px auto;
+  margin: 20px auto 0px auto;
 }
 #masthead h1 {
   margin: 0 !important;
@@ -6898,4 +6897,39 @@ div.speaker-name-title p {
 
 h2.single-session-title {
   margin-bottom: 20px;
+}
+.nav-tabs {
+  border-bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav.nav-tabs li {
+  min-width: 385px;
+  background-color: #DBDBDB;
+  outline: 0px;
+  border: 0px;
+  margin: 2px;
+}
+
+.nav.nav-tabs li.active {
+  outline: 0px;
+  background-color: #E31A22;
+  border: 0px;
+}
+
+.nav.nav-tabs li.active a {
+  color: #FFF;
+}
+.nav.nav-tabs li a {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+  color: #19394F;
+}
+
+.nav.nav-tabs li a:hover {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
 }
