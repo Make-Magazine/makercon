@@ -61,23 +61,32 @@
       <?php 
         $speaker_sessions = explode(",", get_post_meta($speaker_post->ID, '_speaker_sessions', true));
 
-        if((count($speaker_sessions) >  0) && ($speaker_sessions[0] != '')) { ?>
-      <p class="sessions-container">
-        <div class="session_heading">Sessions</div>
-        <div class="session">
-        <?php
+        if((count($speaker_sessions) >  0) && ($speaker_sessions[0] != '')) { 
           $anchors = Array();
           foreach($speaker_sessions as $session_id) {
-            $tmp_title = get_the_title($session_id);
-            $tmp_link = get_permalink($session_id);
-            $tmp = '<a href="'.$tmp_link.'">'.$tmp_title.'</a>';
-            array_push($anchors, $tmp);
+            //check that session is 'published';
+            if(get_post_status ( $session_id ) == 'publish') {
+              $tmp_title = get_the_title($session_id);
+              $tmp_link = get_permalink($session_id);
+              $tmp = '<a href="'.$tmp_link.'">'.$tmp_title.'</a>';
+              array_push($anchors, $tmp);
+            }
           }
-          $session_output = join(", ", $anchors);
-          echo $session_output;
+          if((count($anchors) >  0) && ($anchors[0] != '')) { ?>
+          <p class="sessions-container">
+            <div class="session_heading">Sessions</div>
+            <div class="session">
+            <?php
+              $session_output = join(", ", $anchors);
+              echo $session_output;
+            ?>
+            </div>
+          </p><?php
+
+          }
+
+          
         ?>
-        </div>
-      </p>
 
       <?php
         }
