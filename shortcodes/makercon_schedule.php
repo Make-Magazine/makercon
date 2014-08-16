@@ -38,11 +38,7 @@ function makercon_schedule_shortcode($atts){
 
         if((count($session_speaker_ids) > 0) && ($session_speaker_ids[0] != '')) {
         $wp_speaker_posts = get_posts(array('post_type'=>'speaker', 'posts_per_page' => -1,
-<<<<<<< HEAD
-          'post__in' => array_reverse($session_speaker_ids)));
-=======
             'post__in' => array_reverse($session_speaker_ids), 'order' => 'ASC', 'orderby' => 'title'));
->>>>>>> fix-session-speaker-list
           echo("<p class=\"session-author\">");
           foreach($wp_speaker_posts as $speaker_post) {
             setup_postdata($speaker_post); ?>
