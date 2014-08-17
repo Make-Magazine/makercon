@@ -6624,6 +6624,13 @@ h2.subtitle {
 .page-template-page-speakers-php .speaker-list .lead {
   margin-bottom: 0px;
 }
+
+.speaker-list .session_heading {
+  font-family: fbb0kysgnjregular, helvetica, sans-serif;
+  font-size: 16px;
+  font-weight: 700;
+}
+
 .google-maps {
   position: relative;
   padding-bottom: 25%;
