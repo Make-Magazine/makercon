@@ -15,7 +15,7 @@ jQuery(document).ready(function ($) {
     if(window.location.hash) {
       var hash = window.location.hash.substring(1); //Puts hash in variable, and removes the # character
       $('.nav-tabs').children('li').each(function () {
-        if($(this).data('tab') == hash) {
+        if($(this).data('hash') == hash) {
           $(this).addClass('active');
         } else {
           $(this).removeClass('active');
@@ -25,7 +25,7 @@ jQuery(document).ready(function ($) {
 
       if($('.tab-content').exists()) {
         $('.tab-content').children('div.tab-pane').each(function () {
-          if($(this).attr('id') == hash) {
+          if($(this).data('hash') == hash) {
               $(this).addClass('active');
           } else {
               $(this).removeClass('active');
