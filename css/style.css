@@ -6336,10 +6336,20 @@ article ul li {
   padding: 12px;
 }
 
+#masthead .site-branding {
+  padding-left: 0;
+}
 #masthead .site-branding img {
   max-height: 53px;
   max-width: 202px;
 }
+
+div#page.site {
+  border-bottom: 3px solid #00AACD;
+  margin-bottom: 8px;
+}
+
+
 .slider-wrap {
   background-image: url('../img/background-lg.png');
   background-repeat: repeat-x;
