@@ -45,7 +45,7 @@ function getRandomArbitrary( min, max, not ) {
 }
 
 jQuery( document ).ready( function( $ ) {
-	var url = 'https://public-api.wordpress.com/rest/v1/sites/makezine.com/posts/?tag=makercon&number=20';
+	var url = 'https://public-api.wordpress.com/rest/v1/sites/makezine.com/posts/?tag=makercon&number=6';
 	var jqxhr = $.getJSON( url, function() {
 		// Posts...
 		var posts = jqxhr.responseJSON.posts;
@@ -77,6 +77,8 @@ jQuery( document ).ready( function( $ ) {
 		});
 		html_output += '</div>';
 		$('.highlights .posts').html( html_output );
+
+    $('.highlights .posts a').attr('target', '_blank');
 
 	});
 
