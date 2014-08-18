@@ -6489,7 +6489,11 @@ h1.entry-title {
   font-size: 34px;
   line-height: 40px;
   margin-bottom: 20px;
+	font-weight: 500;
+	color: #02394f;
 }
+
+
 .page-id-20 .entry-content p {
   margin-bottom: 30px;
 }
@@ -6607,6 +6611,7 @@ h2.subtitle {
   color: #02394f !important;
   font-size: 34px;
   line-height: 40px;
+	font-weight: 500;
 }
 .google-maps {
   border: 3px solid #02394f;
@@ -6712,6 +6717,10 @@ h2.session-title a:visited {
 .session-author a:link,
 .session-author a:visited {
   color: #02394f;
+}
+
+p.session-author a {
+  padding-right: 8px;
 }
 .secondary-nav-area {
   color: #fff;
@@ -6900,6 +6909,14 @@ ul.recent-posts .recent-posts p a {
   color: #ED1B24;
   font-weight: bold !important;
 }
+div.speaker-name-title p,
+div.speaker-subtitle,
+h3.speaker-subtitle {
+  font-family: fbb0kysgnjregular, helvetica, sans-serif;
+  font-size: 16px;
+  margin-bottom: 12px;
+  font-weight: bold;
+}
 
 h3.session-subtitle {
   color: rgb(241, 0, 0);
@@ -6914,9 +6931,6 @@ div.lead .session-info {
 
 div.speaker-name-title h3 {
   margin-bottom: 0px;
-}
-div.speaker-name-title p {
-  font-size: 16px;
 }
 
 h2.single-session-title {
