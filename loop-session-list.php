@@ -50,7 +50,7 @@
         $session_speakers = explode(",", get_post_meta($session_post->ID, '_session_speakers', true));
 
         if($session_location){
-          $tmp = $session_location.' - '
+          $tmp = $session_location.' - ';
         }
         if((count($session_speakers) >  0) && ($session_speakers[0] != '')) { 
           $speakers= Array();
