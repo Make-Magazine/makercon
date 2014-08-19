@@ -77,7 +77,7 @@
                 </p>';
               }
               
-
+              $wp_session_track = wp_get_post_terms($session_post->ID, 'track', array());
               foreach($wp_session_tracks as $session_track) {
                 $session_name_parts =  explode(' ', $session_track->name);
                 $link = '/sessions/#tab-'.$session_name_parts[0];
