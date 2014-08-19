@@ -167,6 +167,11 @@ require get_template_directory() . '/menus/featured-speakers.php';
 
 require get_template_directory() . '/post-types/session.php';
 
+/**
+ * Load Company Post Type
+ */
+
+require get_template_directory() . '/post-types/company.php';
 
 /**
  * Load Track Taxonomy
