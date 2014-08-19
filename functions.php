@@ -56,6 +56,11 @@ function makercon_setup() {
 
 	// Enable support for HTML5 markup.
 	add_theme_support( 'html5', array( 'comment-list', 'search-form', 'comment-form', ) );
+
+	// Add image size for speakers
+	add_image_size( 'makercon-thumbnail', 270, 270, true );
+
+	add_image_size( 'small-thumbnail', 210, 210, true );
 }
 endif; // makercon_setup
 add_action( 'after_setup_theme', 'makercon_setup' );
@@ -80,15 +85,13 @@ add_action( 'widgets_init', 'makercon_widgets_init' );
  */
 function makercon_scripts() {
 	wp_enqueue_style( 'makercon-bootstrap', get_stylesheet_directory_uri() . '/css/style.css' );
+	wp_enqueue_style( 'makercon-fonts', get_stylesheet_directory_uri() . '/css/fonts.css' );
 
 	// Drop the original CSS.
 	// wp_enqueue_style( 'makercon-style', get_stylesheet_uri() );
 
 	wp_enqueue_script( 'jquery' );
-	wp_enqueue_script( 'makercon-bootstrap', get_template_directory_uri() . '/js/bootstrap.js', array(), '20120206', true );
-
 	wp_enqueue_script( 'makercon-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20120206', true );
-
 	wp_enqueue_script( 'makercon-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20130115', true );
 
 	if ( is_singular() && comments_open() && get_option( 'thread_comments' ) ) {
@@ -148,7 +151,17 @@ require get_template_directory() . '/inc/gravity-forms-helper/gravity-forms-help
 /**
  * Load Speaker Post Type
  */
+
 require get_template_directory() . '/post-types/speaker.php';
+
+
+require get_template_directory() . '/menus/featured-speakers.php';
+
+/**
+ * Load Session Post Type
+ */
+
+require get_template_directory() . '/post-types/session.php';
 
 
 /**
@@ -162,6 +175,22 @@ require get_template_directory() . '/taxonomies/track.php';
 require get_template_directory() . '/taxonomies/event.php';
 
 /**
+ * Load Location Taxonomy
+ */
+require get_template_directory() . '/taxonomies/location.php';
+
+/**
+ * Load Time Taxonomy(Sessions)
+ */
+require get_template_directory() . '/taxonomies/time.php';
+
+/**
+ * Load Day Taxonomy(Sessions)
+ */
+require get_template_directory() . '/taxonomies/day.php';
+
+
+/**
  * Load Advanced Custom Fields
  */
 require get_template_directory() . '/inc/advanced-custom-fields/acf.php';
@@ -173,7 +202,27 @@ require get_template_directory() . '/inc/acf-field-date-time-picker/acf-date_tim
 
 define( 'ACF_LITE', false );
 
+/**
+ * Load Home Slider
+ */
+
+require get_template_directory() . '/shortcodes/home-slider.php';
+
+/**
+ * Makecon_Schedule Shortcode
+ */
+
+require get_template_directory() . '/shortcodes/makercon_schedule.php';
+
+/**
+ * Makecon_Schedule Shortcode
+ */
+require get_template_directory() . '/shortcodes/makercon_sessions.php';
+
 // Load the default fields.
+
+// -- set post_type to alien - just in case 08.06.14
+
 if( function_exists( "register_field_group" ) ) {
 	register_field_group( array(
 		'id' => 'acf_session-schedule',
@@ -236,10 +285,10 @@ if( function_exists( "register_field_group" ) ) {
 				array(
 					'param' => 'post_type',
 					'operator' => '==',
-					'value' => 'speaker',
+					'value' => 'alien',
 					'order_no' => 0,
 					'group_no' => 0,
-				),
+				)
 			),
 		),
 		'options' => array(

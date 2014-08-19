@@ -1,20 +1,69 @@
-.home {
+body.home {
+	
+	.bighead {
+		font-family: fbuuzczpanmedium;
+		font-weight: normal;
+		text-align:center;
+		margin-bottom:25px;
+		font-size:40px;
+		line-height:42px;
+		text-transform:uppercase;
+		color:#02394F;
+		margin-top:30px;
+		span {
+			font-family: fbvqgndbagbold; 
+			}	
+	}
+
+h2.subtitle {
+	font-family:@subtitle !important;
+	color:@blue !important;
+	font-size:34px;
+	line-height: 40px;
+}
+
+p.intro {
+	font-size:18px;
+	line-height:26px;
+}
+
+.speakerblock {
+	font-family: @font;
+	font-size: 14px;
+	background-color: @teal;
+	color:#fff;
+	border-radius: 0;
+}
+
+.speaker-box-name{
+	font-size:18px;
+font-weight:bold;
+text-transform: uppercase;
+}
+.speaker-box-title {
+font-size:14px;
+line-height: 18px;
+}
+
+.recent-posts a {
+	color: @red;
+	font-weight: bold;
+	&:hover {
+		color: lighten(@red, 10%)
+	}
+	.thumbnail {
+		margin-bottom:5px;
+	}
+
+}
+
 	.photo-bar {
 		background-color: #3b8caa;
-		margin-top: -40px;
 		position: relative;
 		z-index: 0;
 		.col-md-12 {
 			margin-top: -109px;
 			margin-top:-106px;
-		}
-		h1 {
-			font-size: 70px;
-			margin-top: 170px;
-			color: #fff;
-		}
-		h2 {
-			color: #fff;
 		}
 		text-align: center;
 		.call-box {
@@ -49,11 +98,8 @@
 		max-width: 100%
 	}
 	.entry-content {
-		padding: 50px 0;
-		h2 {
-			font-size: 36px;
-			margin-bottom: 20px;
-		}
+		padding: 20px 0 0 0;
+
 		.bullets {
 			li {
 				font-size: 20px;
@@ -70,12 +116,7 @@
 			height: 20px;
 		}
 	}
-	.red-banner {
-		border-bottom: 8px solid #AC6167;
-		img {
-			max-width: 100%;
-		}
-	}
+
 	.white-box {
 		min-height: 300px;
 		padding: 50px;
@@ -109,4 +150,6 @@ ul.recent-posts {
 			}
 		}
 	}
+
+	.recent-posts p a {color:#ED1B24;font-weight:bold !important;}
 }

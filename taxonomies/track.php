@@ -1,7 +1,7 @@
 <?php
 
 function track_init() {
-	register_taxonomy( 'track', array( 'speaker' ), array(
+	register_taxonomy( 'track', array('session' ), array(
 		'hierarchical'      => true,
 		'public'            => true,
 		'show_in_nav_menus' => true,

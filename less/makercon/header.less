@@ -3,7 +3,7 @@
 .navbar {
 border:none;
 min-height:auto;
-margin:0;
+margin:15px auto;
 }
 .navbar-default {
 background-color: transparent;
@@ -12,17 +12,17 @@ border-color: none;
 
 // Primary Navigation styles
 #site-navigation {
-	li { .pull-left; }
 	li.dropdown:hover {
 		> ul.dropdown-menu {
 			display:block; // Allows us to use hover on the dropdowns rather than click.
 		}
 	}
 	a, .dropdown-menu a {
-		color: @nav-tabs-active-link-hover-color;
-		background-color: @nav-tabs-active-link-hover-bg;
+		font-size:27px;
+		color: @red;
+		background-color: none;
 		&:hover {
-			background-color: #eee;
+			color: #eee;
 			text-decoration:none !important;
 		}
 	}
@@ -39,74 +39,126 @@ border-color: none;
 
 
 #masthead {
-	margin-top: 20px;
-	margin-bottom: 40px;
-	position: relative;
-	z-index: 1;
-		#site-navigation {
-			.social {
-				margin-bottom: 20px;
-				height: 22px;
-				width: 240px;
-				display: block;
-				.pull-right;
-				margin-left: 15px;
-				.sharedaddy {
-					border:none;
-					//hide default share this title
-					.sd-title {display:none;}
-					.sd-content{
-						margin:8px 0 0 0 !important;
-						height:22px !important;
-						ul {
-						margin:0px;
-						height:22px;
-							li {
-							margin-left:20px !important;
-							height:23px !important;
-								a {
-									margin:25px 0 0 0;
-									padding:0px !important;
-								}
-							}
-						}
-					}
-					//hide default share this icons
-					li.share-linkedin a.sd-button > span,
-					li.share-google-plus-1 a.sd-button > span,
-					li.share-facebook a.sd-button > span,
-					li.share-twitter a.sd-button > span {
-						display:none;
-			        	}
-					.share-linkedin {background-image:url('../img/social-sprite.png');background-position: -116px 0px;background-repeat:no-repeat; }
-					.share-google-plus-1 {background-image:url('../img/social-sprite.png');background-position: -78px 0px;background-repeat:no-repeat;}
-					.share-facebook {background-image:url('../img/social-sprite.png');background-position: -39px 0px;background-repeat:no-repeat;}
-					.share-twitter {background-image:url('../img/social-sprite.png');background-position: 1px 0px;background-repeat:no-repeat;}
-					.share-linkedin:hover,
-					.share-google-plus-1:hover,
-					.share-facebook:hover,
-					.share-twitter:hover {opacity: 0.3;}
-					//hide default share this border and background gradient
-					a.sd-button {border:none !important; background:none;height:22px;box-shadow: none;width:23px;}
-				    .sd-block {border:none;}
-			    }
-			}
-	    }
+	margin:20px auto;
+	h1 {margin:0 !important;}
+	.social {
+		padding: 0px!important;
+		a {
+			margin: 21px 0 0 24px;
+			width: 23px;
+			height: 23px;
+			display: block;
+			float: right;
+		}
+		.sprite-facebook {
+			background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+			background-position: 0 0; width: 23px; height: 23px;
+		}
+		.sprite-google-plus {
+			background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+			background-position: 0 -73px; width: 23px; height: 23px;
+		}
+		.sprite-linkedin {
+			background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+			background-position: 0 -146px; width: 23px; height: 23px;
+		}
+		.sprite-twitter {
+			background: url('/wp-content/uploads/2014/08/csg-53e52509a090e.png') no-repeat top left;
+			background-position: 0 -219px; width: 23px; height: 23px;
+		}
+	}
 	#site-navigation {
 		ul {
 			li {
 				@media ( max-width: @screen-lg ) {
-					font-size: 22px;
+					font-size: 27px;
 				}
-				font-family: @heading;
+				font-family: @subtitle;
 				text-transform: uppercase;
-				font-size: 28px;
+				font-size: 27px;
+				font-weight:bold;
 				margin: 0px;
 				a {
-					color: @blue;
+					color: @red;
 					padding: 12px;
 				}
 			}
 		}
 	}
 }
+
+
+.slider-wrap {
+    background-image: url('../img/background-lg.png');
+    background-repeat: repeat-x;
+    background-position: center;
+    	min-height:429px;
+	margin: -105px auto 0 auto;
+}
+
+.slider {
+	height:351px;
+	margin-top:79px;
+}
+
+ol.flex-control-nav {
+bottom: 4px !important;
+z-index: 100000 !important;
+}
+
+  .rocket {
+	margin-top:10px;
+}
+
+.logo {
+	margin:15px 0;
+}
+
+@-moz-document url-prefix() {
+  .slider{
+     margin-top:-5px;
+  }
+}
+
+@-moz-document url-prefix() {
+  .rocket{
+     margin-top:-74px;
+  }
+}
+
+
+// RESPONSIVE CODE FROM JOSH FOR FUTURE USE
+
+// @media (min-width: 992px) {
+//    /* col-md background */
+//   .container-background {
+//     background: url(../img/background-md.png) no-repeat center top;
+//   }
+//   /* adjust the margin based on the height of the links in the menu */
+//   .slider {
+//   	margin-top:29px;
+//   }
+// }
+
+// @media (min-width: 1200px) {
+// 	/* blue stripe as body background */
+// 	body.home {
+// 		background: url(../img/bg.png) repeat-x top;
+// 	}
+// 	 col-lg background
+//   .container-background {
+//     background: url(../img/background-lg.png) no-repeat center top;
+//   }
+//   /* adjust the margin based on the height of the links in the menu */
+//   .slider {
+//   	margin-top:29px;
+//   }
+// }
+
+// @media (max-width: 992px) {
+// 	/* slider top and bottom borders from tablet on down */
+// 	.slider {
+// 		border-bottom:6px solid #00ABCD;
+// 		border-top:6px solid #00ABCD;
+// 	}
+// }

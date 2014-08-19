@@ -45,13 +45,13 @@ function getRandomArbitrary( min, max, not ) {
 }
 
 jQuery( document ).ready( function( $ ) {
-	var url = 'https://public-api.wordpress.com/rest/v1/sites/makezine.com/posts/?tag=makercon&number=20';
+  var url = 'https://public-api.wordpress.com/rest/v1/sites/makezine.com/posts/?category=maker-pro&number=8';
 	var jqxhr = $.getJSON( url, function() {
 		// Posts...
 		var posts = jqxhr.responseJSON.posts;
 
 		// Start the output.
-		var html_output = '<h2>News from MakerCon Bay Area</h2><ul class="recent-posts media-list">';
+		var html_output = '<div class="recent-posts media-list">';
 
 		// Figure out how many posts we have to work with...
 		var length = jqxhr.responseJSON.posts.length;
@@ -62,17 +62,23 @@ jQuery( document ).ready( function( $ ) {
 		// Get the first random number.
 		index.push( getRandomArbitrary( 0, length, null ) );
 		index.push( getRandomArbitrary( 0, length, index[0] ) );
-
+		// html for title
+			html_output += '<row>';
+			html_output += '<h2 class="subtitle">News from Makercon</h2>';
+			html_output += '</row>';
+			html_output += '<row>';
 		// Loop through the new index.
 		$( index ).each( function( key, value ) {
-			html_output += '<li class="media">';
-			html_output += '<a class="pull-left" href="' + posts[ value ].URL + '"><img class="media-object thumbnail" src="' + posts[ value ].featured_image + '?w=125" alt="' + posts[ value ].title + '"></a>';
-			html_output += '<h3><a href="' + posts[ value ].URL + '">' + posts[ value ].title + '</a></h3>';
+			html_output += '<div class="col-md-6 media" style="margin-top:0px !important;">';
+			html_output += '<a class="" href="' + posts[ value ].URL + '"><img class="media-object responsive" src="' + posts[ value ].featured_image + '?h=200" alt="' + posts[ value ].title + '"></a>';
+			html_output += '<h3><a style="font-size:20px;color:#ED1B24;font-weight:bold;" href="' + posts[ value ].URL + '">' + posts[ value ].title + '</a></h3>';
 			html_output += posts[ value ].excerpt;
-			html_output += '</li>';
+			html_output += '</div>';
 		});
-		html_output += '</ul>';
+		html_output += '</div>';
 		$('.highlights .posts').html( html_output );
+
+    $('.highlights .posts a').attr('target', '_blank');
 
 	});
 

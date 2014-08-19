@@ -7,12 +7,12 @@
 @yellow-bg: #F5DB93;
 @blue-bg: #8CB4E1;
 @grey: #B7B7B7;
-@red: #DA9594;
+@red: #ED1B24;
 @purple: #7F64A1;
 
-h1 {
-	font-size: 45px;
-	text-transform: uppercase;
+h1.entry-title{
+	font-size:34px;
+	line-height: 40px;
 }
 
 .page-id-20 {
@@ -136,4 +136,200 @@ h1 {
 ul li:before {
 		content: "\00BB \0020";
 	     }
+}
+
+.modal-footer button {margin-top:20px;}
+
+// Videos Page
+
+.video-box {
+	border: 3px solid @blue;
+	margin-bottom:20px;
+}
+
+h2.subtitle {
+	font-family:@subtitle !important;
+	color:@blue !important;
+	font-size:34px;
+	line-height: 40px;
+}
+
+// Attend/Registration Page
+
+.google-maps {
+	border: 3px solid #02394f;
+	position: relative;
+	padding-bottom: 25%;
+	overflow: hidden;
+	 iframe {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100% !important;
+		height: 100% !important;
+	}
+}
+
+.page-id-23 {
+	 a:link, a:visited {
+	 	color:#ed1b24;
+	 }
+	}
+	
+	// Speakers page-break-inside: 
+	.page-id-788 {
+		.attachment-makercon-thumbnail, .attachment-small-thumbnail {
+	border: 3px solid #02394f;
+		}
+		.entry-content h3 {
+			color:#ED1B24;
+			font-size:20px;
+			margin:0;
+		}
+		.lead {
+			margin-bottom:0px;
+		}
+		
+	}
+	
+	
+// STRAIGHT CSS THAT NEEDS TO BE INCORPORATED INTO  APPROPRIATE LESS FILES
+
+.google-maps {
+	position: relative;
+	padding-bottom: 25%;
+	margin-bottom: 30px;
+	overflow: hidden;
+}
+
+.google-maps iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100% !important;
+	height: 100% !important;
+}
+
+.page-id-832 .entry-title,.page-id-505 .entry-title {
+	display: none;
+}
+
+/*TRACKS PAGE*/
+.secondary-nav-area {
+	color: #fff;
+	font-family: fbentonsanscompmedium, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.secondary-nav-area .nav-item {
+	background-color: #ccc;
+	border: 3px solid #fff;
+	padding: 5px 15px;
+}
+
+.secondary-nav-area .nav-item.active {
+	background-color: red;
+}
+
+.secondary-nav-area .nav-item.active a:link, .secondary-nav-area .nav-item.active a:visited {
+	color: #fff !important;
+}
+
+.sessions-wrap {
+	background-color: #bbe6f5;
+	color: #0074a0;
+	margin-bottom: 8px;
+	min-height: 50px;
+	padding-top: 10px;
+}
+
+.sessions-wrap a:link, .sessions-wrap a:visited {
+	color: #ED1B24;
+}
+
+h2.session-title {
+	font-size: 20px;
+	line-height: 24px;
+	color: #0074a0;
+	margin: 0;
+}
+
+h2.session-title a:link,
+h2.session-title a:visited {
+	font-size: 20px;
+	color: #0074a0;
+}
+
+.track-info {
+	margin-bottom: 20px;
+}
+
+.session-author, .session-author a:link, .session-author a:visited {
+	color: #02394f;
+}
+
+// Seconday Navigation list-style-position: 
+.secondary-nav-area {
+	color: #fff;
+	font-family: fbentonsanscompmedium, helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+.secondary-nav-area a:link, .secondary-nav-area a:visited {
+	color: #02394f;
+}
+
+.secondary-nav-area ul {
+	text-align: center;
+	list-style-type: none;
+	margin: none;
+	padding: none;
+}
+
+li.nav-item {
+	list-style-type: none;
+	background-color: #ccc;
+	padding: 5px 15px;
+	margin: 0 auto;
+	color: #fff;
+	font-family: bentonsanscompmedium, helvetica, sans-serif;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+}
+
+li.nav-item.active {
+	background-color: red;
+	color: #fff;
+}
+
+.attachment-small-thumbnail {
+	border: 3px solid #02394f;
+}
+
+.entry-meta {
+	background-color: transparent;
+	border-top: none;
+}
+
+.screen-reader-text {
+	text-indent: 9999px;
+}
+
+h1,h2,h3,h4,h5 {
+	margin-top: 0;
+}
+
+// .entry-content p:first-child {
+// 	font-family: bentonsanscompmedium, helvetica, sans-serif;
+// 	font-size: 34px;
+// 	line-height: 40px;
+// }
+
+.post-22 h1:first-child {
+	display: none;
 }
