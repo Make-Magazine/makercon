@@ -66,7 +66,6 @@
           
 
           if((count($speakers) >  0) && ($speakers[0] != '')) { ?>
-          <p class="sessions-container">
 
             <div class="session">
             <?php
@@ -74,14 +73,15 @@
                 echo("<p class=\"session-author\">{$the_speaker}</p>");
               }
             ?>
-            </div>
-          </p><?php
+            </div><?php
 
           }
 
           
-        ?>
-        
+          $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
+          foreach($wp_session_tracks as $session_track) {
+            print("<a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"#\">{$session_track->name}<a>");
+          }
 
       <?php
         }
