@@ -6692,6 +6692,11 @@ h2.subtitle {
   margin-bottom: 10px;
 }
 
+.session-time {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
 .sessions-wrap {
   background-color: #bbe6f5;
   color: #0074a0;
@@ -6727,6 +6732,7 @@ h2.subtitle {
 .sessions-wrap-days, .sessions-no-event {
   float: right;
 }
+
 
 h2.session-title {
   font-size: 20px;

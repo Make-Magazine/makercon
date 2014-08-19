@@ -65,8 +65,8 @@
         $session_end = get_post_meta( $session_post->ID, '_session_end', true );
         $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
       }
-      echo('<div class="row sessions-block">');
-        echo('<div style="margin-left:3%;" class="col-md-2 col-xs-12">');
+      echo('<div class="sessions-block">');
+        echo('<div style="margin-left:3%;" class="session-time col-md-2 col-xs-12">');
           echo($session_info);
         echo('</div>');
         echo('<div class="row speaker-list">');
