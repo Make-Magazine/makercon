@@ -91,7 +91,7 @@
       <?php if($no_event == true) { ?>
       <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-no-event">
       <?php } else { ?>
-      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-wrap session">
+      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-wrap-days session">
       <?php } ?>
 
         <div class="lead sessions-page">

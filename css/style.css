@@ -6697,10 +6697,23 @@ h2.subtitle {
   color: #0074a0;
   min-height: 50px;
   padding-top: 10px;
+  margin-bottom: 10px;
 }
 
 .sessions-wrap a:link,
 .sessions-wrap a:visited {
+  color: #ED1B24;
+}
+
+.sessions-wrap-days {
+  background-color: #bbe6f5;
+  color: #0074a0;
+  min-height: 50px;
+  padding-top: 10px;
+}
+
+.sessions-wrap-days a:link,
+.sessions-wrap-days a:visited {
   color: #ED1B24;
 }
 
@@ -6711,7 +6724,7 @@ h2.subtitle {
 .sessions-no-event .session-title {
   padding-bottom: 5px;
 }
-.sessions-wrap, .sessions-no-event {
+.sessions-wrap-days, .sessions-no-event {
   float: right;
 }
 
