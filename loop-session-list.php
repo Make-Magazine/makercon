@@ -70,18 +70,11 @@
               foreach($speakers as $the_speaker) {
                 echo("<p class=\"session-author\">{$the_speaker}</p>");
               }
-              $session_subtitle = get_post_meta($session_post->ID, '_session_subtitle', true );
-              if($session_subtitle != '') {
-                echo'<p>
-                <a class="btn btn-default btn-xs" style="color:#02394f  ;" href="sessions page with that track showing">'.esc_html($session_subtitle).'<a>
-                </p>';
-              }
-              
               $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
               foreach($wp_session_tracks as $session_track) {
                 $session_name_parts =  explode(' ', $session_track->name);
                 $link = '/sessions/#tab-'.$session_name_parts[0];
-                echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"/sessions/"."#".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
+                echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
               }
             ?>
             </div>
