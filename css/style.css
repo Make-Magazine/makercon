@@ -1098,6 +1098,13 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
+.lead.sessions-page {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
@@ -6289,7 +6296,7 @@ article ul li {
   padding: 0px!important;
 }
 #masthead .social a {
-  margin: 21px 0 0 24px;
+  margin: 26px 8px 0 8px;
   width: 23px;
   height: 23px;
   display: block;
@@ -6342,11 +6349,12 @@ article ul li {
 #masthead .site-branding img {
   max-height: 53px;
   max-width: 202px;
+  margin-top:10px;
 }
 
 div#page.site {
   border-bottom: 3px solid #00AACD;
-  margin-bottom: 8px;
+  margin-bottom: 20px;
 }
 
 
@@ -6394,9 +6402,23 @@ ol.flex-control-nav {
   border: 3px solid #fff;
   padding: 5px 15px;
 }
+.secondary-nav-area .tabs-nav {
+  font-weight: normal;
+}
+
 .secondary-nav-area .nav-item.active {
-  background-color: red;
-  a: link: color:#fff !important ;
+  background-color: #ED1B24;
+  color:#fff !important;
+}
+.secondary-nav-area .nav-item.active a:link,
+.secondary-nav-area .nav-item.active a:visited {
+  color: #fff !important;
+}
+.secondary-nav-area ul {
+  text-align: center;
+  list-style-type: none;
+  margin: none;
+  padding: none;
 }
 footer {
   background-color: #9EE0F7;
@@ -6669,36 +6691,55 @@ h2.subtitle {
   display: none;
 }
 /*TRACKS PAGE*/
-.secondary-nav-area {
-  color: #fff;
-  font-family: fbentonsanscompmedium, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: bold;
+
+.sessions-block {
+  margin-bottom: 10px;
 }
-.secondary-nav-area .nav-item {
-  background-color: #ccc;
-  border: 3px solid #fff;
-  padding: 5px 15px;
+
+.session-time {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
-.secondary-nav-area .nav-item.active {
-  background-color: red;
-}
-.secondary-nav-area .nav-item.active a:link,
-.secondary-nav-area .nav-item.active a:visited {
-  color: #fff !important;
-}
+
 .sessions-wrap {
   background-color: #bbe6f5;
   color: #0074a0;
-  margin-bottom: 8px;
   min-height: 50px;
   padding-top: 10px;
+  margin-bottom: 10px;
+  margin-left:0 !important;
+  margin-right:0 !important;
 }
+
 .sessions-wrap a:link,
 .sessions-wrap a:visited {
   color: #ED1B24;
 }
+
+.sessions-wrap-days {
+  background-color: #bbe6f5;
+  color: #0074a0;
+  min-height: 50px;
+  padding-top: 10px;
+}
+
+.sessions-wrap-days a:link,
+.sessions-wrap-days a:visited {
+  color: #ED1B24;
+}
+
+.sessions-no-event {
+  border: 1px solid #bbe6f5;
+  padding-top: 10px;
+}
+.sessions-no-event .session-title {
+  padding-bottom: 5px;
+}
+.sessions-wrap-days, .sessions-no-event {
+  float: right;
+}
+
+
 h2.session-title {
   font-size: 20px;
   line-height: 24px;
@@ -6722,23 +6763,7 @@ h2.session-title a:visited {
 p.session-author a {
   padding-right: 8px;
 }
-.secondary-nav-area {
-  color: #fff;
-  font-family: fbentonsanscompmedium, helvetica, sans-serif;
-  text-transform: uppercase;
-  font-size: 22px;
-  font-weight: bold;
-}
-.secondary-nav-area a:link,
-.secondary-nav-area a:visited {
-  color: #02394f;
-}
-.secondary-nav-area ul {
-  text-align: center;
-  list-style-type: none;
-  margin: none;
-  padding: none;
-}
+
 li.nav-item {
   list-style-type: none;
   background-color: #ccc;
@@ -6751,7 +6776,7 @@ li.nav-item {
   font-weight: bold;
 }
 li.nav-item.active {
-  background-color: red;
+  background-color: #ED1B24;
   color: #fff;
 }
 .attachment-small-thumbnail {
@@ -6963,7 +6988,8 @@ h2.single-session-title {
   outline: 0px;
   border: 0px;
   background-color: transparent;
-  color: #19394F;
+  color: #02394F;
+  font-weight: normal;
 }
 
 .nav.nav-tabs li a:hover {
@@ -6971,3 +6997,27 @@ h2.single-session-title {
   border: 0px;
   background-color: transparent;
 }
+
+.nav.tabs-nav {
+  float: none;
+  margin: 0;
+}
+
+.nav.tabs-nav .nav-item {
+  background-color: #DBDBDB;
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 5px 15px;
+}
+
+
+.nav.tabs-nav  .nav-item.active {
+  background-color: #ED1B24;
+  color:#fff !important;
+}
+
+.nav.tabs-nav  .nav-item.active a:link {
+  color:#fff !important;
+}
+
+
