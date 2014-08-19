@@ -49,15 +49,18 @@
   feed_me_time_slots($day_two_array, "two", current(array_keys($time_slots))+100000, '');
   get_innovation_showcase();
   echo('</div>');
+
   function get_innovation_showcase() {
     $page_title = 'Innovation Showcase';
     $output = 'OBJECT';
     $post_type = 'page';
     $post = get_page_by_title( $page_title, $output, $post_type );
     echo('<div class="tab-pane" id="showcase">');
+    echo('<h2>'.$post->post_title.'</h2>');
       echo($post->post_content);
     echo('</div>');
   }
+
   function feed_me_time_slots($time_slots, $day, $date, $active) {
     echo('<div class="tab-pane '.$active.'" id="day-'.$day.'">');
     echo('<h2>Day '.$day.' - '.strftime("%B %d", $date).'</h2>');
