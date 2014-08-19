@@ -25,28 +25,57 @@
       $time_slots[$timestamp][] = $post;
     }
   }
+  // sorting time slots by date
   ksort($time_slots);
-  foreach($time_slots as $time_slot) {
-    foreach($time_slot as $session_post) {
-      $session_info = '';
 
-      //get session start time
-      $session_start = get_post_meta($session_post->ID, '_session_start', true );
-      $session_info .= (($session_start != '')&&($session_start != 0)) ? date("g:i a", $session_start) : '';
+  // day one
+  $day_one = date('d', current(array_keys($time_slots)));
+  // day two
+  $day_two = $day_one + 1;
 
-      //get session end time
-      $session_end = get_post_meta( $session_post->ID, '_session_end', true );
-      $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
+  $day_one_array = Array();
+  $day_two_array = Array();
+
+  foreach($time_slots as $timestamp => $time_slot) {
+    if($day_one == date('d', $timestamp)) {
+      $day_one_array[$timestamp] = $time_slot;
+    } else {
+      $day_two_array[$timestamp] = $time_slot;
     }
-    echo('<div class="row sessions-block">');
-      echo('<div style="margin-left:3%;" class="col-md-2 col-xs-12">');
-        echo($session_info);
+  }
+
+  echo('<div class="tab-content">');
+  feed_me_time_slots($day_one_array, "one", current(array_keys($time_slots)), 'active');
+  feed_me_time_slots($day_two_array, "two", current(array_keys($time_slots)), '');
+  echo('</div>');
+
+  function feed_me_time_slots($time_slots, $day, $date, $active) {
+    echo('<div class="tab-pane '.$active.'" id="day-'.$day.'">');
+    echo('<h2>Day '.$day.' - '.strftime("%B %d", $date).'</h2>');
+    echo('<br/><br/>');
+    foreach($time_slots as $timestamp => $time_slot) {
+      foreach($time_slot as $session_post) {
+        $session_info = '';
+
+        //get session start time
+        $session_start = get_post_meta($session_post->ID, '_session_start', true );
+        $session_info .= (($session_start != '')&&($session_start != 0)) ? date("g:i a", $session_start) : '';
+
+        //get session end time
+        $session_end = get_post_meta( $session_post->ID, '_session_end', true );
+        $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
+      }
+      echo('<div class="row sessions-block">');
+        echo('<div style="margin-left:3%;" class="col-md-2 col-xs-12">');
+          echo($session_info);
+        echo('</div>');
+        echo('<div class="row speaker-list">');
+          foreach($time_slot as $post) {
+            print_a_post($post);
+          }
+        echo('</div>');
       echo('</div>');
-      echo('<div class="row speaker-list">');
-        foreach($time_slot as $post) {
-          print_a_post($post);
-        }
-      echo('</div>');
+    }
     echo('</div>');
   }
 
@@ -102,7 +131,7 @@
                 $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
                 foreach($wp_session_tracks as $session_track) {
                   $session_name_parts =  explode(' ', $session_track->name);
-                  $link = '/sessions/#tab-'.$session_name_parts[0];
+                  $link = '/sessions/#'.$session_name_parts[0];
                   echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
                 }
               ?>
