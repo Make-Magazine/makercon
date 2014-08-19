@@ -91,7 +91,7 @@
         
       ?>
       </div>
-    </div><!-- session-<?php echo($session_post->ID); ?> --><br/><br/><br/>
+    </div><!-- session-<?php echo($session_post->ID); ?> -->
     <?php
 
   }
