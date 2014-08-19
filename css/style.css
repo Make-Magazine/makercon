@@ -1098,6 +1098,13 @@ p {
   font-weight: 300;
   line-height: 1.4;
 }
+.lead.sessions-page {
+  margin-bottom: 0px;
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.4;
+}
+
 @media (min-width: 768px) {
   .lead {
     font-size: 21px;
@@ -6661,6 +6668,7 @@ h2.subtitle {
   font-weight: 700;
 }
 
+
 .google-maps {
   position: relative;
   padding-bottom: 25%;
@@ -6679,17 +6687,34 @@ h2.subtitle {
   display: none;
 }
 /*TRACKS PAGE*/
+
+.sessions-block {
+  margin-bottom: 10px;
+}
+
 .sessions-wrap {
   background-color: #bbe6f5;
   color: #0074a0;
-  margin-bottom: 8px;
   min-height: 50px;
   padding-top: 10px;
 }
+
 .sessions-wrap a:link,
 .sessions-wrap a:visited {
   color: #ED1B24;
 }
+
+.sessions-no-event {
+  border: 1px solid #bbe6f5;
+  padding-top: 10px;
+}
+.sessions-no-event .session-title {
+  padding-bottom: 5px;
+}
+.sessions-wrap, .sessions-no-event {
+  float: right;
+}
+
 h2.session-title {
   font-size: 20px;
   line-height: 24px;
