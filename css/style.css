@@ -6402,8 +6402,8 @@ ol.flex-control-nav {
   padding: 5px 15px;
 }
 .secondary-nav-area .nav-item.active {
-  background-color: red;
-  a: link: color:#fff !important ;
+  background-color: #ED1B24;
+  color:#fff !important;
 }
 .secondary-nav-area .nav-item.active a:link,
 .secondary-nav-area .nav-item.active a:visited {
@@ -6668,7 +6668,6 @@ h2.subtitle {
   font-weight: 700;
 }
 
-
 .google-maps {
   position: relative;
   padding-bottom: 25%;
@@ -6770,7 +6769,7 @@ li.nav-item {
   font-weight: bold;
 }
 li.nav-item.active {
-  background-color: red;
+  background-color: #ED1B24;
   color: #fff;
 }
 .attachment-small-thumbnail {
@@ -7004,7 +7003,7 @@ h2.single-session-title {
 
 
 .nav.tabs-nav  .nav-item.active {
-  background-color: red;
+  background-color: #ED1B24;
   color:#fff !important;
 }
 
