@@ -51,6 +51,8 @@
 
         if($session_location){
           $tmp = $session_location.' - ';
+        } else {
+          $tmp = '';//reset in case of new row
         }
         if((count($session_speakers) >  0) && ($session_speakers[0] != '')) { 
           $speakers= Array();
