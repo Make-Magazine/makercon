@@ -33,7 +33,7 @@
     <div class="row speaker-list speaker-id-<?php echo($session_post->ID); ?>" id="speaker-list-id<?php echo($session_post->ID); ?>">
       <div style="margin-left:3%;" class="col-md-2 col-xs-12"><?php echo($session_info); ?></div> 
 
-      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9  sessions-wrap session"><div class="lead"><?php
+      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-wrap session"><div class="lead"><?php
       $session_post_title = esc_html($session_post->post_title);
 
       echo("<h2><a href=\"".get_post_permalink($session_post->ID)."\">{$session_post_title}</a></h2>");
