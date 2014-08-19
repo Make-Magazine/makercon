@@ -82,7 +82,7 @@
                 $session_name_parts =  explode(' ', $session_track->name);
                 $link = '/sessions/#tab-'.$session_name_parts[0];
                 echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" 
-                  href=\"".$link."\">{$session_track->name}</a></p>";
+                  href=\"".$link."\">".strtolower($session_track->name).'</a></p>";
               }
             ?>
             </div>
