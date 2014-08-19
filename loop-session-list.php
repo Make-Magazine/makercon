@@ -57,7 +57,6 @@
     echo('<div class="tab-pane" id="showcase">');
       echo($post->post_content);
     echo('</div>');
-    exit;
   }
   function feed_me_time_slots($time_slots, $day, $date, $active) {
     echo('<div class="tab-pane '.$active.'" id="day-'.$day.'">');
