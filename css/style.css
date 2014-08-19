@@ -6349,6 +6349,7 @@ article ul li {
 #masthead .site-branding img {
   max-height: 53px;
   max-width: 202px;
+  margin-top:10px;
 }
 
 div#page.site {
