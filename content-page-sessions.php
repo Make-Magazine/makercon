@@ -6,26 +6,16 @@
  */
 ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
-  <header class="entry-header">    
-    <?php 
-        $_page_tabs_menu = get_post_meta(get_the_ID(), 'page_tabs_menu', true);
-        if(empty($_page_tabs_menu)) $_page_tabs_menu = 'tabs-menu';
-
-        wp_nav_menu( array( 
-            'theme_location' => 'primary',
-            'menu' => $_page_tabs_menu,
-            'top_menu',
-            'depth' => 1,
-            'container' => 'div',
-            'container_class' => 'secondary-nav-area',
-            'menu_class' => 'row nav tabs-nav',
-            'items_wrap'      => '<div id="%1$s" class="%2$s">%3$s</div>',
-            'walker' => new Tabs_Walker_Nav_Menu()  ) ); ?>
-    <h1 class="entry-title"><?php the_title(); ?></h1>
+  <header class="entry-header">
+    <ul class="nav nav-tabs">
+      <li class="active"><a href="#day-one" data-toggle="tab">Day One</a></li>
+      <li><a href="#day-two" data-toggle="tab">Day Two</a></li>
+      <li><a href="#showcase" data-toggle="tab">Innovation Showcase</a></li>
+    </ul>
   </header><!-- .entry-header -->
-    <div class="entry-content">
- 
-    <?php the_content(); ?>
+  <br/>
+  <br/>
+  <div class="entry-content">
     <div class="sessions-list-area">
         <?php get_template_part('loop','session-list'); ?>
     </div><!-- .sessions-list-area -->
