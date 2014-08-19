@@ -6401,6 +6401,10 @@ ol.flex-control-nav {
   border: 3px solid #fff;
   padding: 5px 15px;
 }
+.secondary-nav-area .tabs-nav {
+  font-weight: normal;
+}
+
 .secondary-nav-area .nav-item.active {
   background-color: #ED1B24;
   color:#fff !important;
@@ -6977,14 +6981,15 @@ h2.single-session-title {
 .nav.nav-tabs li.active a {
   color: #FFF;
 }
-.nav.nav-tabs li a {
+.nav.tabs-nav li a {
   outline: 0px;
   border: 0px;
   background-color: transparent;
-  color: #19394F;
+  color: #02394F;
+  font-weight: normal;
 }
 
-.nav.nav-tabs li a:hover {
+.nav.tabs-nav li a:hover {
   outline: 0px;
   border: 0px;
   background-color: transparent;
@@ -6996,11 +7001,16 @@ h2.single-session-title {
 }
 
 .nav.tabs-nav .nav-item {
-  background-color: #ccc;
+  background-color: #DBDBDB;
+  text-align: center;
   border: 3px solid #fff;
   padding: 5px 15px;
 }
 
+.nav.tabs-nav .nav-item a {
+  color: #02394F;
+  font-weight: normal;
+}
 
 .nav.tabs-nav  .nav-item.active {
   background-color: #ED1B24;
