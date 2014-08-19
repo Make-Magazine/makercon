@@ -23,12 +23,16 @@
   foreach($wp_session_posts as $session_post) {
     setup_postdata($session_post);
           $session_info = '';
+          //get session start time
     $session_start = get_post_meta($session_post->ID, '_session_start', true );
     $session_info .= (($session_start != '')&&($session_start != 0)) ? date("g:i a", $session_start) : '';
-
+          //get session end time
     $session_end = get_post_meta( $session_post->ID, '_session_end', true );
     $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
 
+    //if a location exist, set it as session location
+    $wp_session_location = wp_get_post_terms(get_the_ID(), 'location', array());
+    $session_location = $wp_session_location[0]->name;
    ?>
     <div class="row speaker-list speaker-id-<?php echo($session_post->ID); ?>" id="speaker-list-id<?php echo($session_post->ID); ?>">
       <div style="margin-left:3%;" class="col-md-2 col-xs-12"><?php echo($session_info); ?></div> 
@@ -45,6 +49,9 @@
       <?php 
         $session_speakers = explode(",", get_post_meta($session_post->ID, '_session_speakers', true));
 
+        if($session_location){
+          $tmp = $session_location.' - '
+        }
         if((count($session_speakers) >  0) && ($session_speakers[0] != '')) { 
           $speakers= Array();
           foreach($session_speakers as $speaker_id) {
@@ -52,7 +59,7 @@
             if(get_post_status ( $speaker_id ) == 'publish') {
               $tmp_title = get_the_title($speaker_id);
               $tmp_link = get_permalink($speaker_id);
-              $tmp = '<a href="'.$tmp_link.'">'.$tmp_title.'</a>';
+              $tmp .= '<a href="'.$tmp_link.'">'.$tmp_title.'</a>';
               array_push($speakers, $tmp);
             } 
           }
