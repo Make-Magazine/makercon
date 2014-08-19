@@ -77,12 +77,16 @@
                 </p>';
               }
               
-              $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
+             $wp_session_track = wp_get_post_terms($session_post->ID, 'track', array());
+            if (isset($wp_session_track) && is_object($wp_session_track[0])) {
+             $session_track_title = esc_html($wp_session_track[0]->name);
+             $session_track_permalink =  get_option("siteurl")."/sessions/"."#".$wp_session_track[0]->slug;
+            }
+
               foreach($wp_session_tracks as $session_track) {
                 $session_name_parts =  explode(' ', $session_track->name);
                 $link = '/sessions/#tab-'.$session_name_parts[0];
-                echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" 
-                  href=\"".$link."\">".strtolower($session_track->name)."</a></p>";
+                echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".$session_track_permalink."\">".strtoupper($session_track->name)."</a></p>";
               }
             ?>
             </div>
