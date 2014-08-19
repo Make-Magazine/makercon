@@ -25,13 +25,13 @@
       <?php do_action( 'before' ); ?>
       <header id="masthead" class="site-header" role="banner">
         <div class="row">
-          <div class="site-branding col-md-3">
+          <div class="site-branding col-md-3 col-xs-3 col-sm-3 col-lg-3">
             <?php if ( is_front_page() || is_home() ) : ?>
             <?php else : ?>
             <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
             <?php endif; ?>
           </div>
-          <nav id="site-navigation" class="navbar navbar-default col-md-7" role="navigation">
+          <nav id="site-navigation" class="navbar navbar-default col-md-7 col-xs-9 col-sm-7 col-lg-7" role="navigation">
             <?php wp_nav_menu( array( 
             'theme_location' => 'primary', 
             'top_menu',
@@ -41,7 +41,7 @@
             'walker' => new Bootstrap_Walker_Nav_Menu() ) ); ?>
           </nav>
           <!-- #site-navigation -->
-          <div class="social col-md-2">
+          <div class="social col-md-2 hidden-xs col-sm-2 col-lg-2">
               <a class="sprite-facebook" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
               <a class="sprite-twitter" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
               <a class="sprite-google-plus" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
