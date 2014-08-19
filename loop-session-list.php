@@ -81,8 +81,8 @@
               foreach($wp_session_tracks as $session_track) {
                 $session_name_parts =  explode(' ', $session_track->name);
                 $link = '/sessions/#tab-'.$session_name_parts[0];
-                print("<a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" 
-                  href=\"".$link."\">{$session_track->name}<a>");
+                echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" 
+                  href=\"".$link."\">{$session_track->name}</a></p>";
               }
             ?>
             </div>
