@@ -26,5 +26,8 @@
     <div class="entry-content">
  
     <?php the_content(); ?>
+    <div class="sessions-list-area">
+        <?php get_template_part('loop','session-list'); ?>
+    </div><!-- .sessions-list-area -->
   </div><!-- .entry-content -->
 </article><!-- #post-## -->
