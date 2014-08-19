@@ -43,6 +43,7 @@ function makercon_setup() {
 	// This theme uses wp_nav_menu() in one location.
 	register_nav_menus( array(
 		'primary' => __( 'Primary Menu', 'makercon' ),
+    'pagetab' => __('Page Tab Menu', 'makercon' )
 	) );
 
 	// Enable support for Post Formats.
@@ -107,6 +108,9 @@ add_action( 'wp_enqueue_scripts', 'makercon_scripts' );
 
 //boostrap walker for navigation';
 require get_template_directory() . '/inc/bootstrap-walker.php';
+
+//boostrap walker for navigation';
+require get_template_directory() . '/inc/tab-menu-walker.php';
 
 /**
  * Custom template tags for this theme.
