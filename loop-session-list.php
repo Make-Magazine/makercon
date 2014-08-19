@@ -46,7 +46,8 @@
 
   echo('<div class="tab-content">');
   feed_me_time_slots($day_one_array, "one", current(array_keys($time_slots)), 'active');
-  feed_me_time_slots($day_two_array, "two", current(array_keys($time_slots)), '');
+  feed_me_time_slots($day_two_array, "two", current(array_keys($time_slots))+100000, '');
+
   echo('</div>');
 
   function feed_me_time_slots($time_slots, $day, $date, $active) {
