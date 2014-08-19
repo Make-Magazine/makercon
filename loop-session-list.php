@@ -40,12 +40,7 @@
       <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-wrap session"><div class="lead"><?php
       $session_post_title = esc_html($session_post->post_title);
 
-      echo("<h2><a href=\"".get_post_permalink($session_post->ID)."\">{$session_post_title}</a></h2>");
-
-      $session_subtitle = get_post_meta($session_post->ID, '_session_subtitle', true );
-      if($session_subtitle != '') {
-        print("<div class=\"speaker-subtitle\">".esc_html($session_subtitle)."</div>");
-      } ?></div>
+      echo("<h2><a href=\"".get_post_permalink($session_post->ID)."\">{$session_post_title}</a></h2>"); ?></div>
       <?php 
         $session_speakers = explode(",", get_post_meta($session_post->ID, '_session_speakers', true));
 
@@ -74,6 +69,12 @@
             <?php
               foreach($speakers as $the_speaker) {
                 echo("<p class=\"session-author\">{$the_speaker}</p>");
+              }
+              $session_subtitle = get_post_meta($session_post->ID, '_session_subtitle', true );
+              if($session_subtitle != '') {
+                echo'<p>
+                <a class="btn btn-default btn-xs" style="color:#02394f  ;" href="sessions page with that track showing">'.esc_html($session_subtitle).'<a>
+                </p>';
               }
             ?>
             </div>
