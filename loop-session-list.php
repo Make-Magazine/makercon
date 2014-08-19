@@ -68,7 +68,7 @@
           
 
           if((count($speakers) >  0) && ($speakers[0] != '')) { ?>
-          <p class="sessions-container">
+          
 
             <div class="session">
             <?php
@@ -77,7 +77,7 @@
               }
             ?>
             </div>
-          </p><?php
+          <?php
 
           }
 
