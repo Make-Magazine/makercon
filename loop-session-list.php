@@ -31,7 +31,7 @@
     $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
 
     //if a location exist, set it as session location
-    $wp_session_location = wp_get_post_terms(get_the_ID(), 'location', array());
+    $wp_session_location = wp_get_post_terms($session_post->ID, 'location', array());
     $session_location = $wp_session_location[0]->name;
    ?>
     <div class="row speaker-list speaker-id-<?php echo($session_post->ID); ?>" id="speaker-list-id<?php echo($session_post->ID); ?>">
