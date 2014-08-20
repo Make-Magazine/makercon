@@ -16,7 +16,7 @@
     <div class="col-md-8">
       <h2 class="subtitle">Live from MakerCon Bay Area 2014</h2>
 
-<iframe style="border: 5px solid #02394F" width="760" height="438" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
+<iframe style="border: 5px solid #02394F" width="100%" height="438" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
 
         <div style="clear:both;"></div>
       <div style="text-align: center; margin-top: 20px;">
