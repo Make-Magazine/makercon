@@ -99,6 +99,7 @@
     //if a location exist, set it as session location
     $wp_session_location = wp_get_post_terms($session_post->ID, 'location', array());
     $session_location = $wp_session_location[0]->name;
+
    ?>
       <?php if($no_event == true) { ?>
       <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-no-event">
@@ -127,28 +128,23 @@
               //check that session is 'published';
               if(get_post_status ( $speaker_id ) == 'publish') {
                 $tmp_title = get_the_title($speaker_id);
-                $tmp_link = get_permalink($speaker_id);
-                $tmp .= $tmp_title;
-                array_push($speakers, $tmp);
+                array_push($speakers, $tmp_title);
               }
             }
-
-            if((count($speakers) >  0) && ($speakers[0] != '')) { 
-              ?>
-              <div class="session">
-              <?php
-                foreach($speakers as $the_speaker) {
-                  echo("<p class=\"session-author\">{$the_speaker}</p>");
-                }
-                $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
-                foreach($wp_session_tracks as $session_track) {
-                  $session_name_parts =  explode(' ', $session_track->name);
-                  $link = '/sessions/#'.$session_name_parts[0];
-                  echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
-                }
-              ?>
-              </div>
-            <?php } ?>
+          $speakers = join(", ", $speakers);
+          $tmp .= $speakers;
+            ?>
+            <div class="session">
+            <p class="session-author"><?php echo($tmp); ?></p>
+            <?php
+              $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
+              foreach($wp_session_tracks as $session_track) {
+                $session_name_parts =  explode(' ', $session_track->name);
+                $link = '/sessions/#'.$session_name_parts[0];
+                echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
+              }
+            ?>
+            </div>
         <?php } ?>
       </div>
     <?php
