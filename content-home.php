@@ -22,7 +22,7 @@
       <div style="text-align: center; margin-top: 20px;">
         <p><strong>MakerCon Bay Area, May 2014: Jay Silver on designing for "wild humans".</strong></p>
       </div>
-      <div style="text-align: center; margin-top: 20px;">
+      <div style="text-align: center; margin-top: 20px;margin-bottom:20px;">
         <a class="button" href="/videos">More Videos from MakerCon</a>
       </div>
     </div>
