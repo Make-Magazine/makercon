@@ -63,7 +63,7 @@
 
   function feed_me_time_slots($time_slots, $day, $date, $active) {
     echo('<div class="tab-pane '.$active.'" id="day-'.$day.'">');
-    echo('<h2>Day '.$day.' - '.strftime("%B %d", $date).'</h2>');
+    echo('<h2>Day '.ucfirst($day).' - '.strftime("%B %d", $date).'</h2>');
     echo('<br/><br/>');
     foreach($time_slots as $timestamp => $time_slot) {
       foreach($time_slot as $session_post) {
@@ -128,7 +128,7 @@
               if(get_post_status ( $speaker_id ) == 'publish') {
                 $tmp_title = get_the_title($speaker_id);
                 $tmp_link = get_permalink($speaker_id);
-                $tmp .= '<a href="'.$tmp_link.'">'.$tmp_title.'</a>';
+                $tmp .= $tmp_title;
                 array_push($speakers, $tmp);
               }
             }
