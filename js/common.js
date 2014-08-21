@@ -14,9 +14,9 @@ $(function() {
         // Use the History API if possible, or else, fall back.
         // The History API will allow us to hash a URL without page jump in modern browsers.
         if ( history.pushState ) {
-            // window.history.pushState( null, null, e.target.hash );
+            window.history.pushState( null, null, e.target.hash );
         } else {
-            // window.location.hash = e.target.hash;
+            window.location.hash = e.target.hash;
         }
 
     })
