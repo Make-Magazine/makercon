@@ -4,7 +4,9 @@ $(function() {
     if ( url.match( '#' ) ) {
       var tab_name = '.nav-tabs a[href=#' + url.split( '#' )[1] + ']';
       console.log(tab_name);
-      $(tab_name).tab( 'show' );
+      if(!$(tab_name).parent().hasClass('active')) {
+        $(tab_name).tab( 'show' );
+      }
     }
 
     $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
