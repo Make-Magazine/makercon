@@ -50,8 +50,8 @@
         echo("<h3><a href=\"".get_post_permalink($speaker_post->ID)."\">{$speaker_post_title}</a></h3>");
       } else {
         echo("<h3>{$speaker_post_title}</h3>");
-      } 
-      
+      }
+
       $speaker_subtitle = get_post_meta($speaker_post->ID, '_speaker_subtitle', true );
       if($speaker_subtitle != '') {
         print("<div class=\"speaker-subtitle\">".esc_html($speaker_subtitle)."</div>");

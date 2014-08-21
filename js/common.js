@@ -1,12 +1,15 @@
-jQuery( document ).ready( function( $ ) {
+$(function() {
     // Allow links within bootstrap tabs for sharing URL of a particular tab
     var url = document.location.toString();
     if ( url.match( '#' ) ) {
-        $( '.nav-tabs a[href=#' + url.split( '#' )[1] + ']').tab( 'show' ) ;
+      var tab_name = '.nav-tabs a[href=#' + url.split( '#' )[1] + ']';
+      $(tab_name).tab( 'show' ) ;
     }
 
-    // Change hash in URL for tab linking
-    $( '.nav-tabs a' ).on( 'shown', function( e ) {
+    $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+       // console.log('showing tab ' + e.target); // Active Tab
+       // console.log('showing tab ' + e.relatedTarget); // Previous Tab
+
         // Use the History API if possible, or else, fall back.
         // The History API will allow us to hash a URL without page jump in modern browsers.
         if ( history.pushState ) {
@@ -14,5 +17,7 @@ jQuery( document ).ready( function( $ ) {
         } else {
             window.location.hash = e.target.hash;
         }
-    });
-});
+
+    })
+  });
+
