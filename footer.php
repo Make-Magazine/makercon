@@ -34,14 +34,21 @@
 </div>
 </div>
 <div class="row" style="border-bottom:1px solid #999;padding-bottom:30px !important;margin-bottom:60px;margin-top:30px;">
-   <div class="col-md-6">
+      <div class="col-md-4">
+      <h3 class="subtitle">
+      Media Partner</h2>
+      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=151334578&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
+      <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NYSCI_Logo_200w.gif" alt="NYSCI Logo" width="150" />
+      </a>
+   </div>
+   <div class="col-md-4">
       <h3 class="subtitle">
       Media Partner</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=147819658&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
       <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/engadget-logo-sidebar.gif" alt="Engadget Logo" width="200" />
       </a>
    </div>
-   <div class="col-md-6">
+   <div class="col-md-4">
       <h3 class="subtitle">
       Communications Partner</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=147820018&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
