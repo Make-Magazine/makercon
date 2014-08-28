@@ -18,6 +18,18 @@
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+    <script>
+      var _prum = [['id', '53fcea2fabe53d341d4ae0eb'],
+                  ['mark', 'firstbyte', (new Date()).getTime()]];
+      (function() {
+          var s = document.getElementsByTagName('script')[0]
+            , p = document.createElement('script');
+          p.async = 'async';
+          p.src = '//rum-static.pingdom.net/prum.min.js';
+          s.parentNode.insertBefore(p, s);
+      })();
+    </script>
+
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
