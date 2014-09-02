@@ -24,13 +24,15 @@
 
       $session_info = '';
       $session_start = get_post_meta( get_the_ID(), '_session_start', true );
-      $session_info .= (($session_start != '')&&($session_start != 0)) ? date("g:i a", $session_start) : '';
+      $session_info .= (($session_start != '')&&($session_start != 0)) ? date("l, jS, g:i a", $session_start) : '';
 
       $session_end = get_post_meta( get_the_ID(), '_session_end', true );
       $session_info .= (($session_end != '')&&($session_start != 0)) ? " to ".date("g:i a", $session_end) : '';
 
       $wp_session_location = wp_get_post_terms(get_the_ID(), 'location', array());
-      $session_info .= (isset($wp_session_location) && is_object($wp_session_location[0])) ? " in ".esc_html($wp_session_location[0]->name) : '';
+      //don't show " in "without times"
+      $session_in = ($session_info != '') ? ' in ': '';
+      $session_info .= (isset($wp_session_location) && is_object($wp_session_location[0])) ? $session_in.esc_html($wp_session_location[0]->name) : '';
 
       
 
