@@ -40,6 +40,27 @@
 
       ?></div>
       <?php the_content(); ?>
+      <?php $session_video = get_post_meta(get_the_ID(), '_session_video_url', true );
+      if(($session_video != '') && (strpos($session_video,'youtube', 0) !== false)) {
+        $session_video = str_replace(array('http:','https:','watch?v='),array('','','embed/'), $session_video);
+          ?>
+        <div class="speaker-subtitle"><a href="#" data-toggle="modal" data-target="#myModal">Session Video</a></div>
+      <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
+        <div class="modal-dialog">
+          <div class="modal-content">
+            <div class="modal-header">
+              <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">×</span><span class="sr-only">Close</span></button>
+              <h4 class="modal-title" id="myModalLabel"><?php the_title(); ?></h4>
+            </div>
+            <div class="modal-body">
+              <iframe style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="<?php echo($session_video); ?>?showinfo=0&amp;rel=0&amp;enablejsapi=1" frameborder="0" allowfullscreen=""></iframe>
+              <div style="clear:both;"></div>
+            </div>
+            <div class="modal-footer">
+            </div>
+          </div>
+        </div>
+      </div><?php } //ENDIF Session Video ?>
     </div>
   </div>      
 </article><!-- #session-## -->
