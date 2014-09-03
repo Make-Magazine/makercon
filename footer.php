@@ -10,11 +10,18 @@
 <?php if ( is_front_page() || is_home() ) : ?>
 <?php else : ?>
 <div class="row sponsors" style="border-top:1px solid #999;padding-top:30px !important;margin-top:30px;">
-   <div class="col-md-6">
+   <div class="col-md-3">
       <h3 class="subtitle">
       Presenting Sponsor</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214418&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
       <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo-02.png" alt="Cornell Logo" style="width:300px;margin-top:41px" />
+      </a>
+   </div>
+   <div class="col-md-3">
+      <h3 class="subtitle">
+      Host Sponsor</h2>
+      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=151334578&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
+      <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NYSCI_Logo_200w.gif" alt="NYSCI Logo" width="150" />
       </a>
    </div>
    <div class="col-md-6">
@@ -31,28 +38,22 @@
             <img style="margin-top:25px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100"  />
             </a>
          </div>
+      </div>
 </div>
 </div>
-<div class="row" style="border-bottom:1px solid #999;padding-bottom:30px !important;margin-bottom:60px;margin-top:30px;">
-      <div class="col-md-4">
-      <h3 class="subtitle">
-      Media Partner</h2>
-      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=151334578&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
-      <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/NYSCI_Logo_200w.gif" alt="NYSCI Logo" width="150" />
-      </a>
-   </div>
-   <div class="col-md-4">
+<div class="row" style="text-align:center; border-bottom:1px solid #999;padding-bottom:30px !important;margin-bottom:60px;margin-top:30px;">
+   <div class="col-md-6">
       <h3 class="subtitle">
       Media Partner</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=147819658&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
-      <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/engadget-logo-sidebar.gif" alt="Engadget Logo" width="200" />
+      <img style="margin:auto;" class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/engadget-logo-sidebar.gif" alt="Engadget Logo" width="200" />
       </a>
    </div>
-   <div class="col-md-4">
+   <div class="col-md-6">
       <h3 class="subtitle">
       Communications Partner</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=147820018&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
-      <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Marketwired Logo" width="150" /></a>
+      <img style="margin:auto;" class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/marketwired_logo.jpg" alt="Marketwired Logo" width="150" /></a>
    </div>
 </div>
 <?php endif; ?>
@@ -97,7 +98,7 @@
 <?php wp_footer(); ?>
 <script async defer>
    jQuery(document).ready(function(){
-   	jQuery(".post-edit-link").addClass("button");
+      jQuery(".post-edit-link").addClass("button");
    });
 </script>
 </body>
