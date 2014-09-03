@@ -98,7 +98,7 @@
 <?php wp_footer(); ?>
 <script async defer>
    jQuery(document).ready(function(){
-   	jQuery(".post-edit-link").addClass("button");
+      jQuery(".post-edit-link").addClass("button");
    });
 </script>
 </body>
