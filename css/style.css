@@ -6628,6 +6628,13 @@ h1.entry-title {
   border: 3px solid #02394f;
   margin-bottom: 20px;
 }
+
+.col-xs-12 .icon-video, .col-sm-12 .icon-video, .col-md-12 .icon-video {
+    max-width: 24px;
+    max-height: auto;
+    float: left;
+}
+
 h2.subtitle {
   font-family: bentonsanscompmedium, helvetica, sans-serif !important;
   color: #02394f !important;
@@ -6961,6 +6968,12 @@ div.speaker-name-title h3 {
 h2.single-session-title {
   margin-bottom: 20px;
 }
+
+.session-video-subtitle a {
+  float: left;
+  padding-left: 8px;
+}
+
 .nav-tabs {
   border-bottom: 0px;
   text-align: center;
