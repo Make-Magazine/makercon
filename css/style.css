@@ -6632,6 +6632,8 @@ h1.entry-title {
 .col-xs-12 .icon-video, .col-sm-12 .icon-video, .col-md-12 .icon-video {
     max-width: 24px;
     max-height: auto;
+    padding-top: 2px;
+    cursor: pointer;
     float: left;
 }
 
@@ -6969,9 +6971,15 @@ h2.single-session-title {
   margin-bottom: 20px;
 }
 
-.session-video-subtitle a {
+div.session-video-subtitle {
+  margin-bottom: 6px;
+  min-height: 26px;
+  cursor: pointer;
+}
+
+div.session-video-subtitle a {
   float: left;
-  padding-left: 8px;
+  padding-left: 6px;
 }
 
 .nav-tabs {
