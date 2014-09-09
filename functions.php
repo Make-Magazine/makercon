@@ -110,9 +110,6 @@ add_action( 'wp_enqueue_scripts', 'makercon_scripts' );
 //boostrap walker for navigation';
 require get_template_directory() . '/inc/bootstrap-walker.php';
 
-//boostrap walker for navigation';
-require get_template_directory() . '/inc/tab-menu-walker.php';
-
 /**
  * Custom template tags for this theme.
  */
