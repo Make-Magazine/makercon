@@ -78,7 +78,7 @@
         $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
       }
       echo('<div class="sessions-block">');
-        echo('<div style="margin-left:3%;" class="session-time col-md-2 col-xs-12">');
+        echo('<div class="session-time col-md-2 col-xs-12">');
           echo($session_info);
         echo('</div>');
         echo('<div class="row speaker-list">');
@@ -102,9 +102,9 @@
 
    ?>
       <?php if($no_event == true) { ?>
-      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-no-event">
+      <div class="col-md-9 col-xs-12  sessions-no-event">
       <?php } else { ?>
-      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-wrap-days session">
+      <div class="col-md-9 col-xs-12  sessions-wrap-days session">
       <?php } ?>
 
         <div class="lead sessions-page">
