@@ -6556,18 +6556,16 @@ ul#block-nav .nav .nav-tabs li {
   outline: 0px;
   border: 2px solid #fff !important;
 }
-#menu-item-898.dropdown > ul.dropdown-menu {
-  padding-left: 20px;
+#site-navigation li#menu-item-898.dropdown > ul.dropdown-menu {
   display: none !important;
 }
-#menu-item-898.open > ul.dropdown-menu {
+#site-navigation li#menu-item-898.open > ul.dropdown-menu {
   display: block !important;
 }
-#menu-item-821.dropdown > ul.dropdown-menu {
-  padding-left: 20px;
+#site-navigation #menu-item-821.dropdown > ul.dropdown-menu {
   display: none !important;
 }
-#menu-item-821.open > ul.dropdown-menu {
+#site-navigation #menu-item-821.open > ul.dropdown-menu {
   display: block !important;
 }
 /* Small devices (tablets, 768px and up) */
