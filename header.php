@@ -57,7 +57,7 @@
                <nav class="navbar navbar-default  col-xs-12 col-sm-12 col-md-12 col-lg-7" role="navigation">
                      <!-- Brand and toggle get grouped for better mobile display -->
                      <div class="col-xs-12 col-sm-3 col-md-3 hidden-lg">
-                         <div class="site-branding col-xs-9 col-sm-12 hidden-md hidden-lg" style="margin-top:20px;">
+                         <div class="site-branding col-xs-9 col-sm-12 hidden-md hidden-lg">
                              <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="auto" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
                          </div>
                         <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
