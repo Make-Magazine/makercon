@@ -13,16 +13,16 @@ get_header(); ?>
   <!-- Nav tabs -->
 <div class="secondary-nav-area">
   <div class="row">
-    <div class="col-md-3 nav-item">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 nav-item">
       <a href="/conference">Overview</a>
     </div>
-    <div class="col-md-3 nav-item">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 nav-item">
       <a href="/videos">Videos</a>
     </div>
-    <div class="col-md-3 nav-item active">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 nav-item active">
       <a href="/sessions">Sessions</a>
     </div>
-    <div class="col-md-3 nav-item">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3nav-item">
       <a href="/speakers">Speakers</a>
     </div>
   </div>

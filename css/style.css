@@ -6250,7 +6250,7 @@ article ul li {
 .navbar {
   border: none;
   min-height: auto;
-  margin: auto;
+  margin: 0px !important;
 }
 .navbar-default {
   background-color: transparent;
@@ -6434,6 +6434,11 @@ ol.flex-control-nav {
     margin-left: -35px !important;
     margin-top: 5px !important;
   }
+  .site-branding img {
+    height: auto !important;
+    width: auto !important;
+    margin-top: 0 !important;
+  }
   #menu-menu-1 {
     width: 100%;
     text-align: center;
@@ -6447,6 +6452,54 @@ ol.flex-control-nav {
     width: 100%;
     text-align: center;
   }
+}
+.nav-tabs {
+  border-bottom: 0px;
+  text-align: center;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+.nav.nav-tabs li {
+  background-color: #DBDBDB;
+  outline: 0px;
+  border: 2px solid #fff;
+  margin: 0px !important;
+}
+.nav.nav-tabs li.active {
+  outline: 0px;
+  background-color: #ED1B24;
+}
+.nav.nav-tabs li.active a {
+  color: #FFF;
+}
+.nav.nav-tabs li a {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+  color: #02394F;
+  font-weight: normal;
+}
+.nav.nav-tabs li a:hover {
+  outline: 0px;
+  border: 0px;
+  background-color: transparent;
+}
+.nav.tabs-nav {
+  float: none;
+  margin: 0;
+}
+.nav.tabs-nav .nav-item {
+  background-color: #DBDBDB;
+  text-align: center;
+  border: 3px solid #fff;
+  padding: 5px 15px;
+}
+.nav.tabs-nav .nav-item.active {
+  background-color: #ED1B24;
+  color: #fff !important;
+}
+.nav.tabs-nav .nav-item.active a:link {
+  color: #fff !important;
 }
 footer {
   background-color: #9EE0F7;
@@ -6488,6 +6541,44 @@ footer form input {
   footer p,
   footer form {
     text-align: center;
+  }
+}
+.page page-id-951 .entry-header .nav-tabs {
+  width: 100%;
+}
+.session-time {
+  padding-left: 0px !important;
+  font-weight: bold !important;
+}
+ul#block-nav .nav .nav-tabs li {
+  margin: 0 !important;
+  background-color: #DBDBDB !important;
+  outline: 0px;
+  border: 2px solid #fff !important;
+}
+#menu-item-821.dropdown > ul.dropdown-menu {
+  padding-left: 20px;
+  display: none !important;
+}
+#menu-item-821.open > ul.dropdown-menu {
+  display: block !important;
+}
+/* Small devices (tablets, 768px and up) */
+@media (min-width: 768px) {
+  .dropdown-toggle a:hover ul.dropdown-menu {
+    display: none;
+  }
+}
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .home a.button {
+    width: 100% !important;
+  }
+}
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  .home a.button {
+    width: 100% !important;
   }
 }
 .widget {
