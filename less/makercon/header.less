@@ -3,7 +3,7 @@
 .navbar {
 border:none;
 min-height:auto;
-margin:15px auto;
+margin:auto;
 }
 .navbar-default {
 background-color: transparent;
@@ -12,6 +12,7 @@ border-color: none;
 
 // Primary Navigation styles
 #site-navigation {
+	margin-top:20px;
 	li.dropdown:hover {
 		> ul.dropdown-menu {
 			display:block; // Allows us to use hover on the dropdowns rather than click.
@@ -39,13 +40,14 @@ border-color: none;
 
 
 #masthead {
-	margin:20px auto;
+	margin:10px auto 20px auto;
 	h1 {margin:0 !important;}
 	.social {
+		margin-top:30px;
 		padding: 0px!important;
 		a {
-			margin: 21px 0 0 24px;
-			width: 23px;
+			margin: auto;
+			width: auto;
 			height: 23px;
 			display: block;
 			float: right;
@@ -93,20 +95,22 @@ border-color: none;
     background-repeat: repeat-x;
     background-position: center;
     	min-height:429px;
-	margin: -105px auto 0 auto;
+	margin: -75px auto 0 auto;
 }
 
 .slider {
 	height:351px;
-	margin-top:79px;
+	margin-top:78px !important;
 }
+
+.metaslider .flexslider {margin-bottom:0px !important;}
 
 ol.flex-control-nav {
 bottom: 4px !important;
 z-index: 100000 !important;
 }
 
-  .rocket {
+.rocket {
 	margin-top:10px;
 }
 
@@ -129,36 +133,36 @@ z-index: 100000 !important;
 
 // RESPONSIVE CODE FROM JOSH FOR FUTURE USE
 
-// @media (min-width: 992px) {
-//    /* col-md background */
-//   .container-background {
-//     background: url(../img/background-md.png) no-repeat center top;
-//   }
-//   /* adjust the margin based on the height of the links in the menu */
-//   .slider {
-//   	margin-top:29px;
-//   }
-// }
+ @media (min-width: 992px) {
+    /* col-md background */
+   .container-background {
+     background: url(../img/background-md.png) no-repeat center top;
+   }
+   /* adjust the margin based on the height of the links in the menu */
+   .slider {
+   	margin-top:29px;
+   }
+ }
 
-// @media (min-width: 1200px) {
-// 	/* blue stripe as body background */
-// 	body.home {
-// 		background: url(../img/bg.png) repeat-x top;
-// 	}
-// 	 col-lg background
-//   .container-background {
-//     background: url(../img/background-lg.png) no-repeat center top;
-//   }
-//   /* adjust the margin based on the height of the links in the menu */
-//   .slider {
-//   	margin-top:29px;
-//   }
-// }
+ @media (min-width: 1200px) {
+ 	/* blue stripe as body background */
+ 	body.home {
+ 		background: url(../img/bg.png) repeat-x top;
+ 	}
+ 	 col-lg background
+   .container-background {
+     background: url(../img/background-lg.png) no-repeat center top;
+   }
+   /* adjust the margin based on the height of the links in the menu */
+   .slider {
+   	margin-top:29px;
+   }
+ }
 
-// @media (max-width: 992px) {
-// 	/* slider top and bottom borders from tablet on down */
-// 	.slider {
-// 		border-bottom:6px solid #00ABCD;
-// 		border-top:6px solid #00ABCD;
-// 	}
-// }
+ @media (max-width: 992px) {
+ 	/* slider top and bottom borders from tablet on down */
+/* 	.slider {
+ 		border-bottom:6px solid #00ABCD;
+ 		border-top:6px solid #00ABCD;
+ 	}*/
+ }

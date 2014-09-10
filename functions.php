@@ -108,7 +108,7 @@ add_action( 'wp_enqueue_scripts', 'makercon_scripts' );
 //require get_template_directory() . '/inc/custom-header.php';
 
 //boostrap walker for navigation';
-require get_template_directory() . '/inc/bootstrap-walker.php';
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 //boostrap walker for navigation';
 require get_template_directory() . '/inc/tab-menu-walker.php';
