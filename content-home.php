@@ -22,14 +22,19 @@
       <div style="text-align: center; margin-top: 20px;">
         <p><strong>MakerCon Bay Area, May 2014: Jay Silver on designing for "wild humans".</strong></p>
       </div>
-      <div style="text-align: center; margin-top: 20px;margin-bottom:20px;">
-        <a class="button" href="/videos">More Videos from MakerCon</a>
-      </div>
+        <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
+              <div style="margin:20px auto" class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <a style="color:#fff;" class="" href="/videos">More Videos from MakerCon</a>
+              </div>
+        <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
     </div>
     <div class="col-md-4">
       <?php featured_speakers_function(); ?>
-      <div style="text-align: center; margin-top: 20px;">
-        <a class="button" href="/speakers">Check out the full line up</a>
+      <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
+              <div style="margin:20px auto" class="button text-center col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+        <a class="" style="color:#fff;" href="/speakers">Check out the full line up</a>
+          </div>
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
       </div>
     </div>
   </div>
