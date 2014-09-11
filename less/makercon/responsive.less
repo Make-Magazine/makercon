@@ -45,6 +45,29 @@ ul#block-nav {
 
 // HOME PAGE
 
+/* Smaller devices (tablets, 768px and below) */
+@media (max-width: 768px) { 
+	
+	.dropdown-toggle a:hover ul.dropdown-menu {display:none;}
+	
+	.navbar-nav {clear:both;}
+	
+	.slider-wrap {
+		background-image:none;
+		min-height: 225px;
+	}
+	
+	.slider {height:auto !important; }
+	
+	.metaslider {
+		border-top:10px solid #00ABCD;
+		border-bottom:10px solid #00ABCD;
+	}
+	
+	.subtitle {text-align:center;}
+
+ }
+
 /* Small devices (tablets, 768px and up) */
 @media (min-width: @screen-sm-min) { 
 	

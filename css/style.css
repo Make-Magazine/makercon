@@ -6568,6 +6568,29 @@ ul#block-nav .nav .nav-tabs li {
 #site-navigation #menu-item-821.open > ul.dropdown-menu {
   display: block !important;
 }
+/* Smaller devices (tablets, 768px and below) */
+@media (max-width: 768px) {
+  .dropdown-toggle a:hover ul.dropdown-menu {
+    display: none;
+  }
+  .navbar-nav {
+    clear: both;
+  }
+  .slider-wrap {
+    background-image: none;
+    min-height: 225px;
+  }
+  .slider {
+    height: auto !important;
+  }
+  .metaslider {
+    border-top: 10px solid #00ABCD;
+    border-bottom: 10px solid #00ABCD;
+  }
+  .subtitle {
+    text-align: center;
+  }
+}
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) {
   .dropdown-toggle a:hover ul.dropdown-menu {
@@ -6829,6 +6852,10 @@ h2.subtitle {
 .sessions-wrap a:link,
 .sessions-wrap a:visited {
   color: #ED1B24;
+}
+.sessions-page {
+  background-color: #00ABCD;
+  padding: 5px 10px;
 }
 h2.session-title {
   font-size: 20px;
