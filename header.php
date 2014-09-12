@@ -14,10 +14,10 @@
       <title><?php wp_title( '|', true, 'right' ); ?></title>
       <link rel="profile" href="http://gmpg.org/xfn/11">
       <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-      <script type="text/javascript" src="//use.typekit.net/brg6nyz.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      
       <script>
          var _prum = [['id', '53fcea2fabe53d341d4ae0eb'],
                      ['mark', 'firstbyte', (new Date()).getTime()]];

@@ -78,7 +78,7 @@
         $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
       }
       echo('<div class=" row sessions-block">');
-        echo('<div class="session-time col-smcol-md-2 col-xs-12">');
+        echo('<div class="session-time col-sm col-md-2 col-xs-2">');
           echo($session_info);
         echo('</div>');
         echo('<div class="speaker-list">');
@@ -107,7 +107,7 @@
       <div class="pull-right col-md-10 col-xs-12  sessions-wrap-days session">
       <?php } ?>
 
-        <div class="lead sessions-page">
+        <div class="sessions-page">
           <?php $session_post_title = esc_html($session_post->post_title); ?>
           <?php if($no_event == true) { ?>
             <h2 class="session-title"><?php echo $session_post_title ?></h2>

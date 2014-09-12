@@ -34,7 +34,7 @@ get_header(); ?>
                   <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
                 </div>
                 <div class="modal-body">
-                  <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_&amp;showinfo=0&amp;rel=0" frameborder="0" allowfullscreen></iframe>
+                  <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_&amp;showinfo=0&amp;rel=0?html5=1" frameborder="0" allowfullscreen></iframe>
                 </div>
                 <div class="modal-footer">
                 </div>
@@ -67,7 +67,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12"  width="780" height="448" src="//www.youtube.com/embed/QIygWVABumA" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12"  width="780" height="448" src="https://www.youtube.com/embed/QIygWVABumA?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -87,7 +87,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Carl Bass, CEO, Autodesk</h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/GzsA_MBk1lE" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/GzsA_MBk1lE?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -107,7 +107,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Lisa Fetterman, CEO, Nomiku</h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/AjtiUtNfG0o" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/AjtiUtNfG0o?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -130,7 +130,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Peter Hirshberg, CEO, The Reimagine Group </h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/y1-yFvAgzDk" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/y1-yFvAgzDk?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -150,7 +150,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Michael Bell &amp; Scott Miller</h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/h81b0dxMAsc" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/h81b0dxMAsc?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -170,7 +170,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Mark Hatch, CEO, TechShop</h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/2gbCxL-x1jU" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/2gbCxL-x1jU?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -193,7 +193,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Kevin Kelly, Senior Maverick, Wired</h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/IhF6wDmwAmk" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/IhF6wDmwAmk?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -213,7 +213,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Brook Drumm, Founder, Printrbot </h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/KKaysCbJlxg" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/KKaysCbJlxg?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -233,7 +233,7 @@ get_header(); ?>
                 <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area, May 2014: Andy Forest, Co-Executive Director, MakerKids </h4>
               </div>
               <div class="modal-body">
-                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="//www.youtube.com/embed/Ca6GpNbz-_A" frameborder="0" allowfullscreen></iframe>
+                <iframe  style="border:5px solid #02394F;padding:0;" class="col-md-12" width="780" height="448" src="https://www.youtube.com/embed/Ca6GpNbz-_A?html5=1" frameborder="0" allowfullscreen></iframe>
               </div>
               <div class="modal-footer">
               </div>
@@ -247,12 +247,28 @@ get_header(); ?>
 
 </div>
 
+<div id="link">My video</div>
+
+<div id="myModal" class="modal fade" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+            </div>
+            <div class="modal-body">
+                <iframe width="400" height="300" frameborder="0" allowfullscreen=""></iframe>
+            </div>
+        </div>
+    </div>
+</div>
+
 <script type="text/javascript">
-  jQuery('.modal').bind('hide', function () {
-    var iframe = $(this).children('div.modal-body').find('iframe');
-    var src = iframe.attr('src');
-    iframe.attr('src', '');
-    iframe.attr('src', src);
-  });
- </script>
+
+$(".modal").on('hidden.bs.modal', function(e) {
+    $iframe = $(this).find( "iframe" );
+    $iframe.attr("src", $iframe.attr("src"));
+}); 
+  </script>
+
+ 
 <?php get_footer(); ?>
