@@ -77,11 +77,11 @@
         $session_end = get_post_meta( $session_post->ID, '_session_end', true );
         $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
       }
-      echo('<div class="sessions-block">');
-        echo('<div class="session-time col-md-2 col-xs-12">');
+      echo('<div class=" row sessions-block">');
+        echo('<div class="session-time col-smcol-md-2 col-xs-12">');
           echo($session_info);
         echo('</div>');
-        echo('<div class="row speaker-list">');
+        echo('<div class="speaker-list">');
           foreach($time_slot as $post) {
             print_a_post($post);
           }

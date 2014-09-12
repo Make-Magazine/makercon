@@ -6546,10 +6546,6 @@ footer form input {
 .page page-id-951 .entry-header .nav-tabs {
   width: 100%;
 }
-.session-time {
-  padding-left: 0px !important;
-  font-weight: bold !important;
-}
 ul#block-nav .nav .nav-tabs li {
   margin: 0 !important;
   background-color: #DBDBDB !important;
@@ -6842,6 +6838,17 @@ h2.subtitle {
 .secondary-nav-area .nav-item.active a:visited {
   color: #fff !important;
 }
+.sessions-block {
+  margin: 15px auto;
+}
+.session-time {
+  padding-left: 0px !important;
+  font-weight: bold !important;
+}
+.sessions-wrap-days,
+.sessions-no-event {
+  background-color: #bbe6f5;
+}
 .sessions-wrap {
   background-color: #bbe6f5;
   color: #0074a0;
@@ -6854,8 +6861,7 @@ h2.subtitle {
   color: #ED1B24;
 }
 .sessions-page {
-  background-color: #00ABCD;
-  padding: 5px 10px;
+  padding: 5px 0px;
 }
 h2.session-title {
   font-size: 20px;
