@@ -102,9 +102,9 @@
 
    ?>
       <?php if($no_event == true) { ?>
-      <div class="col-md-9 col-xs-12  sessions-no-event">
+      <div class="pull-right col-md-10 col-xs-12  sessions-no-event">
       <?php } else { ?>
-      <div class="col-md-9 col-xs-12  sessions-wrap-days session">
+      <div class="pull-right col-md-10 col-xs-12  sessions-wrap-days session">
       <?php } ?>
 
         <div class="lead sessions-page">
