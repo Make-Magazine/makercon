@@ -5387,16 +5387,14 @@ button.close {
   outline: 0;
 }
 .modal.fade .modal-dialog {
-  -webkit-transform: translate3d(0, -25%, 0);
-  transform: translate3d(0, -25%, 0);
   -webkit-transition: -webkit-transform 0.3s ease-out;
-  -moz-transition: -moz-transform 0.3s ease-out;
-  -o-transition: -o-transform 0.3s ease-out;
-  transition: transform 0.3s ease-out;
+     -moz-transition: -moz-transform 0.3s ease-out;
+       -o-transition: -o-transform 0.3s ease-out;
+          transition: transform 0.3s ease-out;
 }
+
 .modal.in .modal-dialog {
-  -webkit-transform: translate3d(0, 0, 0);
-  transform: translate3d(0, 0, 0);
+
 }
 .modal-open .modal {
   overflow-x: hidden;
@@ -6873,6 +6871,19 @@ h2.session-title a:link,
 h2.session-title a:visited {
   font-size: 20px;
   color: #0074a0;
+}
+.speaker-area {
+  overflow: auto;
+  list-style-type: none;
+  margin-bottom: 10px;
+  background-color: #00ABCD;
+  padding: 10px;
+  color: #FFF;
+}
+.speaker-image {
+  float: left;
+  margin-right: 10px;
+  border: 3px solid #FFF;
 }
 .track-info {
   margin-bottom: 20px;

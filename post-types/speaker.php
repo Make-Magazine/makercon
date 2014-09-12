@@ -326,7 +326,7 @@ function register_speaker_shortcodes() {
 }
 
 function featured_speakers_function() {
-  echo '<h2 style="font-size:32px">Featured Speakers NYC</h2>';
+  echo '<h2>Featured Speakers NYC</h2>';
   $featured_speakers = Array();
 
   array_push($featured_speakers, get_option('featured-speaker-1'));
@@ -345,8 +345,8 @@ function featured_speakers_function() {
 function featured_speakers_view($user_id) {
   $post = get_post($user_id, ARRAY_A);
   ?>
-    <li style="overflow: auto; list-style-type: none; margin-bottom: 10px; background-color: #00ABCD; padding: 10px; color: #FFF;">
-      <div class="speaker-image" style="float: left; margin-right: 10px; border: 3px solid #FFF;">
+    <li class="speaker-area">
+      <div class="speaker-image">
         <?php echo get_the_post_thumbnail($user_id, array(100,100)); ?>
       </div>
       <div class="speaker-info">
