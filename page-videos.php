@@ -236,7 +236,6 @@
               </div>
               <div class="modal-footer">
               </div>
-=======
    <div id="primary" class="content-area col-md-12">
       <main id="main" class="site-main" role="main">
          <?php while ( have_posts() ) : the_post(); ?>
@@ -486,7 +485,6 @@ $(".modal").on('hidden.bs.modal', function(e) {
   </script>
 
  
-=======
 <script type="text/javascript">
    $(".modal").on('hidden.bs.modal', function(e) {
        $iframe = $(this).find( "iframe" );
