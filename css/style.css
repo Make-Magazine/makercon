@@ -6766,6 +6766,13 @@ h1.entry-title {
   border: 3px solid #02394f;
   margin-bottom: 20px;
 }
+.modal-body {
+  text-align: center;
+}
+.modal-body iframe {
+  border: 5px solid #02394F;
+  padding: 0;
+}
 h2.subtitle {
   font-family: bentonsanscompmedium, helvetica, sans-serif !important;
   color: #02394f !important;
@@ -6849,6 +6856,12 @@ h2.subtitle {
 .sessions-no-event {
   background-color: #bbe6f5;
   margin-bottom: 15px;
+}
+.sessions-no-event:first-child,
+.sessions-no-event:nth-child(8),
+.sessions-no-event:nth-child(23),
+.sessions-no-event:nth-child(28) {
+  background-color: none !important;
 }
 .sessions-wrap {
   background-color: #bbe6f5;
