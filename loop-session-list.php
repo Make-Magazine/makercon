@@ -78,7 +78,6 @@
         $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
       }
       echo('<div class=" row sessions-block">');
-        echo('<div class="session-time col-sm col-md-2 col-xs-2">');
         echo('<div class="session-time col-xs-12 col-sm-12 col-md-12 col-lg-2 col-xl-2">');
           echo($session_info);
         echo('</div>');
