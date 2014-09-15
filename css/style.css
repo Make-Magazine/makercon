@@ -6772,6 +6772,8 @@ h1.entry-title {
 .modal-body iframe {
   border: 5px solid #02394F;
   padding: 0;
+  min-height: 215px;
+  width: 100%;
 }
 h2.subtitle {
   font-family: bentonsanscompmedium, helvetica, sans-serif !important;
