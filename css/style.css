@@ -6839,7 +6839,7 @@ h2.subtitle {
   color: #fff !important;
 }
 .sessions-block {
-  margin: 15px auto;
+  margin: auto;
 }
 .session-time {
   padding-left: 0px !important;
@@ -6848,6 +6848,7 @@ h2.subtitle {
 .sessions-wrap-days,
 .sessions-no-event {
   background-color: #bbe6f5;
+  margin-bottom: 15px;
 }
 .sessions-wrap {
   background-color: #bbe6f5;
