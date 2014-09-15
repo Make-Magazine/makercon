@@ -6857,8 +6857,9 @@ h2.subtitle {
   margin-bottom: 15px;
 }
 .sessions-no-event {
-  background-color: none !important;
+  background-color: transparent !important;
   border: 1px solid ##bbe6f5;
+  margin-bottom: 15px;
 }
 .sessions-wrap {
   background-color: #bbe6f5;
