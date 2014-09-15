@@ -6852,16 +6852,14 @@ h2.subtitle {
   padding-left: 0px !important;
   font-weight: bold !important;
 }
-.sessions-wrap-days,
-.sessions-no-event {
+.sessions-wrap-days {
   background-color: #bbe6f5;
   margin-bottom: 15px;
 }
-.sessions-no-event:first-child,
-.sessions-no-event:nth-child(8),
-.sessions-no-event:nth-child(23),
-.sessions-no-event:nth-child(28) {
-  background-color: none !important;
+.sessions-no-event {
+  background-color: transparent !important;
+  border: 1px solid ##bbe6f5;
+  margin-bottom: 15px;
 }
 .sessions-wrap {
   background-color: #bbe6f5;
