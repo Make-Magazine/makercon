@@ -15,8 +15,11 @@
   <div class="row">
     <div class="col-md-8">
       <h2 class="subtitle">Live from MakerCon Bay Area 2014</h2>
-
-<iframe style="border: 5px solid #02394F" width="100%" height="438" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_?html5=1" frameborder="0" allowfullscreen></iframe>
+      <div class="home-video-01">
+        
+   <?php echo do_shortcode('[youtube=http://www.youtube.com/watch?v=QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_?html5=1]');
+?>
+</div>
 
         <div style="clear:both;"></div>
       <div style="text-align: center; margin-top: 20px;">
