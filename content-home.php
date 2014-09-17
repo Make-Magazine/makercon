@@ -17,7 +17,7 @@
       <h2 class="subtitle">Live from MakerCon New York 2014</h2>
       <div class="home-video-01">
         
-   <?php echo do_shortcode('[youtube=https://www.youtube.com/watch?v=SYKm4nszufw?autoplay=1]');?>
+   <?php echo do_shortcode('[youtube=https://www.youtube.com/watch?v=hAgVpaK_LUA?autoplay=1]');?>
 </div>
 
         <div style="clear:both;"></div>
