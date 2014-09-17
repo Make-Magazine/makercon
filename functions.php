@@ -336,7 +336,7 @@ function fb_home_image( $tags ) {
         // Remove the default blank image added by Jetpack
         unset( $tags['og:image'] );
  
-        $fb_home_img = 'http://makercon.com/wp-content/themes/makercon/img/logo-rocket-sponsor.png';
+        $fb_home_img = 'http://makercon.com/wp-content/themes/makercon/img/makercon-logo-01.gif';
         $tags['og:image'] = esc_url( $fb_home_img );
     }
     return $tags;

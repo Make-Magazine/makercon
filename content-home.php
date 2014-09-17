@@ -17,7 +17,7 @@
       <h2 class="subtitle">Live from MakerCon New York 2014</h2>
       <div class="home-video-01">
         
-   <?php echo do_shortcode('[youtube=https://www.youtube.com/watch?v=QcUWgQZ8W9c]');?>
+   <?php echo do_shortcode('[youtube=https://www.youtube.com/watch?v=DTG61xUio6k?rel=0&autoplay=1]');?>
 </div>
 
         <div style="clear:both;"></div>
@@ -26,7 +26,7 @@
       </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
               <div style="margin:20px auto" class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <a style="color:#fff;" class="" href="/videos">Videos from MakerCon Bay Area 2014</a>
+        <a style="color:#fff;" class="" href="https://www.youtube.com/playlist?list=PLwhkA66li5vBEkRxCLCrX7IrHySh3LHj3">More Videos From MakerCon New York 2014</a>
               </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
     </div>
