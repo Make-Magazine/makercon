@@ -14,20 +14,19 @@
   <div class="entry-content">
   <div class="row">
     <div class="col-md-8">
-      <h2 class="subtitle">Live from MakerCon Bay Area 2014</h2>
+      <h2 class="subtitle">Live from MakerCon New York 2014</h2>
       <div class="home-video-01">
         
-   <?php echo do_shortcode('[youtube=http://www.youtube.com/watch?v=QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_?html5=1]');
-?>
+   <?php echo do_shortcode('[youtube=http://www.youtube.com/embed/videoseries?list=PLwhkA66li5vBEkRxCLCrX7IrHySh3LHj3?html5=1]');?>
 </div>
 
         <div style="clear:both;"></div>
       <div style="text-align: center; margin-top: 20px;">
-        <p><strong>MakerCon Bay Area, May 2014: Jay Silver on designing for "wild humans".</strong></p>
+        <p><strong>MakerCon New York, September 17th 2014: Live".</strong></p>
       </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
               <div style="margin:20px auto" class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-        <a style="color:#fff;" class="" href="/videos">More Videos from MakerCon</a>
+        <a style="color:#fff;" class="" href="/videos">Videos from MakerCon Bay Area 2014</a>
               </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
     </div>
