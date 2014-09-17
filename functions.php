@@ -330,3 +330,15 @@ function add_google_analytics() { ?>
 <?php }
 
 add_filter('wp_head', 'add_google_analytics');
+
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        // Remove the default blank image added by Jetpack
+        unset( $tags['og:image'] );
+ 
+        $fb_home_img = '<?php echo get_stylesheet_directory_uri(); ?>/img/logo-rocket-sponsor.png';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );
