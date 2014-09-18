@@ -77,13 +77,22 @@ get_header(); ?>
       </div>
     </div>
     <div style="margin: 50px auto 25px auto;" class="row highlights">
-      <div class="col-md-8 posts">
-        <p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
+      <div class="col-md-8">
+        <div class="row">
+          <div class="col-md-12 posts">
+            <p style="text-align:center"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
+          </div>
+        </div>
+        <div class="row">
+          <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
+          <div style="margin: 0px auto" class="button text-center col-xs-12 col-sm-10 col-md-6 col-lg-6 col-xl-6">
+            <a class="" style="color:#fff;" href="http://makezine.com/category/maker-pro/" target="_blank">Read More Maker Pro News</a></div>
+          <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
+      </div>
       </div>
       <div class="col-md-4">
         <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="450">Tweets about "#makercon"</a>
         <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-      </div>
     </div>
     <!-- <div class="row">
       <div class="col-md-12">
