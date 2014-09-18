@@ -14,22 +14,29 @@
   <div class="entry-content">
   <div class="row">
     <div class="col-md-8">
-      <h2 class="subtitle">Live from MakerCon Bay Area 2014</h2>
-
-<iframe style="border: 5px solid #02394F" width="100%" height="438" src="//www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_" frameborder="0" allowfullscreen></iframe>
+      <h2 class="subtitle">Live from MakerCon New York 2014</h2>
+      <div class="home-video-01">
+        
+   <?php echo do_shortcode('[youtube=https://www.youtube.com/embed/2fCbaEuxfi8?html5=1]');?>
+</div>
 
         <div style="clear:both;"></div>
       <div style="text-align: center; margin-top: 20px;">
-        <p><strong>MakerCon Bay Area, May 2014: Jay Silver on designing for "wild humans".</strong></p>
+        <p><strong>MakerCon New York, September 17th 2014: LIVE Feed from Conference</strong></p>
       </div>
-      <div style="text-align: center; margin-top: 20px;margin-bottom:20px;">
-        <a class="button" href="/videos">More Videos from MakerCon</a>
-      </div>
+        <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
+              <div style="margin:20px auto" class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
+        <a style="color:#fff;" class="" href="/videos">Videos from MakerCon Bay Area 2014</a>
+              </div>
+        <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
     </div>
     <div class="col-md-4">
       <?php featured_speakers_function(); ?>
-      <div style="text-align: center; margin-top: 20px;">
-        <a class="button" href="/speakers">Check out the full line up</a>
+      <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
+              <div style="margin:20px auto" class="button text-center col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
+        <a class="" style="color:#fff;" href="/speakers">Check out the full line up</a>
+          </div>
+        <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
       </div>
     </div>
   </div>

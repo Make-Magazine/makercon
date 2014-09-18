@@ -14,10 +14,10 @@
       <title><?php wp_title( '|', true, 'right' ); ?></title>
       <link rel="profile" href="http://gmpg.org/xfn/11">
       <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-      <script type="text/javascript" src="//use.typekit.net/brg6nyz.js"></script>
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
-      <script src="//maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      
       <script>
          var _prum = [['id', '53fcea2fabe53d341d4ae0eb'],
                      ['mark', 'firstbyte', (new Date()).getTime()]];
@@ -48,28 +48,26 @@
          <?php do_action( 'before' ); ?>
          <header id="masthead" class="site-header container" role="banner">
             <div class="row">
-               <div class="site-branding hidden-md hidden-xs hidden-sm col-lg-3">
+               <div class="site-branding  hidden-xs hidden-sm hidden-md col-lg-3">
                   <?php if ( is_front_page() || is_home() ) : ?>
                   <?php else : ?>
                   <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
                   <?php endif; ?>
                </div>
-               <nav class="navbar navbar-default col-md-12 col-xs-12 col-sm-12 col-lg-7" role="navigation">
-                  <div class="">
+               <nav class="navbar navbar-default  col-xs-12 col-sm-12 col-md-12 col-lg-7" role="navigation">
                      <!-- Brand and toggle get grouped for better mobile display -->
-                   
-                     <div class="navbar-header ">
-                        <div class="hidden-lg hidden-md col-sm-6 col-xs-6">
-                         <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
-                   </div>
-                        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                     <div class="col-xs-12 col-sm-3 col-md-3 hidden-lg">
+                         <div class="site-branding col-xs-9 col-sm-12 hidden-md hidden-lg">
+                             <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="auto" height="auto"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+                         </div>
+                        <button type="button" class="navbar-toggle pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
                         <span class="sr-only">Toggle navigation</span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         <span class="icon-bar"></span>
                         </button>
                      </div>
-                     <div class="pull-right col-xs-12 col-sm-12 col-md-12" id="site-navigation">
+                     <div class="pull-right col-xs-12 col-sm-9 col-md-9 col-lg-9" id="site-navigation">
                         <?php
                            wp_nav_menu( array(
                                'menu'              => 'primary',
@@ -84,14 +82,13 @@
                            );
                            ?>
                      </div>
-                  </div>
                </nav>
                <!-- #site-navigation -->
-               <div class="social pull-right hidden-md hidden-xs hidden-sm col-lg-2">
-                  <a style="background:red" class="sprite-facebook col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
-                  <a style="background:blue" class="sprite-twitter col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
-                  <a style="background:green" class="sprite-google-plus col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
-                  <a style="background:yellow" class="sprite-linkedin col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.linkedin.com/cws/share?isFramed=false&url=http%3A%2F%2Fmakercon%2Ecom%2F&token=" target="_blank"></a>
+               <div class="social pull-right hidden-xs hidden-sm hidden-md col-lg-2">
+                  <a class="sprite-facebook col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
+                  <a class="sprite-twitter col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
+                  <a class="sprite-google-plus col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
+                  <a class="sprite-linkedin col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.linkedin.com/cws/share?isFramed=false&url=http%3A%2F%2Fmakercon%2Ecom%2F&token=" target="_blank"></a>
                </div>
             </div>
          </header>

@@ -322,7 +322,9 @@ function add_google_analytics() { ?>
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-51157-24', 'makercon.com');
-    ga('send', 'pageview');
+    ga('send', 'pageview', {
+ 	'page': location.pathname + location.search  + location.hash
+	});
 
   </script>
 <?php }
