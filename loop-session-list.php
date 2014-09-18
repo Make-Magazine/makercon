@@ -77,11 +77,11 @@
         $session_end = get_post_meta( $session_post->ID, '_session_end', true );
         $session_info .= (($session_end != '')&&($session_start != 0)) ? " - ".date("g:i a", $session_end) : '';
       }
-      echo('<div class="sessions-block">');
-        echo('<div style="margin-left:3%;" class="session-time col-md-2 col-xs-12">');
+      echo('<div class=" row sessions-block">');
+        echo('<div class="session-time col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">');
           echo($session_info);
         echo('</div>');
-        echo('<div class="row speaker-list">');
+        echo('<div class="speaker-list">');
           foreach($time_slot as $post) {
             print_a_post($post);
           }
@@ -102,12 +102,12 @@
 
    ?>
       <?php if($no_event == true) { ?>
-      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-no-event">
+      <div class="pull-right col-md-10 col-xs-12 sessions-no-event">
       <?php } else { ?>
-      <div style="margin-left:3%;" class="col-md-9 col-xs-12  sessions-wrap-days session">
+      <div class="pull-right col-md-10 col-xs-12 sessions-wrap-days session">
       <?php } ?>
 
-        <div class="lead sessions-page">
+        <div class="sessions-page">
           <?php $session_post_title = esc_html($session_post->post_title); ?>
           <?php if($no_event == true) { ?>
             <h2 class="session-title"><?php echo $session_post_title ?></h2>

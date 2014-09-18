@@ -44,7 +44,7 @@
       if(($session_video != '') && (strpos($session_video,'youtube', 0) !== false)) {
         $session_video = str_replace(array('http:','https:','watch?v='),array('','','embed/'), $session_video);
           ?>
-        <div class="speaker-subtitle"><a href="#" data-toggle="modal" data-target="#myModal">Watch This Session</a></div>
+        <div class="speaker-subtitle session-video-subtitle"><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/icon_video_red.png" class="video img-responsive icon-video"  data-toggle="modal" data-target="#myModal"><a href="#" data-toggle="modal" data-target="#myModal">Watch This Session</a></div>
       <div class="modal fade in" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true" style="display: none;">
         <div class="modal-dialog">
           <div class="modal-content">

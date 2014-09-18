@@ -108,7 +108,7 @@ add_action( 'wp_enqueue_scripts', 'makercon_scripts' );
 //require get_template_directory() . '/inc/custom-header.php';
 
 //boostrap walker for navigation';
-require get_template_directory() . '/inc/bootstrap-walker.php';
+require get_template_directory() . '/inc/wp_bootstrap_navwalker.php';
 
 //boostrap walker for navigation';
 require get_template_directory() . '/inc/tab-menu-walker.php';
@@ -322,9 +322,23 @@ function add_google_analytics() { ?>
     })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
     ga('create', 'UA-51157-24', 'makercon.com');
-    ga('send', 'pageview');
+    ga('send', 'pageview', {
+ 	'page': location.pathname + location.search  + location.hash
+	});
 
   </script>
 <?php }
 
 add_filter('wp_head', 'add_google_analytics');
+
+function fb_home_image( $tags ) {
+    if ( is_home() || is_front_page() ) {
+        // Remove the default blank image added by Jetpack
+        unset( $tags['og:image'] );
+ 
+        $fb_home_img = 'http://makercon.com/wp-content/themes/makercon/img/makercon-logo-01.gif';
+        $tags['og:image'] = esc_url( $fb_home_img );
+    }
+    return $tags;
+}
+add_filter( 'jetpack_open_graph_tags', 'fb_home_image' );

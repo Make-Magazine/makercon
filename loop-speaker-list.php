@@ -37,7 +37,7 @@
       <div class="col-xs-3 col-sm-3 col-md-3 col-lg-3">
       <?php 
       if(get_post_meta($speaker_post->ID, '_thumbnail_id', true ) !== false) {
-        echo get_the_post_thumbnail($speaker_post->ID, 'small-thumbnail' );
+        echo get_the_post_thumbnail($speaker_post->ID, 'small-thumbnail img-responsive' );
       } ?></div>
       <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9"><div class="lead"><?php
       $speaker_post_title = esc_html($speaker_post->post_title);

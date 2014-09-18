@@ -1,0 +1,81 @@
+
+// Schedule page-break-inside: 
+
+.page page-id-951{
+	.entry-header {
+		.nav-tabs {
+			width:100%;
+		}
+	}
+}
+
+// Tabs Override of Bootstrap
+// -------------------------
+
+ul#block-nav {
+.nav { 
+	.nav-tabs li {
+	margin:0 !important;
+	background-color: #DBDBDB !important;
+	outline: 0px;
+	border:2px solid #fff !important;
+	}
+}
+}
+
+// Fix for duplicate dropdown issue with hamburger menu
+
+
+#site-navigation  li#menu-item-898.dropdown> ul.dropdown-menu {display:none !important;}
+#site-navigation  li#menu-item-898.open> ul.dropdown-menu {display:block !important;}
+
+// local dev menu for Bill Olson
+#site-navigation  #menu-item-821.dropdown> ul.dropdown-menu {display:none !important;}
+#site-navigation  #menu-item-821.open> ul.dropdown-menu {display:block !important;}
+
+
+// HOME PAGE
+
+/* Smaller devices (tablets, 768px and below) */
+@media (max-width: 768px) { 
+	
+	.dropdown-toggle a:hover ul.dropdown-menu {display:none;}
+	
+	.navbar-nav {clear:both;}
+	
+	.slider-wrap {
+		background-image:none;
+		min-height: 225px;
+	}
+	
+	.slider {height:auto !important; }
+	
+	.metaslider {
+		border-top:10px solid #00ABCD;
+		border-bottom:10px solid #00ABCD;
+	}
+	
+	.subtitle {text-align:center;}
+
+ }
+
+/* Small devices (tablets, 768px and up) */
+@media (min-width: @screen-sm-min) { 
+	
+	.dropdown-toggle a:hover ul.dropdown-menu {display:none;}
+
+ }
+
+/* Medium devices (desktops, 992px and up) */
+@media (min-width: @screen-md-min) { 
+.home a.button {
+	width:100% !important;
+}
+}
+
+/* Large devices (large desktops, 1200px and up) */
+@media (min-width: @screen-lg-min) {
+ .home a.button {
+	width:100% !important;
+}
+}
