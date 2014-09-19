@@ -1,3 +1,4 @@
+
 <?php
 /**
  * Template Name: Home Page Template
@@ -20,6 +21,19 @@ get_header(); ?>
     <div class="col-md-8">
       	
 <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+
+				<article <?php post_class(); ?>>
+					
+					<?php the_content(); ?>
+
+
+				</article>
+
+			<?php endwhile; ?>
+
+
+			<?php else: ?>
+
 
 				<article <?php post_class(); ?>>
 					
@@ -92,6 +106,11 @@ get_header(); ?>
       <div class="col-md-4">
           <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="550">Tweets about "#makercon"</a>
           <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      </div>
+      <div class="col-md-4">
+          <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="550">Tweets about "#makercon"</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <!-- <div class="row">
       <div class="col-md-12">
