@@ -6768,35 +6768,36 @@ h1.entry-title {
 }
 p.video-info {
   font-size: 16px;
-  line-height: 16px;
+  line-height: 18px;
   font-weight: bold;
   margin-bottom: 20px;
 }
-.page-template-page-videos-NY2014-php .nav {
+.page-template-page-videos-NY2014-php ul.nav {
   background-color: #ccc;
   color: #02394f;
   margin-bottom: 30px;
 }
-.page-template-page-videos-NY2014-php .nav h2.subtitle {
+.page-template-page-videos-NY2014-php ul.nav h2.subtitle {
+  font-size: 24px !important;
   margin: 0;
 }
-.page-template-page-videos-NY2014-php .nav h2.subtitle a:link,
-.page-template-page-videos-NY2014-php .nav h2.subtitle a:visited {
+.page-template-page-videos-NY2014-php ul.nav h2.subtitle a:link,
+.page-template-page-videos-NY2014-php ul.nav h2.subtitle a:visited {
   color: #02394f;
 }
-.page-template-page-videos-NY2014-php .nav .tab {
+.page-template-page-videos-NY2014-php ul.nav li.tab {
   border-left: 3px solid #fff;
   padding: 15px auto;
 }
-.page-template-page-videos-NY2014-php .nav .tab :first-child {
+.page-template-page-videos-NY2014-php ul.nav li.tab :first-child {
   border: none !important;
 }
-.page-template-page-videos-NY2014-php .nav .active.tab {
+.page-template-page-videos-NY2014-php ul.nav li.active.tab {
   background-color: #ed1b24 !important;
   color: #fff;
 }
-.page-template-page-videos-NY2014-php .nav .active.tab h2.subtitle a:link,
-.page-template-page-videos-NY2014-php .nav .active.tab h2.subtitle a:visited {
+.page-template-page-videos-NY2014-php ul.nav li.active.tab h2.subtitle a:link,
+.page-template-page-videos-NY2014-php ul.nav li.active.tab h2.subtitle a:visited {
   color: #fff;
 }
 .modal-body {

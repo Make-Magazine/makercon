@@ -40,14 +40,14 @@
          </div>
          <div class="row">
             <div class="col-md-12">
-               <div class="nav nav-tabs">
-                  <div class="active col-md-6 tab">
+               <ul class="nav nav-tabs">
+                  <li class="active col-md-6 tab">
                      <h2 class="subtitle"><a href="#tab_a" data-toggle="tab">September 17th, 2014</a></h2>
-                  </div>
-                  <div class="col-md-6 tab">
+                  </li>
+                  <li class="col-md-6 tab">
                      <h2 class="subtitle"><a href="#tab_b" data-toggle="tab">September 18th, 2014</a></h2>
-                  </div>
-               </div>
+                  </li>
+               </ul>
             </div>
          </div>
          <div class="tab-content">
@@ -1045,16 +1045,6 @@
        $iframe.attr("src", $iframe.attr("src"));
    }); 
      
-</script>
-
-
-<script>
-
-$('.nav .tab a').click(function (e) {
-  $('.nav .tab.active').removeClass('active')
-  $(this).parent('.tab a').addClass('active')
-})
-
 </script>
 
 
