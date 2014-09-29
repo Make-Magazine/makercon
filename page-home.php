@@ -38,7 +38,7 @@ get_header(); ?>
 
 			<?php endif; ?>
         
-
+    </div>
     <div class="col-md-4">
       <?php featured_speakers_function(); ?>
       <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
