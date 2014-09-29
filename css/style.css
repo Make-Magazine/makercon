@@ -6775,13 +6775,6 @@ h1.entry-title {
   height: 361px;
   width: 100%;
 }
-.col-xs-12 .icon-video, .col-sm-12 .icon-video, .col-md-12 .icon-video {
-    max-width: 24px;
-    max-height: auto;
-    padding-top: 2px;
-    cursor: pointer;
-    float: left;
-}
 h2.subtitle {
   font-family: bentonsanscompmedium, helvetica, sans-serif !important;
   color: #02394f !important;
@@ -7107,15 +7100,3 @@ ul.recent-posts .recent-posts p a {
   border: 5px solid #02394F;
   width: 100%;
 }
-
-div.session-video-subtitle {
-  margin-bottom: 6px;
-  min-height: 26px;
-  cursor: pointer;
-}
-
-div.session-video-subtitle a {
-  float: left;
-  padding-left: 6px;
-}
-
