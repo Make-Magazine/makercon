@@ -27,4 +27,14 @@
      iframe.attr('src', src);
    });
 </script>
+
+<script>
+
+$('div.nav div a').click(function (e) {
+  $('div.nav div.active').removeClass('active')
+  $(this).parent('div').addClass('active')
+})
+
+</script>
+
 <?php get_footer(); ?>
