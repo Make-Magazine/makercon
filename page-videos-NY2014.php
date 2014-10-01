@@ -8,6 +8,23 @@
     *
     */
    get_header(); ?>
+   
+               <div class="col-md-12" style="padding-left:0px;padding-right:0px;">
+               <ul class="nav nav-tabs">
+                     <li class="active col-md-4 tab">
+                     <h2 class="subtitle"><a href="#" data-toggle="tab">VIDEOS</a></h2>
+                  </li>
+                  <li class="col-md-4 tab">
+                     <h2 class="subtitle"><a href="http://makercon.com/speakers/new-york-2014/" data-toggle="tab">SPEAKERS</a></h2>
+                  </li>
+                     <li class="col-md-4 tab">
+                     <h2 class="subtitle"><a href="http://makercon.com/sessions/" data-toggle="tab">SESSIONS</a></h2>
+                  </li>
+
+               </ul>
+            </div>
+         </div>
+   
 <div class="row">
    <div id="primary" class="content-area col-md-12">
       <main id="main" class="site-main" role="main">
@@ -17,9 +34,9 @@
          <div class="row">
             <div class="col-md-12">
                <!-- Button trigger modal -->
-               <img class="img-responsive" src="http://makercon.com/wp-content/uploads/2014/09/makercon-ny2014-intro-01.jpg" width="1170" data-toggle="modal" data-target="#myModal"/>
+               <img class="img-responsive" src="http://makercon.com/wp-content/uploads/2014/09/makercon-ny2014-intro-02.jpg" width="1170" data-toggle="modal" data-target="#myModal"/>
                <div style="clear:both;"></div>
-               <p style="margin:0px auto 15px auto;text-align:center;">MakerCon Introduction - Dale Dougherty, CEO Maker Media and Travis Good, Co-Chair MakerCon</p>
+               <p style="margin:10px auto 15px auto;text-align:center;font-size:18px;line-height:21px;">MakerCon Introduction - Dale Dougherty, CEO Maker Media and Travis Good, Co-Chair MakerCon</p>
                <!-- Modal -->
                <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
                   <div class="modal-dialog">
@@ -42,10 +59,10 @@
             <div class="col-md-12">
                <ul class="nav nav-tabs">
                   <li class="active col-md-6 tab">
-                     <h2 class="subtitle"><a href="#tab_a" data-toggle="tab">September 17th, 2014</a></h2>
+                     <h2 class="subtitle"><a href="#tab_a" data-toggle="tab">September 17, 2014</a></h2>
                   </li>
                   <li class="col-md-6 tab">
-                     <h2 class="subtitle"><a href="#tab_b" data-toggle="tab">September 18th, 2014</a></h2>
+                     <h2 class="subtitle"><a href="#tab_b" data-toggle="tab">September 18, 2014</a></h2>
                   </li>
                </ul>
             </div>

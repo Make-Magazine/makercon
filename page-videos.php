@@ -25,7 +25,7 @@
             <div class="modal-content">
                <div class="modal-header">
                   <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h4 class="modal-title" id="myModalLabel">MakerCon Bay Area 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
+                  <h4 class="modal-title" id="myModalLabel" style="margin-top:10px;font-size:18px;">MakerCon Bay Area 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
                </div>
                <div class="modal-body">
                   <iframe width="780" height="448" src="https://www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_&amp;showinfo=0&amp;rel=0?html5=1" frameborder="0" allowfullscreen></iframe>

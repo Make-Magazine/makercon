@@ -6772,6 +6772,18 @@ p.video-info {
   font-weight: bold;
   margin-bottom: 20px;
 }
+.video {
+  position: relative;
+}
+.video a {
+  position: absolute;
+  display: block;
+  background: url(url_to_play_button_image.png);
+  height: 40px;
+  width: 40px;
+  top: 20px;
+  left: 20px;
+}
 .page-template-page-videos-NY2014-php ul.nav {
   background-color: #ccc;
   color: #02394f;
@@ -6779,7 +6791,8 @@ p.video-info {
 }
 .page-template-page-videos-NY2014-php ul.nav h2.subtitle {
   font-size: 24px !important;
-  margin: 0;
+  margin: 0px;
+  padding: 10px;
 }
 .page-template-page-videos-NY2014-php ul.nav h2.subtitle a:link,
 .page-template-page-videos-NY2014-php ul.nav h2.subtitle a:visited {
