@@ -6502,7 +6502,7 @@ ol.flex-control-nav {
   color: #fff !important;
 }
 .nav-tabs {
-  margin-bottom: 15px;
+  margin-bottom: 30px;
 }
 .nav-tabs h2.subtitle {
   margin-top: 10px;
@@ -6514,6 +6514,11 @@ ol.flex-control-nav {
 }
 #masthead #site-na1vigation ul li a:first-child {
   padding: 10px;
+}
+.dropdown-menu > .active > a,
+.dropdown-menu > .active > a:hover,
+.dropdown-menu > .active > a:focus {
+  backround-color: #e7e7e7;
 }
 #masthead #site-na1vigation ul li a {
   color: #ed1b24;
