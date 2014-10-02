@@ -28,7 +28,6 @@ get_header(); ?>
                </ul>
             </div>
          </div>
-</div>
 
 <div class="row">
 	<div id="primary" class="content-area col-md-12">
