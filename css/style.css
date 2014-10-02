@@ -6502,12 +6502,12 @@ ol.flex-control-nav {
   color: #fff !important;
 }
 .nav-tabs {
-  margin-bottom: 30px;
+  margin-bottom: 30px !important;
 }
 .nav-tabs h2.subtitle {
-  margin-top: 10px;
-  font-size: 27px;
-  line-height: 32px;
+  margin-top: 10px !important;
+  font-size: 27px !important;
+  line-height: 32px !important;
 }
 .dropdown-menu > .active > a {
   background-color: #e7e7e7 !important;
