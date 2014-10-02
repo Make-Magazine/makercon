@@ -23,7 +23,7 @@ get_header(); ?>
                      <h2 class="subtitle"><a href="#">SESSIONS</a></h2>
                   </li>
                   <li class="col-md-3 tab">
-                     <h2 class="subtitle"><a href="/new-york-2014/slides/">SLIDESHARE</a></h2>
+                     <h2 class="subtitle"><a href="/new-york-2014/slides/" target="_blank">SLIDESHARE</a></h2>
                   </li>
 
                </ul>
