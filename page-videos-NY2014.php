@@ -20,7 +20,9 @@
                      <li class="col-md-4 tab">
                      <h2 class="subtitle"><a href="<?php echo get_stylesheet_directory_uri(); ?>/new-york-2014/sessions/">SESSIONS</a></h2>
                   </li>
-
+                  <li class="col-md-3 tab">
+                     <h2 class="subtitle"><a href="<?php echo get_stylesheet_directory_uri(); ?>/new-york-2014/slides/">SLIDESHARE</a></h2>
+                  </li>
                </ul>
             </div>
          </div>
