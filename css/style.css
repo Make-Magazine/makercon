@@ -7061,6 +7061,31 @@ body.home p.intro {
   font-size: 18px;
   line-height: 26px;
 }
+body.home .button {
+  margin: 20px auto;
+}
+body.home .button a:link,
+body.home .button a:visited {
+  color: #fff;
+}
+body.home img.intel-logo {
+  float: right;
+  margin-left: 0px;
+  margin-right: 50px;
+  margin-top: 20px;
+  width: 100px;
+}
+body.home img.autodesk-logo {
+  width: 300px;
+  margin-top: 30px;
+}
+body.home img.cornell-logo {
+  width: 300px;
+  margin-top: 31px;
+}
+body.home p.posts {
+  text-align: center;
+}
 body.home .speakerblock {
   font-family: fbb0kysgnjregular, helvetica, sans-serif;
   font-size: 14px;
@@ -7153,7 +7178,11 @@ body.home .white-box p {
   font-size: 20px;
 }
 body.home .sponsors-home {
+  padding-top: 30px !important;
+  padding-bottom: 30px !important;
   text-align: center;
+  border-top: 1px solid #999;
+  border-bottom: 1px solid #999;
 }
 body.home .sponsors-home h3 {
   margin: 25px auto 5px auto;
@@ -7175,4 +7204,7 @@ ul.recent-posts .recent-posts p a {
 .home-video-01 .embed-youtube iframe {
   border: 5px solid #02394F;
   width: 100%;
+}
+.row.highlights {
+  margin: 50px auto 25px auto;
 }
