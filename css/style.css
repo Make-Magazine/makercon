@@ -6508,7 +6508,7 @@ ol.flex-control-nav {
   margin-bottom: 30px !important;
 }
 .nav-tabs h2.subtitle {
-  margin-top: 10px !important;
+  margin: 0 10px 10px 10px !important;
   font-size: 27px !important;
   line-height: 32px !important;
 }
