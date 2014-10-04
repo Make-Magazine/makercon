@@ -15,7 +15,7 @@
             <div class="containter">
                <ul class="nav nav-tabs nav-justified">
                   <li>
-                     <h2 class="subtitle"><a href="#">OVERVIEW</a></h2>
+                     <h2 class="subtitle"><a href="/new-york-2014/conference/">OVERVIEW</a></h2>
                   </li>
                   <li class="active">
                      <h2 class="subtitle"><a href="#">VIDEOS</a></h2>
