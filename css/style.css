@@ -6813,30 +6813,30 @@ p.video-info {
   top: 20px;
   left: 20px;
 }
-.page-template-page-videos-NY2014-php ul.nav {
+.top-navbar ul.nav {
   background-color: #ccc;
   color: #02394f;
   margin-bottom: 30px;
 }
-.page-template-page-videos-NY2014-php ul.nav h2.subtitle {
+.top-navbar ul.nav h2.subtitle {
   font-size: 24px !important;
   margin: 0px;
   padding: 10px;
 }
-.page-template-page-videos-NY2014-php ul.nav h2.subtitle a:link,
-.page-template-page-videos-NY2014-php ul.nav h2.subtitle a:visited {
+.top-navbar ul.nav h2.subtitle a:link,
+.top-navbar ul.nav h2.subtitle a:visited {
   color: #02394f;
 }
-.page-template-page-videos-NY2014-php ul.nav li {
+.top-navbar ul.nav li {
   border-left: 3px solid #fff;
   padding: 15px auto;
 }
-.page-template-page-videos-NY2014-php ul.nav li.active {
+.top-navbar ul.nav li.active {
   background-color: #ed1b24 !important;
   color: #fff;
 }
-.page-template-page-videos-NY2014-php ul.nav li.active h2.subtitle a:link,
-.page-template-page-videos-NY2014-php ul.nav li.active h2.subtitle a:visited {
+.top-navbar ul.nav li.active h2.subtitle a:link,
+.top-navbar ul.nav li.active h2.subtitle a:visited {
   color: #fff;
 }
 .modal-body {
