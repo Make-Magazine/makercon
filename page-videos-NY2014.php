@@ -12,7 +12,6 @@
    <div class="col-md-12">
       <div class="top-navbar">
          <div class="navbar">
-            <div class="containter">
                <ul class="nav nav-tabs nav-justified">
                   <li>
                      <h2 class="subtitle"><a href="/new-york-2014/conference/">OVERVIEW</a></h2>
@@ -32,7 +31,6 @@
                </ul>
             </div>
          </div>
-      </div>
    </div>
 </div>
 <div class="row">
