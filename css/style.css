@@ -6508,7 +6508,7 @@ ol.flex-control-nav {
   margin-bottom: 30px !important;
 }
 .nav-tabs h2.subtitle {
-  margin: 0 10px 10px 10px !important;
+  margin: 0 !important;
   font-size: 27px !important;
   line-height: 32px !important;
 }
@@ -6827,19 +6827,16 @@ p.video-info {
 .page-template-page-videos-NY2014-php ul.nav h2.subtitle a:visited {
   color: #02394f;
 }
-.page-template-page-videos-NY2014-php ul.nav li.tab {
+.page-template-page-videos-NY2014-php ul.nav li {
   border-left: 3px solid #fff;
   padding: 15px auto;
 }
-.page-template-page-videos-NY2014-php ul.nav li.tab :first-child {
-  border: none !important;
-}
-.page-template-page-videos-NY2014-php ul.nav li.active.tab {
+.page-template-page-videos-NY2014-php ul.nav li.active {
   background-color: #ed1b24 !important;
   color: #fff;
 }
-.page-template-page-videos-NY2014-php ul.nav li.active.tab h2.subtitle a:link,
-.page-template-page-videos-NY2014-php ul.nav li.active.tab h2.subtitle a:visited {
+.page-template-page-videos-NY2014-php ul.nav li.active h2.subtitle a:link,
+.page-template-page-videos-NY2014-php ul.nav li.active h2.subtitle a:visited {
   color: #fff;
 }
 .modal-body {

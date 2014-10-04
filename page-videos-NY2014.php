@@ -8,24 +8,33 @@
     *
     */
    get_header(); ?>
-   <div class="row">
-               <div class="col-md-12" style="padding-left:0px;padding-right:0px;">
-               <ul class="nav nav-tabs">
-                     <li class="active col-md-3 tab">
+<div class="row">
+   <div class="col-md-12">
+      <div class="top-navbar">
+         <div class="navbar">
+            <div class="containter">
+               <ul class="nav nav-tabs nav-justified">
+                  <li>
+                     <h2 class="subtitle"><a href="#">OVERVIEW</a></h2>
+                  </li>
+                  <li class="active">
                      <h2 class="subtitle"><a href="#">VIDEOS</a></h2>
                   </li>
-                  <li class="col-md-3 tab">
+                  <li>
                      <h2 class="subtitle"><a href="/new-york-2014/speakers-2">SPEAKERS</a></h2>
                   </li>
-                     <li class="col-md-3 tab">
+                  <li>
                      <h2 class="subtitle"><a href="/new-york-2014/sessions/">SESSIONS</a></h2>
                   </li>
-                  <li class="col-md-3 tab">
+                  <li>
                      <h2 class="subtitle"><a href="/new-york-2014/slides/" target="_blank">SLIDESHARE</a></h2>
                   </li>
                </ul>
             </div>
+         </div>
+      </div>
    </div>
+</div>
 <div class="row">
    <div id="primary" class="content-area col-md-12">
       <main id="main" class="site-main" role="main">
@@ -1064,8 +1073,4 @@
    }); 
      
 </script>
-
-
 <?php get_footer(); ?>
-
-
