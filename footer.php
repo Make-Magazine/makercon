@@ -86,9 +86,9 @@
          <div class="col-md-4">
             <h2>Venue</h2>
             <ul class="blue">
-               <li>New York Hall Of Science</li>
-               <li>Corona, NY</li>
-               <li>September 17th - 18th 2014</li>
+             <li>Upcoming MakerCons:</li>
+             <li><a href="http://makercon.no">MakerCon Nordic - October 17 - 18, 2014, Oslo, Norway </a></li>
+             <li>MakerCon Bay Area - May 2015</li>
             </ul>
          </div>
       </div>
