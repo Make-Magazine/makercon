@@ -41,7 +41,7 @@
       </div>
 </div>
 </div>
-<div class="row" style="text-align:center; border-bottom:1px solid #999;padding-bottom:30px !important;margin-bottom:60px;margin-top:30px;">
+<div class="row sponsors" style="text-align:center; border-bottom:1px solid #999;padding-bottom:30px !important;margin-bottom:60px;margin-top:30px;">
    <div class="col-md-6">
       <h3 class="subtitle">
       Media Partner</h2>
