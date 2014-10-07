@@ -66,9 +66,11 @@
          <div class="col-md-4">
             <h2>Past Events</h2>
             <ul>
-               <li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/">2013 New York</a></li>
-               <li><a href="http://makezine.com/hardware-innovation-workshop/overview/">2013 Bay Area</a></li>
-               <li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/">2012 Bay Area</a></li>
+                <li><a href="/new-york-2014/conference/">2014 New York</a></li>
+               <li><a href="/bay-area-2014/overview/">2014 Bay Area</a></li>
+               <li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/" target="_blank">2013 New York</a></li>
+               <li><a href="http://makezine.com/hardware-innovation-workshop/overview/" target="_blank">2013 Bay Area</a></li>
+               <li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/" target="_blank">2012 Bay Area</a></li>
             </ul>
          </div>
          <div class="col-md-4">
