@@ -6229,7 +6229,7 @@ h3 {
   line-height: 26px;
 }
 p {
-  font-family: fbb0kysgnjregular, helvetica, sans-serif;
+  font-family: museo-sans, helvetica, sans-serif;
   font-size: 14px;
   line-height: 20px;
   font-color: #02394f;
@@ -6705,7 +6705,7 @@ h1.entry-title {
 }
 .entry-content {
   color: #02394f;
-  font-family: fbb0kysgnjregular, helvetica, sans-serif;
+  font-family: museo-sans, helvetica, sans-serif;
 }
 .entry-content p {
   font-size: 16px;
@@ -7109,7 +7109,7 @@ body.home p.posts {
   text-align: center;
 }
 body.home .speakerblock {
-  font-family: fbb0kysgnjregular, helvetica, sans-serif;
+  font-family: museo-sans, helvetica, sans-serif;
   font-size: 14px;
   background-color: #4e9192;
   color: #fff;
@@ -7155,7 +7155,7 @@ body.home .photo-bar .call-box h2 {
 body.home .photo-bar .call-box h4 {
   color: #00adef;
   font-size: 18px;
-  font-family: fbb0kysgnjregular, helvetica, sans-serif;
+  font-family: museo-sans, helvetica, sans-serif;
   font-weight: 300;
 }
 body.home .photo-bar .call-box .padme {
