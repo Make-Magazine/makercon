@@ -76,12 +76,12 @@
          <div class="col-md-4">
             <h2>Track the Maker Movement</h2>
             <p>Get the weekly Maker Pro Newsletter from the editors of MAKE magazine.</p>
-            <form action="http://newsletter.makezine.com/t/r/s/ttlusi/" method="post">
+            <form action="http://newsletter.makezine.com/t/r/s/jrsydu/" method="post">
                <p style="margin-bottom:0px;"><label for="fieldName">Name </label></p>
                <input id="fieldName" name="cm-name" type="text" />
                <br />
                <p style="margin:5px 0 0 0;"><label for="fieldEmail">Email </label></p>
-               <input id="fieldEmail" name="cm-ttlusi-ttlusi" type="email" required />
+               <input id="fieldEmail" name="cm-jrsydu-jrsydu" type="email" required />
                <button type="submit" class="button" value="Subscribe">Subscribe</button>
             </form>
          </div>
