@@ -66,11 +66,12 @@
          <div class="col-md-4">
             <h2>Past Events</h2>
             <ul>
-                <li><a href="/new-york-2014/conference/">2014 New York</a></li>
-               <li><a href="/bay-area-2014/overview/">2014 Bay Area</a></li>
-               <li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/" target="_blank">2013 New York</a></li>
-               <li><a href="http://makezine.com/hardware-innovation-workshop/overview/" target="_blank">2013 Bay Area</a></li>
-               <li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/" target="_blank">2012 Bay Area</a></li>
+                <li><a href="/new-york-2014/conference/">New York 2014 </a></li>
+               <li><a href="/bay-area-2014/overview/">Bay Area 2014 </a></li>
+               <li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/" target="_blank">New York 2013</a></li>
+               <li><a href="http://makezine.com/hardware-innovation-workshop/overview/" target="_blank">Bay Area 2013</a></li>
+               <li><a href="http://makezine.com/hardware-innovation-workshop/overview-2012/" target="_blank">Bay Area 2012</a></li>
+               <li><a href="http://makercon.no" target="_blank">MakerCon Nordic 2014</a></li>
             </ul>
          </div>
          <div class="col-md-4">
@@ -89,11 +90,36 @@
             <h2>Venue</h2>
             <ul class="blue">
              <li>Upcoming MakerCons:</li>
-             <li><a href="http://makercon.no">MakerCon Nordic - October 17 - 18, 2014, Oslo, Norway </a></li>
-             <li>MakerCon Bay Area - May 2015</li>
-            </ul>
+             
+             <li>MakerCon Bay Area - May 12 &amp; 13, 2015</li>
+<li>MakerCon New York - September 2015</li>
+</ul>
          </div>
       </div>
+      
+            <div class="footer-col col-sm-12">
+                        <script language="javascript" type="text/javascript">
+                          $(document).ready(function(){
+                                if(window.location.href.indexOf("?thankyou") > -1) {
+                                  $.fancybox(
+                                    '<h2>Thank you</h2><br /><h3>More Information Soon</h3>',
+                  {
+                                      width: 640,
+                                      height: 320,
+                                      closeBtn : false,
+                                      afterLoad: function() {
+                                        setTimeout( function() {
+                                            $.fancybox.close();
+                                        },
+                                      2000); // 2 secs
+                                      }
+                                    }
+                                  );
+                                }
+                            });
+                    </script>
+        </div>
+        
 </footer>
 <!-- #colophon -->
 </div>

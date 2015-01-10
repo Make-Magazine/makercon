@@ -17,7 +17,75 @@
       <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
       <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
+      <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fancybox.js"></script>
       
+      <script>
+function getCookie(name) {
+    var dc = document.cookie; 
+    var prefix = name + "=";
+    var begin = dc.indexOf("; " + prefix);
+    if (begin == -1) {
+        begin = dc.indexOf(prefix);
+        if (begin != 0) return null;
+    } else {
+        begin += 2;
+        var end = document.cookie.indexOf(";", begin);
+        if (end == -1) {
+        end = dc.length;
+        }
+    }
+    return unescape(dc.substring(begin + prefix.length, end));
+} 
+
+$(function() {
+    if ( document.location.href.indexOf('campaign') > -1 ) {
+            var date = new Date();
+            date.setTime(date.getTime()+(60*24*60*60*1000));
+            date = date.toGMTString();
+            document.cookie="Newsletter-signup=; expires=" + date + "; path=/";
+    }
+});
+
+$(function() {
+    var news_close = getCookie("Newsletter-closed");
+    var news_signup = getCookie("Newsletter-signup");
+
+    if ( news_signup == null ) {
+      if ( news_close == null ) {
+        $(".fancybox").fancybox({
+            openEffect  : 'none',
+            closeEffect : 'none',
+            autoSize : false,
+            width  : 465,
+            height  : 200,
+            afterLoad   : function() {
+                this.content = this.content.html();
+            }
+        });
+        // Launch fancyBox on first element
+        $(".fancybox").eq(0).trigger('click');     
+
+        $( ".newsletter-set-cookie" ).click(function() {
+            var date = new Date();
+            date.setTime(date.getTime()+(60*24*60*60*1000));
+            date = date.toGMTString();
+            document.cookie="Newsletter-signup=; expires=" + date + "; path=/";
+        });
+
+        $( ".fancybox-close" ).click(function() {
+            var date = new Date();
+            date.setTime(date.getTime()+(7*24*60*60*1000));
+            date = date.toGMTString();
+            document.cookie="Newsletter-closed=; expires=" + date + "; path=/";
+        });
+      }
+    }
+});
+
+
+</script>
+      
+
       <script>
          var _prum = [['id', '53fcea2fabe53d341d4ae0eb'],
                      ['mark', 'firstbyte', (new Date()).getTime()]];
@@ -110,3 +178,13 @@
       <?php endif; ?>
       <div class="container">
       <div id="content" class="site-content">
+        
+              <div class="fancybox" style="display:none;">
+    <h3>Send Me Details About 2015 MakerCon!</h3>
+    <form action="http://makermedia.createsend.com/t/r/s/ittlurh/" method="post" id="subForm">
+      <div>
+        <input name="cm-ittlurh-ittlurh" id="ittlurh-ittlurh" placeholder="Your E-mail" required="required" type="text"><br>
+        <input value="Sign Me Up" class="btn-modal newsletter-set-cookie" id="newsletter-set-cookie" type="submit">
+      </div>
+    </form>
+</div>
