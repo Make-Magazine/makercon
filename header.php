@@ -42,13 +42,13 @@ $(function() {
             var date = new Date();
             date.setTime(date.getTime()+(60*24*60*60*1000));
             date = date.toGMTString();
-            document.cookie="Newsletter-signup=; expires=" + date + "; path=/";
+            document.cookie="Makercon-Newsletter-signup=; expires=" + date + "; path=/";
     }
 });
 
 $(function() {
-    var news_close = getCookie("Newsletter-closed");
-    var news_signup = getCookie("Newsletter-signup");
+    var news_close = getCookie("Makercon-Newsletter-closed");
+    var news_signup = getCookie("Makercon-Newsletter-signup");
 
     if ( news_signup == null ) {
       if ( news_close == null ) {
@@ -69,14 +69,14 @@ $(function() {
             var date = new Date();
             date.setTime(date.getTime()+(60*24*60*60*1000));
             date = date.toGMTString();
-            document.cookie="Newsletter-signup=; expires=" + date + "; path=/";
+            document.cookie="Makercon-Newsletter-signup=; expires=" + date + "; path=/";
         });
 
         $( ".fancybox-close" ).click(function() {
             var date = new Date();
             date.setTime(date.getTime()+(7*24*60*60*1000));
             date = date.toGMTString();
-            document.cookie="Newsletter-closed=; expires=" + date + "; path=/";
+            document.cookie="Makercon-Newsletter-closed=; expires=" + date + "; path=/";
         });
       }
     }
