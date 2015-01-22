@@ -19,6 +19,12 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fancybox.js"></script>
       
+      <script language="javascript" type="text/javascript">
+        function resizeIframe(obj) {
+          obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
+        }
+      </script>
+      
       <script>
 function getCookie(name) {
     var dc = document.cookie; 
@@ -135,7 +141,7 @@ $(function() {
                         <span class="icon-bar"></span>
                         </button>
                      </div>
-                     <div class="pull-right col-xs-12 col-sm-9 col-md-9 col-lg-9" id="site-navigation">
+                     <div class="pull-right col-xs-12 col-sm-9 col-md-12 col-lg-12" id="site-navigation">
                         <?php
                            wp_nav_menu( array(
                                'menu'              => 'primary',

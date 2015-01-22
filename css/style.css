@@ -3786,6 +3786,7 @@ select[multiple].input-group-sm > .input-group-btn > .btn {
   }
 }
 .navbar-collapse {
+  margin: 0px;
   overflow-x: visible;
   padding-right: 15px;
   padding-left: 15px;
@@ -6529,6 +6530,15 @@ ol.flex-control-nav {
 }
 #site-navigation a:hover {
   color: #ed1b24 !important;
+}
+@media (max-width: 992px) {
+  #site-navigation {
+    margin-top: 0px;
+  }
+  #masthead #site-navigation ul li,
+  #masthead #site-navigation ul li a {
+    font-size: 21px !important;
+  }
 }
 footer {
   background-color: #9EE0F7;
