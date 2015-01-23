@@ -10,16 +10,9 @@
 <?php if ( is_front_page() || is_home() ) : ?>
 <?php else : ?>
 <div class="row sponsors" style="border-top:1px solid #999;padding-top:30px !important;margin-top:30px;">
-   <div class="col-md-3">
+   <div class="col-md-12">
       <h3 class="subtitle">
       Presenting Sponsor</h2>
-      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=146214418&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
-      <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/cornell_logo-02.png" alt="Cornell Logo" style="width:300px;margin-top:41px" />
-      </a>
-   </div>
-   <div class="col-md-3">
-      <h3 class="subtitle">
-      Host Sponsor</h2>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
             <img style="margin-top:25px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100"  />
       </a>
