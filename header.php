@@ -19,6 +19,24 @@
       <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
       <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fancybox.js"></script>
       
+    <script type="text/javascript">
+          adroll_adv_id = "74UKLGM23VB4BDJQTIUZAB";
+          adroll_pix_id = "NUGQMXVPEZDGDORWPOGG72";
+          (function () {
+          var oldonload = window.onload;
+          window.onload = function(){
+             __adroll_loaded=true;
+             var scr = document.createElement("script");
+             var host = (("https:" == document.location.protocol) ? "https://s.adroll.com" : "http://a.adroll.com");
+             scr.setAttribute('async', 'true');
+             scr.type = "text/javascript";
+             scr.src = host + "/j/roundtrip.js";
+             ((document.getElementsByTagName('head') || [null])[0] ||
+              document.getElementsByTagName('script')[0].parentNode).appendChild(scr);
+             if(oldonload){oldonload()}};
+          }());
+    </script>
+      
       <script language="javascript" type="text/javascript">
         function resizeIframe(obj) {
           obj.style.height = obj.contentWindow.document.body.scrollHeight + 'px';
