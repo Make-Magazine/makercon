@@ -7240,6 +7240,51 @@ ul.recent-posts .recent-posts p a {
 .row.highlights {
   margin: 50px auto 25px auto;
 }
+.co-chairs {
+  margin-top: 15px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+  background-color: #9EE0F7;
+  color: #006666;
+}
+.co-chairs h2 {
+  color: #cc3333;
+  font-size: 30px;
+  text-transform: uppercase;
+  border-bottom: 2px solid #02394f;
+}
+.co-chairs h3 {
+  font-weight: bold;
+  padding-bottom: 0px;
+  margin-bottom: 5px;
+}
+.co-chairs p {
+  font-weight: 100;
+  font-size: 18px;
+}
+.co-chairs img.profile {
+  border: 2px solid #006666;
+}
+.co-chairs .col-md-6 {
+  padding-left: 0px;
+  padding-right: 0px;
+}
+.co-chairs .col-md-6:nth-of-type(1) {
+  padding-right: 7px;
+}
+.co-chairs .col-md-6:nth-of-type(2) {
+  padding-left: 7px;
+  padding-top: 0px;
+}
+.co-chairs .col-xs-6:nth-of-type(1),
+.co-chairs .col-sm-6:nth-of-type(1) {
+  padding-right: 0px;
+}
+.co-chairs .col-xs-6:nth-of-type(2),
+.co-chairs .col-sm-6:nth-of-type(2) {
+  padding-top: 10px;
+  padding-left: 0px;
+}
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
 .fancybox-skin,
