@@ -27,7 +27,7 @@
         <?php endif; ?>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
         <div class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <a href="/new-york-2014/videos/">See Video from MakerCon NY 2014</a>
+          <a href="/new-york-2014/videos/">See Videos from MakerCon NY 2014</a>
         </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
       </div>
