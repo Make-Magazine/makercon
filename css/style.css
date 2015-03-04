@@ -7615,3 +7615,21 @@ ul.recent-posts .recent-posts p a {
     margin-top: 10px;
   }
 }
+
+/*@media (min-width: 992px) {
+  .col-md-8.slider {
+    margin-top: 24px !important;
+  }
+}*/
+
+@-moz-document url-prefix() { 
+  .slider{
+     margin-top:24px !important;
+  }
+}
+
+@-moz-document url-prefix() { 
+  .rocket {
+     margin-top: -47px !important;
+  }
+}
