@@ -151,13 +151,13 @@ $(function() {
          <?php do_action( 'before' ); ?>
          <header id="masthead" class="site-header container" role="banner">
             <div class="row">
-               <div class="site-branding  hidden-xs hidden-sm hidden-md col-lg-3">
+               <div class="site-branding  hidden-xs hidden-sm hidden-md col-lg-2">
                   <?php if ( is_front_page() || is_home() ) : ?>
                   <?php else : ?>
                   <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
                   <?php endif; ?>
                </div>
-               <nav class="navbar navbar-default  col-xs-12 col-sm-12 col-md-12 col-lg-7" role="navigation">
+               <nav class="navbar navbar-default  col-xs-12 col-sm-12 col-md-12 col-lg-8" role="navigation">
                      <!-- Brand and toggle get grouped for better mobile display -->
                      <div class="col-xs-12 col-sm-3 col-md-3 hidden-lg">
                          <div class="site-branding col-xs-9 col-sm-12 hidden-md hidden-lg">
