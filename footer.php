@@ -11,8 +11,7 @@
 <?php else : ?>
 <div class="row sponsors" style="border-top:1px solid #999;padding-top:30px !important;margin-top:30px;">
    <div class="col-md-12">
-      <h3 class="subtitle">
-      Presenting Sponsor</h2>
+      <h3 class="subtitle">Presenting Sponsor</h3>
       <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
             <img style="margin-top:25px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100"  />
       </a>
@@ -51,37 +50,35 @@
          <div class="col-md-4">
             <h2>Venue</h2>
             <ul class="blue">
-             <li>Upcoming MakerCons:</li>
-             
-             <li>MakerCon Bay Area - May 12 &amp; 13, 2015</li>
-<li>MakerCon New York - September 2015</li>
-</ul>
+              <li>Upcoming MakerCons:</li>
+              <li>MakerCon Bay Area - May 12 &amp; 13, 2015</li>
+              <li>MakerCon New York - September 2015</li>
+              <li><a href="https://help.makermedia.com/hc/en-us" target="_blank">Help Center</a></li>
+            </ul>
          </div>
       </div>
-      
-            <div class="footer-col col-sm-12">
-                        <script language="javascript" type="text/javascript">
-                          $(document).ready(function(){
-                                if(window.location.href.indexOf("?thankyou") > -1) {
-                                  $.fancybox(
-                                    '<h2>Thank you</h2><br /><h3>More Information Soon</h3>',
-                  {
-                                      width: 640,
-                                      height: 320,
-                                      closeBtn : false,
-                                      afterLoad: function() {
-                                        setTimeout( function() {
-                                            $.fancybox.close();
-                                        },
-                                      2000); // 2 secs
-                                      }
-                                    }
-                                  );
-                                }
-                            });
-                    </script>
+        <div class="footer-col col-sm-12">
+          <script language="javascript" type="text/javascript">
+            $(document).ready(function(){
+                  if(window.location.href.indexOf("?thankyou") > -1) {
+                    $.fancybox(
+                      '<h2>Thank you</h2><br /><h3>More Information Soon</h3>',
+                        {
+                        width: 640,
+                        height: 320,
+                        closeBtn : false,
+                        afterLoad: function() {
+                          setTimeout( function() {
+                              $.fancybox.close();
+                          },
+                        2000); // 2 secs
+                        }
+                      }
+                    );
+                  }
+              });
+          </script>
         </div>
-        
 </footer>
 <!-- #colophon -->
 </div>
