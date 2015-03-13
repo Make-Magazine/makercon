@@ -141,52 +141,55 @@
       })(window,document,'script','dataLayer','GTM-K54K72');
     </script>
     <!-- End Google Tag Manager -->
-    <div id="page" class="hfeed site">
+    <div id="page" class="hfeed site container">
       <?php do_action( 'before' ); ?>
       <div class="row">
-          <header id="masthead" class="container site-header container col-sm-12 col-xs-12 col-lg-12 col-xl-12" role="banner">
-            <?php if ( is_front_page() || is_home() ) : ?>
-            <?php else : ?>
-            <div class="site-branding  col-sm-11 col-xs-11 col-xs-hidden hidden-md hidde-lg hidden-xl">
-              <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+        <header id="masthead" class="site-header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" role="banner">
+          <?php if ( is_front_page() || is_home() ) : ?>
+          <?php else : ?>
+          <div class="row">
+          <div class="site-branding  hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2 ">
+            <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+          </div>
+          <?php endif; ?>
+          <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
+          <nav class="navbar navbar-default  col-xs-10 col-sm-12 col-md-10 col-lg-8 col-xl-8" role="navigation">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="site-branding  col-xs-12 col-sm-2 hidden-md hidden-lg hidden-xl">
+              <h1 class="col-xs-10" title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+              <button type="button" class="navbar-toggle col-sm-1 col-xs-1 pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              </button>
             </div>
-            <?php endif; ?>
-            <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
-        <nav class="navbar navbar-default  col-xs-12 col-sm-12 col-md-12 col-lg-8 col-xl-8" role="navigation">
-        <!-- Brand and toggle get grouped for better mobile display -->
-        <div class="site-branding  col-xs-12 col-sm-3 hidden-md hidden-lg hidden-xl">
-        <h1 class="col-xs-10" title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
-        <button type="button" class="navbar-toggle col-sm-1 col-xs-1 pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        </button>
-        </div>
-        <div class="pull-right col-xs-12 col-sm-9 col-md-10 col-lg-12" id="site-navigation">
-        <?php
-          wp_nav_menu( array(
-              'menu'              => 'primary',
-              'theme_location'    => 'primary',
-              'depth'             => 2,
-              'container'         => 'div',
-              'container_class'   => 'collapse navbar-collapse',
-               'container_id'      => 'bs-example-navbar-collapse-1',
-              'menu_class'        => 'nav navbar-nav',
-              'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-              'walker'            => new wp_bootstrap_navwalker())
-          );
-          ?>
-        </div>
-        </nav>
-        <!-- #site-navigation -->
-        <div class="social pull-right hidden-xs hidden-sm hidden-md col-lg-2">
-        <a class="sprite-facebook col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
-        <a class="sprite-twitter col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
-        <a class="sprite-google-plus col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
-        <a class="sprite-linkedin col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.linkedin.com/cws/share?isFramed=false&url=http%3A%2F%2Fmakercon%2Ecom%2F&token=" target="_blank"></a>
+            <div class="pull-right col-xs-12 col-sm-12 col-md-12 col-lg-12" id="site-navigation">
+              <?php
+                wp_nav_menu( array(
+                    'menu'              => 'primary',
+                    'theme_location'    => 'primary',
+                    'depth'             => 2,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                     'container_id'      => 'bs-example-navbar-collapse-1',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                );
+                ?>
+            </div>
+          </nav>
+          <!-- #site-navigation -->
+          <div class="social pull-right hidden-xs hidden-sm hidden-md col-lg-2">
+            <a class="sprite-facebook col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
+            <a class="sprite-twitter col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
+            <a class="sprite-google-plus col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
+            <a class="sprite-linkedin col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.linkedin.com/cws/share?isFramed=false&url=http%3A%2F%2Fmakercon%2Ecom%2F&token=" target="_blank"></a>
+          </div>
         </div>
         </header>
+      </div>
     </div>
     <!-- #masthead -->
     <?php if ( is_front_page() || is_home() ) : ?>

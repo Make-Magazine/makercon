@@ -10,10 +10,16 @@
 <?php if ( is_front_page() || is_home() ) : ?>
 <?php else : ?>
 <div class="row sponsors" style="border-top:1px solid #999;padding-top:30px !important;margin-top:30px;">
-   <div class="col-md-12">
+   <div class="col-md-6">
       <h3 class="subtitle">Presenting Sponsor</h3>
-      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
-            <img style="margin-top:25px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100"  />
+      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img style="margin-top:15px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100"  />
+      </a>
+   </div>
+   <div class="col-md-6">
+      <h3 class="subtitle">Evening of Innovation Sponsor</h3>
+      <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img style="margin-top:25px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="30"  />
       </a>
    </div>
 </div>

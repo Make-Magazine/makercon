@@ -42,12 +42,18 @@
     </div>
   </div>
   <div class="row sponsors-home">
-    <div class="col-md-12">
+    <div class="col-md-6">
       <h2 class="subtitle">Presenting Sponsor</h2>
-      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);">
+      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
       <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" style="text-align:center;" />
       </a>
     </div>
+   <div class="col-md-6">
+      <h2 class="subtitle">Evening of Innovation Sponsor</h2>
+      <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img style="margin-top:15px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
+      </a>
+   </div>
   </div>
   <div class="row highlights">
     <div class="col-md-8">
