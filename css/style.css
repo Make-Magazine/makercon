@@ -6287,6 +6287,12 @@ article ul li {
 #masthead {
   margin: 10px auto 20px auto;
 }
+#masthead .navbar-toggle {
+  width: 45px;
+}
+#masthead .site-branding {
+  padding-top: 5px;
+}
 #masthead h1 {
   padding-left: 30px;
 }

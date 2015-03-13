@@ -146,17 +146,26 @@
       <div class="row">
         <header id="masthead" class="site-header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" role="banner">
           <?php if ( is_front_page() || is_home() ) : ?>
+          
+                    <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
+
+          
           <?php else : ?>
           <div class="row">
           <div class="site-branding  hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2 ">
-            <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+             <!-- <h1 title="MakerCon - <?php echo bloginfo( 'description' ); ?>"></h1> -->
+           <a href="<?php echo home_url(); ?>">
+            <img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" width="360"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" />
+          </a>
           </div>
           <?php endif; ?>
-          <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
-          <nav class="navbar navbar-default  col-xs-10 col-sm-12 col-md-10 col-lg-8 col-xl-8" role="navigation">
+          <nav class="navbar navbar-default  col-xs-12 col-sm-12 col-md-10 col-lg-8 col-xl-8" role="navigation">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="site-branding  col-xs-12 col-sm-2 hidden-md hidden-lg hidden-xl">
-              <h1 class="col-xs-10" title="MakerCon - <?php echo bloginfo( 'description' ); ?>"><a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a></h1>
+              <!-- <h1 class="col-xs-10" title="MakerCon - <?php echo bloginfo( 'description' ); ?>"></h1> -->
+              <div class="col-xs-10">
+              <a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a>
+              </div>
               <button type="button" class="navbar-toggle col-sm-1 col-xs-1 pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
               <span class="sr-only">Toggle navigation</span>
               <span class="icon-bar"></span>
@@ -164,7 +173,7 @@
               <span class="icon-bar"></span>
               </button>
             </div>
-            <div class="pull-right col-xs-12 col-sm-12 col-md-12 col-lg-12" id="site-navigation">
+            <div class="pull-right col-xs-12 col-sm-10 col-md-12 col-lg-12" id="site-navigation">
               <?php
                 wp_nav_menu( array(
                     'menu'              => 'primary',
