@@ -63,7 +63,6 @@ font-weight: bold;
 .nav.nav-tabs li {		
 background-color: #DBDBDB;		
 outline: 0px;		
-border: 2px solid #fff;		
 margin: 0px !important;		
 }	
 		
@@ -73,19 +72,17 @@ background-color: #ED1B24;
 }	
 		
 .nav.nav-tabs li.active a {		
-color: #FFF;		
+background-color: #ED1B24;		
 }	
 .nav.nav-tabs li a {		
-outline: 0px;		
-border: 0px;		
+outline: 0px;			
 background-color: transparent;		
 color: #02394F;		
 font-weight: normal;		
 }	
 	
 .nav.nav-tabs li a:hover {		
-outline: 0px;		
-border: 0px;		
+outline: 0px;	
 background-color: transparent;		
 }	
 		
@@ -122,12 +119,12 @@ color:#fff !important;
 }
 
 .dropdown-menu > .active > a{
-	background-color:#e7e7e7 !important;
+	background-color:#FFFFFF;
 }
 
 #masthead #site-navigation ul li a:first-child {
   padding: 10px;
-	
+  z-index: 1000;
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
@@ -141,6 +138,10 @@ color:#fff !important;
 
 #site-navigation a:hover {
 	color:#ed1b24 !important;
+}
+
+.no-cursor > a {
+	cursor: default;
 }
 
  @media (max-width: 992px)  {

@@ -54,9 +54,8 @@
             </form>
          </div>
          <div class="col-md-4">
-            <h2>Venue</h2>
+            <h2>Upcoming MakerCons</h2>
             <ul class="blue">
-              <li>Upcoming MakerCons:</li>
               <li>MakerCon Bay Area - May 12 &amp; 13, 2015</li>
               <li>MakerCon New York - September 2015</li>
               <li><a href="https://help.makermedia.com/hc/en-us" target="_blank">Help Center</a></li>
