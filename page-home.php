@@ -59,6 +59,7 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-md-12 posts">
+          <h2>Maker Pro News Feed</h2>
           <?php
           $rss = fetch_feed('http://makezine.com/category/maker-pro/feed/');
 
@@ -96,11 +97,13 @@
               else foreach ( $rss_items as $item ) :
           ?>
           <li class="media">
-            <a class="pull-left mkpro-feed-image" href="<?php echo esc_url($item -> get_permalink()); ?>">
+            <a class="pull-left mkpro-feed-image" href="<?php echo esc_url($item -> get_permalink()); ?>" target="_blank">
                   <?php echo '<img class="media-object" height="150" src="' . get_first_image_url($item -> get_content()) . '" alt="MakerPro post featured image" />'; ?>
             </a>
             <div class="media-body">
-                <h3 class="media-heading"><a href='<?php echo esc_url($item -> get_permalink()); ?>' title='<?php echo esc_html($item -> get_title()); ?>'> <?php echo esc_html($item -> get_title()); ?></a></h3>
+                <h3 class="media-heading">
+                  <a href='<?php echo esc_url($item -> get_permalink()); ?>' title='<?php echo esc_html($item -> get_title()); ?>' target="_blank"> <?php echo esc_html($item -> get_title()); ?></a>
+                </h3>
                 <small><?php echo $item -> get_date('F j Y'); ?></small>
                 <p><?php echo shorten($item -> get_description(), '200'); ?></p>
             </div>

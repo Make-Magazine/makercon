@@ -7417,8 +7417,13 @@ ol.flex-control-nav {
 .fancybox-inner {
   position: relative;
 }
+.fancybox-outer {
+  border: 1px solid #666;
+  padding: 10px;
+}
 .fancybox-inner {
   overflow: hidden;
+  width: 100% !important;
 }
 .fancybox-type-iframe .fancybox-inner {
   -webkit-overflow-scrolling: touch;
@@ -7620,10 +7625,7 @@ ol.flex-control-nav {
 /* FANCYBOX POP UP MODAL */
 .fancybox-inner {
   text-align: center;
-}
-.fancybox-skin {
-  background: #00ABCD !important;
-  color: #fff !important;
+  width: 100% !important;
 }
 .fancybox-inner h2 {
   font-weight: bold;
@@ -7632,11 +7634,11 @@ ol.flex-control-nav {
   margin-top: 10px;
 }
 .fancybox-inner h3 {
-  color: #fff;
+  color: #333;
   font-weight: bold;
   font-size: 28px;
-  line-height: 1.5em;
-  margin-bottom: 20px;
+  line-height: 1.2em;
+  margin: 15px 0 20px;
   text-transform: uppercase;
 }
 .fancybox-inner form div label {
@@ -7701,9 +7703,7 @@ ol.flex-control-nav {
     overflow: visible;
   }
   .fancybox-inner h3 {
-    font-size: 18px;
-    line-height: 1.2em;
-    margin-bottom: 10px;
+    font-size: 22px;
   }
   #newsletter-set-cookie {
     margin-top: 10px;
