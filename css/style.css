@@ -7323,6 +7323,11 @@ ol.flex-control-nav {
 .logo {
   margin: 15px 0;
 }
+@media (min-width: 450px) {
+  .mkpro-feed-image {
+    display: none;
+  }
+}
 @media (min-width: 992px) {
   /* col-md background */
   .container-background {

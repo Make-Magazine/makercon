@@ -59,7 +59,54 @@
     <div class="col-md-8">
       <div class="row">
         <div class="col-md-12 posts">
-          <p><img src="<?php echo get_stylesheet_directory_uri(); ?>/img/ajax-loader.gif" alt="Loading..."></p>
+          <?php
+          $rss = fetch_feed('http://makezine.com/category/maker-pro/feed/');
+
+          if (!is_wp_error($rss)) :
+
+            $maxitems = $rss -> get_item_quantity(5); //gets latest 5 items This can be changed to suit your requirements
+            $rss_items = $rss -> get_items(0, $maxitems);
+          endif;
+          ?>
+          <?php
+          //grabs our post thumbnail image
+            function get_first_image_url($html) {
+              if (preg_match('/<img.+?src="(.+?)"/', $html, $matches)) {
+                return $matches[1];
+              }
+            }
+          ?>
+          <?php
+          //shortens description
+          function shorten($string, $length) {
+            $suffix = '&hellip;';
+            $short_desc = trim(str_replace(array("\r", "\n", "\t"), ' ', strip_tags($string)));
+            $desc = trim(substr($short_desc, 0, $length));
+            $lastchar = substr($desc, -1, 1);
+            if ($lastchar == '.' || $lastchar == '!' || $lastchar == '?')
+              $suffix = '';
+              $desc .= $suffix;
+            return $desc;
+          }
+          ?>
+          <!--start of displaying our feeds-->
+          <ul class="media-list">
+          <?php
+              if ($maxitems == 0) echo '<li>No items.</li>';
+              else foreach ( $rss_items as $item ) :
+          ?>
+          <li class="media">
+            <a class="pull-left mkpro-feed-image" href="<?php echo esc_url($item -> get_permalink()); ?>">
+                  <?php echo '<img class="media-object" height="150" src="' . get_first_image_url($item -> get_content()) . '" alt="MakerPro post featured image" />'; ?>
+            </a>
+            <div class="media-body">
+                <h3 class="media-heading"><a href='<?php echo esc_url($item -> get_permalink()); ?>' title='<?php echo esc_html($item -> get_title()); ?>'> <?php echo esc_html($item -> get_title()); ?></a></h3>
+                <small><?php echo $item -> get_date('F j Y'); ?></small>
+                <p><?php echo shorten($item -> get_description(), '200'); ?></p>
+            </div>
+          </li>
+          <?php endforeach; ?>
+          </ul>
         </div>
       </div>
       <div class="row">

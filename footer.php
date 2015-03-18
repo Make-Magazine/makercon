@@ -49,6 +49,7 @@
                <input id="fieldName" name="cm-name" type="text" />
                <br />
                <p style="margin:5px 0 0 0;"><label for="fieldEmail">Email </label></p>
+               <div class="clearfix"></div>
                <input id="fieldEmail" name="cm-jrsydu-jrsydu" type="email" required />
                <button type="submit" class="button" value="Subscribe">Subscribe</button>
             </form>

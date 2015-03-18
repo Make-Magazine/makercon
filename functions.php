@@ -407,3 +407,16 @@ wp_deregister_style('stats_reports_css'); // Stats
 wp_deregister_style('jetpack-widgets'); // Widgets
 }
 add_action('wp_print_styles', 'remove_jetpack_styles');
+
+//add post thumbnails to RSS images
+function cwc_rss_post_thumbnail($content) {
+    global $post;
+    if(has_post_thumbnail($post->ID)) {
+        $content = '<p>' . get_the_post_thumbnail($post->ID) .
+        '</p>' . get_the_excerpt();
+    }
+
+    return $content;
+}
+add_filter('the_excerpt_rss', 'cwc_rss_post_thumbnail');
+add_filter('the_content_feed', 'cwc_rss_post_thumbnail');
