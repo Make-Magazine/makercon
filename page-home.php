@@ -41,6 +41,18 @@
       </div>
     </div>
   </div>
+
+  <div class="row highlights">
+    <div class="col-md-6">
+      <h2>MakerCon is the epicenter of the maker movement</h2>
+      <p>This year MakerCon happens in San Francisco at the iconic Palace of Fine Arts, the only remaining structure from the 1915 Panama-Pacific International Exposition. As then, the MakerCon Showcase brings the world's attention to innovative and exciting technologies.</p>
+      <p>MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. MakerCon is a meeting place for passionate, young entrepreneurs who want to test the commercial waters for their prototypes; cultural and civic leaders driving maker initiatives; and product developers inspired by the maker movement.</p>
+    </div>
+   <div class="col-md-6">
+        <img class="img-responsive" src="http://makercon.com/wp-content/uploads/2015/03/Palace_of_Fine_Arts_SF.jpg" alt="Palace of Fine Arts San Francisco" title="Image by Kevin Cole (en:User:Kevinlcole) (originally posted to Flickr as Palace of Fine Arts), via Wikimedia Commons"/>
+   </div>
+  </div>
+
   <div class="row sponsors-home">
     <div class="col-md-6">
       <h2 class="subtitle">Presenting Sponsor</h2>
@@ -51,7 +63,7 @@
    <div class="col-md-6">
       <h2 class="subtitle">Evening of Innovation Sponsor</h2>
       <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-            <img style="margin-top:15px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
+          <img style="margin-top:15px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
       </a>
    </div>
   </div>
