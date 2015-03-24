@@ -132,9 +132,24 @@
         <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
       </div>
     </div>
-    <div class="col-md-4">
+    <div class="col-md-4 col-sm-6">
       <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="550">Tweets about "#makercon"</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+    </div>
+    <br/>
+    <div class="col-md-4 col-sm-6 top15">
+        <div class="thumbnail">
+            <a href="http://www.forbes.com/sites/oracle/2014/05/29/maker-movement-fuels-apps-robots-and-internet-of-things/" target="_blank">
+                <img src="http://makercon.com/wp-content/uploads/2015/03/makercon-Oracle.jpg" alt="Makercon 2014 at Oracle" class="img-responsive" />
+            </a>
+            <div class="caption">
+                <h3>
+                  <a href="http://www.forbes.com/sites/oracle/2014/05/29/maker-movement-fuels-apps-robots-and-internet-of-things/" target="_blank">Maker Movement Fuels Apps, Robots, And Internet Of Things</a>
+                </h3>
+                <p><small>By Timothy Beneke | Forbes</small></p>
+                <p>The newer MakerCon event aims to “celebrate makers and making,” highlight innovation and ingenuity, explore the potential of tools and technology, and “visualize the future.”</p>
+            </div>
+        </div>
     </div>
   </div>
   <!-- .entry-content -->
