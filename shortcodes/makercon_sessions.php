@@ -3,7 +3,7 @@ add_shortcode('makercon_sessions', 'makercon_sessions_shortcode');
 
 function makercon_sessions_shortcode($atts){
   extract(shortcode_atts(array(
-  'event' => 'makercon-ny-2014'
+  'event' => 'makercon-bay-area-2015'
   ), $atts));
 
   $wp_sessions_posts = get_posts(array('post_type'=>'session',

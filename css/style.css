@@ -6461,32 +6461,14 @@ ol.flex-control-nav {
   }
 }
 .nav-tabs {
-  border-bottom: 0px;
   text-align: center;
   text-transform: uppercase;
   font-weight: bold;
 }
-.nav.nav-tabs li {
-  background-color: #DBDBDB;
-  outline: 0px;
-  margin: 0px !important;
-}
-.nav.nav-tabs li.active {
-  outline: 0px;
-  background-color: #ED1B24;
-}
-.nav.nav-tabs li.active a {
-  background-color: #ED1B24;
-}
 .nav.nav-tabs li a {
   outline: 0px;
-  background-color: transparent;
   color: #02394F;
   font-weight: normal;
-}
-.nav.nav-tabs li a:hover {
-  outline: 0px;
-  background-color: transparent;
 }
 .nav.tabs-nav {
   float: none;

@@ -1,6 +1,5 @@
 <?php
 /**
-/**
  * Template Name: Nav/Sessions Page
  *
  * @package makercon

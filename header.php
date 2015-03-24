@@ -18,7 +18,7 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fancybox.js"></script>
-    <script type="text/javascript">
+    <!--script type="text/javascript">
       adroll_adv_id = "74UKLGM23VB4BDJQTIUZAB";
       adroll_pix_id = "NUGQMXVPEZDGDORWPOGG72";
       (function () {
@@ -102,9 +102,7 @@
             }
           }
       });
-      
-      
-    </script>
+    </script-->
     <script>
       var _prum = [['id', '53fcea2fabe53d341d4ae0eb'],
                   ['mark', 'firstbyte', (new Date()).getTime()]];
@@ -146,10 +144,7 @@
       <div class="row">
         <header id="masthead" class="site-header col-xs-12 col-sm-12 col-md-12 col-lg-12 col-xl-12" role="banner">
           <?php if ( is_front_page() || is_home() ) : ?>
-          
-                    <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
-
-          
+            <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
           <?php else : ?>
           <div class="row">
           <div class="site-branding  hidden-xs hidden-sm col-md-2 col-lg-2 col-xl-2 ">
