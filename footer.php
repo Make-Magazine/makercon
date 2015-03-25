@@ -27,7 +27,7 @@
 </div><!-- #content -->
 </div><!-- #container -->
 </div>
-<footer id="colophon" class="footer-wrap row">
+<footer id="colophon" class="footer-wrap">
    <div class="site-footer container" role="contentinfo">
       <div class="">
          <div class="col-md-4">

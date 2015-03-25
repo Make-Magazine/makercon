@@ -7075,6 +7075,9 @@ body.home .bighead {
 body.home .bighead span {
   font-family: fbvqgndbagbold;
 }
+body.home .highlights-sidebar h3 {
+  margin-bottom: 5px;
+}
 body.home h2.subtitle {
   font-family: bentonsanscompmedium, helvetica, sans-serif !important;
   color: #02394f !important;
