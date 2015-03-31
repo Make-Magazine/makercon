@@ -10,18 +10,27 @@
 <?php if ( is_front_page() || is_home() ) : ?>
 <?php else : ?>
 <div class="row sponsors" style="border-top:1px solid #999;padding-top:30px !important;margin-top:30px;">
-   <div class="col-md-6">
-      <h3 class="subtitle">Presenting Sponsor</h3>
-      <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-            <img style="margin-top:15px;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100"  />
+    <div class="col-sm-12 col-md-4">
+      <h2 class="subtitle">Presenting Sponsor</h2>
+        <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+          <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" style="text-align:center;" />
+        </a>
+        <a href="http://csr.cisco.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+          <img class="" src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="text-align:center;margin-left:30px;" />
+        </a>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <h2 class="subtitle">Communications Sponsor</h2>
+      <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img class="" src="http://makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" style="text-align:center;" />
       </a>
-   </div>
-   <div class="col-md-6">
-      <h3 class="subtitle">Evening of Innovation Sponsor</h3>
+    </div>
+    <div class="col-sm-12 col-md-4">
+      <h2 class="subtitle">Evening of Innovation Sponsor</h2>
       <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-            <img style="margin-top:25px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="30"  />
+        <img style="margin-top:15px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
       </a>
-   </div>
+    </div>
 </div>
 <?php endif; ?>
 </div><!-- #content -->
@@ -59,7 +68,11 @@
             <ul class="blue">
               <li>MakerCon Bay Area - May 12 &amp; 13, 2015</li>
               <li>MakerCon New York - September 2015</li>
+            </ul>
+            <h2>More Info</h2>
+            <ul>
               <li><a href="https://help.makermedia.com/hc/en-us" target="_blank">Help Center</a></li>
+              <li><a href="http://makermedia.com/privacy/" target="_blank">Privacy Policy</a></li>
             </ul>
          </div>
       </div>
