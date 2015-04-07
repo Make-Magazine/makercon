@@ -420,3 +420,6 @@ function cwc_rss_post_thumbnail($content) {
 }
 add_filter('the_excerpt_rss', 'cwc_rss_post_thumbnail');
 add_filter('the_content_feed', 'cwc_rss_post_thumbnail');
+
+/* Decrease RSS Feed for page-makezine-projects feed */
+add_filter( 'wp_feed_cache_transient_lifetime', create_function('$fixrss', 'return 15;') );

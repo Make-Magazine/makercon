@@ -53,7 +53,7 @@ get_header(); ?>
   </div>
   <div class="row sponsors-home">
     <div class="col-sm-12 col-md-4">
-      <h2 class="subtitle">Presenting Sponsor</h2>
+      <h2 class="subtitle">Presenting Sponsors</h2>
         <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
           <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" style="text-align:center;" />
         </a>
