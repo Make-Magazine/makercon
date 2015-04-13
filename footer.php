@@ -13,22 +13,31 @@
     <div class="col-sm-12 col-md-4">
       <h2 class="subtitle">Presenting Sponsors</h2>
         <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-          <img class="" src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" style="text-align:center;" />
+          <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
         </a>
         <a href="http://csr.cisco.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-          <img class="" src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="text-align:center;margin-left:30px;" />
+          <img src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="margin-left:30px;" />
         </a>
     </div>
     <div class="col-sm-12 col-md-4">
-      <h2 class="subtitle">Communications Sponsor</h2>
-      <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img class="" src="http://makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" style="text-align:center;" />
+      <h2 class="subtitle">Participating Sponsor</h2>
+      <a href="http://www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="http://makercon.com/wp-content/uploads/2015/04/Autodesk_fusion360_logo_flat_color.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
+      </a>
+      <a href="http://www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="http://makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />
       </a>
     </div>
     <div class="col-sm-12 col-md-4">
       <h2 class="subtitle">Evening of Innovation Sponsor</h2>
       <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img style="margin-top:15px;" src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
+        <img src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-4 col-md-offset-4 top15">
+      <h2 class="subtitle">Communications Sponsor</h2>
+      <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="http://makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" />
       </a>
     </div>
 </div>
@@ -42,7 +51,7 @@
          <div class="col-md-4">
             <h2>Past Events</h2>
             <ul>
-                <li><a href="/new-york-2014/conference/">New York 2014 </a></li>
+              <li><a href="/new-york-2014/conference/">New York 2014 </a></li>
                <li><a href="/bay-area-2014/overview/">Bay Area 2014 </a></li>
                <li><a href="http://makezine.com/hardware-innovation-workshop/2013-new-york-event/" target="_blank">New York 2013</a></li>
                <li><a href="http://makezine.com/hardware-innovation-workshop/overview/" target="_blank">Bay Area 2013</a></li>

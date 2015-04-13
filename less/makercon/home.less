@@ -18,80 +18,79 @@ body.home {
 		margin-bottom:5px;
 	}
 
-h2.subtitle {
-	font-family:@subtitle !important;
-	color:@blue !important;
-	font-size:34px;
-	line-height: 40px;
-}
+	h2.subtitle {
+		font-family:@subtitle !important;
+		color:@blue !important;
+		font-size:34px;
+		line-height: 40px;
+	}
 
-p.intro {
-	font-size:18px;
-	line-height:26px;
-}
+	p.intro {
+		font-size:18px;
+		line-height:26px;
+	}
 
-.button {
-	margin:20px auto;
-	a:link, a:visited {
+	.button {
+		margin:20px auto;
+		a:link, a:visited {
+			color:#fff;
+		}
+	}
+
+	.slideshow-controls {
+		display: none;
+	}
+
+	img.intel-logo {
+		float:right;
+		margin-left:0px;
+		margin-right:50px;
+		margin-top:20px;
+		width:100px;
+	}
+
+	img.autodesk-logo {
+		width:300px;
+		margin-top:30px;
+	}
+
+	img.cornell-logo {
+		width:300px;
+		margin-top:31px;
+	}
+
+	p.posts {
+		text-align:center;
+	}
+
+	.speakerblock {
+		font-family: @font;
+		font-size: 14px;
+		background-color: @teal;
 		color:#fff;
-	}
-}
-
-.slideshow-controls {
-	display: none;
-}
-
-img.intel-logo {
-	float:right;
-	margin-left:0px;
-	margin-right:50px;
-	margin-top:20px;
-	width:100px;
-}
-
-img.autodesk-logo {
-	width:300px;
-	margin-top:30px;
-}
-
-img.cornell-logo {
-	width:300px;
-	margin-top:31px;
-}
-
-p.posts {
-	text-align:center;
-}
-
-.speakerblock {
-	font-family: @font;
-	font-size: 14px;
-	background-color: @teal;
-	color:#fff;
-	border-radius: 0;
-}
-
-.speaker-box-name{
-	font-size:18px;
-font-weight:bold;
-text-transform: uppercase;
-}
-.speaker-box-title {
-font-size:14px;
-line-height: 18px;
-}
-
-.recent-posts a {
-	color: @red;
-	font-weight: bold;
-	&:hover {
-		color: lighten(@red, 10%)
-	}
-	.thumbnail {
-		margin-bottom:5px;
+		border-radius: 0;
 	}
 
-}
+	.speaker-box-name{
+		font-size:18px;
+		font-weight:bold;
+		text-transform: uppercase;
+	}
+	.speaker-box-title {
+		font-size:14px;
+		line-height: 18px;
+	}
+
+	.recent-posts a {
+		color: @red;
+		font-weight: bold;
+		&:hover {
+			color: lighten(@red, 10%)
+		}
+		.thumbnail {
+			margin-bottom:5px;
+		}
+	}
 
 	.photo-bar {
 		background-color: #3b8caa;
@@ -249,13 +248,6 @@ ul.recent-posts {
 	padding-left:7px;
 	padding-top:0px;
 	}
-	// .col-xs-6:nth-of-type(1) {
-	// padding-right:0px;
-	// }
-	// .col-xs-6:nth-of-type(2) {
-	// padding-top:10px;
-	// padding-left:0px;
-	// }
 }
 
 @-moz-document url-prefix() { 
@@ -274,7 +266,7 @@ ul.recent-posts {
     background-image: url('../img/background-lg.png');
     background-repeat: repeat-x;
     background-position: center;
-    	min-height:429px;
+    min-height:429px;
 	margin: -75px auto 0 auto;
 }
 
@@ -283,19 +275,21 @@ ul.recent-posts {
 	margin-top:78px !important;
 }
 
-.metaslider .flexslider {margin-bottom:0px !important;}
+.metaslider .flexslider {
+	margin-bottom:0px !important;
+}
 
 ol.flex-control-nav {
-bottom: 4px !important;
-z-index: 100000 !important;
+	bottom: 4px !important;
+	z-index: 100000 !important;
 }
 
 .rocket {
 	margin-top:10px;
 }
 
-.logo {
-	margin:15px 0;
+.sponsors h2 {
+	margin-bottom: 0px;
 }
 
 @media (max-width: 450px) {
@@ -315,14 +309,14 @@ z-index: 100000 !important;
    .slider {
    	margin-top:29px;
    }
- }
+}
 
  @media (min-width: 1200px) {
  	/* blue stripe as body background */
  	body.home {
  		background: url(../img/bg.png) repeat-x top;
  	}
- 	 col-lg background
+ 	//col-lg background
    .container-background {
      background: url(../img/background-lg.png) no-repeat center top;
    }
@@ -335,7 +329,6 @@ z-index: 100000 !important;
  }
 
 @media screen and (min-width : 992px){
-
     @-moz-document regexp('http:.*'){
         .slider { margin-top:4px !important; } // red in FF/Gecko
         .rocket {margin-top:-56px;}
@@ -343,10 +336,9 @@ z-index: 100000 !important;
 }
 
  @media (max-width: 768px) {
-
-.slider-wrap {
-   		background-image: none;
-   		min-height:225px;
-   		margin-top: -75px atuo 0 auto;
-   	}
-   }
+	.slider-wrap {
+	   		background-image: none;
+	   		min-height:225px;
+	   		margin-top: -75px atuo 0 auto;
+	}
+}
