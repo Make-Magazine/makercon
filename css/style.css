@@ -6834,12 +6834,15 @@ p.video-info {
   padding: 15px auto;
 }
 .top-navbar ul.nav li.active {
-  background-color: #ed1b24 !important;
   color: #fff;
+  background-color: #FFF;
 }
 .top-navbar ul.nav li.active h2.subtitle a:link,
 .top-navbar ul.nav li.active h2.subtitle a:visited {
   color: #fff;
+}
+.ny2014-nav .top-navbar ul.nav li.active {
+  background-color: #ed1b24;
 }
 .modal-body {
   text-align: center;

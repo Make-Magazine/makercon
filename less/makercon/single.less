@@ -119,26 +119,28 @@ h1.entry-title{
 
 .sponsorship {
 	color:#145a60;
-  h2 {
-  	margin: 10px auto;
-  	color:#FF0000;
-  	  span {
-  	  	font-family: arial, sans-serif;
-  	  	font-size:21px;font-weight:100;
-  	  }
-  }
-  ul {
-  	padding-left:0;
-  	color:#00ADDC;
-	list-style: none;
+	h2 {
+		margin: 10px auto;
+		color:#FF0000;
+		span {
+		  	font-family: arial, sans-serif;
+		  	font-size:21px;font-weight:100;
+		}
+	}
+  	ul {
+	  	padding-left:0;
+	  	color:#00ADDC;
+		list-style: none;
 	}
 
-ul li:before {
-		content: "\00BB \0020";
-	     }
+	ul li:before {
+			content: "\00BB \0020";
+	}
 }
 
-.modal-footer button {margin-top:20px;}
+.modal-footer button {
+	margin-top:20px;
+}
 
 // Videos Page
 
@@ -154,7 +156,9 @@ p.video-info {
 	margin-bottom:20px;
 }
 
-.video { position: relative; }
+.video { 
+	position: relative; 
+}
 
 .video a {
    position: absolute;
@@ -169,40 +173,40 @@ p.video-info {
 
 
 .top-navbar {
-ul.nav {
-	background-color: #ccc;
-	color:@blue;
-	margin-bottom:30px;
-	
-	h2.subtitle {
-		font-size:24px !important; 
-		margin:0px;
-		padding:10px;
-	a:link, a:visited {
+	ul.nav {
+		background-color: #ccc;
 		color:@blue;
-	}
-}
-
-	li {
-	border-left:3px solid #fff;
-	padding: 15px auto;
-	
-	}
-	
-	li.active {
-		background-color: @red !important;
-		color:#fff;
+		margin-bottom:30px;
+		
 		h2.subtitle {
-	a:link, a:visited {
-		color: #fff;
-	}
-	}
-}
-}
+			font-size:24px !important; 
+			margin:0px;
+			padding:10px;
+			a:link, a:visited {
+				color:@blue;
+			}
+		}
 
-
+		li {
+			border-left:3px solid #fff;
+			padding: 15px auto;
+		}
+		
+		li.active {
+			color:#fff;
+			background-color: #FFF;
+			h2.subtitle {
+				a:link, a:visited {
+					color: #fff;
+				}
+			}
+		}
+	}
 }
  
+.ny2014-nav .top-navbar ul.nav li.active {
+	background-color: @red;
+}
 
 
 .modal-body {

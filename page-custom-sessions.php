@@ -9,7 +9,7 @@
  */
 
 get_header(); ?>
-<div class="row">
+<div class="row ny2014-nav">
    <div class="col-md-12">
       <div class="top-navbar">
          <div class="navbar">
