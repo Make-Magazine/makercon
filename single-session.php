@@ -29,7 +29,7 @@ jQuery(document).ready(function(){
       <?php get_template_part( 'content', 'session-single' ); 
       $wp_post_speaker_ids = get_post_meta(get_the_ID(), '_session_speakers', true);
       if($wp_post_speaker_ids != '') {
-        echo ("<h2>Speakers</h2>");
+        echo ("<h2 class='speaker-h2'>Speakers</h2>");
         $_show_speaker_website_link = true;
       get_template_part('loop','speaker-list');
       } ?>

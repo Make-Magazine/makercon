@@ -62,14 +62,27 @@
          <div class="col-md-4">
             <h2>Track the Maker Movement</h2>
             <p>Get the weekly Maker Pro Newsletter from the editors of MAKE magazine.</p>
-            <form action="http://newsletter.makezine.com/t/r/s/jrsydu/" method="post">
-               <p style="margin-bottom:0px;"><label for="fieldName">Name </label></p>
-               <input id="fieldName" name="cm-name" type="text" />
-               <br />
-               <p style="margin:5px 0 0 0;"><label for="fieldEmail">Email </label></p>
-               <div class="clearfix"></div>
-               <input id="fieldEmail" name="cm-jrsydu-jrsydu" type="email" required />
-               <button type="submit" class="button" value="Subscribe">Subscribe</button>
+            <script>
+                $(function() {
+                  $( "input[name='custom_url']" ).val( window.location.href );
+                });
+            </script>
+            <form action="http://whatcounts.com/bin/listctrl" method="POST">
+                <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B" />
+                <input type="hidden" name="cmd" value="subscribe" />
+                <input type="hidden" name="custom_source" value="footer" />
+                <input type="hidden" name="custom_incentive" value="none" />
+                <input type="hidden" id="format_mime" name="format" value="mime" />
+                <input type="hidden" name="custom_url" value="" />
+                <input type="hidden" name="goto" value="http://makercon.com/?thankyou" />
+                <input type="hidden" name="errors_to" value="" />
+                <p style="margin-bottom:0px;"><label for="fieldName">Name </label></p>
+                <input id="fieldName" name="first" type="text" />
+                <br />
+                <p style="margin:5px 0 0 0;"><label for="fieldEmail">Email </label></p>
+                <div class="clearfix"></div>
+                <input id="email" name="email" type="email" required />
+                <button type="submit" class="button" value="Subscribe">Subscribe</button>
             </form>
          </div>
          <div class="col-md-4">
