@@ -62,7 +62,7 @@ get_header(); ?>
         </a>
     </div>
     <div class="col-sm-12 col-md-4">
-      <h2 class="subtitle">Participating Sponsor</h2>
+      <h2 class="subtitle">Participating Sponsors</h2>
       <a href="http://www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="http://makercon.com/wp-content/uploads/2015/04/Autodesk_fusion360_logo_flat_color.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
       </a>
@@ -76,10 +76,16 @@ get_header(); ?>
         <img src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
       </a>
     </div>
-    <div class="col-sm-12 col-md-4 col-md-offset-4 top15">
+    <div class="col-sm-12 col-md-4 col-md-offset-2 top15">
       <h2 class="subtitle">Communications Sponsor</h2>
       <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="http://makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" />
+      </a>
+    </div>
+    <div class="col-sm-12 col-md-4 top15">
+      <h2 class="subtitle">After Party Sponsor</h2>
+      <a href="http://www.arm.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="http://makercon.com/wp-content/uploads/2015/04/ARM-After-Party-Sponsor-logo.jpg" alt="ARM After Party Sponsor Logo" width="100" align="center" />
       </a>
     </div>
   </div>
