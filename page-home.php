@@ -64,7 +64,7 @@ get_header(); ?>
     <div class="col-sm-12 col-md-4">
       <h2 class="subtitle">Participating Sponsors</h2>
       <a href="http://www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img src="http://makercon.com/wp-content/uploads/2015/04/Autodesk_fusion360_logo_flat_color.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
+        <img src="http://makercon.com/wp-content/uploads/2015/04/fusion_360tm_sponsor_logo.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
       </a>
       <a href="http://www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="http://makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />

@@ -11,7 +11,12 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php wp_title( '|', true, 'right' ); ?></title>
+    <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
+    <meta name="description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods." />
+    <meta property="og:title" content="<?php bloginfo('name'); ?> | <?php wp_title(); ?>" />
+    <meta property="og:site_name" content="MakerCon" />
+    <meta property="og:description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. " />
+    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
     <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
@@ -120,15 +125,6 @@
     <?php wp_head(); ?>
   </head>
   <body <?php body_class(); ?>>
-    <!-- Google Tag Manager Maker Shed -->
-    <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-WR8NLB" height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
-    <script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
-      new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
-      j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
-      '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
-      })(window,document,'script','dataLayer','GTM-WR8NLB');
-    </script>
-    <!-- End Google Tag Manager -->
     <!-- Google Tag Manager  -->
     <noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K54K72"
       height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
@@ -162,10 +158,10 @@
               <a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png"  alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a>
               </div>
               <button type="button" class="navbar-toggle col-sm-1 col-xs-1 pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-              <span class="sr-only">Toggle navigation</span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
-              <span class="icon-bar"></span>
+                <span class="sr-only">Toggle navigation</span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
+                <span class="icon-bar"></span>
               </button>
             </div>
             <div class="pull-right col-xs-12 col-sm-10 col-md-12 col-lg-12" id="site-navigation">
@@ -211,13 +207,13 @@
     </div>
     <?php endif; ?>
     <div class="container">
-    <div id="content" class="site-content">
-    <div class="fancybox" style="display:none;">
-      <h3>Send Me Details About 2015 MakerCon!</h3>
-      <form action="http://makermedia.createsend.com/t/r/s/ittlurh/" method="post" id="subForm">
-        <div>
-          <input name="cm-ittlurh-ittlurh" id="ittlurh-ittlurh" placeholder="Your E-mail" required="required" type="text"><br>
-          <input value="Sign Me Up" class="btn-modal newsletter-set-cookie" id="newsletter-set-cookie" type="submit">
+      <div id="content" class="site-content">
+        <div class="fancybox" style="display:none;">
+          <h3>Send Me Details About 2015 MakerCon!</h3>
+          <form action="http://makermedia.createsend.com/t/r/s/ittlurh/" method="post" id="subForm">
+            <div>
+              <input name="cm-ittlurh-ittlurh" id="ittlurh-ittlurh" placeholder="Your E-mail" required="required" type="text"><br>
+              <input value="Sign Me Up" class="btn-modal newsletter-set-cookie" id="newsletter-set-cookie" type="submit">
+            </div>
+          </form>
         </div>
-      </form>
-    </div>

@@ -383,11 +383,22 @@ function make_modal_builder( $atts, $content = null ) {
 add_shortcode( 'modal', 'make_modal_builder' );
 
 // Removing coment-reply .js
-
 function clean_header(){
   wp_deregister_script( 'comment-reply' );
          }
 add_action('init','clean_header');
+
+/**
+ * Adds footer copyright information
+ */
+function make_copyright_footer() { ?>
+  <div class="row footer_copyright">
+    <div class="col-xs-12 text-center">
+      <p class="muted"><small>Make: and Maker Faire are registered trademarks of Maker Media, Inc.</small></p>
+      <p class="muted"><small>Copyright &copy; 2004-<?php echo date("Y") ?> Maker Media, Inc.  All rights reserved</small></p>
+    </div>
+  </div>
+<?php }
 
 // Remove Jetpack CSS
 function remove_jetpack_styles(){

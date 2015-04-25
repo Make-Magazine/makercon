@@ -642,6 +642,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/MakerCon-Logo-Intel-CiscoTM.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 11757,
+		"inputAbbreviatedPath": "\/img\/MakerCon-Logo-Intel-CiscoTM.png",
+		"outputAbbreviatedPath": "\/img\/MakerCon-Logo-Intel-CiscoTM.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/MakerCon_Header_v4.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -847,6 +858,17 @@
 		"initialSize": 2631,
 		"inputAbbreviatedPath": "\/img\/social-sprite.png",
 		"outputAbbreviatedPath": "\/img\/social-sprite.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/spritesheet.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 2191,
+		"inputAbbreviatedPath": "\/img\/spritesheet.png",
+		"outputAbbreviatedPath": "\/img\/spritesheet.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4244,9 +4266,9 @@
 		"outputAbbreviatedPath": "\/css\/style.css",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
-		"outputStyle": 0,
+		"outputStyle": 2,
 		"relativeURLS": 0,
-		"shouldRunAutoprefixer": 0,
+		"shouldRunAutoprefixer": 1,
 		"shouldRunBless": 0,
 		"strictImports": 0,
 		"strictMath": 0,
@@ -4589,7 +4611,7 @@
 	"bowerAbbreviatedPath": "",
 	"displayValue": "makercon",
 	"displayValueWasSetByUser": 0,
-	"iconImageName": "globe_gray"
+	"iconImageName": "meme-grumpy"
 	},
 "projectSettings": {
 	"alwaysUseExternalServer": 0,
