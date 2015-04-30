@@ -4,7 +4,6 @@
 *
 * @package    makercon
 * @license    http://opensource.org/licenses/gpl-license.php  GNU Public License
-* @author     Bill Olson <bolson@makermedia.com>
 *
 */
 get_header(); ?>
@@ -52,40 +51,54 @@ get_header(); ?>
     </div>
   </div>
   <div class="row sponsors-home">
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-4 top15">
       <h2 class="subtitle">Presenting Sponsors</h2>
         <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
         </a>
-        <a href="http://csr.cisco.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-          <img src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="margin-left:30px;" />
+        <a href="//csr.cisco.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+          <img src="//makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="margin-left:30px;" />
         </a>
     </div>
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-4 top15">
       <h2 class="subtitle">Participating Sponsors</h2>
-      <a href="http://www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img src="http://makercon.com/wp-content/uploads/2015/04/fusion_360tm_sponsor_logo.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
-      </a>
-      <a href="http://www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img src="http://makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />
-      </a>
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="//www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img src="//makercon.com/wp-content/uploads/2015/04/fusion_360tm_sponsor_logo.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
+          </a>
+          <a href="//www.microsoft.com/en-us/default.aspx" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img src="//makercon.com/wp-content/uploads/2015/04/Microsoft-Participating-Sponsor-Logo.jpg" alt="Microsoft Sponsor Logo" class="left15" width="150" align="center" />
+          </a>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-xs-12">
+          <a href="//www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img src="//makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />
+          </a>
+          <a href="//www.sony.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+            <img src="//makercon.com/wp-content/uploads/2015/04/Sony-Participating-Sponsor-Logo.jpg" alt="Sony Sponsor Logo" width="100" align="center" style="margin-left: 45px;" />
+          </a>
+        </div>
+      </div>
     </div>
-    <div class="col-sm-12 col-md-4">
+    <div class="col-sm-12 col-md-4 top15">
       <h2 class="subtitle">Evening of Innovation Sponsor</h2>
-      <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
+      <a href="//sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="//makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
       </a>
     </div>
     <div class="col-sm-12 col-md-4 col-md-offset-2 top15">
       <h2 class="subtitle">Communications Sponsor</h2>
-      <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img src="http://makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" />
+      <a href="//www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="//makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" />
       </a>
     </div>
     <div class="col-sm-12 col-md-4 top15">
       <h2 class="subtitle">After Party Sponsor</h2>
-      <a href="http://www.arm.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-        <img src="http://makercon.com/wp-content/uploads/2015/04/ARM-After-Party-Sponsor-logo.jpg" alt="ARM After Party Sponsor Logo" width="100" align="center" />
+      <a href="//www.arm.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+        <img src="//makercon.com/wp-content/uploads/2015/04/ARM-After-Party-Sponsor-logo.jpg" alt="ARM After Party Sponsor Logo" width="100" align="center" />
       </a>
     </div>
   </div>
@@ -161,17 +174,17 @@ get_header(); ?>
     </div>
     <br/>
     <div class="col-md-4 col-sm-6 top15 highlights-sidebar">
-      <h3>Featured on Forbes</h3>
+      <h3>Featured on FastCompany</h3>
       <div class="thumbnail">
-        <a href="http://www.forbes.com/sites/oracle/2014/05/29/maker-movement-fuels-apps-robots-and-internet-of-things/" target="_blank">
-          <img src="http://makercon.com/wp-content/uploads/2015/03/makercon-Oracle.jpg" alt="Makercon 2014 at Oracle" class="img-responsive" />
+        <a href="http://www.fastcompany.com/3045505/maker-faire-founder-dale-dougherty-on-the-past-present-and-online-future-of-the-maker-moveme" target="_blank">
+          <img src="http://makercon.com/wp-content/uploads/2015/04/FastCompany-article-featured-image.jpg" alt="FastCompany article featured image" class="img-responsive" />
         </a>
         <div class="caption">
           <h3>
-          <a href="http://www.forbes.com/sites/oracle/2014/05/29/maker-movement-fuels-apps-robots-and-internet-of-things/" target="_blank">Maker Movement Fuels Apps, Robots, And Internet Of Things</a>
+          <a href="http://www.fastcompany.com/3045505/maker-faire-founder-dale-dougherty-on-the-past-present-and-online-future-of-the-maker-moveme" target="_blank">Maker Faire founder Dale Dougherty on the past, present, and online future of the maker movement</a>
           </h3>
-          <p><small>By Timothy Beneke | Forbes</small></p>
-          <p>The newer MakerCon event aims to “celebrate makers and making,” highlight innovation and ingenuity, explore the potential of tools and technology, and “visualize the future.”</p>
+          <p><small>By Harry McCracken | FastCompany</small></p>
+          <p>What started a decade ago as an influential magazine—and became a beloved global series of events—is about to become a new social network.</p>
         </div>
       </div>
     </div>

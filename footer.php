@@ -9,8 +9,8 @@
    ?>
       <?php if ( is_front_page() || is_home() ) : ?>
       <?php else : ?>
-        <div class="row sponsors" style="border-top:1px solid #999;padding-top:30px !important;margin-top:30px;">
-            <div class="col-sm-12 col-md-4">
+        <div class="row sponsors">
+            <div class="col-sm-12 col-md-4 top15">
               <h2 class="subtitle">Presenting Sponsors</h2>
                 <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
@@ -19,16 +19,30 @@
                   <img src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="margin-left:30px;" />
                 </a>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4 top15">
               <h2 class="subtitle">Participating Sponsor</h2>
-              <a href="http://www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                <img src="http://makercon.com/wp-content/uploads/2015/04/fusion_360tm_sponsor_logo.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
-              </a>
-              <a href="http://www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                <img src="http://makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />
-              </a>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a href="//www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+                    <img src="//makercon.com/wp-content/uploads/2015/04/fusion_360tm_sponsor_logo.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
+                  </a>
+                  <a href="//www.microsoft.com/en-us/default.aspx" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+                    <img src="//makercon.com/wp-content/uploads/2015/04/Microsoft-Participating-Sponsor-Logo.jpg" alt="Microsoft Sponsor Logo" class="left15" width="150" align="center" />
+                  </a>
+                </div>
+              </div>
+              <div class="row">
+                <div class="col-xs-12">
+                  <a href="//www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+                    <img src="//makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />
+                  </a>
+                  <a href="//www.sony.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+                    <img src="//makercon.com/wp-content/uploads/2015/04/Sony-Participating-Sponsor-Logo.jpg" alt="Sony Sponsor Logo" width="100" align="center" style="margin-left: 45px;" />
+                  </a>
+                </div>
+              </div>
             </div>
-            <div class="col-sm-12 col-md-4">
+            <div class="col-sm-12 col-md-4 top15">
               <h2 class="subtitle">Evening of Innovation Sponsor</h2>
               <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
                 <img src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
@@ -91,22 +105,22 @@
       <div class="col-sm-12 col-sm-6 col-md-3 social-foot-col">
         <h4 class="stay-connected">Stay Connected</h4>
         <div class="social-profile-icons">
-          <a class="sprite-facebook-32" href="//www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" title="Facebook" target="_blank">
+          <a class="sprite-facebook-32" href="//www.facebook.com/MakerCon" title="Facebook" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
           </a>
-          <a class="sprite-twitter-32" href="//twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" title="Twitter" target="_blank">
+          <a class="sprite-twitter-32" href="//twitter.com/makercon" title="Twitter" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
           </a>
-          <a class="sprite-pinterest-32" href="//www.pinterest.com/makemagazine/maker-faire/" title="Pinterest" target="_blank">
+          <a class="sprite-pinterest-32" href="//www.pinterest.com/makemagazine/maker-pro/" title="Pinterest" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
           </a>
-          <a class="sprite-googleplus-32" href="//plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" rel="publisher" title="Google+" target="_blank">
+          <a class="sprite-googleplus-32" href="//plus.google.com/explore/MakerCon" rel="publisher" title="Google+" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
@@ -140,22 +154,22 @@
       <div class="col-sm-12 social-foot-col">
         <h4 class="stay-connected">Stay Connected</h4>
         <div class="social-profile-icons">
-          <a class="sprite-facebook-32" href="//www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" title="Facebook" target="_blank">
+          <a class="sprite-facebook-32" href="//www.facebook.com/MakerCon" title="Facebook" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
           </a>
-          <a class="sprite-twitter-32" href="//twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" title="Twitter" target="_blank">
+          <a class="sprite-twitter-32" href="//twitter.com/makercon" title="Twitter" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
           </a>
-          <a class="sprite-pinterest-32" href="//www.pinterest.com/makemagazine/maker-faire/" title="Pinterest" target="_blank">
+          <a class="sprite-pinterest-32" href="//www.pinterest.com/makemagazine/maker-pro/" title="Pinterest" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>
           </a>
-          <a class="sprite-googleplus-32" href="//plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" rel="publisher" title="Google+" target="_blank">
+          <a class="sprite-googleplus-32" href="//plus.google.com/explore/MakerCon" rel="publisher" title="Google+" target="_blank">
             <div class="social-profile-cont"> 
               <span class="sprite"></span>
             </div>

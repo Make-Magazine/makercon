@@ -1,44 +1,29 @@
 // Seconday Navigation list-style-position: 
 .secondary-nav-area {
-color:#fff;
-font-family: bentonsanscompmedium, helvetica, sans-serif !important;
-text-transform: uppercase;
-font-size: 22px;
-font-weight: bold;
-
-.nav-item {
-background-color: #ccc;
-border:3px solid #fff;
-padding:5px 15px;
-}
-
-.nav-item.active {
-	background-color:red;
-	a:link: color:#fff !important ;
+	color:#fff;
+	font-family: bentonsanscompmedium, helvetica, sans-serif !important;
+	text-transform: uppercase;
+	font-size: 22px;
+	font-weight: bold;
+	.nav-item {
+		background-color: #ccc;
+		border:3px solid #fff;
+		padding:5px 15px;
+	}
+	.nav-item.active {
+		background-color:red;
 	}
 }
 
-.menu-menu-1-container {display:none;}
+.menu-menu-1-container {
+	display:none;
+}
 
-.navbar-nav {float:right !important;}
-
- @media (max-width: 765px) {
- 	#masthead {
- 		margin:0 !important;
- 	}
- 	
- 	.site-branding {
- 		margin-left:-35px !important;
- 		margin-top:5px !important;
-	 		img {
-	 			height:auto !important;
-		 		width:auto !important;
-		 		margin-top:0 !important;
-	 		}
- 	}
+.navbar-nav {
+	float:right;
+}
 
 #menu-menu-1 {
-	width:100%;
 	text-align: center;
 	ul {
 		width:100%;
@@ -50,41 +35,39 @@ padding:5px 15px;
 		}
 	}
 }
- }
  
- // Seconday Navigation
- 
- .nav-tabs {
-text-align: center;		
-text-transform: uppercase;		
-font-weight: bold;		
+// Seconday Navigation
+.nav-tabs {
+	text-align: center;		
+	text-transform: uppercase;		
+	font-weight: bold;		
 }		
 
 .nav.nav-tabs li a {		
-outline: 0px;	
-color: #02394F;		
-font-weight: normal;		
+	outline: 0px;	
+	color: #02394F;		
+	font-weight: normal;		
 }	
 		
 .nav.tabs-nav {		
-float: none;		
-margin: 0;		
+	float: none;		
+	margin: 0;		
 }	
 		
 .nav.tabs-nav .nav-item {		
-background-color: #DBDBDB;		
-text-align: center;		
-border: 3px solid #fff;		
-padding: 5px 15px;		
+	background-color: #DBDBDB;		
+	text-align: center;		
+	border: 3px solid #fff;		
+	padding: 5px 15px;		
 }	
 			
 .nav.tabs-nav  .nav-item.active {		
-background-color: #ED1B24;		
-color:#fff !important;		
+	background-color: #ED1B24;		
+	color:#fff !important;		
 }	
 	
 .nav.tabs-nav  .nav-item.active a:link {		
-color:#fff !important;		
+	color:#fff !important;		
 }
 
 .nav-tabs {margin-bottom:30px;}
@@ -102,18 +85,25 @@ color:#fff !important;
 	background-color:#FFFFFF;
 }
 
-#masthead #site-navigation ul li a:first-child {
-  padding: 10px;
-  z-index: 1000;
+#masthead {
+	#site-na1vigation ul li a {
+		color: #ed1b24;
+		padding: 0px;
+	}
+	#site-navigation ul li a:first-child {
+		padding: 10px;
+		z-index: 1000;
+	}
+	.dropdown-menu {
+		padding: 0;
+	}
+	.menu-item-1494 ul {
+		width: 275px;
+	}
 }
 
 .dropdown-menu>.active>a, .dropdown-menu>.active>a:hover, .dropdown-menu>.active>a:focus {
 	backround-color:#e7e7e7;
-}
-
-#masthead #site-na1vigation ul li a {
-  color: #ed1b24;
-  padding: 0px;
 }
 
 #site-navigation a:hover {
@@ -124,11 +114,14 @@ color:#fff !important;
 	cursor: default;
 }
 
- @media (max-width: 992px)  {
- 	#site-navigation { margin-top:0px;}
- 	#masthead #site-navigation ul li , #masthead #site-navigation ul li a {
- font-size:21px !important;		
- 	}
- 	
- }
-
+@media (max-width: 991px) {
+	#masthead #site-navigation ul li , #masthead #site-navigation ul li a, #masthead #site-navigation .dropdown-menu a, #masthead #site-navigation a {
+		font-size:22px;		
+	}
+	#masthead .site-branding {
+  		margin-bottom: 5px;
+  	}
+	#masthead #site-navigation {
+		padding: 0;
+	}
+}
