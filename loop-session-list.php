@@ -118,7 +118,7 @@
         <?php
           $session_speakers = explode(",", get_post_meta($session_post->ID, '_session_speakers', true));
           if($session_location){
-            $tmp = $session_location.' - ';
+            $tmp = '<p>Location: '.$session_location.'</p>';
           } else {
             $tmp = '';//reset in case of new row
           }
@@ -132,7 +132,7 @@
               }
             }
           $speakers = join(", ", $speakers);
-          $tmp .= $speakers;
+          $tmp = $speakers . $tmp;
             ?>
             <div class="session">
             <p class="session-author"><?php echo($tmp); ?></p>
