@@ -140,7 +140,7 @@
               $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
               foreach($wp_session_tracks as $session_track) {
                 $session_name_parts =  explode(' ', $session_track->name);
-                $link = '/sessions/#'.$session_name_parts[0];
+                $link = '/bay-area-2015/sessions/#'.$session_name_parts[0];
                 echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
               }
             ?>

@@ -345,18 +345,20 @@ function featured_speakers_function() {
 function featured_speakers_view($user_id) {
   $post = get_post($user_id, ARRAY_A);
   ?>
-    <li class="speaker-area">
-      <div class="speaker-image">
-        <?php echo get_the_post_thumbnail($user_id, array(100,100)); ?>
-      </div>
-      <div class="speaker-info">
-        <div class="speaker-name-bio">
-          <div class="speaker-box-name"><?php echo $post['post_title'];?></div>
-          <div class="speaker-box-bio"> <?php echo get_post_meta($user_id, '_speaker_subtitle', true);?></div>
-        </div>
-        <div class="speaker-session">
-        </div>
-      </div>
-    </li>
+  	<a href="<?php echo $permalink = get_permalink( $user_id ); ?>">
+	    <li class="speaker-area">
+	      <div class="speaker-image">
+	        <?php echo get_the_post_thumbnail($user_id, array(100,100)); ?>
+	      </div>
+	      <div class="speaker-info">
+	        <div class="speaker-name-bio">
+	          <div class="speaker-box-name"><?php echo $post['post_title'];?></div>
+	          <div class="speaker-box-bio"> <?php echo get_post_meta($user_id, '_speaker_subtitle', true);?></div>
+	        </div>
+	        <div class="speaker-session">
+	        </div>
+	      </div>
+	    </li>
+    </a>
   <?php
 }
