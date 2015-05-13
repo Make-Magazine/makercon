@@ -434,3 +434,11 @@ add_filter('the_content_feed', 'cwc_rss_post_thumbnail');
 
 /* Decrease RSS Feed for page-makezine-projects feed */
 add_filter( 'wp_feed_cache_transient_lifetime', create_function('$fixrss', 'return 15;') );
+
+/**
+* Add theme support for Responsive Videos.
+*/
+function jetpackme_responsive_videos_setup() {
+    add_theme_support( 'jetpack-responsive-videos' );
+}
+add_action( 'after_setup_theme', 'jetpackme_responsive_videos_setup' );
