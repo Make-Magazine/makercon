@@ -20,14 +20,14 @@
                      <h2 class="subtitle"><a href="#">VIDEOS</a></h2>
                   </li>
                   <li>
-                     <h2 class="subtitle"><a href="/bay-area-2015/speakers-2">SPEAKERS</a></h2>
+                     <h2 class="subtitle"><a href="/bay-area-2015/speakers">SPEAKERS</a></h2>
                   </li>
                   <li>
-                     <h2 class="subtitle"><a href="/bay-area-2015/sessions/">SESSIONS</a></h2>
+                     <h2 class="subtitle"><a href="/bay-area-2015/sessions/#business">SESSIONS</a></h2>
                   </li>
-                <!--   <li>
-                     <h2 class="subtitle"><a href="/bay-area-2015/slides/" target="_blank">SLIDESHARE</a></h2>
-                  </li> -->
+                  <li>
+                    <h2 class="subtitle"><a href="/sessions/launch-pad-competition">LAUNCH PAD</a></h2>
+                  </li>
                </ul>
             </div>
          </div>
