@@ -26,7 +26,7 @@ get_header(); ?>
         <?php endif; ?>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
         <div class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <a href="/bay-area-2015/sessions/#business">Check out the Sessions</a>
+          <a href="/bay-area-2015/videos">Watch MakerCon Bay Area 2015 Interviews</a>
         </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
       </div>
