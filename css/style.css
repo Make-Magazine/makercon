@@ -7148,7 +7148,8 @@ p.video-info {
 .top-navbar ul.nav li.active h2.subtitle a:visited {
   color: #fff;
 }
-.ny2014-nav .top-navbar ul.nav li.active {
+.ny2014-nav .top-navbar ul.nav li.active,
+.sub-nav .top-navbar ul.nav li.active {
   background-color: #ed1b24;
 }
 .modal-body {
@@ -7374,6 +7375,12 @@ h2.subtitle {
   border-top: 1px solid #999;
   padding: 15px 0;
   margin-top: 30px;
+}
+.carousel-caption h4 {
+  display: none;
+}
+.video-archive {
+  margin-bottom: 30px;
 }
 body.home .bighead {
   font-family: fbuuzczpanmedium;
