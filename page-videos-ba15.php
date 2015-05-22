@@ -13,7 +13,7 @@
       <main id="main" class="site-main" role="main">
          <div class="row">
             <div class="col-md-12">
-                        <h1 clss="entry-title"><?php echo get_the_title(); ?></h1>
+                        <h1 class="entry-title"><?php echo get_the_title(); ?></h1>
          <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
          <article <?php post_class(); ?>>
             <?php the_content(); ?>
