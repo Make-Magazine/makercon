@@ -25,6 +25,7 @@
          <div class="clearfix">&nbsp;</div>
 
          </div>
+      </div>
          <div class="row">
             <div class="col-xs-12">
                <h2 class="subtitle">More Videos from MakerCon Bay Area 2015</h2>
