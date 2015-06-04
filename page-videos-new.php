@@ -4,7 +4,7 @@
     *
     * @package    makercon
     * @license    http://opensource.org/licenses/gpl-license.php  GNU Public License
-    * @author     Bill Olson <bolson@makermedia.com>
+    * @author     Maker Media Web Team
     *
     */
    get_header(); ?>
