@@ -25,16 +25,16 @@ get_header(); ?>
         <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
         <?php endif; ?>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
-        <div class="button text-center col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xl-6">
-          <a href="/bay-area-2015/videos">Watch MakerCon Bay Area 2015 Interviews</a>
+        <div class="text-center col-xs-12">
+          <a class="btn-red" href="/bay-area-2015/videos">Watch MakerCon Bay Area 2015 Interviews</a>
         </div>
         <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
       </div>
       <div class="col-md-4">
         <?php featured_speakers_function(); ?>
         <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
-        <div class="button text-center col-xs-12 col-sm-12 col-md-10 col-lg-10 col-xl-10">
-          <a href="/speakers">Check out the full line up</a>
+        <div class="text-center col-xs-12">
+          <a class="btn-red" href="/speakers">Check out the full line up</a>
         </div>
         <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
       </div>
@@ -161,8 +161,8 @@ get_header(); ?>
       </div>
       <div class="row">
         <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
-        <div style="margin: 0px auto" class="button text-center col-xs-12 col-sm-10 col-md-6 col-lg-6 col-xl-6">
-          <a class="" style="color:#fff;" href="http://makezine.com/category/maker-pro/" target="_blank">Read More Maker Pro News</a>
+        <div class="text-center col-xs-12">
+          <a class="btn-red" href="http://makezine.com/category/maker-pro/" target="_blank">Read More Maker Pro News</a>
         </div>
         <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
       </div>
