@@ -10,7 +10,7 @@
       <?php if ( is_front_page() || is_home() ) : ?>
       <?php else : ?>
         <div class="row sponsors">
-            <div class="col-sm-12 col-md-4 top15">
+            <div class="col-sm-12 col-md-6 top15">
               <h2 class="subtitle">Presenting Sponsors</h2>
                 <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
                   <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
@@ -19,7 +19,8 @@
                   <img src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="margin-left:30px;" />
                 </a>
             </div>
-            <div class="col-sm-12 col-md-4 top15">
+           <!-- 
+           <div class="col-sm-12 col-md-4 top15">
               <h2 class="subtitle">Participating Sponsor</h2>
               <div class="row">
                 <div class="col-xs-12">
@@ -30,7 +31,7 @@
                     <img src="//makercon.com/wp-content/uploads/2015/04/Microsoft-Participating-Sponsor-Logo.jpg" alt="Microsoft Sponsor Logo" class="left15" width="150" align="center" />
                   </a>
                 </div>
-              </div>
+              </div> 
               <div class="row">
                 <div class="col-xs-12">
                   <a href="//www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
@@ -42,12 +43,14 @@
                 </div>
               </div>
             </div>
-            <div class="col-sm-12 col-md-4 top15">
+          -->
+            <div class="col-sm-12 col-md-6 top15">
               <h2 class="subtitle">Evening of Innovation Sponsor</h2>
               <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
                 <img src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
               </a>
             </div>
+            <!-- 
             <div class="col-sm-12 col-md-4 col-md-offset-2 top15">
               <h2 class="subtitle">Communications Sponsor</h2>
               <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
@@ -60,7 +63,8 @@
                 <img src="http://makercon.com/wp-content/uploads/2015/04/ARM-After-Party-Sponsor-logo.jpg" alt="ARM After Party Sponsor Logo" width="100" align="center" />
               </a>
             </div>
-        </div>
+        </div> 
+      -->
       <?php endif; ?>
     </div><!-- #content -->
   </div><!-- #container -->

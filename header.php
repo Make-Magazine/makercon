@@ -17,13 +17,13 @@
     <meta property="og:url" content="<?php echo the_permalink() ?>" />
     <meta property="og:site_name" content="MakerCon" />
     <meta property="og:description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods." />
-    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-rocket-sponsor-intel-01.png" />
+    <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@MakerCon" />
     <meta name="twitter:creator" content="@MakerCon" />
     <meta name="twitter:title" content="<?php bloginfo('name'); ?> | <?php wp_title(); ?>" />
     <meta name="twitter:description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods." />
-    <meta name="twitter:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-rocket-sponsor-intel-01.png" />
+    <meta name="twitter:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" />
     <meta name="twitter:url" content="<?php echo the_permalink() ?>" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
@@ -253,7 +253,7 @@
       <!-- desktop logo -->
       <div class="container">
           <div class="col-md-4 col-lg-4 hidden-sm hidden-xs text-center">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/logo-rocket-sponsor-intel-01.png" class="rocket img-responsive" alt="MakerCon maker conference rocket logo">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" class="rocket img-responsive" alt="MakerCon maker conference rocket logo">
           </div>
           <div class="col-md-8 text-center slider">
             <?=do_shortcode('[home-slider]');?>
