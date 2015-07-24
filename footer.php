@@ -233,7 +233,7 @@
                 <li><a href="//makerfaire.com" target="_blank">Maker Faire</a></li>
                 <li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
                 <li><a href="/">MakerCon</a></li>
-                <li><a href="//makercamp.com" target="_blank">Maker Camp</a></li>
+                <li><a href="//readerservices.makezine.com/mk/default.aspx?" target="_blank">Subscribe to Make:</a></li>
               </ul>
             </div>
           </div>
