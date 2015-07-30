@@ -44,7 +44,7 @@ get_header(); ?>
     <div class="col-md-6">
       <h2>MakerCon is the epicenter of the maker movement</h2>
       <!-- <p>This year MakerCon happens in San Francisco at the iconic Palace of Fine Arts, the only remaining structure from the 1915 Panama-Pacific International Exposition. As then, the MakerCon Showcase brings the world's attention to innovative and exciting technologies.</p> -->
-      <p>MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. MakerCon is a meeting place for passionate, entrepreneurs who want to test the commercial waters for their prototypes; cultural and civic leaders driving maker initiatives; and product developers inspired by the maker movement.</p>
+      <p>MakerCon connects the individuals at the forefront of the Maker Movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. MakerCon is a meeting place for passionate, entrepreneurs who want to test the commercial waters for their prototypes; cultural and civic leaders driving Maker initiatives; and product developers inspired by the Maker Movement.</p>
     </div>
     <div class="col-md-6">
       <img class="img-responsive" src="http://makercon.com/wp-content/uploads/2015/03/Palace_of_Fine_Arts_SF.jpg" alt="Palace of Fine Arts San Francisco" title="Image by Kevin Cole (en:User:Kevinlcole) (originally posted to Flickr as Palace of Fine Arts), via Wikimedia Commons"/>
@@ -185,7 +185,7 @@ get_header(); ?>
         </a>
         <div class="caption">
           <h3>
-          <a href="http://www.fastcompany.com/3045505/maker-faire-founder-dale-dougherty-on-the-past-present-and-online-future-of-the-maker-moveme" target="_blank">Maker Faire founder Dale Dougherty on the past, present, and online future of the maker movement</a>
+          <a href="http://www.fastcompany.com/3045505/maker-faire-founder-dale-dougherty-on-the-past-present-and-online-future-of-the-maker-moveme" target="_blank">Maker Faire founder Dale Dougherty on the past, present, and online future of the Maker Movement</a>
           </h3>
           <p><small>By Harry McCracken | FastCompany</small></p>
           <p>What started a decade ago as an influential magazine—and became a beloved global series of events—is about to become a new social network.</p>
