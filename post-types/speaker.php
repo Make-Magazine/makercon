@@ -326,7 +326,7 @@ function register_speaker_shortcodes() {
 }
 
 function featured_speakers_function() {
-  echo '<h2>Featured Speakers</h2>';
+  echo '<h2>Past Speakers</h2>';
   $featured_speakers = Array();
 
   array_push($featured_speakers, get_option('featured-speaker-1'));
