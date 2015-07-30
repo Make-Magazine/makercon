@@ -43,7 +43,7 @@ get_header(); ?>
   <div class="row highlights">
     <div class="col-md-6">
       <h2>MakerCon is the epicenter of the maker movement</h2>
-      <p>This year MakerCon happens in San Francisco at the iconic Palace of Fine Arts, the only remaining structure from the 1915 Panama-Pacific International Exposition. As then, the MakerCon Showcase brings the world's attention to innovative and exciting technologies.</p>
+      <!-- <p>This year MakerCon happens in San Francisco at the iconic Palace of Fine Arts, the only remaining structure from the 1915 Panama-Pacific International Exposition. As then, the MakerCon Showcase brings the world's attention to innovative and exciting technologies.</p> -->
       <p>MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. MakerCon is a meeting place for passionate, entrepreneurs who want to test the commercial waters for their prototypes; cultural and civic leaders driving maker initiatives; and product developers inspired by the maker movement.</p>
     </div>
     <div class="col-md-6">
