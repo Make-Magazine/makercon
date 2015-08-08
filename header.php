@@ -160,7 +160,8 @@
       })(window,document,'script','dataLayer','GTM-K54K72');
     </script>
     <!-- End Google Tag Manager -->
-    <div id="page" class="hfeed site container">
+
+    <!--div id="page" class="hfeed site container">
       <?php do_action( 'before' ); ?>
       <div class="row">
         <header id="masthead" class="site-header col-xs-12" role="banner">
@@ -217,50 +218,96 @@
                 </div>
               </div>
             </nav>
-            <!-- #site-navigation 
-            <div class="social pull-right hidden-xs hidden-sm hidden-md col-lg-2">
-              <a class="sprite-facebook col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.facebook.com/login.php?next=https%3A%2F%2Fwww.facebook.com%2Fsharer%2Fsharer.php%3Fu%3Dhttp%253A%252F%252Fmakercon.com%252F%26t%3DHome&display=popup" target="_blank"></a>
-              <a class="sprite-twitter col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://twitter.com/intent/tweet?text=Home&url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
-              <a class="sprite-google-plus col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://plus.google.com/share?url=http%3A%2F%2Fmakercon.com%2F" target="_blank"></a>
-              <a class="sprite-linkedin col-md-3 hidden-xs col-sm-2 col-lg-3" href="https://www.linkedin.com/cws/share?isFramed=false&url=http%3A%2F%2Fmakercon%2Ecom%2F&token=" target="_blank"></a>
-            </div-->
         </header>
       </div>
-    </div>
-    <!-- #masthead -->
-    <?php if ( is_front_page() || is_home() ) : ?>
-    <div class="clearfix"></div>
-    <div class="slider-wrap row">
-      <div class="social-popup popup-active">
-          <a class="open" href="#"><i class="icon-share"></i></a>
-          <div class="popup" style="opacity: 1;">
-              <a class="close" href="#">&times;</a>
-              <ul class="social-list list-unstyled">
-                  <li class="facebook"><a href="//www.facebook.com/MakerCon" target="_blank"><span class="sprite"></span></a></li>
-                  <li class="twitter"><a href="//twitter.com/makercon" target="_blank"><span class="sprite"></span></a></li>
-                  <li class="pinterest"><a href="//www.pinterest.com/makemagazine/maker-pro/" target="_blank"><span class="sprite"></span></a></li>
-                  <li class="googleplus"><a href="//plus.google.com/explore/MakerCon" target="_blank"><span class="sprite"></span></a></li>
-              </ul>
-          </div>
-          <script>
-          $(document).ready(function(){
-              $("a.close").click(function(){
-                  $("div.social-popup").hide(500);
-              });
-          });
-          </script>
-      </div>
-      <!-- desktop logo -->
+    </div-->
+
+    <!-- TOP INFO BAR -->
+    <div class="hidden-xs top-header-bar-brand">
       <div class="container">
-          <div class="col-md-4 col-lg-4 hidden-sm hidden-xs text-center">
-            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" class="rocket img-responsive" alt="MakerCon maker conference rocket logo">
+        <div class="row">
+          <div class="col-sm-3">
           </div>
-          <div class="col-md-8 text-center slider">
-            <?=do_shortcode('[home-slider]');?>
+          <div class="col-sm-6 text-center">
+            <p><a href="//www.makershed.com/collections/most-popular" target="_blank">Shop Best Sellers at Maker Shed &rarr; Kits, Books, More!</a></p>
           </div>
-      </div>
+          <div class="col-sm-3 text-center">
+            <h6 class="header-sub-link"><a href="//readerservices.makezine.com/mk/" target="_blank">SUBSCRIBE TO <em class="red">MAKE</em>&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book.png" alt="Make magazine icon"></img></a></h6>
+          </div>
+        </div>
+      </div>   
     </div>
-    <?php endif; ?>
+
+    <!-- Header area -->
+    <header class="container">
+      <div class="row">
+
+        <!-- LOGO & TAG LINE -->
+        <div class="col-md-2 col-sm-3 col-xs-7 text-center">
+          <a href="/">
+            <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" class="header-logo img-responsive" />
+            <h5 class="icon-tagline">By Makers for Makers</h5>
+          </a>
+        </div>
+
+        <!-- MENUS -->
+        <nav class="header-top-nav col-md-7 col-sm-9 col-xs-5">
+          <div class="row">
+            <a class="menu-bar visible-xs-block" data-toggle="collapse" href="#mc-menu">
+              <span class="bars"></span>            
+            </a> 
+            <!-- Main Menu -->
+            <?php
+              wp_nav_menu( array(
+                  'menu'              => 'primary',
+                  'theme_location'    => 'primary',
+                  'depth'             => 2,
+                  'container'         => 'div',
+                  'container_class'   => 'collapse navbar-collapse',
+                  'menu_class'        => 'nav navbar-nav',
+                  'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                  'walker'            => new wp_bootstrap_navwalker())
+              );
+            ?>
+            <!-- Mobile Menu -->
+            <div class="hidden-sm hidden-md hidden-lg" id="mc-menu-container">
+              <?php
+                wp_nav_menu( array(
+                    'menu'              => 'Mobile',
+                    'theme_location'    => 'primary',
+                    'depth'             => 1,
+                    'container'         => 'div',
+                    'container_class'   => 'collapse navbar-collapse',
+                    'container_id'      => 'mc-menu',
+                    'menu_class'        => 'nav navbar-nav',
+                    'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
+                    'walker'            => new wp_bootstrap_navwalker())
+                );
+              ?>
+            </div>
+          </div>
+        </nav>
+
+        <!-- SOCIAL MEDIA ICONS -->
+        <div class="social-network-container col-md-3 hidden-sm hidden-xs text-center"> 
+          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+          <ul class="social-network social-circle">
+              <li><a href="https://www.facebook.com/MakerCon" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="https://twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="https://instagram.com/makemagazine/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" target="_blank"></i></a></li>
+              <li><a href="https://www.pinterest.com/makemagazine/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
+          </ul>    
+        </div>
+
+      </div> <!-- row -->  
+    </header>
+
+    <!-- #masthead -->
+    <div class="clearfix"></div>
+    <div class="hidden-xs masthead-banner">
+      <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/full-background-banner.png" alt="Event info banner" />
+    </div>
+
     <div class="container">
       <div id="content" class="site-content">
         <div class="fancybox" style="display:none;">

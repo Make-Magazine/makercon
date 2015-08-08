@@ -4,7 +4,7 @@ add_shortcode('makercon_schedule', 'makercon_schedule_shortcode');
 function makercon_schedule_shortcode($atts){
   extract(shortcode_atts(array(
   'track' => 'keynote',
-  'event' => 'makercon-bay-area-2015'
+  'event' => 'makercon-ny-2015'
   ), $atts));
 
   $wp_sessions_posts = get_posts(array('post_type'=>'session',

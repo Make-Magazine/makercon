@@ -326,39 +326,35 @@ function register_speaker_shortcodes() {
 }
 
 function featured_speakers_function() {
-  echo '<h2>Past Speakers</h2>';
   $featured_speakers = Array();
 
   array_push($featured_speakers, get_option('featured-speaker-1'));
   array_push($featured_speakers, get_option('featured-speaker-2'));
   array_push($featured_speakers, get_option('featured-speaker-3'));
   array_push($featured_speakers, get_option('featured-speaker-4'));
-  ?>
-  <ul style="margin: 0px 0px 10px 0px; padding: 0px;" class="featured-speakers">
-     <?php foreach($featured_speakers as $user_id) {
-        featured_speakers_view($user_id);
-     }?>
-   </ul>
-   <?php
+  array_push($featured_speakers, get_option('featured-speaker-5'));
+  array_push($featured_speakers, get_option('featured-speaker-6'));
+
+    foreach($featured_speakers as $user_id) {
+    	featured_speakers_view($user_id);
+    }
 }
 
 function featured_speakers_view($user_id) {
   $post = get_post($user_id, ARRAY_A);
   ?>
-  	<a href="<?php echo $permalink = get_permalink( $user_id ); ?>">
-	    <li class="speaker-area">
-	      <div class="speaker-image">
-	        <?php echo get_the_post_thumbnail($user_id, array(100,100)); ?>
-	      </div>
-	      <div class="speaker-info">
-	        <div class="speaker-name-bio">
-	          <div class="speaker-box-name"><?php echo $post['post_title'];?></div>
-	          <div class="speaker-box-bio"> <?php echo get_post_meta($user_id, '_speaker_subtitle', true);?></div>
-	        </div>
-	        <div class="speaker-session">
-	        </div>
-	      </div>
-	    </li>
-    </a>
+	    <div class="col-md-4 col-sm-4 col-xs-6 speaker-area">
+	    	<a href="<?php echo $permalink = get_permalink( $user_id ); ?>">
+				<div class="speaker-image">
+					<?php echo get_the_post_thumbnail($user_id, array(250,250), array( 'class' => 'img-responsive' )); ?>
+				</div>
+				<div class="speaker-box text-center">
+					<h3><?php echo $post['post_title'];?></h3>
+					<div class="speaker-box-bio"> <?php echo get_post_meta($user_id, '_speaker_subtitle', true);?></div>
+				</div>
+				<div class="speaker-session">
+				</div>
+			</a>
+	    </div>
   <?php
 }

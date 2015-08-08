@@ -9,49 +9,63 @@
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
   <div class="row">
-    <div class="col-md-12">
-      <h1 class="bighead">By <strong>Makers</strong> for <strong>Makers</strong></h1>
+    <div class="col-md-12 text-center">
+      <h1 class="no-margins">MakerCon is the epicenter of the maker movement</h1>
     </div>
   </div>
-  <div class="entry-content">
-    <div class="row">
-      <div class="col-md-8">
-        <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-        <article <?php post_class(); ?>>
-          <?php the_content(); ?>
-        </article>
-        <?php endwhile; ?>
-        <?php else: ?>
-        <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-        <?php endif; ?>
-        <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
-        <div class="text-center col-xs-12">
-          <a class="btn-red" href="/bay-area-2015/videos">Watch MakerCon Bay Area 2015 Interviews</a>
-        </div>
-        <div class="hidden-xs hidden-sm col-md-3 col-lg-3 col-xl-3"></div>
-      </div>
-      <div class="col-md-4">
+
+  <div class="row home-panel-top">
+    <div class="col-md-6">
+      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+      <article <?php post_class(); ?>>
+        <?php the_content(); ?>
+      </article>
+      <?php endwhile; ?>
+      <?php else: ?>
+      <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+      <?php endif; ?>
+    </div>
+    <div class="col-md-6">
+      <img class="img-responsive" src="//makercon.com/wp-content/uploads/2015/08/makercon-session.jpg" alt="Live at the MakerCon conference" />
+    </div>
+  </div>
+
+  <!-- SPEAKERS -->
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>Featured Speakers</h1>
+    </div>
+  </div>
+  <div class="row home-panel-top">
+    <div class="featured-speakers col-xs-12">
+      <div class="row">
         <?php featured_speakers_function(); ?>
-        <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
-        <div class="text-center col-xs-12">
-          <a class="btn-red" href="/speakers">Check out the full line up</a>
+      </div>
+      <div class="row">
+        <div class="col-xs-12 text-center padtop">
+          <a class="btn-red" href="/speakers">Check Out The Full Line Up</a>
         </div>
-        <div class="hidden-xs hidden-sm col-md-1 col-lg-1 col-xl-1"></div>
       </div>
     </div>
   </div>
-  <div class="row highlights">
-    <div class="col-md-6">
-      <h2>MakerCon is the epicenter of the maker movement</h2>
-      <!-- <p>This year MakerCon happens in San Francisco at the iconic Palace of Fine Arts, the only remaining structure from the 1915 Panama-Pacific International Exposition. As then, the MakerCon Showcase brings the world's attention to innovative and exciting technologies.</p> -->
-      <p>MakerCon connects the individuals at the forefront of the Maker Movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. MakerCon is a meeting place for passionate, entrepreneurs who want to test the commercial waters for their prototypes; cultural and civic leaders driving Maker initiatives; and product developers inspired by the Maker Movement.</p>
-    </div>
-    <div class="col-md-6">
-      <img class="img-responsive" src="http://makercon.com/wp-content/uploads/2015/03/Palace_of_Fine_Arts_SF.jpg" alt="Palace of Fine Arts San Francisco" title="Image by Kevin Cole (en:User:Kevinlcole) (originally posted to Flickr as Palace of Fine Arts), via Wikimedia Commons"/>
+
+  <div class="row">
+    <div class="col-md-12 text-center">
+      <h1>MakerCon is a professional conference by and for Makers</h1>
     </div>
   </div>
+  <div class="row home-panel-top">
+    <div class="col-md-6">
+      <img class="img-responsive" src="//makercon.com/wp-content/uploads/2015/08/insde-makercon.jpg" alt="Inside MakerCon Sessions" />
+    </div>
+    <div class="col-md-6">
+      <p class="lead">What are the signals coming out of the Maker Movement that will shape the coming economy, local communities, education, government policy and initiatives? How is the Movement stimulating talent development, opportunity and agency? How is this Maker Movement distinct from the 20th century industrial model? These are some of the questions that MakerCon NY, a one-day event on September 24, will focus the conversation around. Don't miss it! A full day designed by Makers for Makers.</p>
+    </div>
+  </div>
+
+  <!-- SPONSORS -->
   <div class="row sponsors-home">
-    <div class="col-sm-12 col-md-6 top15">
+    <div class="col-sm-12 col-md-6">
       <h2 class="subtitle">Presenting Sponsors</h2>
         <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
           <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
@@ -85,7 +99,7 @@ get_header(); ?>
       </div>
     </div>
       -->
-    <div class="col-sm-12 col-md-6 top15">
+    <div class="col-sm-12 col-md-6">
       <h2 class="subtitle">Evening of Innovation Sponsor</h2>
       <a href="//sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="//makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
@@ -106,7 +120,7 @@ get_header(); ?>
     </div>
   -->
   </div>
-  <div class="row highlights">
+  <div class="row home-panel-bot">
     <div class="col-xs-12">
       <h2>Makers in the News</h2>
     </div>

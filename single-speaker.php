@@ -22,7 +22,7 @@ get_header(); ?>
     <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 nav-item active">
       <a href="/sessions">Sessions</a>
     </div>
-    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3nav-item">
+    <div class="col-xs-12 col-sm-12 col-md-3 col-lg-3 col-xl-3 nav-item">
       <a href="/speakers">Speakers</a>
     </div>
   </div>

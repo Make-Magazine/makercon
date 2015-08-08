@@ -20,11 +20,19 @@ function featured_speakers_order_callback() {
   if (isset($_POST["featured-speaker-4"])) {
     update_option("featured-speaker-4", $_POST["featured-speaker-4"]);
   }
+  if (isset($_POST["featured-speaker-5"])) {
+    update_option("featured-speaker-5", $_POST["featured-speaker-5"]);
+  }
+  if (isset($_POST["featured-speaker-6"])) {
+    update_option("featured-speaker-6", $_POST["featured-speaker-6"]);
+  }
 
   $featured_speaker_1 = get_option("featured-speaker-1");
   $featured_speaker_2 = get_option("featured-speaker-2");
   $featured_speaker_3 = get_option("featured-speaker-3");
   $featured_speaker_4 = get_option("featured-speaker-4");
+  $featured_speaker_5 = get_option("featured-speaker-5");
+  $featured_speaker_6 = get_option("featured-speaker-6");
 
   echo '<div class="wrap"><div id="icon-tools" class="icon32"></div>';
   echo '<h2>Featured Speakers Order</h2>';
@@ -69,6 +77,26 @@ function featured_speakers_order_callback() {
           <select name="featured-speaker-4">
             <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
               <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_4) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+            <?php endwhile; ?>
+          </select>
+         </td>
+      </tr>
+      <tr>
+         <td>Speaker #5</td>
+         <td>
+          <select name="featured-speaker-5">
+            <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+              <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_5) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
+            <?php endwhile; ?>
+          </select>
+         </td>
+       </tr>
+       <tr>
+         <td>Speaker #6</td>
+         <td>
+          <select name="featured-speaker-6">
+            <?php while ( $speakers->have_posts() ) : $speakers->the_post(); ?>
+              <option value="<?php echo $speakers->post->ID ?>" <?php if($speakers->post->ID == $featured_speaker_6) echo 'selected="selected"'; ?> ><?php the_title(); ?></option>
             <?php endwhile; ?>
           </select>
          </td>
