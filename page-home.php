@@ -15,7 +15,10 @@ get_header(); ?>
   </div>
 
   <div class="row home-panel-top">
-    <div class="col-md-6">
+    <div class="col-md-6 col-md-push-6">
+      <img class="img-responsive" src="//makercon.com/wp-content/uploads/2015/08/makercon-session.jpg" alt="Live at the MakerCon conference" />
+    </div>
+    <div class="col-md-6 col-md-pull-6">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <article <?php post_class(); ?>>
         <?php the_content(); ?>
@@ -24,9 +27,6 @@ get_header(); ?>
       <?php else: ?>
       <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
       <?php endif; ?>
-    </div>
-    <div class="col-md-6">
-      <img class="img-responsive" src="//makercon.com/wp-content/uploads/2015/08/makercon-session.jpg" alt="Live at the MakerCon conference" />
     </div>
   </div>
 
@@ -185,13 +185,13 @@ get_header(); ?>
         <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
       </div>
     </div>
-    <div class="col-md-4 col-sm-6 highlights-sidebar">
+    <div class="col-md-4 col-sm-6 twitter-sidebar">
       <h3>Active on Twitter</h3>
       <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="550">Tweets about "#makercon"</a>
       <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
     </div>
     <br/>
-    <div class="col-md-4 col-sm-6 top15 highlights-sidebar">
+    <div class="col-md-4 col-sm-6 top15">
       <h3>Featured on FastCompany</h3>
       <div class="thumbnail">
         <a href="http://www.fastcompany.com/3045505/maker-faire-founder-dale-dougherty-on-the-past-present-and-online-future-of-the-maker-moveme" target="_blank">
