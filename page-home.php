@@ -10,7 +10,7 @@ get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
   <div class="row">
     <div class="col-md-12 text-center">
-      <h1 class="no-margins">MakerCon is the epicenter of the maker movement</h1>
+      <h1 class="no-margins">MakerCon is the epicenter of the Maker Movement</h1>
     </div>
   </div>
 
@@ -30,7 +30,7 @@ get_header(); ?>
     </div>
   </div>
 
-  <!-- SPEAKERS -->
+  <!-- xS -->
   <div class="row">
     <div class="col-md-12 text-center">
       <h1>Featured Speakers</h1>

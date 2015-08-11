@@ -367,6 +367,17 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/book.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 18007,
+		"inputAbbreviatedPath": "\/img\/book.png",
+		"outputAbbreviatedPath": "\/img\/book.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/cochairs-image-02.png": {
 		"fileType": 32768,
 		"ignore": 0,
@@ -440,6 +451,17 @@
 		"initialSize": 25491,
 		"inputAbbreviatedPath": "\/img\/dale.jpg",
 		"outputAbbreviatedPath": "\/img\/dale.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/full-background-banner.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 181821,
+		"inputAbbreviatedPath": "\/img\/full-background-banner.png",
+		"outputAbbreviatedPath": "\/img\/full-background-banner.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -550,6 +572,17 @@
 		"initialSize": 33695,
 		"inputAbbreviatedPath": "\/img\/landing-banner.jpg",
 		"outputAbbreviatedPath": "\/img\/landing-banner.jpg",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/logo-rocket-sponsor-intel-01.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 20957,
+		"inputAbbreviatedPath": "\/img\/logo-rocket-sponsor-intel-01.png",
+		"outputAbbreviatedPath": "\/img\/logo-rocket-sponsor-intel-01.png",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
@@ -4344,15 +4377,6 @@
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
 		"inputAbbreviatedPath": "\/page-makezine-projects.php",
-		"outputAbbreviatedPath": "No Output Path",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0
-		},
-	"\/page-makezine-videos.php": {
-		"fileType": 8192,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"inputAbbreviatedPath": "\/page-makezine-videos.php",
 		"outputAbbreviatedPath": "No Output Path",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0

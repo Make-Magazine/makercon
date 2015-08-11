@@ -255,9 +255,6 @@ h2.subtitle {
 			margin-bottom:0px;
 		}
 	}
-	
-	
-// STRAIGHT CSS THAT NEEDS TO BE INCORPORATED INTO  APPROPRIATE LESS FILES
 
 .google-maps {
 	position: relative;
@@ -359,6 +356,10 @@ h2.session-title a:visited {
 	color: #02394f;
 }
 
+.track-info-area {
+	padding-top: 15px;
+}
+
 // Seconday Navigation list-style-position: 
 .secondary-nav-area {
 	color: #fff;
@@ -424,6 +425,26 @@ h3.speaker-subtitle {
 	font-size: 16px;
 	margin-bottom: 12px;
 	font-weight: bold;
+}
+
+ul.featured-speakers {
+	list-style-type: none;
+	.speaker-image {
+		display: inline;
+		img {
+			border-radius: 125px;
+		}
+	}
+	.speaker-info {
+		display: inline;
+		.speaker-name-bio {
+			display: inline-block;
+			color: @dark-grey;
+			.speaker-box-name {
+				font-weight: bold;
+			}
+		}
+	}
 }
 
 p.session-author a {
