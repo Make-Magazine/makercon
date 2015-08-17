@@ -161,67 +161,6 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!--div id="page" class="hfeed site container">
-      <?php do_action( 'before' ); ?>
-      <div class="row">
-        <header id="masthead" class="site-header col-xs-12" role="banner">
-          <?php if ( is_front_page() || is_home() ) : ?>
-            <div class="col-md-2 col-lg-2 col-xl-2 hidden-sm hidden-xs"></div>
-          <?php endif; ?>
-            <nav class="navbar navbar-default col-xs-12 col-sm-12 <?php if ( is_front_page() || is_home() ) : ?>col-md-10 col-lg-10<?php endif; ?>" role="navigation">
-              <div class="row">
-                <div class="site-branding col-xs-8 col-sm-3 col-xs-offset-2 col-sm-offset-0 <?php if ( is_front_page() || is_home() ) : ?>hidden-md hidden-lg<?php endif; ?>">
-                  <div class="row">
-                    <a href="<?php echo home_url(); ?>"><img class="img-responsive" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-logo-02-1x.png" alt="Tech-savvy DIY Enthusiasts Innovative Projects and Ideas" /></a>
-                  </div>
-                </div>
-                <div class="col-xs-2 hidden-sm hidden-md hidden-lg">
-                  <div class="row">
-                    <button type="button" class="navbar-toggle col-sm-1 col-xs-1 pull-right" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
-                      <span class="sr-only">Toggle navigation</span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                      <span class="icon-bar"></span>
-                    </button>
-                  </div>
-                </div>
-                <div class="pull-right col-xs-12 col-sm-8 <?php if ( is_front_page() || is_home() ) : ?>col-md-12 col-lg-12<?php endif; ?>" id="site-navigation">
-                  <div class="row hidden-xs">
-                    <?php
-                      wp_nav_menu( array(
-                          'menu'              => 'primary',
-                          'theme_location'    => 'primary',
-                          'depth'             => 2,
-                          'container'         => 'div',
-                          'container_class'   => 'collapse navbar-collapse',
-                          'menu_class'        => 'nav navbar-nav',
-                          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                          'walker'            => new wp_bootstrap_navwalker())
-                      );
-                      ?>
-                    </div>
-                  <div class="row hidden-sm hidden-md hidden-lg">
-                    <?php
-                      wp_nav_menu( array(
-                          'menu'              => 'Mobile',
-                          'theme_location'    => 'primary',
-                          'depth'             => 1,
-                          'container'         => 'div',
-                          'container_class'   => 'collapse navbar-collapse',
-                          'container_id'      => 'bs-example-navbar-collapse-1',
-                          'menu_class'        => 'nav navbar-nav',
-                          'fallback_cb'       => 'wp_bootstrap_navwalker::fallback',
-                          'walker'            => new wp_bootstrap_navwalker())
-                      );
-                      ?>
-                    </div>
-                </div>
-              </div>
-            </nav>
-        </header>
-      </div>
-    </div-->
-
     <!-- TOP INFO BAR -->
     <div class="hidden-xs top-header-bar-brand">
       <div class="container">
@@ -305,7 +244,9 @@
     <!-- #masthead -->
     <div class="clearfix"></div>
     <div class="hidden-xs masthead-banner">
-      <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/full-background-banner.png" alt="Event info banner" />
+      <a href="/new-york-2015/register/">
+        <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/full-background-banner.png" alt="Event info banner" />
+      </a>
     </div>
 
     <div class="container">
