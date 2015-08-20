@@ -57,7 +57,7 @@
     $post = get_page_by_title( $page_title, $output, $post_type );
     echo('<div class="tab-pane" id="showcase">');
     echo('<h2>'.$post->post_title.'</h2>');
-      echo($post->post_content);
+    echo($post->post_content);
     echo('</div>');
   }
 
@@ -79,7 +79,7 @@
       }
       echo('<div class=" row sessions-block">');
         echo('<div class="session-time col-xs-12 col-sm-12 col-md-2 col-lg-2 col-xl-2">');
-          echo($session_info);
+        echo($session_info);
         echo('</div>');
         echo('<div class="speaker-list">');
           foreach($time_slot as $post) {
@@ -140,7 +140,7 @@
               $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
               foreach($wp_session_tracks as $session_track) {
                 $session_name_parts =  explode(' ', $session_track->name);
-                $link = '/bay-area-2015/sessions/#'.$session_name_parts[0];
+                $link = '/new-york-2015/sessions/#'.$session_name_parts[0];
                 echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
               }
             ?>
