@@ -13,7 +13,7 @@
       if (isset($wp_session_track) && is_object($wp_session_track[0])) {
           $session_track_title = esc_html($wp_session_track[0]->name);
           #$session_track_permalink = get_term_link($wp_session_track[0]);
-          $session_track_permalink = get_option("makecon_session_page", get_option("siteurl")."/sessions/")."#".$wp_session_track[0]->slug;
+          $session_track_permalink = get_option("makecon_session_page", get_option("siteurl")."/new-york-2015/sessions/")."#".$wp_session_track[0]->slug;
           print("<h3 class=\"session-subtitle\"><a href=\"{$session_track_permalink}\">{$session_track_title}</a></h3>");
       }
 

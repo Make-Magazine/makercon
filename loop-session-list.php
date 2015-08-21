@@ -128,10 +128,17 @@
               //check that session is 'published';
               if(get_post_status ( $speaker_id ) == 'publish') {
                 $tmp_title = get_the_title($speaker_id);
+
+                //ADD SUBTITLES
+                $speaker_subtitle = get_post_meta($speaker_id, '_speaker_subtitle', true );
+                if($speaker_subtitle != '') {
+                  $tmp_title = $tmp_title . ', <span class=\'schedule-auth-sub\'>' . esc_html($speaker_subtitle) . '</span>';
+                }
+
                 array_push($speakers, $tmp_title);
               }
             }
-          $speakers = join(", ", $speakers);
+          $speakers = join("<br/>", $speakers);
           $tmp = $speakers . $tmp;
             ?>
             <div class="session">
