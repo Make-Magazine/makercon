@@ -1,75 +1,64 @@
 <?php
-   /**
-    * The template for displaying the footer.
-    *
-    * Contains the closing of the #content div and all content after
-    *
-    * @package makercon
-    */
-   ?>
-      <?php if ( is_front_page() || is_home() ) : ?>
-      <?php else : ?>
-        <div class="row sponsors">
-            <div class="col-sm-12 col-md-6 top15">
-              <h2 class="subtitle">Presenting Sponsors</h2>
-                <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                  <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
-                </a>
-                <a href="http://csr.cisco.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                  <img src="http://makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" style="margin-left:30px;" />
-                </a>
-            </div>
-           <!-- 
-           <div class="col-sm-12 col-md-4 top15">
-              <h2 class="subtitle">Participating Sponsor</h2>
-              <div class="row">
-                <div class="col-xs-12">
-                  <a href="//www.autodesk.com/products/fusion-360/overview" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                    <img src="//makercon.com/wp-content/uploads/2015/04/fusion_360tm_sponsor_logo.png" alt="Autodesk Sponsor Logo" width="150" align="center" />
-                  </a>
-                  <a href="//www.microsoft.com/en-us/default.aspx" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                    <img src="//makercon.com/wp-content/uploads/2015/04/Microsoft-Participating-Sponsor-Logo.jpg" alt="Microsoft Sponsor Logo" class="left15" width="150" align="center" />
-                  </a>
-                </div>
-              </div> 
-              <div class="row">
-                <div class="col-xs-12">
-                  <a href="//www.nvidia.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                    <img src="//makercon.com/wp-content/uploads/2015/04/NVIDIA_Logo.jpg" alt="NVIDIA Sponsor Logo" width="100" align="center" style="margin-left: 20px;" />
-                  </a>
-                  <a href="//www.sony.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                    <img src="//makercon.com/wp-content/uploads/2015/04/Sony-Participating-Sponsor-Logo.jpg" alt="Sony Sponsor Logo" width="100" align="center" style="margin-left: 45px;" />
-                  </a>
-                </div>
-              </div>
-            </div>
-          -->
-            <div class="col-sm-12 col-md-6 top15">
-              <h2 class="subtitle">Evening of Innovation Sponsor</h2>
-              <a href="https://sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                <img src="http://makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
-              </a>
-            </div>
-            <!-- 
-            <div class="col-sm-12 col-md-4 col-md-offset-2 top15">
-              <h2 class="subtitle">Communications Sponsor</h2>
-              <a href="http://www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                <img src="http://makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="100" align="center" />
-              </a>
-            </div>
-            <div class="col-sm-12 col-md-4 top15">
-              <h2 class="subtitle">After Party Sponsor</h2>
-              <a href="http://www.arm.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
-                <img src="http://makercon.com/wp-content/uploads/2015/04/ARM-After-Party-Sponsor-logo.jpg" alt="ARM After Party Sponsor Logo" width="100" align="center" />
-              </a>
-            </div>
-        </div> 
-      -->
-      <?php endif; ?>
-    </div><!-- #content -->
-  </div><!-- #container -->
+  /**
+   * The template for displaying the footer.
+   *
+   * Contains the closing of the #content div and all content after
+   *
+   * @package makercon
+   */
+  ?>
+<?php if ( is_front_page() || is_home() ) : ?>
+<?php else : ?>
+<div class="row sponsors">
+  <div class="col-sm-12 col-md-4 top15">
+    <h2 class="subtitle">Presenting Sponsors</h2>
+    <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="100" align="center" />
+    </a><br />
+    <a href="//csr.cisco.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img class="top15" src="//makercon.com/wp-content/uploads/2015/03/Cisco-Sponsor-Logo.png" alt="Cisco Sponsor Logo" width="100" align="center" />
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-4 top15">
+    <h2 class="subtitle">Evening of Innovation Sponsor</h2>
+    <a href="//sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img class="top15" src="//makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-4 top15">
+    <h2 class="subtitle">Participating Sponsors</h2>
+    <a href="//flir.com" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img src="//makercon.com/wp-content/uploads/2015/08/makercon-Flir-logo-01.jpg" alt="FLIR Logo" width="150" align="center" />
+    </a><br />
+    <a href="//www.makeblock.cc/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img class="top15" src="//makerfaire.com/wp-content/uploads/2015/08/makercon-makeblok-logo-01.jpg" alt="MakeBlock Logo" width="150" align="center" />
+    </a>
+  </div>
 </div>
-
+<div class="row sponsors" style="border:none;">
+  <div class="col-sm-12 col-md-4 top15">
+    <h2 class="subtitle">Communications Partner</h2>
+    <a href="//www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img src="//makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="125" align="center" />
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-4 top15">
+    <h2 class="subtitle">Host Sponsor</h2>
+    <a href="//www.nysci.org/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img src="//makercon.com/wp-content/uploads/2015/08/makercon-sponsor-NYSCI-Logo.jpg" alt="NYSI Logo" width="100" align="center" />
+    </a>
+  </div>
+  <div class="col-sm-12 col-md-4 top15">
+    <h2 class="subtitle">Community Sponsor</h2>
+    <a href="//themakersnation.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img src="//makercon.com/wp-content/uploads/2015/08/makercon-sponsor-mn-Logo.jpg" alt="Makers Nations Logo" width="80" align="center" />
+    </a>
+  </div>
+</div>
+<?php endif; ?>
+</div><!-- #content -->
+</div><!-- #container -->
+</div>
 <footer id="footer" class="new-footer">
   <div class="container">
     <div class="row-fluid hidden-xs">
@@ -83,7 +72,6 @@
           <li><a href="//www.slideshare.net/MakerCon?utm_campaign=profiletracking&utm_medium=sssite&utm_source=ssslideview" target="_blank">Slideshows</a></li>
         </ul>
       </div>
-
       <div class="col-sm-12 col-sm-6 col-md-3 social-foot-col" >
         <h4>Explore Making</h4>
         <ul class="list-unstyled">
@@ -94,7 +82,6 @@
           <li><a href="//readerservices.makezine.com/mk/default.aspx?" target="_blank">Subscribe to Make:</a></li>
         </ul>
       </div>
-
       <div class="col-sm-12 col-sm-6 col-md-3 social-foot-col">
         <h4>Our Company</h4>
         <ul class="list-unstyled">
@@ -105,7 +92,6 @@
           <li><a href="//makermedia.com/privacy" target="_blank">Privacy</a></li>
         </ul>
       </div>
-
       <div class="col-sm-12 col-sm-6 col-md-3 social-foot-col">
         <h4 class="stay-connected">Stay Connected</h4>
         <div class="social-profile-icons">
@@ -135,7 +121,7 @@
           if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
             $isSecure = "https://";
           }
-        ?>
+          ?>
         <form action="http://whatcounts.com/bin/listctrl" method="POST">
           <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B" />
           <input type="hidden" name="cmd" value="subscribe" />
@@ -152,8 +138,8 @@
           </div>
         </form>
       </div>
-    </div><!-- END desktop row -->
-
+    </div>
+    <!-- END desktop row -->
     <div class="row visible-xs-block">
       <div class="col-sm-12 social-foot-col">
         <h4 class="stay-connected">Stay Connected</h4>
@@ -184,7 +170,7 @@
           if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
             $isSecure = "https://";
           }
-        ?>
+          ?>
         <form action="http://whatcounts.com/bin/listctrl" method="POST">
           <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B" />
           <input type="hidden" name="cmd" value="subscribe" />
@@ -257,20 +243,22 @@
           </div>
         </div>
       </div>
-    </div><!-- End social-foot-mobile -->
-  </div><!-- END container -->
+    </div>
+    <!-- End social-foot-mobile -->
+  </div>
+  <!-- END container -->
   <div class="container">
     <?php echo make_copyright_footer(); ?>
   </div>
-</footer><!-- END new-footer -->
+</footer>
+<!-- END new-footer -->
 </div>
 <?php wp_footer(); ?>
 <script async defer>
-   jQuery(document).ready(function(){
-      jQuery(".post-edit-link").addClass("button");
-   });
+  jQuery(document).ready(function(){
+     jQuery(".post-edit-link").addClass("button");
+  });
 </script>
-
 <!-- Adroll Remarketing Pixel -->
 <script type="text/javascript">
   adroll_adv_id = "74UKLGM23VB4BDJQTIUZAB";
