@@ -16,7 +16,14 @@ get_header(); ?>
 
   <div class="row home-panel-top">
     <div class="col-md-6 col-md-push-6">
-      <img class="img-responsive" src="//makercon.com/wp-content/uploads/2015/08/makercon-session.jpg" alt="Live at the MakerCon conference" />
+      <div class="embed-responsive embed-responsive-16by9">
+      <video class="embed-responsive-item" controls preload="auto" poster="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-still.jpg">
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.mp4" type='video/mp4' />
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.webm" type='video/webm' />
+        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.ogv" type='video/ogg' />
+        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+      </video>
+      </div>
     </div>
     <div class="col-md-6 col-md-pull-6">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -175,7 +182,7 @@ get_header(); ?>
       </div>
       <div class="row">
         <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
-        <div class="text-center col-xs-12">
+        <div class="text-center col-xs-12 padtop">
           <a class="btn-red" href="http://makezine.com/category/maker-pro/" target="_blank">Read More Maker Pro News</a>
         </div>
         <div class="hidden-xs col-sm-1 col-md-2 col-lg-3 col-xl-3"></div>
