@@ -8,22 +8,19 @@
 */
 get_header(); ?>
 <article id="post-<?php the_ID(); ?>" <?php post_class('home'); ?>>
+
   <div class="row">
     <div class="col-md-12 text-center">
-      <h1 class="no-margins">MakerCon is the epicenter of the Maker Movement</h1>
+      <h1>MakerCon is the epicenter of the Maker Movement</h1>
     </div>
   </div>
 
   <div class="row home-panel-top">
     <div class="col-md-6 col-md-push-6">
-      <div class="embed-responsive embed-responsive-16by9">
-      <video class="embed-responsive-item" controls preload="auto" poster="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-still.jpg">
-        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.mp4" type='video/mp4' />
-        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.webm" type='video/webm' />
-        <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.ogv" type='video/ogg' />
-        <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
-      </video>
-      </div>
+      <!-- <img class="img-responsive" src="//makercon.com/wp-content/uploads/2015/08/makercon-session.jpg" alt="Live at the MakerCon conference" /> -->
+      <a class="fancybox-promo" href="#promo-video">
+        <img src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-still.jpg" alt="MakerCon Promo Video" class="video-thumbnail img-responsive">
+      </a>
     </div>
     <div class="col-md-6 col-md-pull-6">
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
@@ -36,6 +33,42 @@ get_header(); ?>
       <?php endif; ?>
     </div>
   </div>
+
+  <!-- FANCYBOX VIDEO STUFF -->
+  <div class="promo-video-outer" style="display: none;">
+      <div id="promo-video">
+          <video id="promo-video-c" controls preload="auto" poster="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-still.jpg" width="auto" height="auto" style="width:100% !important; height:auto !important">
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.mp4" type='video/mp4' />
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.webm" type='video/webm' />
+            <source src="<?php echo get_stylesheet_directory_uri(); ?>/video/promo-vo-50.ogv" type='video/ogg' />
+            <p class="vjs-no-js">To view this video please enable JavaScript, and consider upgrading to a web browser that supports HTML5 video</p>
+          </video>
+          <script>
+            $(".fancybox-promo").fancybox({
+                'beforeShow': function(){
+                    $(window).on({
+                        'resize.fancybox' : function(){
+                            $.fancybox.update();
+                        }
+                    });
+                    $('#promo-video-c').get(0).play()
+                },
+                'afterClose': function(){
+                  $(window).off('resize.fancybox');
+                },
+                width      : '640',
+                height     : '360',
+                fitToView  : true,
+                closeClick : false,
+                openEffect : 'none',
+                closeEffect: 'none',
+                closeBtn   : 'true',
+                scrolling  : 'no'
+            });
+          </script>
+      </div>
+  </div>
+  <!-- END FANCYBOX VIDEO STUFF -->
 
   <!-- xS -->
   <div class="row">
@@ -214,3 +247,10 @@ get_header(); ?>
 </article>
 <!-- #post-## -->
 <?php get_footer(); ?>
+<script>
+  $(document).ready(function(){
+    if(window.location.href.indexOf("content=video") > -1) {
+      $(".fancybox-promo").eq(0).trigger('click'); 
+    }
+  });
+</script> 
