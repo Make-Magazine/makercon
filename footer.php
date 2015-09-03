@@ -36,6 +36,9 @@
     <a href="//www.makeblock.cc/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
     <img class="left15" src="//makerfaire.com/wp-content/uploads/2015/08/makercon-makeblok-logo-01.jpg" alt="MakeBlock Logo" width="150" align="center" />
     </a>
+    <a href="//www.samsung.com/us/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
+    <img class="left15" src="//makercon.com/wp-content/uploads/2015/09/makercon-sponsor-artik-01.jpg" alt="Samsung Artik" width="150" align="center" />
+    </a>
   </div>
 </div>
 <div class="row">
