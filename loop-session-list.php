@@ -139,6 +139,11 @@
               }
             }
           $speakers = join("<br/>", $speakers);
+
+                if ($moderator = get_field( 'moderator', $session_post->ID )) {
+                  echo "<p class=\"session-author\">Moderator - " .$moderator->post_title. ", <span class=\"schedule-auth-sub\">" .$moderator->_speaker_subtitle. "</span></p>"; 
+                }
+
           $tmp = $speakers . $tmp;
             ?>
             <div class="session">
@@ -146,6 +151,7 @@
             <?php
               $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
               foreach($wp_session_tracks as $session_track) {
+
                 $session_name_parts =  explode(' ', $session_track->name);
                 $link = '/new-york-2015/sessions/#'.$session_name_parts[0];
                 echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
