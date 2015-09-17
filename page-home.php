@@ -167,7 +167,7 @@ get_header(); ?>
       <div class="row">
         <div class="col-md-12 posts">
           <?php
-          $rss = fetch_feed('http://makezine.com/category/maker-pro/feed/');
+          $rss = fetch_feed('http://makezine.com/tag/maker-pro/feed/');
           if (!is_wp_error($rss)) :
           $maxitems = $rss -> get_item_quantity(6); //gets latest 6 items This can be changed to suit your requirements
           $rss_items = $rss -> get_items(0, $maxitems);
