@@ -199,17 +199,17 @@
     </script>
     <!-- End Google Tag Manager -->
 
-    <!-- TOP INFO BAR -->
+    <!-- TOP BRAND BAR -->
     <div class="hidden-xs top-header-bar-brand">
       <div class="container">
         <div class="row">
           <div class="col-sm-3">
           </div>
           <div class="col-sm-6 text-center">
-            <p><a href="//www.makershed.com/collections/most-popular" target="_blank">Shop Best Sellers at Maker Shed &rarr; Kits, Books, More!</a></p>
+            <p class="header-make-img"><a href="//makezine.com?utm_source=makershed.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make" target="_blank">Explore all of <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/make_logo.png" alt="Make: Makezine Logo" /></a></p>
           </div>
-          <div class="col-sm-3 text-center">
-            <h6 class="header-sub-link"><a href="//readerservices.makezine.com/mk/" target="_blank">SUBSCRIBE TO <em class="red">MAKE</em>&nbsp;&nbsp;&nbsp;&nbsp;<img src="<?php echo get_stylesheet_directory_uri(); ?>/img/book.png" alt="Make magazine icon"></img></a></h6>
+          <div class="col-sm-3">
+            <p class="header-sub-link pull-right"><a href="//readerservices.makezine.com/mk?utm_source=makershed.com&utm_medium=brand+bar&utm_campaign=mag+sub" target="_blank">Subscribe </a></p>
           </div>
         </div>
       </div>   

@@ -631,6 +631,28 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
+	"\/img\/magazine-icon.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 6658,
+		"inputAbbreviatedPath": "\/img\/magazine-icon.png",
+		"outputAbbreviatedPath": "\/img\/magazine-icon.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
+	"\/img\/make_logo.png": {
+		"fileType": 32768,
+		"ignore": 0,
+		"ignoreWasSetByUser": 0,
+		"initialSize": 4561,
+		"inputAbbreviatedPath": "\/img\/make_logo.png",
+		"outputAbbreviatedPath": "\/img\/make_logo.png",
+		"outputPathIsOutsideProject": 0,
+		"outputPathIsSetByUser": 0,
+		"processed": 0
+		},
 	"\/img\/makercon-logo-01-1x.png": {
 		"fileType": 32768,
 		"ignore": 0,
