@@ -439,3 +439,29 @@ function jetpackme_responsive_videos_setup() {
     add_theme_support( 'jetpack-responsive-videos' );
 }
 add_action( 'after_setup_theme', 'jetpackme_responsive_videos_setup' );
+
+
+/**
+* Adds the Youtube inside Fancybox modal
+* To use: [youtube "wnnWrLt_RCo"]
+* Place YT id in shortcade
+*/
+add_shortcode('youtube', 'youtube_shortcode'); 
+
+function youtube_shortcode($atts){  
+
+  if(!isset($atts[0])) return;
+  $id = strip_tags($atts[0]);
+  ob_start();
+  ?>
+
+<div class="col-xs-6 col-sm-4 padtop">
+  <a class="fancytube fancybox.iframe" href="http://www.youtube.com/embed/<?php echo $id; ?>?autoplay=1">
+    <img class="img-responsive" src="http://img.youtube.com/vi/<?php echo $id; ?>/0.jpg" alt="MakerCon Conference Videos" />
+    <img class="yt-play-btn" src="<?php echo get_stylesheet_directory_uri(); ?>/img/play-btn.png" alt="Youtube overlay play button" />
+  </a>
+</div>
+
+  <?php
+  return ob_get_clean();
+}

@@ -23,6 +23,10 @@ get_header(); ?>
       </a>
     </div>
     <div class="col-md-6 col-md-pull-6">
+      <p class="lead">MakerCon connects the individuals at the forefront of the Maker Movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods. MakerCon is a meeting place for passionate entrepreneurs who want to test the commercial waters for their prototypes; cultural and civic leaders driving Maker initiatives; and product developers inspired by the Maker Movement.</p>
+    </div>
+    <div class="clearfix"></div>
+    <div>
       <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
       <article <?php post_class(); ?>>
         <?php the_content(); ?>
