@@ -283,7 +283,7 @@
     <div class="clearfix"></div>
     <div class="hidden-xs masthead-banner">
       <a href="/new-york-2015/register/">
-        <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/full-background-banner.png" alt="Event info banner" />
+        <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/live-stream-banner-live.jpg" alt="Event info banner" />
       </a>
     </div>
 
