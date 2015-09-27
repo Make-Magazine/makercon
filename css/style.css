@@ -7295,10 +7295,6 @@ body.home .speaker-area .speaker-box-title {
   font-size: 14px;
   line-height: 18px;
 }
-body.home .speaker-area .speaker-box-bio {
-  max-height: 50px;
-  min-height: 50px;
-}
 body.home .speaker-area img {
   border-radius: 125px;
   margin: 0 auto 10px;
