@@ -14,33 +14,36 @@
         <h1>MakerCon is the epicenter of the Maker Movement</h1>
       </div>
     </div> -->
-  <div class="row home-panel-top">
-    <div class="col-sm-12 col-md-8">
-      <h3>Live from MakerCon New York 2015</h3>
-      <p style="margin-top:15px;" class="lead"></p>
-      <div class="videoWrapper">
-<iframe width="100%" height="auto" src="https://www.youtube.com/embed/n0Ao82F8ppY" frameborder="0" allowfullscreen></iframe>
+  <div class="row">
+    <div class="col-md-12">
+      <h3>Watch session from MakerCon 2015!</h3>
+      <p>Videos of the sessions will be posted shortly on the site by topic title. Catch the live stream here if you missed the conference.</p>
+      <p style="margin-bottom:30px;"><strong>A special note of thanks to our stellar speakers for their participation.</strong></p>
+    </div>
+  </div>
+    <div class="row">
+      <div class="col-sm-12 col-md-8">
+        <div class="videoWrapper">
+          <iframe width="100%" height="auto" src="https://www.youtube.com/embed/n0Ao82F8ppY" frameborder="0" allowfullscreen></iframe>
+        </div>
+        <!--          <p class="lead top15">What are the signals coming out of the Maker Movement that will shape the coming economy, local communities, education, government policy and initiatives? How is the Movement stimulating talent development, opportunity and agency? How is this Maker Movement distinct from the 20th century industrial model? These are some of the questions that MakerCon NY, a one-day event on September 24, will focus the conversation around. Don't miss it! A full day designed by Makers for Makers.</p>
+          -->
       </div>
-      <!--          <p class="lead top15">What are the signals coming out of the Maker Movement that will shape the coming economy, local communities, education, government policy and initiatives? How is the Movement stimulating talent development, opportunity and agency? How is this Maker Movement distinct from the 20th century industrial model? These are some of the questions that MakerCon NY, a one-day event on September 24, will focus the conversation around. Don't miss it! A full day designed by Makers for Makers.</p>
-        -->
-      <!-- <img src="//makercon.com/wp-content/themes/makercon/video/promo-still.jpg" alt="MakerCon Promo Video" class="img-responsive" /> -->
+      <div class="hidden-xs hidden-sm col-md-4  col-lg-4 col-xs-4 twitter-sidebar">
+        <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="420">Tweets about "#makercon"</a>
+        <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+      </div>
+      <div class="clearfix"></div>
     </div>
-    <div class="hidden-xs hidden-sm col-md-4  col-lg-4 col-xs-4 twitter-sidebar">
-      <h3 class="bottom15">Active on Twitter</h3>
-      <a class="twitter-timeline" href="https://twitter.com/search?q=%23makercon" data-widget-id="466630807038066688" height="420">Tweets about "#makercon"</a>
-      <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0],p=/^http:/.test(d.location)?'http':'https';if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src=p+"://platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
-    </div>
-    <div class="clearfix"></div>
-    <div>
-      <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
-      <article <?php post_class(); ?>>
-        <?php the_content(); ?>
-      </article>
-      <?php endwhile; ?>
-      <?php else: ?>
-      <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
-      <?php endif; ?>
-    </div>
+      <div class="row">
+    <?php if ( have_posts() ) : while ( have_posts() ) : the_post(); ?>
+    <article <?php post_class(); ?>>
+      <?php the_content(); ?>
+    </article>
+    <?php endwhile; ?>
+    <?php else: ?>
+    <p><?php _e('Sorry, no posts matched your criteria.'); ?></p>
+    <?php endif; ?>
   </div>
   <div class="row">
     <div class="col-xs-12 col-sm-6 hidden-md hidden-lg hidden-xl twitter-sidebar">

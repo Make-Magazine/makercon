@@ -457,7 +457,7 @@ function youtube_shortcode($atts){
 
 <div class="col-xs-6 col-sm-4 padtop">
   <a class="fancytube fancybox.iframe" href="http://www.youtube.com/embed/<?php echo $id; ?>?autoplay=1">
-    <img class="img-responsive" src="http://img.youtube.com/vi/<?php echo $id; ?>/0.jpg" alt="MakerCon Conference Videos" />
+    <img class="img-responsive" src="http://img.youtube.com/vi/<?php echo $id; ?>/mqdefault.jpg" alt="MakerCon Conference Videos" />
     <img class="yt-play-btn" src="<?php echo get_stylesheet_directory_uri(); ?>/img/play-btn.png" alt="Youtube overlay play button" />
   </a>
 </div>

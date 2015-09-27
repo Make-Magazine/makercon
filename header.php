@@ -212,7 +212,7 @@
             <p class="header-sub-link pull-right"><a href="//readerservices.makezine.com/mk?utm_source=makercon.com&utm_medium=brand+bar&utm_campaign=mag+sub" target="_blank">Subscribe </a></p>
           </div>
         </div>
-      </div>   
+      </div>
     </div>
 
     <!-- Header area -->
@@ -273,7 +273,7 @@
               <li><a href="https://twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
               <li><a href="https://instagram.com/makemagazine/" class="icoInstagram" title="Instagram"><i class="fa fa-instagram" target="_blank"></i></a></li>
               <li><a href="https://www.pinterest.com/makemagazine/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
-          </ul>    
+          </ul>
         </div>
 
       </div> <!-- row -->  
@@ -282,9 +282,7 @@
     <!-- #masthead -->
     <div class="clearfix"></div>
     <div class="hidden-xs masthead-banner">
-      <a href="/new-york-2015/register/">
-        <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/live-stream-banner-live.jpg" alt="Event info banner" />
-      </a>
+        <a href="//makercon.com/"><img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-banner.png" alt="Event info banner" /></a>
     </div>
 
     <div class="container">

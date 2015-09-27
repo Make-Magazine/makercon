@@ -7230,6 +7230,17 @@ h2.subtitle {
   margin-right: -50%;
   transform: translate(-50%, -50%);
 }
+.yt-play-btn {
+  padding-right: 5px;
+}
+.page-id-2774 .top-navbar ul.nav,
+.page-id-2782 .top-navbar ul.nav {
+  height: 60px;
+  margin-bottom: 0;
+}
+.page-id-2774 .sponsors {
+  margin-top: 30px;
+}
 body.home h1 {
   margin-top: 40px;
 }
@@ -7455,6 +7466,9 @@ ul.recent-posts .recent-posts p a {
   padding-left: 7px;
   padding-top: 0px;
 }
+.home-intro {
+  margin-bottom: 30px;
+}
 .sponsors h2 {
   margin-bottom: 0px;
 }
@@ -7475,6 +7489,25 @@ ul.recent-posts .recent-posts p a {
   .home .lead {
     margin-top: 15px;
   }
+}
+@media screen and (max-width: 1199px) {
+  .twitter-sidebar h3 {
+    margin-top: 15px;
+  }
+  .home-panel-top {
+    padding-bottom: 15px;
+  }
+}
+@media screen and (max-width: 969px) {
+  .home-panel-top {
+    border: none;
+  }
+}
+.home .media {
+  margin-top: 0;
+  overflow: visible;
+  clear: both;
+  margin-bottom: 30px;
 }
 /*! fancyBox v2.1.5 fancyapps.com | fancyapps.com/fancybox/#license */
 .fancybox-wrap,
