@@ -343,7 +343,7 @@ function featured_speakers_function() {
 function featured_speakers_view($user_id) {
   $post = get_post($user_id, ARRAY_A);
   ?>
-	    <div class="col-md-4 col-sm-4 col-xs-6 speaker-area">
+	    <div class="col-xs-12 col-sm-6 col-md-4 speaker-area">
 	    	<a href="<?php echo $permalink = get_permalink( $user_id ); ?>">
 				<div class="featured-speaker">
 					<?php echo get_the_post_thumbnail($user_id, array(200,200),array( 'class' => '  img-circle img-responsive' )); ?>
