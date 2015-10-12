@@ -446,9 +446,9 @@ add_action( 'after_setup_theme', 'jetpackme_responsive_videos_setup' );
 * To use: [youtube "wnnWrLt_RCo"]
 * Place YT id in shortcade
 */
-add_shortcode('youtube', 'youtube_shortcode'); 
+add_shortcode('youtube-modal', 'youtube_shortcode_modal'); 
 
-function youtube_shortcode($atts){  
+function youtube_shortcode_modal($atts){  
 
   if(!isset($atts[0])) return;
   $id = strip_tags($atts[0]);
