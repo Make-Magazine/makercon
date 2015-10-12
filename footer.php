@@ -99,100 +99,84 @@
           <li><a href="//makermedia.com/privacy" target="_blank">Privacy</a></li>
         </ul>
       </div>
-      <div class="col-sm-12 col-sm-6 col-md-3 social-foot-col">
-        <h4 class="stay-connected">Stay Connected</h4>
-        <div class="social-profile-icons">
-          <a class="sprite-facebook-32" href="//www.facebook.com/MakerCon" title="Facebook" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
-          <a class="sprite-twitter-32" href="//twitter.com/makercon" title="Twitter" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
-          <a class="sprite-pinterest-32" href="//www.pinterest.com/makemagazine/maker-pro/" title="Pinterest" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
-          <a class="sprite-googleplus-32" href="//plus.google.com/explore/MakerCon" rel="publisher" title="Google+" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
+      <div class="col-sm-6 col-md-3 social-foot-col">
+        <h4 class="stay-connected">Follow Us</h4>
+        <div class="social-network-container">
+          <ul class="social-network social-circle">
+              <li><a href="//www.facebook.com/MakerCon" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="//www.pinterest.com/makemagazine/maker-pro/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
+              <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
+          </ul>    
         </div>
-        <?php
-          $isSecure = "http://";
-          if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
-            $isSecure = "https://";
-          }
+        <div class="clearfix"></div>
+
+        <div class="mz-footer-subscribe"> 
+          <?php
+            $isSecure = "http://";
+            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+              $isSecure = "https://";
+            }
           ?>
-        <form action="http://whatcounts.com/bin/listctrl" method="POST">
-          <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B" />
-          <input type="hidden" name="cmd" value="subscribe" />
-          <input type="hidden" name="custom_source" value="footer" /> 
-          <input type="hidden" name="custom_incentive" value="none" /> 
-          <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-          <input type="hidden" id="format_mime" name="format" value="mime" />
-          <input type="hidden" name="goto" value="/?thankyou" />
-          <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
-          <input type="hidden" name="errors_to" value="" />
-          <div>
-            <input name="email" placeholder="Enter your Email" required="required" type="text"><br>
-            <input value="Sign Up for our Newsletter" class="btn-cyan" type="submit">
-          </div>
-        </form>
+          <h4>Sign Up</h4>
+          <p>Stay inspired and get fresh updates</p>
+          <form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
+            <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B"/>
+            <input type="hidden" name="cmd" value="subscribe"/>
+            <input type="hidden" name="custom_source" value="footer"/>
+            <input type="hidden" name="custom_incentive" value="none"/>
+            <input type="hidden" name="custom_url" value="<?php echo $_SERVER[" HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>"/>
+            <input type="hidden" id="format_mime" name="format" value="mime"/>
+            <input type="hidden" name="goto" value=""/>
+            <input type="hidden" name="custom_host" value="<?php echo $_SERVER[" HTTP_HOST"]; ?>" />
+            <input type="hidden" name="errors_to" value=""/>
+            <div class="mz-form-horizontal">
+              <input name="email" placeholder="Enter your Email" required type="email"><br>
+              <input value="GO" class="btn-cyan" type="submit">
+            </div>
+          </form>
+        </div>
       </div>
     </div>
     <!-- END desktop row -->
+
     <div class="row visible-xs-block">
-      <div class="col-sm-12 social-foot-col">
-        <h4 class="stay-connected">Stay Connected</h4>
-        <div class="social-profile-icons">
-          <a class="sprite-facebook-32" href="//www.facebook.com/MakerCon" title="Facebook" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
-          <a class="sprite-twitter-32" href="//twitter.com/makercon" title="Twitter" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
-          <a class="sprite-pinterest-32" href="//www.pinterest.com/makemagazine/maker-pro/" title="Pinterest" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
-          <a class="sprite-googleplus-32" href="//plus.google.com/explore/MakerCon" rel="publisher" title="Google+" target="_blank">
-            <div class="social-profile-cont"> 
-              <span class="sprite"></span>
-            </div>
-          </a>
+      <div class="col-xs-12 social-foot-col">
+        <h4 class="stay-connected">Follow Us</h4>
+        <div class="social-network-container">
+          <ul class="social-network social-circle">
+              <li><a href="//www.facebook.com/MakerCon" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
+              <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="//www.pinterest.com/makemagazine/maker-pro/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
+              <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
+          </ul>    
         </div>
-        <?php
-          $isSecure = "http://";
-          if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
-            $isSecure = "https://";
-          }
+        <div class="clearfix"></div>
+        <div class="mz-footer-subscribe"> 
+          <?php
+            $isSecure = "http://";
+            if (isset($_SERVER['HTTPS']) && $_SERVER['HTTPS'] == 'on') {
+              $isSecure = "https://";
+            }
           ?>
-        <form action="http://whatcounts.com/bin/listctrl" method="POST">
-          <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B" />
-          <input type="hidden" name="cmd" value="subscribe" />
-          <input type="hidden" name="custom_source" value="footer" /> 
-          <input type="hidden" name="custom_incentive" value="none" /> 
-          <input type="hidden" name="custom_url" value="<?php echo $_SERVER["HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>" />
-          <input type="hidden" id="format_mime" name="format" value="mime" />
-          <input type="hidden" name="goto" value="/?thankyou" />
-          <input type="hidden" name="custom_host" value="<?php echo $_SERVER["HTTP_HOST"]; ?>" />
-          <input type="hidden" name="errors_to" value="" />
-          <div>
-            <input name="email" placeholder="Enter your Email" required="required" type="text"><br>
-            <input value="Sign Up for our Newsletter" class="btn-cyan" type="submit">
-          </div>
-        </form>
+          <h4>Sign Up</h4>
+          <p>Stay inspired and get fresh updates</p>
+          <form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
+            <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B"/>
+            <input type="hidden" name="cmd" value="subscribe"/>
+            <input type="hidden" name="custom_source" value="footer"/>
+            <input type="hidden" name="custom_incentive" value="none"/>
+            <input type="hidden" name="custom_url" value="<?php echo $_SERVER[" HTTP_HOST"] . $_SERVER["REQUEST_URI"]; ?>"/>
+            <input type="hidden" id="format_mime" name="format" value="mime"/>
+            <input type="hidden" name="goto" value=""/>
+            <input type="hidden" name="custom_host" value="<?php echo $_SERVER[" HTTP_HOST"]; ?>" />
+            <input type="hidden" name="errors_to" value=""/>
+            <div class="mz-form-horizontal">
+              <input name="email" placeholder="Enter your Email" required type="email"><br>
+              <input value="GO" class="btn-cyan" type="submit">
+            </div>
+          </form>
+        </div>
       </div>
       <div class="col-xs-12 panel-group" id="accordion" role="tablist" aria-multiselectable="true">
         <div class="panel panel-default">
