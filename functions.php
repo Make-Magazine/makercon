@@ -443,7 +443,7 @@ add_action( 'after_setup_theme', 'jetpackme_responsive_videos_setup' );
 
 /**
 * Adds the Youtube inside Fancybox modal
-* To use: [youtube "wnnWrLt_RCo"]
+* To use: [youtube-modal "wnnWrLt_RCo"]
 * Place YT id in shortcade
 */
 add_shortcode('youtube-modal', 'youtube_shortcode_modal'); 

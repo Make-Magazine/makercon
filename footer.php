@@ -104,9 +104,9 @@
         <div class="social-network-container">
           <ul class="social-network social-circle">
               <li><a href="//www.facebook.com/MakerCon" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
-              <li><a href="//www.pinterest.com/makemagazine/maker-pro/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
-              <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
+              <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="//www.pinterest.com/makemagazine/maker-pro/" class="icoPinterest" title="Pinterest" target="_blank"><i class="fa fa-pinterest-p" target="_blank"></i></a></li>
+              <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+" target="_blank"><i class="fa fa-google-plus" target="_blank"></i></a></li>
           </ul>    
         </div>
         <div class="clearfix"></div>
@@ -146,9 +146,9 @@
         <div class="social-network-container">
           <ul class="social-network social-circle">
               <li><a href="//www.facebook.com/MakerCon" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
-              <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
-              <li><a href="//www.pinterest.com/makemagazine/maker-pro/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
-              <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
+              <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter" target="_blank"><i class="fa fa-twitter" target="_blank"></i></a></li>
+              <li><a href="//www.pinterest.com/makemagazine/maker-pro/" class="icoPinterest" title="Pinterest" target="_blank"><i class="fa fa-pinterest-p" target="_blank"></i></a></li>
+              <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+" target="_blank"><i class="fa fa-google-plus" target="_blank"></i></a></li>
           </ul>    
         </div>
         <div class="clearfix"></div>

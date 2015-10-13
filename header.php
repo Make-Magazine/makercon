@@ -267,11 +267,11 @@
 
         <!-- SOCIAL MEDIA ICONS -->
         <div class="social-network-container col-md-3 hidden-sm hidden-xs text-center"> 
-          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet">
+          <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
           <ul class="social-network social-circle">
               <li><a href="//www.facebook.com/MakerCon" class="icoFacebook" title="Facebook" target="_blank"><i class="fa fa-facebook"></i></a></li>
               <li><a href="//twitter.com/makercon" class="icoTwitter" title="Twitter"><i class="fa fa-twitter" target="_blank"></i></a></li>
-              <li><a href="//www.pinterest.com/makemagazine/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest" target="_blank"></i></a></li>
+              <li><a href="//www.pinterest.com/makemagazine/" class="icoPinterest" title="Pinterest"><i class="fa fa-pinterest-p" target="_blank"></i></a></li>
               <li><a href="//plus.google.com/explore/MakerCon" class="icoGoogle-plus" title="Google+"><i class="fa fa-google-plus" target="_blank"></i></a></li>
           </ul>
         </div>

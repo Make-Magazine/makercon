@@ -98,8 +98,12 @@ ul.social-network li {
 .social-network a.icoLinkedin:hover {
 	background-color:#007bb7;
 }
-.social-network a.icoInstagram:hover i, .social-network a.icoFacebook:hover i, .social-network a.icoTwitter:hover i,
-.social-network a.icoPinterest:hover i, .social-network a.icoVimeo:hover i, .social-network a.icoLinkedin:hover i {
+.social-network a.icoInstagram:hover i, 
+.social-network a.icoFacebook:hover i, 
+.social-network a.icoTwitter:hover i,
+.social-network a.icoPinterest:hover i, 
+.social-network a.icoVimeo:hover i, 
+.social-network a.icoLinkedin:hover i {
 	color:#fff;
 }
 a.socialIcon:hover, .socialHoverClass {
@@ -130,13 +134,14 @@ a.socialIcon:hover, .socialHoverClass {
 	height: 30px;
 	font-size:20px;
 	background-color: #D3D3D3;
+	-webkit-transition: all 0.2s;
+	-moz-transition: all 0.2s;
+	-o-transition: all 0.2s;
+	-ms-transition: all 0.2s;
+	transition: all 0.2s;
 }
 
-.social-circle li a:hover i, .triggeredHover {
-	-moz-transform: rotate(360deg);
-	-webkit-transform: rotate(360deg);
-	-ms--transform: rotate(360deg);
-	transform: rotate(360deg);
+.social-circle li a:hover {
 	-webkit-transition: all 0.2s;
 	-moz-transition: all 0.2s;
 	-o-transition: all 0.2s;
@@ -147,7 +152,7 @@ a.socialIcon:hover, .socialHoverClass {
 @media (max-width: 767px) {
 	header {
 		margin-top: 15px;
-    	margin-bottom: 15px;
+    margin-bottom: 15px;
 		border-bottom: 1px solid #999;
 	}
 	.header-top-nav {
