@@ -209,7 +209,7 @@
             <p class="header-make-img"><a href="//makezine.com?utm_source=makercon.com&utm_medium=brand+bar&utm_campaign=explore+all+of+make" target="_blank">Explore all of <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/make_logo.png" alt="Make: Makezine Logo" /></a></p>
           </div>
           <div class="col-sm-3">
-            <p class="header-sub-link pull-right"><a href="//readerservices.makezine.com/mk?utm_source=makercon.com&utm_medium=brand+bar&utm_campaign=mag+sub" target="_blank">Subscribe </a></p>
+            <p class="header-sub-link pull-right"><a id="trigger-overlay" href="#">Subscribe </a></p>
           </div>
         </div>
       </div>
