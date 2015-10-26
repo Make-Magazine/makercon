@@ -399,28 +399,24 @@ function make_copyright_footer() { ?>
 
 
 /**
- * Adds the subscribe header button return path overlay
+ * Adds the subscribe header return path overlay
  */
 function subscribe_return_path_overlay() { ?>
   <div class="overlay-div overlay-slidedown hidden-xs">
-    <button type="button" class="overlay-close"><i class="fa fa-times fa-4x"></i></button>
-    <div class="container-fluid overlay-sub-inner">
+    <div class="container-fluid-overlay">
       <div class="container">
         <div class="row">
-
           <div class="col-sm-4 overlay-1">
-            <img class="img-responsive" src="/wp-content/themes/makercon/img/Magazine-cover-44-for-overlay.png" />
+            <img class="img-responsive" src="/wp-content/themes/makercon/img/Magazine-cover-44-for-overlay.jpg" alt="Make Magazine Volume 44 Cover" />
           </div>
-
           <div class="col-sm-4 overlay-2">
             <h2>Get the Magazine</h2>
             <p>Make: is the voice of the Maker Movement, empowering, inspiring, and connecting Makers worldwide to tinker and hack. Subscribe to Make Magazine Today!</p>
             <a class="black-overlay-btn" target="_blank" href="//readerservices.makezine.com/mk?utm_source=makercon.com&utm_medium=brand+bar&utm_campaign=mag+sub">SUBSCRIBE</a>
           </div>
-
           <div class="col-sm-4 overlay-3">
-            <h2>Sign Up for Our Newsletter</h2>
-            <p>Make's biggest stories, delivered to your inbox.</p>
+            <h2>Sign Up for the Maker Pro Newsletter</h2>
+            <p>Keep informed, stay inspired.</p>
             <form class="sub-form" action="http://whatcounts.com/bin/listctrl" method="POST">
               <input type="hidden" name="slid" value="6B5869DC547D3D467B33E192ADD9BE4B"/>
               <input type="hidden" name="cmd" value="subscribe"/>
@@ -432,41 +428,24 @@ function subscribe_return_path_overlay() { ?>
               <input type="hidden" name="custom_host" value="MakerCon" />
               <input type="hidden" name="errors_to" value=""/>
               <input name="email" class="overlay-input" placeholder="Enter your email" required type="email"><br>
-              <input value="SUBMIT" class="black-overlay-btn" type="submit">
+              <input value="GO" class="black-overlay-btn" type="submit">
             </form>
           </div>
-
         </div>
       </div>
     </div>
   </div>
   <script type="text/javascript">
-    $(function(){
-      function toggleOverlay() {
-        if( $( ".overlay-div" ).hasClass( "open" ) ) {
-          $( ".overlay-div" ).removeClass( "open" );
-          $( ".overlay-div" ).addClass( "close" );
-          $("body").removeClass("modal-open");
-          var onEndTransitionFn = function( ev ) {
-            $( ".overlay-div" ).removeClass( "close" );
-          };
-          onEndTransitionFn();
-        }
-        else if( !$( ".overlay-div" ).hasClass( "close" ) ) {
-          $( ".overlay-div" ).addClass( "open" );
-          $("body").addClass("modal-open");
-        }
-        // else {
-        //   $( ".overlay-div" ).addClass( "open" );
-        // }
+    $('#trigger-overlay, .overlay-div').hover(
+      function () {
+          $('.overlay-div').stop().addClass( 'open' );
+          $( 'body' ).addClass( 'modal-open' );
+      },
+      function () {
+          $('.overlay-div').stop().removeClass( 'open' );
+          $( 'body' ).removeClass( 'modal-open' );
       }
-    $(".overlay-div").on("click", function(e) {
-        if (e.target !== this) return;
-
-        toggleOverlay();
-    });
-    $( "#trigger-overlay, .overlay-close" ).click(toggleOverlay);
-    });
+    );
   </script>
 <?php }
 

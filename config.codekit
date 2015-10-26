@@ -444,17 +444,6 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/cross.png": {
-		"fileType": 32768,
-		"ignore": 0,
-		"ignoreWasSetByUser": 0,
-		"initialSize": 1163,
-		"inputAbbreviatedPath": "\/img\/cross.png",
-		"outputAbbreviatedPath": "\/img\/cross.png",
-		"outputPathIsOutsideProject": 0,
-		"outputPathIsSetByUser": 0,
-		"processed": 0
-		},
 	"\/img\/dale.jpg": {
 		"fileType": 16384,
 		"ignore": 0,
@@ -675,13 +664,13 @@
 		"outputPathIsSetByUser": 0,
 		"processed": 0
 		},
-	"\/img\/Magazine-cover-44-for-overlay.png": {
-		"fileType": 32768,
+	"\/img\/Magazine-cover-44-for-overlay.jpg": {
+		"fileType": 16384,
 		"ignore": 0,
 		"ignoreWasSetByUser": 0,
-		"initialSize": 183512,
-		"inputAbbreviatedPath": "\/img\/Magazine-cover-44-for-overlay.png",
-		"outputAbbreviatedPath": "\/img\/Magazine-cover-44-for-overlay.png",
+		"initialSize": 48591,
+		"inputAbbreviatedPath": "\/img\/Magazine-cover-44-for-overlay.jpg",
+		"outputAbbreviatedPath": "\/img\/Magazine-cover-44-for-overlay.jpg",
 		"outputPathIsOutsideProject": 0,
 		"outputPathIsSetByUser": 0,
 		"processed": 0
