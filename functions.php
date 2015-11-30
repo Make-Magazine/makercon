@@ -518,3 +518,13 @@ function youtube_shortcode_modal($atts){
   <?php
   return ob_get_clean();
 }
+
+
+/**
+ * Adds the previous event alert message
+ */
+function previous_event_alert_function() { ?>
+  <div class="alert alert-warning text-center" role="alert">This page lists information for a past event. Information about MakerCon 2016 is coming soon.</div>
+<?php }
+
+add_shortcode('previous_event_alert_message', 'previous_event_alert_function');

@@ -282,7 +282,9 @@
     <!-- #masthead -->
     <div class="clearfix"></div>
     <div class="hidden-xs masthead-banner">
-        <a href="//makercon.com/"><img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-banner.png" alt="Event info banner" /></a>
+      <a href="/new-york-2015/videos">
+        <img class="img-responsive" style="width:100%;" src="<?php echo get_stylesheet_directory_uri(); ?>/img/makercon-banner.png" alt="Event info banner" />
+      </a>
     </div>
 
     <div class="container">
