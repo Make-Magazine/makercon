@@ -1,6 +1,7 @@
 <?php
   /**
    * The template used for displaying page speakers within the loop
+   * Used on each of the single session pages
    *
    * @package makercon
    */
@@ -39,7 +40,7 @@
       if(get_post_meta($speaker_post->ID, '_thumbnail_id', true ) !== false) {
         echo get_the_post_thumbnail($speaker_post->ID, 'small-thumbnail img-responsive' );
       } ?></div>
-      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9"><div class="lead"><?php
+      <div class="col-xs-9 col-sm-9 col-md-9 col-lg-9"><div><?php
       $speaker_post_title = esc_html($speaker_post->post_title);
 
       $_website = get_post_meta($speaker_post->ID, 'website', true );
@@ -56,7 +57,8 @@
       if($speaker_subtitle != '') {
         print("<div class=\"speaker-subtitle\">".esc_html($speaker_subtitle)."</div>");
       } ?></div>
-      <?php echo($speaker_post->post_content); ?><br />
+      <?php echo($speaker_post->post_content); ?>
+      <br />
       <br/>
       <?php 
         $speaker_sessions = explode(",", get_post_meta($speaker_post->ID, '_speaker_sessions', true));
@@ -82,13 +84,7 @@
             ?>
             </div>
           </p><?php
-
           }
-
-          
-        ?>
-
-      <?php
         }
         
           $_twitter = get_post_meta($speaker_post->ID, 'twitter', true );
@@ -102,8 +98,8 @@
                 $_twitter_pos = strpos($_twitter, '@');
                 $_twitter = ($_twitter_pos !== FALSE) ? substr($_twitter, 1): $_twitter;
                 ?><a href="https://twitter.com/<?php echo($_twitter); ?>" class="twitter-follow-button" data-show-count="true" data-lang="en">Follow @<?php echo($_twitter); ?></a>
-    <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script><br><?php
-                
+                <script>!function(d,s,id){var js,fjs=d.getElementsByTagName(s)[0];if(!d.getElementById(id)){js=d.createElement(s);js.id=id;js.src="//platform.twitter.com/widgets.js";fjs.parentNode.insertBefore(js,fjs);}}(document,"script","twitter-wjs");</script>
+                <br><?php  
             }
            
             echo("</p>");

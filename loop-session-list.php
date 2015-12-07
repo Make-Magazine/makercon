@@ -1,6 +1,6 @@
 <?php
   /**
-   * The template used for displaying page sessions within the loop
+   * The template used for displaying the schedule page
    *
    * @package makercon
    */
@@ -102,9 +102,10 @@
 
    ?>
       <?php if($no_event == true) { ?>
-      <div class="pull-right col-md-10 col-xs-12 sessions-no-event">
+        <div class="pull-right col-md-10 col-xs-12 sessions-no-event">
       <?php } else { ?>
-      <div class="pull-right col-md-10 col-xs-12 sessions-wrap-days session">
+        <a href="<?php echo get_post_permalink($session_post->ID); ?>">
+          <div class="pull-right col-md-10 col-xs-12 sessions-wrap-days session">
       <?php } ?>
 
         <div class="sessions-page">
@@ -112,7 +113,7 @@
           <?php if($no_event == true) { ?>
             <h2 class="session-title"><?php echo $session_post_title ?></h2>
           <? } else { ?>
-            <h2 class="session-title"><a href="<?php echo get_post_permalink($session_post->ID); ?>"><?php echo $session_post_title ?></a></h2>
+            <h2 class="session-title"><?php echo $session_post_title ?></h2>
           <? } ?>
         </div>
         <?php
@@ -140,15 +141,16 @@
             }
           $speakers = join("<br/>", $speakers);
 
-                if ($moderator = get_field( 'moderator', $session_post->ID )) {
-                  echo "<p class=\"session-author\">Moderator - " .$moderator->post_title. ", <span class=\"schedule-auth-sub\">" .$moderator->_speaker_subtitle. "</span></p>"; 
-                }
+          // DISPLAYS THE MODERATOR AT THE TOP
+          if ($moderator = get_field( 'moderator', $session_post->ID )) {
+            echo "<p class=\"session-author\">Moderator - " .$moderator->post_title. ", <span class=\"schedule-auth-sub\">" .$moderator->_speaker_subtitle. "</span></p>"; 
+          }
 
           $tmp = $speakers . $tmp;
             ?>
             <div class="session">
             <p class="session-author"><?php echo($tmp); ?></p>
-            <?php
+<!--             <?php
               $wp_session_tracks = wp_get_post_terms($session_post->ID, 'track', array());
               foreach($wp_session_tracks as $session_track) {
 
@@ -156,10 +158,11 @@
                 $link = '/new-york-2015/sessions/#'.$session_name_parts[0];
                 echo "<p><a class=\"btn btn-default btn-xs\" style=\"color:#02394f;text-transform: uppercase;\" href=\"".strtolower($link)."\">".strtoupper($session_track->name)."</a></p>";
               }
-            ?>
+            ?> -->
             </div>
         <?php } ?>
       </div>
+      </a>
     <?php
 
   }

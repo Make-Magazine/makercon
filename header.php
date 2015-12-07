@@ -11,24 +11,24 @@
   <head>
     <meta charset="<?php bloginfo( 'charset' ); ?>">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title><?php bloginfo('name'); ?> | <?php wp_title(); ?></title>
-    <meta name="description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods." />
-    <meta property="og:title" content="<?php bloginfo('name'); ?> | <?php wp_title(); ?>" />
+    <title><?php echo get_the_title(); ?> | MakerCon</title>
+    <meta name="description" content="<?php bloginfo('description'); ?>" />
+    <meta property="og:title" content="<?php echo get_the_title(); ?> | MakerCon" />
     <meta property="og:url" content="<?php echo the_permalink() ?>" />
     <meta property="og:site_name" content="MakerCon" />
-    <meta property="og:description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods." />
+    <meta property="og:description" content="<?php bloginfo('description'); ?>" />
     <meta property="og:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" />
     <meta name="twitter:card" content="summary" />
     <meta name="twitter:site" content="@MakerCon" />
     <meta name="twitter:creator" content="@MakerCon" />
-    <meta name="twitter:title" content="<?php bloginfo('name'); ?> | <?php wp_title(); ?>" />
-    <meta name="twitter:description" content="MakerCon connects the individuals at the forefront of the maker movement and taps into the best thinking on how to make things and get them to market, from new technologies to manufacturing models to funding methods." />
+    <meta name="twitter:title" content="<?php echo get_the_title(); ?> | MakerCon" />
+    <meta name="twitter:description" content="<?php bloginfo('description'); ?>" />
     <meta name="twitter:image" content="<?php echo get_stylesheet_directory_uri(); ?>/img/MakerCon-Logo-Intel-CiscoTM.png" />
     <meta name="twitter:url" content="<?php echo the_permalink() ?>" />
     <link rel="profile" href="http://gmpg.org/xfn/11">
     <link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-    <script type="text/javascript">try{Typekit.load();}catch(e){}</script>
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <link href='https://fonts.googleapis.com/css?family=Roboto:400,500,300,700' rel='stylesheet' type='text/css'>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.4/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/js/bootstrap.min.js"></script>
     <script type="text/javascript" src="<?php bloginfo('template_url'); ?>/js/fancybox.js"></script>
     <!--script type="text/javascript">

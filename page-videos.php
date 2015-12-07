@@ -9,34 +9,34 @@
     */
    get_header(); ?>
 <div class="row">
-<div id="primary" class="content-area col-md-12">
-<main id="main" class="site-main" role="main">
-<?php while ( have_posts() ) : the_post(); ?>
-   <?php get_template_part( 'content', 'page' ); ?>
-<?php endwhile; // end of the loop. ?>
-<div class="row">
-   <div class="col-md-12">
-      <!-- Button trigger modal -->
-      <img class="img-responsive" src="http://cdn.makezine.com/make/makercon/makercon-BA2014-jay-silver.jpg" width="1170" data-toggle="modal" data-target="#myModal"/>
-      <div style="clear:both;"></div>
-      <!-- Modal -->
-      <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
-         <div class="modal-dialog">
-            <div class="modal-content">
-               <div class="modal-header">
-                  <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
-                  <h4 class="modal-title" id="myModalLabel" style="margin-top:10px;font-size:18px;">MakerCon Bay Area 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
-               </div>
-               <div class="modal-body">
-                  <iframe width="780" height="448" src="https://www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_&amp;showinfo=0&amp;rel=0?html5=1" frameborder="0" allowfullscreen></iframe>
-               </div>
-               <div class="modal-footer">
+   <div id="primary" class="content-area col-md-12">
+      <main id="main" class="site-main" role="main">
+         <?php while ( have_posts() ) : the_post(); ?>
+            <?php get_template_part( 'content', 'page' ); ?>
+         <?php endwhile; // end of the loop. ?>
+         <div class="row">
+            <div class="col-md-12">
+               <!-- Button trigger modal -->
+               <img class="img-responsive" src="http://cdn.makezine.com/make/makercon/makercon-BA2014-jay-silver.jpg" width="1170" data-toggle="modal" data-target="#myModal"/>
+               <div style="clear:both;"></div>
+               <!-- Modal -->
+               <div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+                  <div class="modal-dialog">
+                     <div class="modal-content">
+                        <div class="modal-header">
+                           <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                           <h4 class="modal-title" id="myModalLabel" style="margin-top:10px;font-size:18px;">MakerCon Bay Area 2014: Jay Silver, Founder &amp; CEO, JoyLabz</h4>
+                        </div>
+                        <div class="modal-body">
+                           <iframe width="780" height="448" src="https://www.youtube.com/embed/QIygWVABumA?list=PLwhkA66li5vCKd7XNwpV42-zgBf9S3vP_&amp;showinfo=0&amp;rel=0?html5=1" frameborder="0" allowfullscreen></iframe>
+                        </div>
+                        <div class="modal-footer">
+                        </div>
+                     </div>
+                  </div>
                </div>
             </div>
          </div>
-      </div>
-   </div>
-</div>
          <br/>
          <br/>
          <div class="row">
@@ -235,14 +235,12 @@
    $(".modal").on('hidden.bs.modal', function(e) {
        $iframe = $(this).find( "iframe" );
        $iframe.attr("src", $iframe.attr("src"));
-   }); 
-     
+   });
 </script>
 <script type="text/javascript">
    $(".modal").on('hidden.bs.modal', function(e) {
        $iframe = $(this).find( "iframe" );
        $iframe.attr("src", $iframe.attr("src"));
    }); 
-     
 </script>
 <?php get_footer(); ?>

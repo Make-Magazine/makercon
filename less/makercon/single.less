@@ -16,7 +16,6 @@ h1.entry-title{
 }
 
 .sessions-list-area .session-author {
-	font-weight: bold;
 	.schedule-auth-sub {
 		font-weight: 300;
 	}
@@ -58,8 +57,7 @@ h1.entry-title{
 	font-family: @font;
 	h3 {
 		color: darken(@blue, 10%);
-		margin-bottom: 10px;
-		font-size: 26px;
+		margin-bottom: 5px;
 	}
 }
 
@@ -127,7 +125,7 @@ h1.entry-title{
 		margin: 10px auto;
 		color:#FF0000;
 		span {
-		  	font-family: arial, sans-serif;
+		  	font-family: @font;
 		  	font-size:21px;font-weight:100;
 		}
 	}
@@ -174,8 +172,6 @@ p.video-info {
    left: 20px;
 }
 
-
-
 .top-navbar {
 	ul.nav {
 		background-color: #ccc;
@@ -213,16 +209,14 @@ p.video-info {
 	background-color: @red;
 }
 
-
 .modal-body {
-text-align: center;
-
-iframe {
-	border:5px solid #02394F;
-	padding:0;
-	height:361px;
-	width:100%;
-}
+	text-align: center;
+	iframe {
+		border:5px solid #02394F;
+		padding:0;
+		height:361px;
+		width:100%;
+	}
 }
 
 h2.subtitle {
@@ -231,14 +225,28 @@ h2.subtitle {
 	font-size:34px;
 	line-height: 40px;
 }
-
-// Attend/Registration Page
+	
+// Speakers page-break-inside: 
+.page-id-788 {
+	.attachment-makercon-thumbnail, .attachment-small-thumbnail {
+		border: 3px solid #02394f;
+	}
+	.entry-content h3 {
+		color:#ED1B24;
+		font-size:20px;
+		margin:0;
+	}
+	.lead {
+		margin-bottom:0px;
+	}
+}
 
 .google-maps {
 	border: 3px solid #02394f;
 	position: relative;
 	padding-bottom: 25%;
 	overflow: hidden;
+	margin-bottom: 30px;
 	 iframe {
 		position: absolute;
 		top: 0;
@@ -246,28 +254,6 @@ h2.subtitle {
 		width: 100% !important;
 		height: 100% !important;
 	}
-}
-	
-	// Speakers page-break-inside: 
-	.page-id-788 {
-		.attachment-makercon-thumbnail, .attachment-small-thumbnail {
-	border: 3px solid #02394f;
-		}
-		.entry-content h3 {
-			color:#ED1B24;
-			font-size:20px;
-			margin:0;
-		}
-		.lead {
-			margin-bottom:0px;
-		}
-	}
-
-.google-maps {
-	position: relative;
-	padding-bottom: 25%;
-	margin-bottom: 30px;
-	overflow: hidden;
 }
 
 .google-maps iframe {
@@ -285,7 +271,7 @@ h2.subtitle {
 /*TRACKS PAGE*/
 .secondary-nav-area {
 	color: #fff;
-	font-family: fbentonsanscompmedium, "alternate-gothic-no-3-d-n4", helvetica, sans-serif;
+	font-family: @font;
 	text-transform: uppercase;
 	font-size: 22px;
 	font-weight: bold;
@@ -318,6 +304,14 @@ h2.subtitle {
 .sessions-wrap-days {
 	background-color:#bbe6f5;
 	margin-bottom:15px;
+	border: 1px solid transparent;
+	transition: border 0.3s ease;
+}
+
+.speaker-list a:hover .sessions-wrap-days {
+	border: 1px solid #0074a0;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease;
 }
 
 .sessions-no-event {
@@ -326,16 +320,24 @@ h2.subtitle {
 	margin-bottom:15px;
 }
 
+.session-wrap-a {
+	margin-bottom: 8px;
+	display: block;
+}
+
 .sessions-wrap {
 	background-color: #bbe6f5;
 	color: #0074a0;
-	margin-bottom: 8px;
 	min-height: 50px;
 	padding-top: 10px;
+	border: 1px solid transparent;
+	transition: border 0.3s ease;
 }
 
-.sessions-wrap a:link, .sessions-wrap a:visited {
-	color: #ED1B24;
+.sessions-list-area a:hover .sessions-wrap {
+	border: 1px solid #0074a0;
+	box-sizing: border-box;
+	transition: border-color 0.3s ease;
 }
 
 .sessions-page {
@@ -370,7 +372,7 @@ h2.session-title a:visited {
 // Seconday Navigation list-style-position: 
 .secondary-nav-area {
 	color: #fff;
-	font-family: fbentonsanscompmedium, helvetica, sans-serif;
+	font-family: @font;
 	text-transform: uppercase;
 	font-size: 22px;
 	font-weight: bold;
@@ -393,7 +395,7 @@ li.nav-item {
 	padding: 5px 15px;
 	margin: 0 auto;
 	color: #fff;
-	font-family: bentonsanscompmedium, helvetica, sans-serif;
+	font-family: @font;
 	text-transform: uppercase;
 	font-size: 22px;
 	font-weight: bold;
@@ -417,10 +419,6 @@ li.nav-item.active {
 	text-indent: 9999px;
 }
 
-h1,h2,h3,h4,h5 {
-	margin-top: 0;
-}
-
 .post-22 h1:first-child {
 	display: none;
 }
@@ -428,10 +426,10 @@ h1,h2,h3,h4,h5 {
 div.speaker-name-title p,
 div.speaker-subtitle,
 h3.speaker-subtitle {
-	font-family: fbb0kysgnjregular, helvetica, sans-serif;
-	font-size: 16px;
-	margin-bottom: 12px;
-	font-weight: bold;
+	font-family: @font;
+	font-size: 14px;
+	margin-bottom: 15px;
+	font-style: italic;
 }
 
 ul.featured-speakers {
@@ -452,10 +450,6 @@ ul.featured-speakers {
 			}
 		}
 	}
-}
-
-p.session-author a {
-	padding-right: 8px;
 }
 
 h1.entry-title {
@@ -481,12 +475,15 @@ h2.subtitle {
 }
 
 .sponsors {
-	  border-top: 1px solid #999;
-	  padding-bottom:30px;
-}
-
-.sponsors .row {
-	margin-top: 30px;
+  border-top: 1px solid #999;
+  padding-bottom:30px;
+  text-align: center;
+	.row {
+		margin-top: 30px;
+	}
+  h3 {
+      font-size: 22px;
+  }
 }
 
 // Carousel Plugin
@@ -500,19 +497,15 @@ h2.subtitle {
 }
 
 //Youtube play button class, put on img element. Add the play button on images.
+// Video and slideshow pages
 .yt-play-btn {
   width: 75px;
   position: absolute;
 	top: 50%;
   left: 50%;
   margin-right: -50%;
+  padding-right: 5px;
   transform: translate(-50%, -50%);
-}
-
-// Video and slideshow pages
-
-.yt-play-btn {
-	padding-right: 5px;
 }
 
 .page-id-2774 .top-navbar ul.nav, 

@@ -68,7 +68,6 @@ function display_session_subtitle() {
       #subtitle {
         padding: 6px 6px;
         font-size: 1.2em;
-
         height: 1.7em;
         width: 100%;
         outline: 0;

@@ -12,7 +12,7 @@
   <div class="sponsors">
     <div class="row">
       <div class="col-sm-12 col-md-12">
-        <h2 class="subtitle">Presenting Sponsors</h2>
+        <h3 class="subtitle">Presenting Sponsors</h3>
         <a href="http://pubads.g.doubleclick.net/gampad/clk?id=150606898&iu=/11548178/Makezine" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="<?php echo get_stylesheet_directory_uri(); ?>/img/intel_logo.jpg" alt="Intel Logo" width="125" align="center" />
         </a>
@@ -23,13 +23,13 @@
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-6">
-        <h2 class="subtitle">Evening of Innovation Sponsor</h2>
+        <h3 class="subtitle">Evening of Innovation Sponsor</h3>
         <a href="//sprout.hp.com/us/en/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img class="top15" src="//makercon.com/wp-content/uploads/2015/03/hp-sprout-sponsor-01.jpg" alt="HP Sprout Sponsor" height="35"  />
         </a>
       </div>
       <div class="col-sm-12 col-md-6">
-        <h2 class="subtitle">Participating Sponsors</h2>
+        <h3 class="subtitle">Participating Sponsors</h3>
         <a href="//flir.com" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="//makercon.com/wp-content/uploads/2015/08/makercon-Flir-logo-01.jpg" alt="FLIR Logo" width="150" align="center" />
         </a>
@@ -43,19 +43,19 @@
     </div>
     <div class="row">
       <div class="col-sm-12 col-md-4">
-        <h2 class="subtitle">Communications Partner</h2>
+        <h3 class="subtitle">Communications Partner</h3>
         <a href="//www.marketwired.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img style="left15" src="//makercon.com/wp-content/uploads/2015/03/logo.png" alt="Market Wired Sponsor Logo" width="125" align="center" />
         </a>
       </div>
       <div class="col-sm-12 col-md-4">
-        <h2 class="subtitle">Host Sponsor</h2>
+        <h3 class="subtitle">Host Sponsor</h3>
         <a href="//www.nysci.org/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="//makercon.com/wp-content/uploads/2015/08/makercon-sponsor-NYSCI-Logo.jpg" alt="NYSI Logo" width="100" align="center" />
         </a>
       </div>
       <div class="col-sm-12 col-md-4">
-        <h2 class="subtitle">Community Sponsor</h2>
+        <h3 class="subtitle">Community Sponsor</h3>
         <a href="//themakersnation.com/" onClick="_gaq.push(['_trackEvent', 'SponsorAds', 'Click', 'AdLogo']);" target="_blank">
         <img src="//makercon.com/wp-content/uploads/2015/08/makercon-sponsor-mn-Logo.jpg" alt="Makers Nations Logo" width="80" align="center" />
         </a>
