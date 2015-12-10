@@ -207,11 +207,11 @@
           <div id="collapse2" class="panel-collapse collapse" role="tabpanel" aria-labelledby="heading2">
             <div class="panel-body">
               <ul class="nav nav-pills nav-stacked">
-                <li><a href="//makezine.com/blog/" target="_blank">Make: News</a></li>
+                <li><a href="//makezine.com/" target="_blank">Make: News &amp; Projects</a></li>
                 <li><a href="//makerfaire.com" target="_blank">Maker Faire</a></li>
                 <li><a href="//www.makershed.com" target="_blank">Maker Shed</a></li>
                 <li><a href="//makercamp.com" target="_blank">Maker Camp</a></li>
-                <li><a href="//readerservices.makezine.com/mk/default.aspx?" target="_blank">Subscribe to Make:</a></li>
+                <li><a href="https://readerservices.makezine.com/mk/default.aspx?utm_source=makercon.com&utm_medium=brand+bar&utm_campaign=mag+sub&pc=MK&pk=M5BMCN" target="_blank">Subscribe to Make:</a></li>
               </ul>
             </div>
           </div>
